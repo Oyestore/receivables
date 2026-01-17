@@ -36,6 +36,7 @@ coverage/
 uploads/
 temp/
 tmp/
+clickhouse/
 
 # Build
 *.tsbuildinfo

@@ -1,0 +1,38 @@
+{
+  "company": {
+    "name": "Innovatech Solutions Ltd.",
+    "address": "123 Tech Park, Bangalore, KA 560001, India",
+    "gstin": "29ABCDE1234F1Z5",
+    "logo_url": "https://via.placeholder.com/150/0000FF/FFFFFF?Text=Innovatech"
+  },
+  "recipient": {
+    "name": "Future Gadgets Pvt. Ltd.",
+    "address": "789 Innovation Hub, Pune, MH 411007, India",
+    "gstin": "27FGHIJ5678K1Z4"
+  },
+  "invoice": {
+    "number": "INV-2025-05-001",
+    "date": "2025-05-14",
+    "due_date": "2025-06-13",
+    "currency": "INR",
+    "items": [
+      {
+        "description": "AI Powered Chatbot Development - Basic Tier",
+        "hsn_sac": "998314",
+        "quantity": 1,
+        "unit_price": 75000,
+        "tax_rate": 0.18
+      },
+      {
+        "description": "Cloud Hosting & Maintenance (1 Year)",
+        "hsn_sac": "998315",
+        "quantity": 1,
+        "unit_price": 25000,
+        "tax_rate": 0.18
+      }
+    ],
+    "notes": "Thank you for your business! Payment is due within 30 days.",
+    "terms_conditions": "All services are governed by the Innovatech Solutions Ltd. MSA. Late payments are subject to a 2% monthly interest."
+  }
+}
+

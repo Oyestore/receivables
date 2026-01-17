@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Invoice Template Editor</title>
+    <link rel="stylesheet" href="https://unpkg.com/grapesjs/dist/css/grapes.min.css">
+    <link rel="stylesheet" href="css/editor-styles.css">
+    <style>
+        .template-info-bar {
+            padding: 10px 15px;
+            background-color: #f0f2f5;
+            border-bottom: 1px solid #ccc;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            height: 30px; /* Total height around 50px with padding */
+        }
+        .template-info-bar label {
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        .template-info-bar input[type="text"] {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        #template-name-input { flex-grow: 1; max-width: 300px; }
+        #template-description-input { flex-grow: 2; max-width: 400px; }
+        .template-info-bar span {
+            font-size: 0.9em;
+            background-color: #e9ecef;
+            padding: 5px 8px;
+            border-radius: 4px;
+        }
+        #template-version-display { margin-left: auto; }
+        #template-status-display { margin-left: 10px; }
+        .editor-toolbar-custom-buttons button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 6px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.85em;
+        }
+        .editor-toolbar-custom-buttons button:hover { background-color: #0056b3; }
+
+        /* Styles for Data Source Modal */
+        .data-source-modal {
+            display: none; /* Hidden by default */
+            position: fixed;
+            z-index: 10000; /* High z-index to be on top */
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+        }
+        .data-source-modal-content {
+            background-color: #fefefe;
+            margin: 10% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 60%;
+            max-width: 700px;
+            border-radius: 5px;
+        }
+        .data-source-modal-content h2, .data-source-modal-content h3 {
+            margin-top:0;
+        }
+        .data-source-modal-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 15px;
+        }
+        .data-source-modal-content th, .data-source-modal-content td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .data-source-modal-content th { background-color: #f2f2f2; }
+        .data-source-modal-content .form-group {
+            margin-bottom: 15px;
+        }
+        .data-source-modal-content .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .data-source-modal-content .form-group input[type="text"],
+        .data-source-modal-content .form-group select,
+        .data-source-modal-content .form-group textarea {
+            width: calc(100% - 16px);
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .data-source-modal-content .modal-actions button {
+             padding: 10px 15px;
+             margin-right: 10px;
+             border-radius: 4px;
+             cursor: pointer;
+        }
+        .close-data-source-modal { float: right; font-size: 20px; font-weight: bold; cursor: pointer; }
+
+    </style>
+</head>
+<body>
+    <div class="template-info-bar">
+        <label for="template-name-input">Name:</label>
+        <input type="text" id="template-name-input" placeholder="Untitled Template">
+        <label for="template-description-input">Description:</label>
+        <input type="text" id="template-description-input" placeholder="Template Description">
+        
+        <div class="editor-toolbar-custom-buttons" style="margin-left: 20px;">
+            <button id="manage-data-sources-btn">Manage Data Sources</button>
+        </div>
+
+        <span id="template-version-display">Version: 1</span>
+        <span id="template-status-display">Status: DRAFT</span>
+    </div>
+
+    <div id="gjs-editor-container"></div>
+
+    <div class="editor-panels">
+        <div id="blocks-container" class="panel-section"></div>
+        <div id="layers-container" class="panel-section"></div>
+        <div id="styles-container" class="panel-section"></div>
+        <div id="traits-container" class="panel-section"></div>
+        <div id="version-history-panel" class="panel-section" style="flex-basis: 250px; flex-grow: 0;">
+            <h4>Version History</h4>
+            <!-- Content will be populated by JS -->
+        </div>
+    </div>
+
+    <!-- User-Defined Data Source Management Modal -->
+    <div id="user-data-source-modal" class="data-source-modal">
+        <div class="data-source-modal-content">
+            <span class="close-data-source-modal" id="close-user-data-source-modal">&times;</span>
+            <h2>User-Defined Data Sources</h2>
+            
+            <div id="data-sources-list-view">
+                <h3>Defined Data Sources</h3>
+                <table id="data-sources-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Rows will be populated by JS -->
+                        <tr>
+                            <td colspan="4" style="text-align:center;">No data sources defined yet.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button id="add-new-data-source-btn">Add New Data Source</button>
+            </div>
+
+            <div id="add-edit-data-source-form-view" style="display:none;">
+                <h3 id="data-source-form-title">Add New Data Source</h3>
+                <form id="data-source-form">
+                    <input type="hidden" id="data-source-id">
+                    <div class="form-group">
+                        <label for="data-source-name">Source Name:</label>
+                        <input type="text" id="data-source-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="data-source-type">Source Type:</label>
+                        <select id="data-source-type">
+                            <option value="rest_api">REST API</option>
+                            <option value="json_url">JSON File URL</option>
+                            <option value="csv_url">CSV File URL</option>
+                        </select>
+                    </div>
+                    <div id="connection-details-rest" class="connection-details-group">
+                        <div class="form-group">
+                            <label for="data-source-base-url">Base URL:</label>
+                            <input type="text" id="data-source-base-url">
+                        </div>
+                        <div class="form-group">
+                            <label for="data-source-auth-method">Authentication Method:</label>
+                            <select id="data-source-auth-method">
+                                <option value="none">None</option>
+                                <option value="api_key">API Key</option>
+                                <option value="basic_auth">Basic Auth</option>
+                            </select>
+                        </div>
+                        <div id="auth-details-api-key" class="auth-details-group" style="display:none;">
+                             <div class="form-group">
+                                <label for="data-source-api-key-header">API Key Header Name:</label>
+                                <input type="text" id="data-source-api-key-header" placeholder="e.g., X-API-Key">
+                            </div>
+                            <div class="form-group">
+                                <label for="data-source-api-key-value">API Key Value:</label>
+                                <input type="text" id="data-source-api-key-value">
+                            </div>
+                        </div>
+                         <div id="auth-details-basic-auth" class="auth-details-group" style="display:none;">
+                            <div class="form-group">
+                                <label for="data-source-basic-user">Username:</label>
+                                <input type="text" id="data-source-basic-user">
+                            </div>
+                            <div class="form-group">
+                                <label for="data-source-basic-pass">Password:</label>
+                                <input type="text" id="data-source-basic-pass">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="connection-details-file-url" class="connection-details-group" style="display:none;">
+                        <div class="form-group">
+                            <label for="data-source-file-url">File URL:</label>
+                            <input type="text" id="data-source-file-url">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="data-source-schema">Data Schema/Sample (JSON - Conceptual):</label>
+                        <textarea id="data-source-schema" rows="4" placeholder="Paste sample JSON or define field names..."></textarea>
+                    </div>
+                    <div class="modal-actions">
+                        <button type="submit" id="save-data-source-btn">Save Data Source</button>
+                        <button type="button" id="test-data-source-connection-btn">Test Connection (Conceptual)</button>
+                        <button type="button" id="cancel-data-source-form-btn">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/grapesjs"></script>
+    <script src="js/editor-main.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,18 @@
+{
+  "training_date": "2025-11-24T17:23:04.349097",
+  "models": [
+    "engagement_score",
+    "payment_probability",
+    "churn_risk",
+    "send_time_hour",
+    "send_time_day"
+  ],
+  "data_sources": [
+    "B2B ICT Customer Dataset (Kaggle-based patterns)",
+    "Email optimization research (22-50% improvement)",
+    "SaaS churn prediction research",
+    "SME credit risk patterns"
+  ],
+  "sample_size": 10000,
+  "version": "1.0"
+}

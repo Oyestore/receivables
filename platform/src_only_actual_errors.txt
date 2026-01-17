@@ -1,0 +1,2586 @@
+﻿
+Module_01_Smart_Invoice_Generation/src/controller
+s/invoice.controller.spec.ts(57,36): error 
+TS2349: This expression is not callable.
+Module_01_Smart_Invoice_Generation/src/controller
+s/invoice.controller.spec.ts(81,36): error 
+TS2349: This expression is not callable.
+Module_01_Smart_Invoice_Generation/src/controller
+s/invoice.controller.spec.ts(98,36): error 
+TS2349: This expression is not callable.
+Module_01_Smart_Invoice_Generation/src/controller
+s/invoice.controller.spec.ts(108,19): error 
+TS2349: This expression is not callable.
+Module_01_Smart_Invoice_Generation/src/controller
+s/invoice.controller.spec.ts(123,36): error 
+TS2349: This expression is not callable.
+Module_01_Smart_Invoice_Generation/src/controller
+s/invoice.controller.spec.ts(141,36): error 
+TS2349: This expression is not callable.
+Module_01_Smart_Invoice_Generation/src/controller
+s/invoice.controller.spec.ts(161,36): error 
+TS2349: This expression is not callable.
+Module_01_Smart_Invoice_Generation/src/controller
+s/recurring-invoice.controller.ts(48,13): error 
+TS2345: Argument of type '{ tenantId: string; 
+name: string; templateInvoiceId: string; 
+frequency: string; startDate: Date; endDate?: 
+Date; maxOccurrences?: number; 
+sendOnGeneration?: boolean; }' is not assignable 
+to parameter of type 'Partial<RecurringInvoice>'.
+Module_01_Smart_Invoice_Generation/src/controller
+s/recurring-invoice.controller.ts(89,56): error 
+TS2345: Argument of type 
+'UpdateRecurringInvoiceDto' is not assignable to 
+parameter of type 'Partial<RecurringInvoice>'.
+Module_01_Smart_Invoice_Generation/src/invoice.mo
+dule.ts(11,44): error TS2307: Cannot find module 
+'./services' or its corresponding type 
+declarations.
+Module_01_Smart_Invoice_Generation/src/invoice.mo
+dule.ts(19,38): error TS2307: Cannot find module 
+'../../Module_12_Administration/administration.mo
+dule' or its corresponding type declarations.
+Module_01_Smart_Invoice_Generation/src/services/i
+nvoice.service.spec.ts(67,42): error TS2554: 
+Expected 3 arguments, but got 2.
+Module_01_Smart_Invoice_Generation/src/services/i
+nvoice.service.spec.ts(79,27): error TS2554: 
+Expected 3 arguments, but got 2.
+Module_01_Smart_Invoice_Generation/src/services/i
+nvoice.service.spec.ts(89,42): error TS2554: 
+Expected 2 arguments, but got 1.
+Module_01_Smart_Invoice_Generation/src/services/i
+nvoice.service.spec.ts(98,34): error TS2554: 
+Expected 2 arguments, but got 1.
+Module_01_Smart_Invoice_Generation/src/services/i
+nvoice.service.spec.ts(124,42): error TS2554: 
+Expected 4 arguments, but got 2.
+Module_01_Smart_Invoice_Generation/src/services/i
+nvoice.service.spec.ts(126,27): error TS2339: 
+Property 'client_name' does not exist on type 
+'Invoice'.
+Module_01_Smart_Invoice_Generation/src/services/i
+nvoice.service.spec.ts(135,42): error TS2554: 
+Expected 4-5 arguments, but got 2.
+Module_01_Smart_Invoice_Generation/src/services/i
+nvoice.service.spec.ts(146,27): error TS2339: 
+Property 'delete' does not exist on type 
+'InvoiceService'.
+Module_01_Smart_Invoice_Generation/src/services/i
+nvoice.service.ts(73,17): error TS2322: Type 
+'"INVOICE_CREATED"' is not assignable to type 
+'AuditAction'.
+Module_01_Smart_Invoice_Generation/src/services/i
+nvoice.service.ts(215,13): error TS2322: Type 
+'"INVOICE_UPDATED"' is not assignable to type 
+'AuditAction'.
+Module_01_Smart_Invoice_Generation/src/services/i
+nvoice.service.ts(250,13): error TS2322: Type 
+'"INVOICE_DELETED"' is not assignable to type 
+'AuditAction'.
+Module_01_Smart_Invoice_Generation/src/services/i
+nvoice.service.ts(304,13): error TS2322: Type 
+'"INVOICE_SENT"' is not assignable to type 
+'AuditAction'.
+Module_01_Smart_Invoice_Generation/src/services/i
+nvoice.service.ts(361,13): error TS2322: Type 
+'"INVOICE_STATUS_UPDATED"' is not assignable to 
+type 'AuditAction'.
+Module_01_Smart_Invoice_Generation/src/services/r
+ecurring-invoice.service.spec.ts(95,34): error 
+TS2551: Property 'templateInvoice' does not 
+exist on type '{ id: string; tenantId: string; 
+templateInvoiceId: string; name: string; 
+frequency: RecurrenceFrequency; startDate: Date; 
+nextRunDate: Date; status: RecurringStatus; ... 
+4 more ...; shouldStop: Mock<...>; }'. Did you 
+mean 'templateInvoiceId'?
+Module_01_Smart_Invoice_Generation/src/services/r
+ecurring-invoice.service.spec.ts(103,71): error 
+TS2345: Argument of type '{ id: string; 
+tenantId: string; templateInvoiceId: string; 
+name: string; frequency: RecurrenceFrequency; 
+startDate: Date; nextRunDate: Date; status: 
+RecurringStatus; ... 4 more ...; shouldStop: 
+jest.Mock<...>; }' is not assignable to 
+parameter of type 'RecurringInvoice'.
+Module_01_Smart_Invoice_Generation/src/services/r
+ecurring-invoice.service.spec.ts(112,34): error 
+TS2551: Property 'templateInvoice' does not 
+exist on type '{ id: string; tenantId: string; 
+templateInvoiceId: string; name: string; 
+frequency: RecurrenceFrequency; startDate: Date; 
+nextRunDate: Date; status: RecurringStatus; ... 
+4 more ...; shouldStop: Mock<...>; }'. Did you 
+mean 'templateInvoiceId'?
+Module_01_Smart_Invoice_Generation/src/services/r
+ecurring-invoice.service.spec.ts(119,56): error 
+TS2345: Argument of type '{ id: string; 
+tenantId: string; templateInvoiceId: string; 
+name: string; frequency: RecurrenceFrequency; 
+startDate: Date; nextRunDate: Date; status: 
+RecurringStatus; ... 4 more ...; shouldStop: 
+jest.Mock<...>; }' is not assignable to 
+parameter of type 'RecurringInvoice'.
+Module_01_Smart_Invoice_Generation/src/services/r
+ecurring-invoice.service.ts(71,54): error 
+TS2554: Expected 3 arguments, but got 2.
+Module_01_Smart_Invoice_Generation/src/services/r
+ecurring-invoice.service.ts(77,58): error 
+TS2551: Property 'due_date' does not exist on 
+type 'Invoice'. Did you mean 'dueDate'?
+Module_01_Smart_Invoice_Generation/src/services/r
+ecurring-invoice.service.ts(77,77): error 
+TS2339: Property 'invoice_date' does not exist 
+on type 'Invoice'.
+Module_02_Intelligent_Distribution/src/controller
+s/collections-autopilot.controller.spec.ts(43,45)
+: error TS2551: Property 'configureDefaults' 
+does not exist on type 
+'CollectionsAutopilotController'. Did you mean 
+'configureDefault'?
+Module_02_Intelligent_Distribution/src/controller
+s/collections-autopilot.controller.spec.ts(52,52)
+: error TS2554: Expected 0 arguments, but got 1.
+Module_02_Intelligent_Distribution/src/controller
+s/collections-autopilot.controller.spec.ts(69,30)
+: error TS2339: Property 'pauseAutopilot' does 
+not exist on type 
+'CollectionsAutopilotController'.
+Module_02_Intelligent_Distribution/src/controller
+s/collections-autopilot.controller.spec.ts(76,30)
+: error TS2339: Property 'resumeAutopilot' does 
+not exist on type 
+'CollectionsAutopilotController'.
+Module_02_Intelligent_Distribution/src/controller
+s/collections-autopilot.controller.ts(3,10): 
+error TS2459: Module 
+'"../services/core/distribution.service"' 
+declares 'ChannelType' locally, but it is not 
+exported.
+Module_02_Intelligent_Distribution/src/controller
+s/distribution.controller.spec.ts(59,62): error 
+TS2345: Argument of type '{ invoiceId: string; 
+channels: string[]; options: {}; }' is not 
+assignable to parameter of type 
+'CreateDistributionDto'.
+Module_02_Intelligent_Distribution/src/controller
+s/distribution.controller.spec.ts(71,66): error 
+TS2345: Argument of type '{ invoiceIds: 
+string[]; channels: string[]; options: {}; }' is 
+not assignable to parameter of type 
+'BulkDistributionDto'.
+Module_02_Intelligent_Distribution/src/controller
+s/distribution.controller.spec.ts(90,68): error 
+TS2353: Object literal may only specify known 
+properties, and 'dateRange' does not exist in 
+type 'DistributionStatsDto'.
+Module_02_Intelligent_Distribution/src/controller
+s/distribution.controller.spec.ts(115,81): error 
+TS2322: Type 'DistributionStatus.SENT' is not 
+assignable to type 'DistributionStatus'.
+Module_02_Intelligent_Distribution/src/controller
+s/distribution.controller.ts(49,23): error 
+TS2551: Property 'channels' does not exist on 
+type 'CreateDistributionDto'. Did you mean 
+'channel'?
+Module_02_Intelligent_Distribution/src/controller
+s/distribution.controller.ts(51,23): error 
+TS2339: Property 'options' does not exist on 
+type 'CreateDistributionDto'.
+Module_02_Intelligent_Distribution/src/controller
+s/distribution.controller.ts(71,17): error 
+TS2345: Argument of type 
+'CommunicationChannel[]' is not assignable to 
+parameter of type 'ChannelType[]'.
+Module_02_Intelligent_Distribution/src/controller
+s/distribution.controller.ts(73,25): error 
+TS2339: Property 'options' does not exist on 
+type 'BulkDistributionDto'.
+Module_02_Intelligent_Distribution/src/controller
+s/distribution.controller.ts(114,23): error 
+TS2339: Property 'startDate' does not exist on 
+type 'DistributionFilterDto'.
+Module_02_Intelligent_Distribution/src/controller
+s/distribution.controller.ts(115,89): error 
+TS2339: Property 'startDate' does not exist on 
+type 'DistributionFilterDto'.
+Module_02_Intelligent_Distribution/src/controller
+s/distribution.controller.ts(118,23): error 
+TS2339: Property 'endDate' does not exist on 
+type 'DistributionFilterDto'.
+Module_02_Intelligent_Distribution/src/controller
+s/distribution.controller.ts(119,85): error 
+TS2339: Property 'endDate' does not exist on 
+type 'DistributionFilterDto'.
+Module_02_Intelligent_Distribution/src/controller
+s/distribution.controller.ts(147,73): error 
+TS2339: Property 'dateRange' does not exist on 
+type 'DistributionStatsDto'.
+Module_02_Intelligent_Distribution/src/controller
+s/distribution.controller.ts(194,9): error 
+TS2322: Type 'import("C:/Users/91858/Downloads/SM
+E_Platform_12_Separate_Modules/platform/Module_02
+_Intelligent_Distribution/src/entities/distributi
+on-record.entity").DistributionStatus' is not 
+assignable to type 'import("C:/Users/91858/Downlo
+ads/SME_Platform_12_Separate_Modules/platform/Mod
+ule_02_Intelligent_Distribution/src/entities/dist
+ribution-job.entity").DistributionStatus'.
+  Property 'OPENED' is missing in type 'import("C
+:/Users/91858/Downloads/SME_Platform_12_Separate_
+Modules/platform/Module_02_Intelligent_Distributi
+on/src/entities/distribution-job.entity").Distrib
+utionStatus'.
+Module_02_Intelligent_Distribution/src/controller
+s/distribution.controller.ts(195,23): error 
+TS2339: Property 'completedAt' does not exist on 
+type 'UpdateDistributionStatusDto'.
+Module_02_Intelligent_Distribution/src/controller
+s/distribution.controller.ts(196,41): error 
+TS2339: Property 'completedAt' does not exist on 
+type 'UpdateDistributionStatusDto'.
+Module_02_Intelligent_Distribution/src/controller
+s/follow-up.controller.spec.ts(55,68): error 
+TS2345: Argument of type '{ name: string; 
+description: string; triggerType: TriggerType; 
+daysOffset: number; channel: ChannelType; 
+templateId: string; }' is not assignable to 
+parameter of type 'CreateFollowUpRuleDto'.
+Module_02_Intelligent_Distribution/src/controller
+s/follow-up.controller.spec.ts(113,74): error 
+TS2345: Argument of type '{ channel: 
+ChannelType; customMessage: string; }' is not 
+assignable to parameter of type 
+'TriggerFollowUpDto'.
+Module_02_Intelligent_Distribution/src/controller
+s/follow-up.controller.ts(46,22): error TS2352: 
+Conversion of type 'CommunicationChannel' to 
+type 'ChannelType' may be a mistake because 
+neither type sufficiently overlaps with the 
+other. If this was intentional, convert the 
+expression to 'unknown' first.
+Module_02_Intelligent_Distribution/src/controller
+s/follow-up.controller.ts(134,13): error TS2352: 
+Conversion of type 'CommunicationChannel' to 
+type 'ChannelType' may be a mistake because 
+neither type sufficiently overlaps with the 
+other. If this was intentional, convert the 
+expression to 'unknown' first.
+Module_02_Intelligent_Distribution/src/controller
+s/recipient.controller.spec.ts(23,56): error 
+TS2345: Argument of type '{ name: string; email: 
+string; }' is not assignable to parameter of 
+type 'CreateRecipientDto'.
+Module_02_Intelligent_Distribution/src/controller
+s/whatsapp.controller.ts(18,30): error TS2307: 
+Cannot find module 
+'@common/guards/jwt-auth.guard' or its 
+corresponding type declarations.
+Module_02_Intelligent_Distribution/src/services/a
+nalytics/distribution-analytics.service.ts(164,17
+): error TS2353: Object literal may only specify 
+known properties, and 'tenantId' does not exist 
+in type 'FindOptionsWhere<DistributionLog> | 
+FindOptionsWhere<DistributionLog>[]'.
+Module_02_Intelligent_Distribution/src/services/a
+nalytics/distribution-analytics.service.ts(171,17
+): error TS2353: Object literal may only specify 
+known properties, and 'tenantId' does not exist 
+in type 'FindOptionsWhere<DeliveryEvent> | 
+FindOptionsWhere<DeliveryEvent>[]'.
+Module_02_Intelligent_Distribution/src/services/a
+nalytics/distribution-analytics.service.ts(180,33
+): error TS2339: Property 'channel' does not 
+exist on type 'DistributionLog'.
+Module_02_Intelligent_Distribution/src/services/c
+ollections-autopilot.service.spec.ts(2,45): 
+error TS2307: Cannot find module 
+'../collections-autopilot.service' or its 
+corresponding type declarations.
+Module_02_Intelligent_Distribution/src/services/c
+ollections-autopilot.service.spec.ts(5,10): 
+error TS2459: Module 
+'"./core/distribution.service"' declares 
+'ChannelType' locally, but it is not exported.
+Module_02_Intelligent_Distribution/src/services/c
+ollections-autopilot.service.ts(4,10): error 
+TS2459: Module '"./core/distribution.service"' 
+declares 'ChannelType' locally, but it is not 
+exported.
+Module_02_Intelligent_Distribution/src/services/c
+ore/delivery-tracking.service.spec.ts(53,63): 
+error TS2554: Expected 1 arguments, but got 4.
+Module_02_Intelligent_Distribution/src/services/c
+ore/delivery-tracking.service.spec.ts(62,27): 
+error TS2339: Property 'recordBounce' does not 
+exist on type 'DeliveryTrackingService'.
+Module_02_Intelligent_Distribution/src/services/c
+ore/delivery-tracking.service.spec.ts(76,42): 
+error TS2339: Property 'getDeliveryStatus' does 
+not exist on type 'DeliveryTrackingService'.
+Module_02_Intelligent_Distribution/src/services/c
+ore/delivery-tracking.service.spec.ts(90,27): 
+error TS2339: Property 'processWebhook' does not 
+exist on type 'DeliveryTrackingService'.
+Module_02_Intelligent_Distribution/src/services/c
+ore/distribution.service.spec.ts(4,31): error 
+TS2459: Module '"./distribution.service"' 
+declares 'ChannelType' locally, but it is not 
+exported.
+Module_02_Intelligent_Distribution/src/services/c
+ore/distribution.service.spec.ts(7,28): error 
+TS2307: Cannot find module '../../../Module_01_Sm
+art_Invoice_Generation/src/services/pdf.service' 
+or its corresponding type declarations.
+Module_02_Intelligent_Distribution/src/services/c
+ore/distribution.service.spec.ts(8,32): error 
+TS2307: Cannot find module '../../../Module_01_Sm
+art_Invoice_Generation/src/services/invoice.servi
+ce' or its corresponding type declarations.
+Module_02_Intelligent_Distribution/src/services/c
+ore/distribution.service.spec.ts(9,37): error 
+TS2307: Cannot find module '../../../Module_11_Co
+mmon/src/services/notification.service' or its 
+corresponding type declarations.
+Module_02_Intelligent_Distribution/src/services/c
+ore/distribution.service.spec.ts(10,36): error 
+TS2307: Cannot find module '../../../Module_03_Pa
+yment_Integration/src/services/payment-link.servi
+ce' or its corresponding type declarations.
+Module_02_Intelligent_Distribution/src/services/c
+ore/distribution.service.ts(4,28): error TS2307: 
+Cannot find module '../../../Module_01_Smart_Invo
+ice_Generation/src/services/pdf.service' or its 
+corresponding type declarations.
+Module_02_Intelligent_Distribution/src/services/c
+ore/distribution.service.ts(5,32): error TS2307: 
+Cannot find module '../../../Module_01_Smart_Invo
+ice_Generation/src/services/invoice.service' or 
+its corresponding type declarations.
+Module_02_Intelligent_Distribution/src/services/c
+ore/distribution.service.ts(6,37): error TS2307: 
+Cannot find module '../../../Module_11_Common/src
+/services/notification.service' or its 
+corresponding type declarations.
+Module_02_Intelligent_Distribution/src/services/c
+ore/distribution.service.ts(7,36): error TS2307: 
+Cannot find module '../../../Module_03_Payment_In
+tegration/src/services/payment-link.service' or 
+its corresponding type declarations.
+Module_02_Intelligent_Distribution/src/services/c
+ore/follow-up.service.spec.ts(7,31): error 
+TS2459: Module '"./distribution.service"' 
+declares 'ChannelType' locally, but it is not 
+exported.
+Module_02_Intelligent_Distribution/src/services/c
+ore/follow-up.service.spec.ts(8,32): error 
+TS2307: Cannot find module '../../../Module_01_Sm
+art_Invoice_Generation/src/services/invoice.servi
+ce' or its corresponding type declarations.
+Module_02_Intelligent_Distribution/src/services/c
+ore/follow-up.service.spec.ts(9,33): error 
+TS2307: Cannot find module '../../../Module_11_Co
+mmon/code/services/deepseek-r1.service' or its 
+corresponding type declarations.
+Module_02_Intelligent_Distribution/src/services/c
+ore/follow-up.service.ts(7,31): error TS2459: 
+Module '"./distribution.service"' declares 
+'ChannelType' locally, but it is not exported.
+Module_02_Intelligent_Distribution/src/services/c
+ore/follow-up.service.ts(8,32): error TS2307: 
+Cannot find module '../../../Module_01_Smart_Invo
+ice_Generation/src/services/invoice.service' or 
+its corresponding type declarations.
+Module_02_Intelligent_Distribution/src/services/c
+ore/follow-up.service.ts(9,33): error TS2307: 
+Cannot find module '../../../Module_11_Common/cod
+e/services/deepseek-r1.service' or its 
+corresponding type declarations.
+Module_02_Intelligent_Distribution/src/services/c
+ore/follow-up.service.ts(163,17): error TS2353: 
+Object literal may only specify known 
+properties, and 'organizationId' does not exist 
+in type 'FindOptionsWhere<FollowUpRule> | 
+FindOptionsWhere<FollowUpRule>[]'.
+Module_02_Intelligent_Distribution/src/services/c
+ore/follow-up.service.ts(361,13): error TS2769: 
+No overload matches this call.
+Module_02_Intelligent_Distribution/src/services/c
+ore/follow-up.service.ts(364,9): error TS2740: 
+Type 'FollowUpRule[]' is missing the following 
+properties from type 'FollowUpRule': id, 
+tenantId, name, description, and 12 more.
+Module_02_Intelligent_Distribution/src/services/c
+ore/follow-up.service.ts(372,22): error TS2353: 
+Object literal may only specify known 
+properties, and 'organizationId' does not exist 
+in type 'FindOptionsWhere<FollowUpRule> | 
+FindOptionsWhere<FollowUpRule>[]'.
+Module_02_Intelligent_Distribution/src/services/c
+ore/follow-up.service.ts(386,27): error TS2353: 
+Object literal may only specify known 
+properties, and 'organizationId' does not exist 
+in type 'string[] | number[] | Date | ObjectId | 
+Date[] | ObjectId[] | 
+FindOptionsWhere<FollowUpRule> | 
+FindOptionsWhere<FollowUpRule>[]'.
+Module_02_Intelligent_Distribution/src/services/c
+ore/follow-up.service.ts(391,34): error TS2353: 
+Object literal may only specify known 
+properties, and 'organizationId' does not exist 
+in type 'FindOptionsWhere<FollowUpRule> | 
+FindOptionsWhere<FollowUpRule>[]'.
+Module_02_Intelligent_Distribution/src/services/c
+ore/follow-up.service.ts(401,13): error TS2353: 
+Object literal may only specify known 
+properties, and 'organizationId' does not exist 
+in type 'string[] | number[] | Date | ObjectId | 
+Date[] | ObjectId[] | 
+FindOptionsWhere<FollowUpRule> | 
+FindOptionsWhere<FollowUpRule>[]'.
+Module_02_Intelligent_Distribution/src/services/c
+ore/follow-up.service.ts(422,33): error TS2339: 
+Property 'determineFollowUpAction' does not 
+exist on type 'FollowUpEngineService'.
+Module_02_Intelligent_Distribution/src/services/m
+l/channel-selection.service.ts(6,10): error 
+TS2305: Module 
+'"../../entities/ml-intelligence.entity"' has no 
+exported member 'MLIntelligence'.
+Module_02_Intelligent_Distribution/src/services/m
+l/ml-bridge.service.spec.ts(3,29): error TS2307: 
+Cannot find module '@nestjs/axios' or its 
+corresponding type declarations.
+Module_02_Intelligent_Distribution/src/services/m
+l/ml-bridge.service.spec.ts(40,42): error 
+TS2339: Property 'getPrediction' does not exist 
+on type 'MLBridgeService'.
+Module_02_Intelligent_Distribution/src/services/m
+l/ml-bridge.service.spec.ts(48,34): error 
+TS2339: Property 'getPrediction' does not exist 
+on type 'MLBridgeService'.
+Module_02_Intelligent_Distribution/src/services/m
+l/ml-bridge.service.spec.ts(58,42): error 
+TS2551: Property 'getEngagementScore' does not 
+exist on type 'MLBridgeService'. Did you mean 
+'predictEngagementScore'?
+Module_02_Intelligent_Distribution/src/services/m
+l/ml-bridge.service.spec.ts(68,42): error 
+TS2339: Property 'getPredictionWithFallback' 
+does not exist on type 'MLBridgeService'.
+Module_02_Intelligent_Distribution/src/services/m
+l/ml-personalization.service.spec.ts(38,42): 
+error TS2339: Property 'personalizeContent' does 
+not exist on type 'MLPersonalizationService'.
+Module_02_Intelligent_Distribution/src/services/m
+l/ml-personalization.service.spec.ts(48,42): 
+error TS2339: Property 'selectTemplate' does not 
+exist on type 'MLPersonalizationService'.
+Module_02_Intelligent_Distribution/src/services/m
+l/ml-personalization.service.spec.ts(57,42): 
+error TS2339: Property 'adaptLanguage' does not 
+exist on type 'MLPersonalizationService'.
+Module_02_Intelligent_Distribution/src/services/m
+l/ml-personalization.service.spec.ts(67,42): 
+error TS2339: Property 'culturalAdaptation' does 
+not exist on type 'MLPersonalizationService'.
+Module_02_Intelligent_Distribution/src/services/m
+l/ml-personalization.service.ts(78,54): error 
+TS2339: Property 'personalizeMessage' does not 
+exist on type 'MLBridgeService'.
+Module_02_Intelligent_Distribution/src/services/m
+l/send-time-optimization.service.spec.ts(66,27): 
+error TS2339: Property 'hour' does not exist on 
+type 'number'.
+Module_02_Intelligent_Distribution/src/services/m
+l/send-time-optimization.service.spec.ts(67,27): 
+error TS2339: Property 'hour' does not exist on 
+type 'number'.
+Module_02_Intelligent_Distribution/src/services/m
+l/send-time-optimization.service.ts(4,36): error 
+TS2307: Cannot find module 
+'../entities/ml-intelligence.entity' or its 
+corresponding type declarations.
+Module_02_Intelligent_Distribution/src/services/m
+l/send-time-optimization.service.ts(5,41): error 
+TS2307: Cannot find module 
+'../entities/ml-intelligence.entity' or its 
+corresponding type declarations.
+Module_02_Intelligent_Distribution/src/services/w
+hatsapp.service.ts(8,10): error TS2724: 
+'"../entities/recipient-contact.entity"' has no 
+exported member named 'RecipientContactEntity'. 
+Did you mean 'RecipientContact'?
+Module_02_Intelligent_Distribution/src/whatsapp.m
+odule.ts(4,28): error TS2307: Cannot find module 
+'@nestjs/axios' or its corresponding type 
+declarations.
+Module_02_Intelligent_Distribution/src/whatsapp.m
+odule.ts(15,10): error TS2724: 
+'"./entities/recipient-contact.entity"' has no 
+exported member named 'RecipientContactEntity'. 
+Did you mean 'RecipientContact'?
+Module_03_Payment_Integration/code/payment.module
+.ts(19,32): error TS2307: Cannot find module 
+'../src/entities/payment-gateway.entity' or its 
+corresponding type declarations.
+Module_03_Payment_Integration/src/controllers/ana
+lytics.controller.ts(2,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Controller'.
+Module_03_Payment_Integration/src/controllers/ana
+lytics.controller.ts(3,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 'Get'.
+Module_03_Payment_Integration/src/controllers/ana
+lytics.controller.ts(4,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 'Post'.
+Module_03_Payment_Integration/src/controllers/ana
+lytics.controller.ts(5,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Query'.
+Module_03_Payment_Integration/src/controllers/ana
+lytics.controller.ts(6,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Param'.
+Module_03_Payment_Integration/src/controllers/ana
+lytics.controller.ts(7,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 'Body'.
+Module_03_Payment_Integration/src/controllers/ana
+lytics.controller.ts(8,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'UseGuards'.
+Module_03_Payment_Integration/src/controllers/ana
+lytics.controller.ts(9,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 'Res'.
+Module_03_Payment_Integration/src/controllers/ana
+lytics.controller.ts(10,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'HttpStatus'.
+Module_03_Payment_Integration/src/controllers/ana
+lytics.controller.ts(25,26): error TS2307: 
+Cannot find module '../enums/user-role.enum' or 
+its corresponding type declarations.
+Module_03_Payment_Integration/src/controllers/dis
+pute.controller.ts(2,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Controller'.
+Module_03_Payment_Integration/src/controllers/dis
+pute.controller.ts(3,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 'Get'.
+Module_03_Payment_Integration/src/controllers/dis
+pute.controller.ts(4,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 'Post'.
+Module_03_Payment_Integration/src/controllers/dis
+pute.controller.ts(5,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 'Put'.
+Module_03_Payment_Integration/src/controllers/dis
+pute.controller.ts(6,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 'Body'.
+Module_03_Payment_Integration/src/controllers/dis
+pute.controller.ts(7,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Param'.
+Module_03_Payment_Integration/src/controllers/dis
+pute.controller.ts(8,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Query'.
+Module_03_Payment_Integration/src/controllers/dis
+pute.controller.ts(9,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'UseGuards'.
+Module_03_Payment_Integration/src/controllers/dis
+pute.controller.ts(10,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 'Req'.
+Module_03_Payment_Integration/src/controllers/dis
+pute.controller.ts(11,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'HttpStatus'.
+Module_03_Payment_Integration/src/controllers/dis
+pute.controller.ts(25,26): error TS2307: Cannot 
+find module '../enums/user-role.enum' or its 
+corresponding type declarations.
+Module_03_Payment_Integration/src/controllers/gat
+eway.controller.ts(2,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Controller'.
+Module_03_Payment_Integration/src/controllers/gat
+eway.controller.ts(3,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 'Get'.
+Module_03_Payment_Integration/src/controllers/gat
+eway.controller.ts(4,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 'Post'.
+Module_03_Payment_Integration/src/controllers/gat
+eway.controller.ts(5,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 'Put'.
+Module_03_Payment_Integration/src/controllers/gat
+eway.controller.ts(6,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Delete'.
+Module_03_Payment_Integration/src/controllers/gat
+eway.controller.ts(7,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 'Body'.
+Module_03_Payment_Integration/src/controllers/gat
+eway.controller.ts(8,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Param'.
+Module_03_Payment_Integration/src/controllers/gat
+eway.controller.ts(9,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'UseGuards'.
+Module_03_Payment_Integration/src/controllers/gat
+eway.controller.ts(10,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 'Req'.
+Module_03_Payment_Integration/src/controllers/gat
+eway.controller.ts(11,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'HttpStatus'.
+Module_03_Payment_Integration/src/controllers/gat
+eway.controller.ts(12,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'HttpCode'.
+Module_03_Payment_Integration/src/controllers/gat
+eway.controller.ts(13,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Query'.
+Module_03_Payment_Integration/src/controllers/gat
+eway.controller.ts(30,26): error TS2307: Cannot 
+find module '../enums/user-role.enum' or its 
+corresponding type declarations.
+Module_03_Payment_Integration/src/controllers/pay
+ment-link.controller.ts(2,5): error TS2305: 
+Module '"@nestjs/common"' has no exported member 
+'Controller'.
+Module_03_Payment_Integration/src/controllers/pay
+ment-link.controller.ts(3,5): error TS2305: 
+Module '"@nestjs/common"' has no exported member 
+'Get'.
+Module_03_Payment_Integration/src/controllers/pay
+ment-link.controller.ts(4,5): error TS2305: 
+Module '"@nestjs/common"' has no exported member 
+'Post'.
+Module_03_Payment_Integration/src/controllers/pay
+ment-link.controller.ts(5,5): error TS2305: 
+Module '"@nestjs/common"' has no exported member 
+'Put'.
+Module_03_Payment_Integration/src/controllers/pay
+ment-link.controller.ts(6,5): error TS2305: 
+Module '"@nestjs/common"' has no exported member 
+'Delete'.
+Module_03_Payment_Integration/src/controllers/pay
+ment-link.controller.ts(7,5): error TS2305: 
+Module '"@nestjs/common"' has no exported member 
+'Body'.
+Module_03_Payment_Integration/src/controllers/pay
+ment-link.controller.ts(8,5): error TS2305: 
+Module '"@nestjs/common"' has no exported member 
+'Param'.
+Module_03_Payment_Integration/src/controllers/pay
+ment-link.controller.ts(9,5): error TS2305: 
+Module '"@nestjs/common"' has no exported member 
+'Query'.
+Module_03_Payment_Integration/src/controllers/pay
+ment-link.controller.ts(10,5): error TS2305: 
+Module '"@nestjs/common"' has no exported member 
+'UseGuards'.
+Module_03_Payment_Integration/src/controllers/pay
+ment-link.controller.ts(11,5): error TS2305: 
+Module '"@nestjs/common"' has no exported member 
+'Req'.
+Module_03_Payment_Integration/src/controllers/pay
+ment-link.controller.ts(12,5): error TS2305: 
+Module '"@nestjs/common"' has no exported member 
+'Res'.
+Module_03_Payment_Integration/src/controllers/pay
+ment-link.controller.ts(13,5): error TS2305: 
+Module '"@nestjs/common"' has no exported member 
+'HttpStatus'.
+Module_03_Payment_Integration/src/controllers/pay
+ment-link.controller.ts(29,26): error TS2307: 
+Cannot find module '../enums/user-role.enum' or 
+its corresponding type declarations.
+Module_03_Payment_Integration/src/controllers/pay
+ment.controller.ts(2,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Controller'.
+Module_03_Payment_Integration/src/controllers/pay
+ment.controller.ts(3,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 'Post'.
+Module_03_Payment_Integration/src/controllers/pay
+ment.controller.ts(4,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 'Body'.
+Module_03_Payment_Integration/src/controllers/pay
+ment.controller.ts(5,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 'Get'.
+Module_03_Payment_Integration/src/controllers/pay
+ment.controller.ts(6,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Param'.
+Module_03_Payment_Integration/src/controllers/pay
+ment.controller.ts(7,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'UseGuards'.
+Module_03_Payment_Integration/src/controllers/pay
+ment.controller.ts(8,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 'Req'.
+Module_03_Payment_Integration/src/controllers/pay
+ment.controller.ts(9,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'HttpStatus'.
+Module_03_Payment_Integration/src/controllers/pay
+ment.controller.ts(10,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'HttpCode'.
+Module_03_Payment_Integration/src/controllers/pay
+ment.controller.ts(19,74): error TS2307: Cannot 
+find module '../dto' or its corresponding type 
+declarations.
+Module_03_Payment_Integration/src/controllers/pay
+ment.controller.ts(24,26): error TS2307: Cannot 
+find module '../enums/user-role.enum' or its 
+corresponding type declarations.
+Module_03_Payment_Integration/src/controllers/rec
+onciliation.controller.ts(2,5): error TS2305: 
+Module '"@nestjs/common"' has no exported member 
+'Controller'.
+Module_03_Payment_Integration/src/controllers/rec
+onciliation.controller.ts(3,5): error TS2305: 
+Module '"@nestjs/common"' has no exported member 
+'Get'.
+Module_03_Payment_Integration/src/controllers/rec
+onciliation.controller.ts(4,5): error TS2305: 
+Module '"@nestjs/common"' has no exported member 
+'Post'.
+Module_03_Payment_Integration/src/controllers/rec
+onciliation.controller.ts(5,5): error TS2305: 
+Module '"@nestjs/common"' has no exported member 
+'Body'.
+Module_03_Payment_Integration/src/controllers/rec
+onciliation.controller.ts(6,5): error TS2305: 
+Module '"@nestjs/common"' has no exported member 
+'Param'.
+Module_03_Payment_Integration/src/controllers/rec
+onciliation.controller.ts(7,5): error TS2305: 
+Module '"@nestjs/common"' has no exported member 
+'Query'.
+Module_03_Payment_Integration/src/controllers/rec
+onciliation.controller.ts(8,5): error TS2305: 
+Module '"@nestjs/common"' has no exported member 
+'UseGuards'.
+Module_03_Payment_Integration/src/controllers/rec
+onciliation.controller.ts(9,5): error TS2305: 
+Module '"@nestjs/common"' has no exported member 
+'Req'.
+Module_03_Payment_Integration/src/controllers/rec
+onciliation.controller.ts(10,5): error TS2305: 
+Module '"@nestjs/common"' has no exported member 
+'HttpStatus'.
+Module_03_Payment_Integration/src/controllers/rec
+onciliation.controller.ts(25,26): error TS2307: 
+Cannot find module '../../../Module_12_Administra
+tion/code/enums/user-role.enum' or its 
+corresponding type declarations.
+Module_03_Payment_Integration/src/controllers/ref
+und.controller.ts(2,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Controller'.
+Module_03_Payment_Integration/src/controllers/ref
+und.controller.ts(3,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 'Get'.
+Module_03_Payment_Integration/src/controllers/ref
+und.controller.ts(4,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 'Post'.
+Module_03_Payment_Integration/src/controllers/ref
+und.controller.ts(5,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 'Put'.
+Module_03_Payment_Integration/src/controllers/ref
+und.controller.ts(6,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 'Body'.
+Module_03_Payment_Integration/src/controllers/ref
+und.controller.ts(7,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Param'.
+Module_03_Payment_Integration/src/controllers/ref
+und.controller.ts(8,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Query'.
+Module_03_Payment_Integration/src/controllers/ref
+und.controller.ts(9,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'UseGuards'.
+Module_03_Payment_Integration/src/controllers/ref
+und.controller.ts(10,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 'Req'.
+Module_03_Payment_Integration/src/controllers/ref
+und.controller.ts(11,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'HttpStatus'.
+Module_03_Payment_Integration/src/controllers/ref
+und.controller.ts(12,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'HttpCode'.
+Module_03_Payment_Integration/src/controllers/ref
+und.controller.ts(25,26): error TS2307: Cannot 
+find module '../enums/user-role.enum' or its 
+corresponding type declarations.
+Module_03_Payment_Integration/src/controllers/set
+tlement.controller.ts(2,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Controller'.
+Module_03_Payment_Integration/src/controllers/set
+tlement.controller.ts(3,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 'Get'.
+Module_03_Payment_Integration/src/controllers/set
+tlement.controller.ts(4,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 'Post'.
+Module_03_Payment_Integration/src/controllers/set
+tlement.controller.ts(5,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 'Put'.
+Module_03_Payment_Integration/src/controllers/set
+tlement.controller.ts(6,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 'Body'.
+Module_03_Payment_Integration/src/controllers/set
+tlement.controller.ts(7,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Param'.
+Module_03_Payment_Integration/src/controllers/set
+tlement.controller.ts(8,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Query'.
+Module_03_Payment_Integration/src/controllers/set
+tlement.controller.ts(9,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'UseGuards'.
+Module_03_Payment_Integration/src/controllers/set
+tlement.controller.ts(10,5): error TS2305: 
+Module '"@nestjs/common"' has no exported member 
+'Req'.
+Module_03_Payment_Integration/src/controllers/set
+tlement.controller.ts(11,5): error TS2305: 
+Module '"@nestjs/common"' has no exported member 
+'HttpStatus'.
+Module_03_Payment_Integration/src/controllers/set
+tlement.controller.ts(25,26): error TS2307: 
+Cannot find module '../enums/user-role.enum' or 
+its corresponding type declarations.
+Module_03_Payment_Integration/src/controllers/vir
+tual-account.controller.ts(2,5): error TS2305: 
+Module '"@nestjs/common"' has no exported member 
+'Controller'.
+Module_03_Payment_Integration/src/controllers/vir
+tual-account.controller.ts(3,5): error TS2305: 
+Module '"@nestjs/common"' has no exported member 
+'Get'.
+Module_03_Payment_Integration/src/controllers/vir
+tual-account.controller.ts(4,5): error TS2305: 
+Module '"@nestjs/common"' has no exported member 
+'Post'.
+Module_03_Payment_Integration/src/controllers/vir
+tual-account.controller.ts(5,5): error TS2305: 
+Module '"@nestjs/common"' has no exported member 
+'Delete'.
+Module_03_Payment_Integration/src/controllers/vir
+tual-account.controller.ts(6,5): error TS2305: 
+Module '"@nestjs/common"' has no exported member 
+'Param'.
+Module_03_Payment_Integration/src/controllers/vir
+tual-account.controller.ts(7,5): error TS2305: 
+Module '"@nestjs/common"' has no exported member 
+'Body'.
+Module_03_Payment_Integration/src/controllers/vir
+tual-account.controller.ts(8,5): error TS2305: 
+Module '"@nestjs/common"' has no exported member 
+'Query'.
+Module_03_Payment_Integration/src/controllers/vir
+tual-account.controller.ts(9,5): error TS2305: 
+Module '"@nestjs/common"' has no exported member 
+'HttpStatus'.
+Module_03_Payment_Integration/src/controllers/vir
+tual-account.controller.ts(10,5): error TS2305: 
+Module '"@nestjs/common"' has no exported member 
+'UseGuards'.
+Module_03_Payment_Integration/src/controllers/web
+hook.controller.ts(2,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Controller'.
+Module_03_Payment_Integration/src/controllers/web
+hook.controller.ts(3,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 'Post'.
+Module_03_Payment_Integration/src/controllers/web
+hook.controller.ts(4,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 'Body'.
+Module_03_Payment_Integration/src/controllers/web
+hook.controller.ts(5,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Headers'.
+Module_03_Payment_Integration/src/controllers/web
+hook.controller.ts(6,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'HttpStatus'.
+Module_03_Payment_Integration/src/controllers/web
+hook.controller.ts(7,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'HttpCode'.
+Module_03_Payment_Integration/src/controllers/web
+hook.controller.ts(8,5): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Logger'.
+Module_03_Payment_Integration/src/entities/index.
+ts(6,1): error TS2308: Module 
+'./payment-transaction.entity' has already 
+exported a member named 'PaymentMethodType'. 
+Consider explicitly re-exporting to resolve the 
+ambiguity.
+Module_03_Payment_Integration/src/entities/index.
+ts(16,1): error TS2308: Module 
+'./settlement.entity' has already exported a 
+member named 'GatewayType'. Consider explicitly 
+re-exporting to resolve the ambiguity.
+Module_03_Payment_Integration/src/entities/index.
+ts(16,1): error TS2308: Module 
+'./settlement.entity' has already exported a 
+member named 'ReconciliationStatus'. Consider 
+explicitly re-exporting to resolve the ambiguity.
+Module_03_Payment_Integration/src/entities/settle
+ment-item.entity.ts(21,59): error TS2339: 
+Property 'items' does not exist on type 
+'unknown'.
+Module_03_Payment_Integration/src/entities/settle
+ment.entity.ts(163,51): error TS2339: Property 
+'settlement' does not exist on type 'unknown'.
+Module_03_Payment_Integration/src/payment.module.
+ts(1,10): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Module'.
+Module_03_Payment_Integration/src/payment.module.
+ts(1,18): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'forwardRef'.
+Module_03_Payment_Integration/src/payment.module.
+ts(3,38): error TS2307: Cannot find module '../..
+/Module_12_Administration/administration.module' 
+or its corresponding type declarations.
+Module_03_Payment_Integration/src/payment.module.
+ts(7,9): error TS2304: Cannot find name 
+'ConfigModule'.
+Module_03_Payment_Integration/src/payment.module.
+ts(8,9): error TS2304: Cannot find name 
+'ScheduleModule'.
+Module_03_Payment_Integration/src/payment.module.
+ts(9,35): error TS2304: Cannot find name 
+'PaymentTransaction'.
+Module_03_Payment_Integration/src/payment.module.
+ts(9,55): error TS2304: Cannot find name 
+'PaymentMethod'.
+Module_03_Payment_Integration/src/payment.module.
+ts(9,70): error TS2304: Cannot find name 
+'PaymentLog'.
+Module_03_Payment_Integration/src/payment.module.
+ts(9,82): error TS2304: Cannot find name 
+'GatewayConfig'.
+Module_03_Payment_Integration/src/payment.module.
+ts(9,97): error TS2304: Cannot find name 
+'Refund'.
+Module_03_Payment_Integration/src/payment.module.
+ts(9,105): error TS2304: Cannot find name 
+'InstallmentPlan'.
+Module_03_Payment_Integration/src/payment.module.
+ts(9,122): error TS2304: Cannot find name 
+'Installment'.
+Module_03_Payment_Integration/src/payment.module.
+ts(9,135): error TS2304: Cannot find name 
+'PaymentIncentive'.
+Module_03_Payment_Integration/src/payment.module.
+ts(9,153): error TS2304: Cannot find name 
+'PaymentLink'.
+Module_03_Payment_Integration/src/payment.module.
+ts(9,166): error TS2304: Cannot find name 
+'Settlement'.
+Module_03_Payment_Integration/src/payment.module.
+ts(9,178): error TS2304: Cannot find name 
+'SettlementItem'.
+Module_03_Payment_Integration/src/payment.module.
+ts(9,194): error TS2304: Cannot find name 
+'ReconciliationRecord'.
+Module_03_Payment_Integration/src/payment.module.
+ts(9,216): error TS2304: Cannot find name 
+'Dispute'.
+Module_03_Payment_Integration/src/payment.module.
+ts(9,225): error TS2304: Cannot find name 
+'VirtualAccount'.
+Module_03_Payment_Integration/src/payment.module.
+ts(10,26): error TS2304: Cannot find name 
+'InvoiceModule'.
+Module_03_Payment_Integration/src/payment.module.
+ts(11,9): error TS2304: Cannot find name 
+'CommonModule'.
+Module_03_Payment_Integration/src/payment.module.
+ts(15,9): error TS2304: Cannot find name 
+'PaymentController'.
+Module_03_Payment_Integration/src/payment.module.
+ts(16,9): error TS2304: Cannot find name 
+'WebhookController'.
+Module_03_Payment_Integration/src/payment.module.
+ts(17,9): error TS2304: Cannot find name 
+'GatewayController'.
+Module_03_Payment_Integration/src/payment.module.
+ts(18,9): error TS2304: Cannot find name 
+'RefundController'.
+Module_03_Payment_Integration/src/payment.module.
+ts(19,9): error TS2304: Cannot find name 
+'PaymentLinkController'.
+Module_03_Payment_Integration/src/payment.module.
+ts(20,9): error TS2304: Cannot find name 
+'SettlementController'.
+Module_03_Payment_Integration/src/payment.module.
+ts(21,9): error TS2304: Cannot find name 
+'ReconciliationController'.
+Module_03_Payment_Integration/src/payment.module.
+ts(22,9): error TS2304: Cannot find name 
+'AnalyticsController'.
+Module_03_Payment_Integration/src/payment.module.
+ts(23,9): error TS2304: Cannot find name 
+'DisputeController'.
+Module_03_Payment_Integration/src/payment.module.
+ts(24,9): error TS2304: Cannot find name 
+'VirtualAccountController'.
+Module_03_Payment_Integration/src/payment.module.
+ts(27,9): error TS2304: Cannot find name 
+'RazorpayService'.
+Module_03_Payment_Integration/src/payment.module.
+ts(28,9): error TS2304: Cannot find name 
+'PaymentService'.
+Module_03_Payment_Integration/src/payment.module.
+ts(29,9): error TS2304: Cannot find name 
+'PaymentGatewayFactory'.
+Module_03_Payment_Integration/src/payment.module.
+ts(30,9): error TS2304: Cannot find name 
+'RazorpayGatewayService'.
+Module_03_Payment_Integration/src/payment.module.
+ts(31,9): error TS2304: Cannot find name 
+'StripeGatewayService'.
+Module_03_Payment_Integration/src/payment.module.
+ts(32,9): error TS2304: Cannot find name 
+'PayUGatewayService'.
+Module_03_Payment_Integration/src/payment.module.
+ts(33,9): error TS2304: Cannot find name 
+'RefundService'.
+Module_03_Payment_Integration/src/payment.module.
+ts(34,9): error TS2304: Cannot find name 
+'InstallmentService'.
+Module_03_Payment_Integration/src/payment.module.
+ts(35,9): error TS2304: Cannot find name 
+'IncentiveService'.
+Module_03_Payment_Integration/src/payment.module.
+ts(36,9): error TS2304: Cannot find name 
+'PaymentLinkService'.
+Module_03_Payment_Integration/src/payment.module.
+ts(37,9): error TS2304: Cannot find name 
+'QRCodeService'.
+Module_03_Payment_Integration/src/payment.module.
+ts(38,9): error TS2304: Cannot find name 
+'SettlementService'.
+Module_03_Payment_Integration/src/payment.module.
+ts(39,9): error TS2304: Cannot find name 
+'ReconciliationService'.
+Module_03_Payment_Integration/src/payment.module.
+ts(40,9): error TS2304: Cannot find name 
+'PaymentAnalyticsService'.
+Module_03_Payment_Integration/src/payment.module.
+ts(41,9): error TS2304: Cannot find name 
+'DisputeService'.
+Module_03_Payment_Integration/src/payment.module.
+ts(42,9): error TS2304: Cannot find name 
+'VirtualAccountService'.
+Module_03_Payment_Integration/src/payment.module.
+ts(44,15): error TS2304: Cannot find name 
+'PaymentService'.
+Module_03_Payment_Integration/src/services/bank-s
+tatement.service.ts(1,10): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Injectable'.
+Module_03_Payment_Integration/src/services/bank-s
+tatement.service.ts(1,22): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Logger'.
+Module_03_Payment_Integration/src/services/disput
+e.service.ts(1,10): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Injectable'.
+Module_03_Payment_Integration/src/services/disput
+e.service.ts(1,22): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Logger'.
+Module_03_Payment_Integration/src/services/disput
+e.service.ts(80,62): error TS2339: Property 
+'metadata' does not exist on type 
+'PaymentTransaction'.
+Module_03_Payment_Integration/src/services/disput
+e.service.ts(81,60): error TS2339: Property 
+'metadata' does not exist on type 
+'PaymentTransaction'.
+Module_03_Payment_Integration/src/services/disput
+e.service.ts(93,13): error TS2322: Type 
+'"DISPUTE_CREATED"' is not assignable to type 
+'AuditAction'.
+Module_03_Payment_Integration/src/services/disput
+e.service.ts(143,13): error TS2322: Type 
+'"DISPUTE_EVIDENCE_SUBMITTED"' is not assignable 
+to type 'AuditAction'.
+Module_03_Payment_Integration/src/services/disput
+e.service.ts(192,13): error TS2322: Type 
+'"DISPUTE_STATUS_UPDATED"' is not assignable to 
+type 'AuditAction'.
+Module_03_Payment_Integration/src/services/disput
+e.service.ts(228,13): error TS2322: Type 
+'"DISPUTE_ASSIGNED"' is not assignable to type 
+'AuditAction'.
+Module_03_Payment_Integration/src/services/disput
+e.service.ts(363,17): error TS2353: Object 
+literal may only specify known properties, and 
+'template' does not exist in type 'EmailData'.
+Module_03_Payment_Integration/src/services/disput
+e.service.ts(386,17): error TS2353: Object 
+literal may only specify known properties, and 
+'template' does not exist in type 'EmailData'.
+Module_03_Payment_Integration/src/services/gatewa
+ys/payu-gateway.service.ts(1,10): error TS2305: 
+Module '"@nestjs/common"' has no exported member 
+'Injectable'.
+Module_03_Payment_Integration/src/services/gatewa
+ys/payu-gateway.service.ts(1,22): error TS2305: 
+Module '"@nestjs/common"' has no exported member 
+'Logger'.
+Module_03_Payment_Integration/src/services/gatewa
+ys/razorpay-gateway.service.ts(1,10): error 
+TS2305: Module '"@nestjs/common"' has no 
+exported member 'Injectable'.
+Module_03_Payment_Integration/src/services/gatewa
+ys/razorpay-gateway.service.ts(1,22): error 
+TS2305: Module '"@nestjs/common"' has no 
+exported member 'Logger'.
+Module_03_Payment_Integration/src/services/gatewa
+ys/stripe-gateway.service.ts(1,10): error 
+TS2305: Module '"@nestjs/common"' has no 
+exported member 'Injectable'.
+Module_03_Payment_Integration/src/services/gatewa
+ys/stripe-gateway.service.ts(1,22): error 
+TS2305: Module '"@nestjs/common"' has no 
+exported member 'Logger'.
+Module_03_Payment_Integration/src/services/gatewa
+ys/stripe-gateway.service.ts(113,60): error 
+TS2367: This comparison appears to be 
+unintentional because the types '"processing" | 
+"requires_action" | "requires_capture" | 
+"requires_confirmation" | 
+"requires_payment_method"' and '"failed"' have 
+no overlap.
+Module_03_Payment_Integration/src/services/incent
+ive.service.ts(1,10): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Injectable'.
+Module_03_Payment_Integration/src/services/incent
+ive.service.ts(1,22): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Logger'.
+Module_03_Payment_Integration/src/services/incent
+ive.service.ts(47,13): error TS2322: Type 
+'"INCENTIVE_CREATED"' is not assignable to type 
+'AuditAction'.
+Module_03_Payment_Integration/src/services/incent
+ive.service.ts(258,13): error TS2322: Type 
+'"INCENTIVE_UPDATED"' is not assignable to type 
+'AuditAction'.
+Module_03_Payment_Integration/src/services/incent
+ive.service.ts(277,13): error TS2322: Type 
+'"INCENTIVE_DELETED"' is not assignable to type 
+'AuditAction'.
+Module_03_Payment_Integration/src/services/instal
+lment.service.ts(1,10): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Injectable'.
+Module_03_Payment_Integration/src/services/instal
+lment.service.ts(1,22): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Logger'.
+Module_03_Payment_Integration/src/services/instal
+lment.service.ts(82,13): error TS2322: Type 
+'"INSTALLMENT_PLAN_CREATED"' is not assignable 
+to type 'AuditAction'.
+Module_03_Payment_Integration/src/services/instal
+lment.service.ts(362,13): error TS2322: Type 
+'"INSTALLMENT_PLAN_CANCELLED"' is not assignable 
+to type 'AuditAction'.
+Module_03_Payment_Integration/src/services/paymen
+t-analytics.service.ts(1,10): error TS2305: 
+Module '"@nestjs/common"' has no exported member 
+'Injectable'.
+Module_03_Payment_Integration/src/services/paymen
+t-analytics.service.ts(1,22): error TS2305: 
+Module '"@nestjs/common"' has no exported member 
+'Logger'.
+Module_03_Payment_Integration/src/services/paymen
+t-analytics.service.ts(70,17): error TS2322: 
+Type '"success"' is not assignable to type 
+'TransactionStatus | 
+FindOperator<TransactionStatus>'.
+Module_03_Payment_Integration/src/services/paymen
+t-analytics.service.ts(87,17): error TS2322: 
+Type '"success"' is not assignable to type 
+'TransactionStatus | 
+FindOperator<TransactionStatus>'.
+Module_03_Payment_Integration/src/services/paymen
+t-analytics.service.ts(119,54): error TS2367: 
+This comparison appears to be unintentional 
+because the types 'TransactionStatus' and 
+'"success"' have no overlap.
+Module_03_Payment_Integration/src/services/paymen
+t-analytics.service.ts(121,51): error TS2367: 
+This comparison appears to be unintentional 
+because the types 'TransactionStatus' and 
+'"pending"' have no overlap.
+Module_03_Payment_Integration/src/services/paymen
+t-analytics.service.ts(271,17): error TS2322: 
+Type '"success"' is not assignable to type 
+'TransactionStatus | 
+FindOperator<TransactionStatus>'.
+Module_03_Payment_Integration/src/services/paymen
+t-analytics.service.ts(395,17): error TS2322: 
+Type '"failed"' is not assignable to type 
+'TransactionStatus | 
+FindOperator<TransactionStatus>'.
+Module_03_Payment_Integration/src/services/paymen
+t-analytics.service.ts(404,31): error TS2339: 
+Property 'metadata' does not exist on type 
+'PaymentTransaction'.
+Module_03_Payment_Integration/src/services/paymen
+t-gateway-factory.service.ts(1,10): error 
+TS2305: Module '"@nestjs/common"' has no 
+exported member 'Injectable'.
+Module_03_Payment_Integration/src/services/paymen
+t-gateway-factory.service.ts(1,22): error 
+TS2305: Module '"@nestjs/common"' has no 
+exported member 'Logger'.
+Module_03_Payment_Integration/src/services/paymen
+t-link.service.ts(1,10): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Injectable'.
+Module_03_Payment_Integration/src/services/paymen
+t-link.service.ts(1,22): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Logger'.
+Module_03_Payment_Integration/src/services/paymen
+t-link.service.ts(99,13): error TS2322: Type 
+'"PAYMENT_LINK_CREATED"' is not assignable to 
+type 'AuditAction'.
+Module_03_Payment_Integration/src/services/paymen
+t-link.service.ts(220,13): error TS2322: Type 
+'"PAYMENT_LINK_CANCELLED"' is not assignable to 
+type 'AuditAction'.
+Module_03_Payment_Integration/src/services/paymen
+t.service.spec.ts(76,42): error TS2339: Property 
+'create' does not exist on type 'PaymentService'.
+Module_03_Payment_Integration/src/services/paymen
+t.service.spec.ts(94,25): error TS2339: Property 
+'create' does not exist on type 'PaymentService'.
+Module_03_Payment_Integration/src/services/paymen
+t.service.spec.ts(114,42): error TS2339: 
+Property 'confirm' does not exist on type 
+'PaymentService'.
+Module_03_Payment_Integration/src/services/paymen
+t.service.spec.ts(126,42): error TS2339: 
+Property 'getByInvoice' does not exist on type 
+'PaymentService'.
+Module_03_Payment_Integration/src/services/paymen
+t.service.spec.ts(143,41): error TS2339: 
+Property 'getStatistics' does not exist on type 
+'PaymentService'.
+Module_03_Payment_Integration/src/services/paymen
+t.service.ts(1,10): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Injectable'.
+Module_03_Payment_Integration/src/services/paymen
+t.service.ts(1,22): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Logger'.
+Module_03_Payment_Integration/src/services/paymen
+t.service.ts(6,74): error TS2307: Cannot find 
+module '../dto' or its corresponding type 
+declarations.
+Module_03_Payment_Integration/src/services/paymen
+t.service.ts(72,60): error TS2769: No overload 
+matches this call.
+Module_03_Payment_Integration/src/services/paymen
+t.service.ts(92,17): error TS2322: Type 
+'"PAYMENT_INITIATED"' is not assignable to type 
+'AuditAction'.
+Module_03_Payment_Integration/src/services/paymen
+t.service.ts(137,25): error TS2339: Property 
+'gatewayType' does not exist on type 
+'PaymentTransaction'.
+Module_03_Payment_Integration/src/services/paymen
+t.service.ts(167,37): error TS2339: Property 
+'gatewayType' does not exist on type 
+'PaymentTransaction'.
+Module_03_Payment_Integration/src/services/paymen
+t.service.ts(184,13): error TS2322: Type 
+'"PAYMENT_VERIFIED"' is not assignable to type 
+'AuditAction'.
+Module_03_Payment_Integration/src/services/paymen
+t.service.ts(190,38): error TS2339: Property 
+'gatewayType' does not exist on type 
+'PaymentTransaction'.
+Module_03_Payment_Integration/src/services/paymen
+t.service.ts(200,34): error TS2339: Property 
+'gatewayType' does not exist on type 
+'PaymentTransaction'.
+Module_03_Payment_Integration/src/services/qrcode
+.service.ts(1,10): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Injectable'.
+Module_03_Payment_Integration/src/services/qrcode
+.service.ts(1,22): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Logger'.
+Module_03_Payment_Integration/src/services/razorp
+ay.service.ts(1,10): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Injectable'.
+Module_03_Payment_Integration/src/services/razorp
+ay.service.ts(1,22): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Logger'.
+Module_03_Payment_Integration/src/services/reconc
+iliation.service.ts(1,10): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Injectable'.
+Module_03_Payment_Integration/src/services/reconc
+iliation.service.ts(1,22): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Logger'.
+Module_03_Payment_Integration/src/services/reconc
+iliation.service.ts(100,17): error TS2322: Type 
+'"RECONCILIATION_COMPLETED"' is not assignable 
+to type 'AuditAction'.
+Module_03_Payment_Integration/src/services/reconc
+iliation.service.ts(366,13): error TS2322: Type 
+'"MANUAL_RECONCILIATION"' is not assignable to 
+type 'AuditAction'.
+Module_03_Payment_Integration/src/services/refund
+.service.ts(1,10): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Injectable'.
+Module_03_Payment_Integration/src/services/refund
+.service.ts(1,22): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Logger'.
+Module_03_Payment_Integration/src/services/refund
+.service.ts(97,13): error TS2322: Type 
+'"REFUND_INITIATED"' is not assignable to type 
+'AuditAction'.
+Module_03_Payment_Integration/src/services/refund
+.service.ts(143,13): error TS2322: Type 
+'"REFUND_APPROVED"' is not assignable to type 
+'AuditAction'.
+Module_03_Payment_Integration/src/services/refund
+.service.ts(187,13): error TS2322: Type 
+'"REFUND_REJECTED"' is not assignable to type 
+'AuditAction'.
+Module_03_Payment_Integration/src/services/refund
+.service.ts(219,36): error TS2339: Property 
+'gatewayType' does not exist on type 
+'PaymentTransaction'.
+Module_03_Payment_Integration/src/services/settle
+ment.service.ts(1,10): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Injectable'.
+Module_03_Payment_Integration/src/services/settle
+ment.service.ts(1,22): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Logger'.
+Module_03_Payment_Integration/src/services/settle
+ment.service.ts(85,13): error TS2322: Type 
+'"SETTLEMENT_CREATED"' is not assignable to type 
+'AuditAction'.
+Module_03_Payment_Integration/src/services/settle
+ment.service.ts(215,13): error TS2322: Type 
+'"SETTLEMENT_STATUS_UPDATED"' is not assignable 
+to type 'AuditAction'.
+Module_03_Payment_Integration/src/services/settle
+ment.service.ts(275,17): error TS2322: Type 
+'"success"' is not assignable to type 
+'TransactionStatus | 
+FindOperator<TransactionStatus>'.
+Module_03_Payment_Integration/src/services/settle
+ment.service.ts(302,58): error TS2339: Property 
+'getGatewayByType' does not exist on type 
+'PaymentGatewayFactory'.
+Module_03_Payment_Integration/src/services/virtua
+l-account.service.ts(1,10): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Injectable'.
+Module_03_Payment_Integration/src/services/virtua
+l-account.service.ts(1,22): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Logger'.
+Module_04_Analytics_Reporting/src/config/clickhou
+se.config.ts(3,28): error TS2307: Cannot find 
+module 'clickhouse' or its corresponding type 
+declarations.
+Module_04_Analytics_Reporting/src/controllers/__t
+ests__/anomaly-detection.controller.spec.ts(56,39
+): error TS2339: Property 'NEW' does not exist 
+on type 'typeof AnomalyStatus'.
+Module_04_Analytics_Reporting/src/controllers/__t
+ests__/anomaly-detection.controller.spec.ts(102,3
+9): error TS2339: Property 'NEW' does not exist 
+on type 'typeof AnomalyStatus'.
+Module_04_Analytics_Reporting/src/controllers/__t
+ests__/anomaly-detection.controller.spec.ts(118,3
+9): error TS2339: Property 'NEW' does not exist 
+on type 'typeof AnomalyStatus'.
+Module_04_Analytics_Reporting/src/controllers/__t
+ests__/dashboard-management.controller.spec.ts(16
+2,70): error TS2345: Argument of type '{ 
+sharedWith: string[]; }' is not assignable to 
+parameter of type 'ShareDashboardDto'.
+Module_04_Analytics_Reporting/src/controllers/__t
+ests__/report.controller.spec.ts(90,27): error 
+TS2339: Property 'id' does not exist on type 
+'ReportTemplateEntity[]'.
+Module_04_Analytics_Reporting/src/controllers/ana
+lytics.controller.ts(7,26): error TS2307: Cannot 
+find module '../../../Module_03_Payment_Integrati
+on/src/enums/user-role.enum' or its 
+corresponding type declarations.
+Module_04_Analytics_Reporting/src/controllers/das
+hboard-management.controller.ts(64,13): error 
+TS2345: Argument of type 'CreateDashboardDto' is 
+not assignable to parameter of type 
+'Partial<DashboardEntity>'.
+Module_04_Analytics_Reporting/src/controllers/das
+hboard-management.controller.ts(146,13): error 
+TS2345: Argument of type 'UpdateDashboardDto' is 
+not assignable to parameter of type 
+'Partial<DashboardEntity>'.
+Module_04_Analytics_Reporting/src/services/__test
+s__/anomaly-notification.service.spec.ts(3,37): 
+error TS2307: Cannot find module '../../../Module
+_11_Common/src/services/notification.service' or 
+its corresponding type declarations.
+Module_04_Analytics_Reporting/src/services/__test
+s__/anomaly-scheduler.service.spec.ts(74,35): 
+error TS2339: Property 'returnThis' does not 
+exist on type 'Mock<any, any, any>'.
+Module_04_Analytics_Reporting/src/services/__test
+s__/anomaly-scheduler.service.spec.ts(75,34): 
+error TS2339: Property 'returnThis' does not 
+exist on type 'Mock<any, any, any>'.
+Module_04_Analytics_Reporting/src/services/__test
+s__/anomaly-scheduler.service.spec.ts(89,35): 
+error TS2339: Property 'returnThis' does not 
+exist on type 'Mock<any, any, any>'.
+Module_04_Analytics_Reporting/src/services/__test
+s__/anomaly-scheduler.service.spec.ts(107,35): 
+error TS2339: Property 'returnThis' does not 
+exist on type 'Mock<any, any, any>'.
+Module_04_Analytics_Reporting/src/services/__test
+s__/anomaly-scheduler.service.spec.ts(108,34): 
+error TS2339: Property 'returnThis' does not 
+exist on type 'Mock<any, any, any>'.
+Module_04_Analytics_Reporting/src/services/__test
+s__/anomaly-scheduler.service.spec.ts(109,37): 
+error TS2339: Property 'returnThis' does not 
+exist on type 'Mock<any, any, any>'.
+Module_04_Analytics_Reporting/src/services/__test
+s__/anomaly-scheduler.service.spec.ts(124,35): 
+error TS2339: Property 'returnThis' does not 
+exist on type 'Mock<any, any, any>'.
+Module_04_Analytics_Reporting/src/services/__test
+s__/dashboard-collaboration.service.spec.ts(72,34
+): error TS2339: Property 'returnThis' does not 
+exist on type 'Mock<any, any, any>'.
+Module_04_Analytics_Reporting/src/services/__test
+s__/dashboard-collaboration.service.spec.ts(73,36
+): error TS2339: Property 'returnThis' does not 
+exist on type 'Mock<any, any, any>'.
+Module_04_Analytics_Reporting/src/services/__test
+s__/dashboard-collaboration.service.spec.ts(74,37
+): error TS2339: Property 'returnThis' does not 
+exist on type 'Mock<any, any, any>'.
+Module_04_Analytics_Reporting/src/services/__test
+s__/scheduled-reports.service.spec.ts(6,37): 
+error TS2307: Cannot find module '../../../Module
+_11_Common/src/services/notification.service' or 
+its corresponding type declarations.
+Module_04_Analytics_Reporting/src/services/anomal
+y-notification.service.ts(204,21): error TS2353: 
+Object literal may only specify known 
+properties, and 'body' does not exist in type 
+'EmailData'.
+Module_04_Analytics_Reporting/src/services/anomal
+y-notification.service.ts(244,21): error TS2322: 
+Type 'string[]' is not assignable to type 
+'string'.
+Module_04_Analytics_Reporting/src/services/dashbo
+ard-management.service.ts(291,9): error TS2322: 
+Type '{ userId?: string; roleId?: string; 
+permissions: string[]; }[]' is not assignable to 
+type '{ userId?: string; roleId?: string; 
+permissions: ("view" | "edit" | "admin")[]; }[]'.
+Module_04_Analytics_Reporting/src/services/report
+-generator.service.ts(5,26): error TS2307: 
+Cannot find module 'exceljs' or its 
+corresponding type declarations.
+Module_04_Analytics_Reporting/src/services/report
+-generator.service.ts(6,24): error TS2307: 
+Cannot find module 'json2csv' or its 
+corresponding type declarations.
+Module_04_Analytics_Reporting/src/services/report
+-scheduling.service.ts(77,55): error TS2554: 
+Expected 3 arguments, but got 1.
+Module_04_Analytics_Reporting/src/services/report
+.service.ts(5,10): error TS2305: Module 
+'"../entities/report-template.entity"' has no 
+exported member 'ReportTemplate'.
+Module_04_Analytics_Reporting/src/services/report
+.service.ts(70,29): error TS2339: Property 
+'AGING' does not exist on type 'typeof 
+ReportType'.
+Module_04_Analytics_Reporting/src/services/report
+.service.ts(72,29): error TS2339: Property 
+'REVENUE' does not exist on type 'typeof 
+ReportType'.
+Module_04_Analytics_Reporting/src/services/schedu
+led-reports.service.ts(30,19): error TS2393: 
+Duplicate function implementation.
+Module_04_Analytics_Reporting/src/services/schedu
+led-reports.service.ts(46,29): error TS2353: 
+Object literal may only specify known 
+properties, and 'path' does not exist in type 
+'EmailAttachment'.
+Module_04_Analytics_Reporting/src/services/schedu
+led-reports.service.ts(198,19): error TS2393: 
+Duplicate function implementation.
+Module_05_Milestone_Workflows/src/controllers/__t
+ests__/milestone.controller.spec.ts(3,44): error 
+TS2307: Cannot find module 
+'../milestone-definition.service' or its 
+corresponding type declarations.
+Module_05_Milestone_Workflows/src/controllers/__t
+ests__/milestone.controller.spec.ts(42,47): 
+error TS2339: Property 'create' does not exist 
+on type 'MilestoneController'.
+Module_05_Milestone_Workflows/src/controllers/__t
+ests__/milestone.controller.spec.ts(54,47): 
+error TS2339: Property 'findOne' does not exist 
+on type 'MilestoneController'.
+Module_05_Milestone_Workflows/src/controllers/__t
+ests__/milestone.controller.spec.ts(65,47): 
+error TS2339: Property 'findAll' does not exist 
+on type 'MilestoneController'.
+Module_05_Milestone_Workflows/src/controllers/__t
+ests__/milestone.controller.spec.ts(76,47): 
+error TS2339: Property 'update' does not exist 
+on type 'MilestoneController'.
+Module_05_Milestone_Workflows/src/controllers/__t
+ests__/milestone.controller.spec.ts(86,30): 
+error TS2339: Property 'remove' does not exist 
+on type 'MilestoneController'.
+Module_05_Milestone_Workflows/src/controllers/evi
+dence.controller.ts(51,39): error TS2694: 
+Namespace 'global.Express' has no exported 
+member 'Multer'.
+Module_05_Milestone_Workflows/src/controllers/evi
+dence.controller.ts(155,43): error TS2551: 
+Property 'validateMilestoneEvidenceCompleteness' 
+does not exist on type 
+'EvidenceCollectionService'. Did you mean 
+'validateEvidenceCompleteness'?
+Module_05_Milestone_Workflows/src/controllers/mil
+estone.controller.ts(13,44): error TS2307: 
+Cannot find module '../services' or its 
+corresponding type declarations.
+Module_05_Milestone_Workflows/src/controllers/pay
+ment.controller.ts(10,41): error TS2307: Cannot 
+find module '../services' or its corresponding 
+type declarations.
+Module_05_Milestone_Workflows/src/controllers/sta
+tus.controller.ts(12,39): error TS2307: Cannot 
+find module '../services' or its corresponding 
+type declarations.
+Module_05_Milestone_Workflows/src/services/__test
+s__/escalation.service.spec.ts(5,28): error 
+TS2307: Cannot find module 
+'../../entities/escalation.entity' or its 
+corresponding type declarations.
+Module_05_Milestone_Workflows/src/services/__test
+s__/escalation.service.spec.ts(50,42): error 
+TS2341: Property 'createEscalation' is private 
+and only accessible within class 
+'EscalationService'.
+Module_05_Milestone_Workflows/src/services/__test
+s__/escalation.service.spec.ts(50,42): error 
+TS2554: Expected 3 arguments, but got 2.
+Module_05_Milestone_Workflows/src/services/__test
+s__/escalation.service.spec.ts(53,27): error 
+TS2339: Property 'level' does not exist on type 
+'MilestoneEscalation'.
+Module_05_Milestone_Workflows/src/services/__test
+s__/escalation.service.spec.ts(68,42): error 
+TS2339: Property 'checkAndEscalate' does not 
+exist on type 'EscalationService'.
+Module_05_Milestone_Workflows/src/services/__test
+s__/escalation.service.spec.ts(80,42): error 
+TS2339: Property 'assignEscalation' does not 
+exist on type 'EscalationService'.
+Module_05_Milestone_Workflows/src/services/__test
+s__/escalation.service.spec.ts(99,42): error 
+TS2339: Property 'assignEscalation' does not 
+exist on type 'EscalationService'.
+Module_05_Milestone_Workflows/src/services/__test
+s__/escalation.service.spec.ts(111,42): error 
+TS2554: Expected 4 arguments, but got 3.
+Module_05_Milestone_Workflows/src/services/__test
+s__/escalation.service.spec.ts(113,27): error 
+TS2339: Property 'status' does not exist on type 
+'MilestoneEscalation'.
+Module_05_Milestone_Workflows/src/services/__test
+s__/escalation.service.spec.ts(114,27): error 
+TS2551: Property 'resolvedAt' does not exist on 
+type 'MilestoneEscalation'. Did you mean 
+'resolvedBy'?
+Module_05_Milestone_Workflows/src/services/__test
+s__/escalation.service.spec.ts(127,42): error 
+TS2339: Property 'getEscalationsByMilestone' 
+does not exist on type 'EscalationService'.
+Module_05_Milestone_Workflows/src/services/__test
+s__/escalation.service.spec.ts(139,25): error 
+TS2339: Property 'checkAndEscalate' does not 
+exist on type 'EscalationService'.
+Module_05_Milestone_Workflows/src/services/__test
+s__/escalation.service.spec.ts(152,42): error 
+TS2339: Property 'checkAndEscalate' does not 
+exist on type 'EscalationService'.
+Module_05_Milestone_Workflows/src/services/__test
+s__/evidence-collection.service.spec.ts(5,26): 
+error TS2307: Cannot find module 
+'../../entities/evidence.entity' or its 
+corresponding type declarations.
+Module_05_Milestone_Workflows/src/services/__test
+s__/evidence-collection.service.spec.ts(49,67): 
+error TS2554: Expected 1 arguments, but got 2.
+Module_05_Milestone_Workflows/src/services/__test
+s__/evidence-collection.service.spec.ts(52,27): 
+error TS2551: Property 'filename' does not exist 
+on type 'MilestoneEvidence'. Did you mean 
+'fileName'?
+Module_05_Milestone_Workflows/src/services/__test
+s__/evidence-collection.service.spec.ts(63,64): 
+error TS2554: Expected 1 arguments, but got 2.
+Module_05_Milestone_Workflows/src/services/__test
+s__/evidence-collection.service.spec.ts(77,42): 
+error TS2339: Property 'getEvidence' does not 
+exist on type 'EvidenceCollectionService'.
+Module_05_Milestone_Workflows/src/services/__test
+s__/evidence-collection.service.spec.ts(89,27): 
+error TS2554: Expected 3 arguments, but got 2.
+Module_05_Milestone_Workflows/src/services/__test
+s__/milestone-definition.service.spec.ts(46,46): 
+error TS2339: Property 'DELIVERY' does not exist 
+on type 'typeof MilestoneType'.
+Module_05_Milestone_Workflows/src/services/__test
+s__/milestone-definition.service.spec.ts(51,35): 
+error TS2551: Property 'mockReturvedValue' does 
+not exist on type 'Mock<any, any, any>'. Did you 
+mean 'mockReturnValue'?
+Module_05_Milestone_Workflows/src/services/__test
+s__/milestone-definition.service.spec.ts(54,58): 
+error TS2345: Argument of type '{ name: string; 
+description: string; projectId: string; 
+milestoneType: any; dependencies: any[]; }' is 
+not assignable to parameter of type 
+'CreateMilestoneDefinitionDto'.
+Module_05_Milestone_Workflows/src/services/__test
+s__/milestone-definition.service.spec.ts(74,58): 
+error TS2345: Argument of type '{ name: string; 
+description: string; projectId: string; 
+milestoneType: MilestoneType; dependencies: 
+string[]; }' is not assignable to parameter of 
+type 'CreateMilestoneDefinitionDto'.
+Module_05_Milestone_Workflows/src/services/__test
+s__/milestone-definition.service.spec.ts(154,34):
+ error TS2339: Property 'returnThis' does not 
+exist on type 'Mock<any, any, any>'.
+Module_05_Milestone_Workflows/src/services/__test
+s__/milestone-definition.service.spec.ts(155,37):
+ error TS2339: Property 'returnThis' does not 
+exist on type 'Mock<any, any, any>'.
+Module_05_Milestone_Workflows/src/services/__test
+s__/milestone-definition.service.spec.ts(156,46):
+ error TS2339: Property 'returnThis' does not 
+exist on type 'Mock<any, any, any>'.
+Module_05_Milestone_Workflows/src/services/__test
+s__/milestone-definition.service.spec.ts(170,34):
+ error TS2339: Property 'returnThis' does not 
+exist on type 'Mock<any, any, any>'.
+Module_05_Milestone_Workflows/src/services/__test
+s__/milestone-definition.service.spec.ts(171,37):
+ error TS2339: Property 'returnThis' does not 
+exist on type 'Mock<any, any, any>'.
+Module_05_Milestone_Workflows/src/services/__test
+s__/milestone-definition.service.spec.ts(172,46):
+ error TS2339: Property 'returnThis' does not 
+exist on type 'Mock<any, any, any>'.
+Module_05_Milestone_Workflows/src/services/__test
+s__/milestone-definition.service.spec.ts(187,34):
+ error TS2339: Property 'returnThis' does not 
+exist on type 'Mock<any, any, any>'.
+Module_05_Milestone_Workflows/src/services/__test
+s__/milestone-definition.service.spec.ts(188,37):
+ error TS2339: Property 'returnThis' does not 
+exist on type 'Mock<any, any, any>'.
+Module_05_Milestone_Workflows/src/services/__test
+s__/milestone-definition.service.spec.ts(189,46):
+ error TS2339: Property 'returnThis' does not 
+exist on type 'Mock<any, any, any>'.
+Module_05_Milestone_Workflows/src/services/__test
+s__/milestone-definition.service.spec.ts(195,78):
+ error TS2339: Property 'DELIVERY' does not 
+exist on type 'typeof MilestoneType'.
+Module_05_Milestone_Workflows/src/services/__test
+s__/milestone-definition.service.spec.ts(251,25):
+ error TS2341: Property 'validateDependencies' 
+is private and only accessible within class 
+'MilestoneDefinitionService'.
+Module_05_Milestone_Workflows/src/services/__test
+s__/milestone-definition.service.spec.ts(265,25):
+ error TS2341: Property 'validateDependencies' 
+is private and only accessible within class 
+'MilestoneDefinitionService'.
+Module_05_Milestone_Workflows/src/services/__test
+s__/milestone-definition.service.spec.ts(280,25):
+ error TS2341: Property 'validateDependencies' 
+is private and only accessible within class 
+'MilestoneDefinitionService'.
+Module_05_Milestone_Workflows/src/services/__test
+s__/status-probing.service.spec.ts(5,29): error 
+TS2307: Cannot find module 
+'../../entities/status-probe.entity' or its 
+corresponding type declarations.
+Module_05_Milestone_Workflows/src/services/__test
+s__/status-probing.service.spec.ts(48,42): error 
+TS2339: Property 'probeStatus' does not exist on 
+type 'StatusProbingService'.
+Module_05_Milestone_Workflows/src/services/__test
+s__/status-probing.service.spec.ts(61,42): error 
+TS2339: Property 'probeStatus' does not exist on 
+type 'StatusProbingService'.
+Module_05_Milestone_Workflows/src/services/__test
+s__/status-probing.service.spec.ts(77,42): error 
+TS2339: Property 'getStatusHistory' does not 
+exist on type 'StatusProbingService'.
+Module_05_Milestone_Workflows/src/services/__test
+s__/status-probing.service.spec.ts(89,42): error 
+TS2339: Property 'probeStatus' does not exist on 
+type 'StatusProbingService'.
+Module_05_Milestone_Workflows/src/services/__test
+s__/workflow-design.service.spec.ts(5,34): error 
+TS2307: Cannot find module 
+'../../entities/workflow-template.entity' or its 
+corresponding type declarations.
+Module_05_Milestone_Workflows/src/services/__test
+s__/workflow-design.service.spec.ts(49,42): 
+error TS2339: Property 'createWorkflow' does not 
+exist on type 'WorkflowDesignService'.
+Module_05_Milestone_Workflows/src/services/__test
+s__/workflow-design.service.spec.ts(65,25): 
+error TS2339: Property 'createWorkflow' does not 
+exist on type 'WorkflowDesignService'.
+Module_05_Milestone_Workflows/src/services/__test
+s__/workflow-design.service.spec.ts(82,42): 
+error TS2339: Property 'cloneWorkflow' does not 
+exist on type 'WorkflowDesignService'.
+Module_05_Milestone_Workflows/src/services/__test
+s__/workflow-design.service.spec.ts(95,42): 
+error TS2339: Property 'updateWorkflow' does not 
+exist on type 'WorkflowDesignService'.
+Module_05_Milestone_Workflows/src/services/__test
+s__/workflow-design.service.spec.ts(114,42): 
+error TS2339: Property 'updateWorkflow' does not 
+exist on type 'WorkflowDesignService'.
+Module_05_Milestone_Workflows/src/services/__test
+s__/workflow-design.service.spec.ts(132,42): 
+error TS2339: Property 'validateWorkflow' does 
+not exist on type 'WorkflowDesignService'.
+Module_05_Milestone_Workflows/src/services/__test
+s__/workflow-design.service.spec.ts(147,42): 
+error TS2339: Property 'validateWorkflow' does 
+not exist on type 'WorkflowDesignService'.
+Module_05_Milestone_Workflows/src/services/__test
+s__/workflow-design.service.spec.ts(162,42): 
+error TS2339: Property 'validateWorkflow' does 
+not exist on type 'WorkflowDesignService'.
+Module_05_Milestone_Workflows/src/services/__test
+s__/workflow-design.service.spec.ts(178,44): 
+error TS2339: Property 'executeWorkflow' does 
+not exist on type 'WorkflowDesignService'.
+Module_05_Milestone_Workflows/src/services/__test
+s__/workflow-design.service.spec.ts(192,42): 
+error TS2339: Property 'completeStage' does not 
+exist on type 'WorkflowDesignService'.
+Module_05_Milestone_Workflows/src/services/__test
+s__/workflow-design.service.spec.ts(206,42): 
+error TS2339: Property 'validateWorkflow' does 
+not exist on type 'WorkflowDesignService'.
+Module_05_Milestone_Workflows/src/services/__test
+s__/workflow-design.service.spec.ts(220,42): 
+error TS2339: Property 'validateWorkflow' does 
+not exist on type 'WorkflowDesignService'.
+Module_05_Milestone_Workflows/src/services/__test
+s__/workflow-design.service.spec.ts(233,25): 
+error TS2339: Property 'completeStage' does not 
+exist on type 'WorkflowDesignService'.
+Module_05_Milestone_Workflows/src/services/escala
+tion-analytics.service.ts(168,22): error TS2353: 
+Object literal may only specify known 
+properties, and 'tenantId' does not exist in 
+type 'FindOptionsWhere<MilestoneEscalation> | 
+FindOptionsWhere<MilestoneEscalation>[]'.
+Module_05_Milestone_Workflows/src/services/escala
+tion-analytics.service.ts(171,57): error TS2339: 
+Property 'status' does not exist on type 
+'MilestoneEscalation'.
+Module_05_Milestone_Workflows/src/services/escala
+tion-analytics.service.ts(175,36): error TS2339: 
+Property 'status' does not exist on type 
+'MilestoneEscalation'.
+Module_05_Milestone_Workflows/src/services/escala
+tion.service.ts(5,31): error TS2724: 
+'"../entities/milestone-escalation.entity"' has 
+no exported member named 'EscalationStatus'. Did 
+you mean 'ResolutionStatus'?
+Module_05_Milestone_Workflows/src/services/escala
+tion.service.ts(95,55): error TS2339: Property 
+'plannedEndDate' does not exist on type 
+'MilestoneInstance'.
+Module_05_Milestone_Workflows/src/services/escala
+tion.service.ts(101,17): error TS2353: Object 
+literal may only specify known properties, and 
+'status' does not exist in type 
+'FindOptionsWhere<MilestoneEscalation> | 
+FindOptionsWhere<MilestoneEscalation>[]'.
+Module_05_Milestone_Workflows/src/services/escala
+tion.service.ts(128,48): error TS2769: No 
+overload matches this call.
+Module_05_Milestone_Workflows/src/services/escala
+tion.service.ts(141,59): error TS2345: Argument 
+of type 'MilestoneEscalation[]' is not 
+assignable to parameter of type 
+'MilestoneEscalation'.
+Module_05_Milestone_Workflows/src/services/escala
+tion.service.ts(143,9): error TS2740: Type 
+'MilestoneEscalation[]' is missing the following 
+properties from type 'MilestoneEscalation': id, 
+milestoneInstanceId, escalationLevel, 
+escalationReason, and 11 more.
+Module_05_Milestone_Workflows/src/services/escala
+tion.service.ts(159,27): error TS2339: Property 
+'status' does not exist on type 
+'MilestoneEscalation'.
+Module_05_Milestone_Workflows/src/services/escala
+tion.service.ts(246,45): error TS2353: Object 
+literal may only specify known properties, and 
+'tenantId' does not exist in type 
+'FindOptionsWhere<MilestoneEscalation> | 
+FindOptionsWhere<MilestoneEscalation>[]'.
+Module_05_Milestone_Workflows/src/services/escala
+tion.service.ts(275,40): error TS2353: Object 
+literal may only specify known properties, and 
+'tenantId' does not exist in type 
+'FindOptionsWhere<MilestoneEscalation> | 
+FindOptionsWhere<MilestoneEscalation>[]'.
+Module_05_Milestone_Workflows/src/services/escala
+tion.service.ts(282,20): error TS2339: Property 
+'status' does not exist on type 
+'MilestoneEscalation'.
+Module_05_Milestone_Workflows/src/services/escala
+tion.service.ts(307,52): error TS2339: Property 
+'status' does not exist on type 
+'MilestoneEscalation'.
+Module_05_Milestone_Workflows/src/services/escala
+tion.service.ts(308,48): error TS2339: Property 
+'status' does not exist on type 
+'MilestoneEscalation'.
+Module_05_Milestone_Workflows/src/services/escala
+tion.service.ts(309,53): error TS2339: Property 
+'status' does not exist on type 
+'MilestoneEscalation'.
+Module_05_Milestone_Workflows/src/services/escala
+tion.service.ts(325,63): error TS2339: Property 
+'status' does not exist on type 
+'MilestoneEscalation'.
+Module_05_Milestone_Workflows/src/services/escala
+tion.service.ts(388,55): error TS2339: Property 
+'plannedEndDate' does not exist on type 
+'MilestoneInstance'.
+Module_05_Milestone_Workflows/src/services/escala
+tion.service.ts(394,31): error TS2339: Property 
+'plannedEndDate' does not exist on type 
+'MilestoneInstance'.
+Module_05_Milestone_Workflows/src/services/escala
+tion.service.ts(401,28): error TS2339: Property 
+'slaDeadline' does not exist on type 
+'MilestoneEscalation'.
+Module_05_Milestone_Workflows/src/services/eviden
+ce-collection.service.ts(51,23): error TS2694: 
+Namespace 'global.Express' has no exported 
+member 'Multer'.
+Module_05_Milestone_Workflows/src/services/eviden
+ce-collection.service.ts(299,40): error TS2694: 
+Namespace 'global.Express' has no exported 
+member 'Multer'.
+Module_05_Milestone_Workflows/src/services/milest
+one-analytics-export.service.ts(100,47): error 
+TS2339: Property 'plannedEndDate' does not exist 
+on type 'MilestoneInstance'.
+Module_05_Milestone_Workflows/src/services/milest
+one-analytics-export.service.ts(103,34): error 
+TS2339: Property 'name' does not exist on type 
+'MilestoneInstance'.
+Module_05_Milestone_Workflows/src/services/milest
+one-analytics-export.service.ts(104,53): error 
+TS2339: Property 'plannedStartDate' does not 
+exist on type 'MilestoneInstance'.
+Module_05_Milestone_Workflows/src/services/milest
+one-analytics-export.service.ts(104,73): error 
+TS2339: Property 'plannedEndDate' does not exist 
+on type 'MilestoneInstance'.
+Module_05_Milestone_Workflows/src/services/milest
+one-analytics-export.service.ts(106,43): error 
+TS2339: Property 'plannedEndDate' does not exist 
+on type 'MilestoneInstance'.
+Module_05_Milestone_Workflows/src/services/milest
+one-analytics-export.service.ts(130,32): error 
+TS2353: Object literal may only specify known 
+properties, and 'status' does not exist in type 
+'FindOptionsWhere<MilestoneInstance> | 
+FindOptionsWhere<MilestoneInstance>[]'.
+Module_05_Milestone_Workflows/src/services/milest
+one-analytics-export.service.ts(134,66): error 
+TS2339: Property 'plannedEndDate' does not exist 
+on type 'MilestoneInstance'.
+Module_05_Milestone_Workflows/src/services/milest
+one-analytics-export.service.ts(139,34): error 
+TS2339: Property 'name' does not exist on type 
+'MilestoneInstance'.
+Module_05_Milestone_Workflows/src/services/milest
+one-analytics-export.service.ts(164,22): error 
+TS2353: Object literal may only specify known 
+properties, and 'tenantId' does not exist in 
+type 'FindOptionsWhere<MilestoneEscalation> | 
+FindOptionsWhere<MilestoneEscalation>[]'.
+Module_05_Milestone_Workflows/src/services/milest
+one-analytics-export.service.ts(169,60): error 
+TS2551: Property 'resolvedAt' does not exist on 
+type 'MilestoneEscalation'. Did you mean 
+'resolvedBy'?
+Module_05_Milestone_Workflows/src/services/milest
+one-analytics-export.service.ts(202,52): error 
+TS2339: Property 'status' does not exist on type 
+'MilestoneInstance'.
+Module_05_Milestone_Workflows/src/services/milest
+one-analytics-export.service.ts(203,53): error 
+TS2339: Property 'status' does not exist on type 
+'MilestoneInstance'.
+Module_05_Milestone_Workflows/src/services/milest
+one-analytics-export.service.ts(205,15): error 
+TS2339: Property 'plannedEndDate' does not exist 
+on type 'MilestoneInstance'.
+Module_05_Milestone_Workflows/src/services/milest
+one-analytics-export.service.ts(205,48): error 
+TS2339: Property 'status' does not exist on type 
+'MilestoneInstance'.
+Module_05_Milestone_Workflows/src/services/milest
+one-analytics-export.service.ts(240,27): error 
+TS2339: Property 'status' does not exist on type 
+'MilestoneInstance'.
+Module_05_Milestone_Workflows/src/services/milest
+one-analytics-export.service.ts(275,52): error 
+TS2339: Property 'status' does not exist on type 
+'MilestoneInstance'.
+Module_05_Milestone_Workflows/src/services/milest
+one-analytics-export.service.ts(279,34): error 
+TS2339: Property 'plannedEndDate' does not exist 
+on type 'MilestoneInstance'.
+Module_05_Milestone_Workflows/src/services/milest
+one-analytics-export.service.ts(289,52): error 
+TS2551: Property 'resolvedAt' does not exist on 
+type 'MilestoneEscalation'. Did you mean 
+'resolvedBy'?
+Module_05_Milestone_Workflows/src/services/milest
+one-analytics-export.service.ts(293,29): error 
+TS2551: Property 'resolvedAt' does not exist on 
+type 'MilestoneEscalation'. Did you mean 
+'resolvedBy'?
+Module_05_Milestone_Workflows/src/services/milest
+one-analytics-export.service.ts(293,54): error 
+TS2551: Property 'createdAt' does not exist on 
+type 'MilestoneEscalation'. Did you mean 
+'createdDate'?
+Module_05_Milestone_Workflows/src/services/milest
+one-analytics-export.service.ts(306,39): error 
+TS2339: Property 'reason' does not exist on type 
+'MilestoneEscalation'.
+Module_05_Milestone_Workflows/src/services/milest
+one-analytics-export.service.ts(320,38): error 
+TS2339: Property 'escalatedToUserId' does not 
+exist on type 'MilestoneEscalation'.
+Module_05_Milestone_Workflows/src/services/milest
+one-analytics.service.ts(47,51): error TS2367: 
+This comparison appears to be unintentional 
+because the types 'MilestoneStatus' and 
+'"NOT_STARTED"' have no overlap.
+Module_05_Milestone_Workflows/src/services/milest
+one-analytics.service.ts(55,35): error TS2339: 
+Property 'plannedEndDate' does not exist on type 
+'MilestoneInstance'.
+Module_05_Milestone_Workflows/src/services/milest
+one-analytics.service.ts(110,47): error TS2339: 
+Property 'plannedEndDate' does not exist on type 
+'MilestoneInstance'.
+Module_05_Milestone_Workflows/src/services/milest
+one-analytics.service.ts(112,44): error TS2339: 
+Property 'plannedEndDate' does not exist on type 
+'MilestoneInstance'.
+Module_05_Milestone_Workflows/src/services/milest
+one-analytics.service.ts(119,57): error TS2339: 
+Property 'plannedStartDate' does not exist on 
+type 'MilestoneInstance'.
+Module_05_Milestone_Workflows/src/services/milest
+one-analytics.service.ts(119,77): error TS2339: 
+Property 'plannedEndDate' does not exist on type 
+'MilestoneInstance'.
+Module_05_Milestone_Workflows/src/services/milest
+one-analytics.service.ts(192,45): error TS2339: 
+Property 'plannedEndDate' does not exist on type 
+'MilestoneInstance'.
+Module_05_Milestone_Workflows/src/services/milest
+one-analytics.service.ts(257,17): error TS2322: 
+Type '"IN_PROGRESS"' is not assignable to type 
+'MilestoneStatus | 
+FindOperator<MilestoneStatus>'.
+Module_05_Milestone_Workflows/src/services/milest
+one-analytics.service.ts(262,66): error TS2339: 
+Property 'plannedEndDate' does not exist on type 
+'MilestoneInstance'.
+Module_05_Milestone_Workflows/src/services/milest
+one-analytics.service.ts(323,17): error TS2353: 
+Object literal may only specify known 
+properties, and 'createdAt' does not exist in 
+type 'FindOptionsWhere<MilestoneInstance> | 
+FindOptionsWhere<MilestoneInstance>[]'.
+Module_05_Milestone_Workflows/src/services/milest
+one-analytics.service.ts(368,45): error TS2339: 
+Property 'topPerformers' does not exist on type 
+'{ owner: string; metrics: { total: number; 
+completed: number; inProgress: number; delayed: 
+number; completionRate: number; onTimeRate: 
+number; delayRate: number; 
+avgCompletionTimeDays: number; }; rank: number; 
+} | { ...; }'.
+Module_05_Milestone_Workflows/src/services/milest
+one-invoice.service.ts(55,23): error TS2339: 
+Property 'status' does not exist on type 
+'MilestoneInstance'.
+Module_05_Milestone_Workflows/src/services/milest
+one-invoice.service.ts(57,97): error TS2339: 
+Property 'status' does not exist on type 
+'MilestoneInstance'.
+Module_05_Milestone_Workflows/src/services/milest
+one-invoice.service.ts(70,58): error TS2339: 
+Property 'name' does not exist on type 
+'MilestoneInstance'.
+Module_05_Milestone_Workflows/src/services/milest
+one-invoice.service.ts(78,42): error TS2339: 
+Property 'name' does not exist on type 
+'MilestoneInstance'.
+Module_05_Milestone_Workflows/src/services/milest
+one-invoice.service.ts(79,40): error TS2339: 
+Property 'completedAt' does not exist on type 
+'MilestoneInstance'.
+Module_05_Milestone_Workflows/src/services/milest
+one-invoice.service.ts(81,81): error TS2339: 
+Property 'name' does not exist on type 
+'MilestoneInstance'.
+Module_05_Milestone_Workflows/src/services/milest
+one-payment.service.ts(61,42): error TS2339: 
+Property 'name' does not exist on type 
+'MilestoneInstance'.
+Module_05_Milestone_Workflows/src/services/status
+-probing.service.ts(259,17): error TS2353: 
+Object literal may only specify known 
+properties, and 'nonResponseHandledAt' does not 
+exist in type '{ templateUsed?: string; 
+notificationResult?: any; escalationTriggered?: 
+boolean; escalationId?: string; }'.
+Module_05_Milestone_Workflows/src/services/status
+-probing.service.ts(292,58): error TS2339: 
+Property 'name' does not exist on type 
+'MilestoneInstance'.
+Module_05_Milestone_Workflows/src/services/status
+-probing.service.ts(294,31): error TS2339: 
+Property 'plannedEndDate' does not exist on type 
+'MilestoneInstance'.
+Module_06_Credit_Scoring/code/services/scoring-en
+gine.service.ts(4,34): error TS2307: Cannot find 
+module 
+'../src/entities/credit-assessment.entity' or 
+its corresponding type declarations.
+Module_06_Credit_Scoring/code/services/scoring-en
+gine.service.ts(5,30): error TS2307: Cannot find 
+module '../src/entities/buyer-profile.entity' or 
+its corresponding type declarations.
+Module_06_Credit_Scoring/code/services/scoring-en
+gine.service.ts(6,32): error TS2307: Cannot find 
+module '../src/entities/payment-history.entity' 
+or its corresponding type declarations.
+Module_06_Credit_Scoring/code/services/scoring-en
+gine.service.ts(7,40): error TS2307: Cannot find 
+module 
+'../src/services/score-calculator.service' or 
+its corresponding type declarations.
+Module_06_Credit_Scoring/src/controllers/buyer-pr
+ofile.controller.ts(151,75): error TS2554: 
+Expected 1 arguments, but got 2.
+Module_06_Credit_Scoring/src/controllers/buyer-pr
+ofile.controller.ts(177,45): error TS2554: 
+Expected 2 arguments, but got 1.
+Module_06_Credit_Scoring/src/controllers/credit-l
+imit.controller.ts(19,29): error TS2307: Cannot 
+find module 
+'../../../Module_11_Common/guards/tenant.guard' 
+or its corresponding type declarations.
+Module_06_Credit_Scoring/src/controllers/credit-l
+imit.controller.ts(42,34): error TS2339: 
+Property 'calculateRecommendedLimit' does not 
+exist on type 'CreditLimitService'.
+Module_06_Credit_Scoring/src/controllers/credit-l
+imit.controller.ts(53,34): error TS2339: 
+Property 'requestApproval' does not exist on 
+type 'CreditLimitService'.
+Module_06_Credit_Scoring/src/controllers/credit-l
+imit.controller.ts(65,34): error TS2339: 
+Property 'approveLimit' does not exist on type 
+'CreditLimitService'.
+Module_06_Credit_Scoring/src/controllers/credit-s
+coring.controller.ts(14,29): error TS2307: 
+Cannot find module 
+'../../../Module_11_Common/guards/tenant.guard' 
+or its corresponding type declarations.
+Module_06_Credit_Scoring/src/controllers/risk-ale
+rts.controller.ts(20,29): error TS2307: Cannot 
+find module 
+'../../../Module_11_Common/guards/tenant.guard' 
+or its corresponding type declarations.
+Module_06_Credit_Scoring/src/controllers/risk-con
+fig.controller.ts(101,45): error TS2322: Type 
+'boolean' is not assignable to type 'string[]'.
+Module_06_Credit_Scoring/src/controllers/risk-con
+fig.controller.ts(173,45): error TS2322: Type 
+'boolean' is not assignable to type 'string[]'.
+Module_06_Credit_Scoring/src/credit-scoring.modul
+e.ts(46,38): error TS2307: Cannot find module '..
+/../Module_12_Administration/administration.modul
+e' or its corresponding type declarations.
+Module_06_Credit_Scoring/src/services/__tests__/i
+ndustry-risk.service.spec.ts(4,37): error 
+TS2307: Cannot find module 
+'../services/industry-risk.service' or its 
+corresponding type declarations.
+Module_06_Credit_Scoring/src/services/__tests__/i
+ndustry-risk.service.spec.ts(5,37): error 
+TS2307: Cannot find module 
+'../entities/industry-risk-profile.entity' or 
+its corresponding type declarations.
+Module_06_Credit_Scoring/src/services/__tests__/p
+ayment-prediction.service.spec.ts(3,42): error 
+TS2307: Cannot find module 
+'../services/payment-prediction.service' or its 
+corresponding type declarations.
+Module_06_Credit_Scoring/src/services/__tests__/p
+ayment-prediction.service.spec.ts(4,32): error 
+TS2307: Cannot find module 
+'../entities/payment-history.entity' or its 
+corresponding type declarations.
+Module_06_Credit_Scoring/src/services/__tests__/p
+ortfolio-risk.service.spec.ts(3,38): error 
+TS2307: Cannot find module 
+'../services/portfolio-risk.service' or its 
+corresponding type declarations.
+Module_06_Credit_Scoring/src/services/__tests__/p
+ortfolio-risk.service.spec.ts(4,29): error 
+TS2307: Cannot find module 
+'../entities/credit-limit.entity' or its 
+corresponding type declarations.
+Module_06_Credit_Scoring/src/services/__tests__/p
+ortfolio-risk.service.spec.ts(5,34): error 
+TS2307: Cannot find module 
+'../entities/credit-assessment.entity' or its 
+corresponding type declarations.
+Module_06_Credit_Scoring/src/services/__tests__/p
+ortfolio-risk.service.spec.ts(6,30): error 
+TS2307: Cannot find module 
+'../entities/buyer-profile.entity' or its 
+corresponding type declarations.
+Module_06_Credit_Scoring/src/services/credit-asse
+ssment.service.ts(176,42): error TS2769: No 
+overload matches this call.
+Module_06_Credit_Scoring/src/services/credit-limi
+t.service.ts(44,13): error TS2769: No overload 
+matches this call.
+Module_06_Credit_Scoring/src/services/credit-limi
+t.service.ts(45,34): error TS2339: Property 
+'requestedAmount' does not exist on type 
+'CreditLimitRequestDto'.
+Module_06_Credit_Scoring/src/services/credit-limi
+t.service.ts(48,25): error TS2339: Property 
+'reason' does not exist on type 
+'CreditLimitRequestDto'.
+Module_06_Credit_Scoring/src/services/credit-limi
+t.service.ts(52,9): error TS2740: Type 
+'CreditLimitApproval[]' is missing the following 
+properties from type 'CreditLimitApproval': id, 
+creditLimitId, requestedLimit, approvedLimit, 
+and 9 more.
+Module_06_Credit_Scoring/src/services/credit-limi
+t.service.ts(64,31): error TS2339: Property 
+'status' does not exist on type 
+'ApproveCreditLimitDto'.
+Module_06_Credit_Scoring/src/services/credit-limi
+t.service.ts(65,18): error TS2339: Property 
+'reviewedBy' does not exist on type 
+'CreditLimitApproval'.
+Module_06_Credit_Scoring/src/services/credit-limi
+t.service.ts(65,35): error TS2339: Property 
+'reviewedBy' does not exist on type 
+'ApproveCreditLimitDto'.
+Module_06_Credit_Scoring/src/services/credit-limi
+t.service.ts(66,18): error TS2339: Property 
+'reviewedAt' does not exist on type 
+'CreditLimitApproval'.
+Module_06_Credit_Scoring/src/services/credit-limi
+t.service.ts(67,18): error TS2339: Property 
+'comments' does not exist on type 
+'CreditLimitApproval'.
+Module_06_Credit_Scoring/src/services/credit-limi
+t.service.ts(67,33): error TS2339: Property 
+'comments' does not exist on type 
+'ApproveCreditLimitDto'.
+Module_06_Credit_Scoring/src/services/credit-limi
+t.service.ts(69,17): error TS2339: Property 
+'status' does not exist on type 
+'ApproveCreditLimitDto'.
+Module_06_Credit_Scoring/src/services/credit-limi
+t.service.ts(72,44): error TS2339: Property 
+'buyerId' does not exist on type 
+'CreditLimitApproval'.
+Module_06_Credit_Scoring/src/services/credit-limi
+t.service.ts(76,46): error TS2769: No overload 
+matches this call.
+Module_06_Credit_Scoring/src/services/credit-limi
+t.service.ts(77,39): error TS2339: Property 
+'buyerId' does not exist on type 
+'CreditLimitApproval'.
+Module_06_Credit_Scoring/src/services/credit-limi
+t.service.ts(84,44): error TS2339: Property 
+'requestedAmount' does not exist on type 
+'CreditLimitApproval'.
+Module_06_Credit_Scoring/src/services/portfolio-r
+isk.service.ts(51,46): error TS2322: Type 
+'"ACTIVE"' is not assignable to type 
+'CreditLimitStatus | 
+FindOperator<CreditLimitStatus>'.
+Module_07_Financing/src/controllers/dynamic-disco
+unting.controller.ts(16,30): error TS2307: 
+Cannot find module '../../../Module_12_Administra
+tion/guards/jwt-auth.guard' or its corresponding 
+type declarations.
+Module_07_Financing/src/controllers/dynamic-disco
+unting.controller.ts(17,28): error TS2307: 
+Cannot find module '../../../Module_12_Administra
+tion/guards/roles.guard' or its corresponding 
+type declarations.
+Module_07_Financing/src/controllers/dynamic-disco
+unting.controller.ts(18,23): error TS2307: 
+Cannot find module '../../../Module_12_Administra
+tion/decorators/roles.decorator' or its 
+corresponding type declarations.
+Module_07_Financing/src/controllers/financing-req
+uest.controller.ts(16,29): error TS2307: Cannot 
+find module 
+'../../../Module_11_Common/guards/tenant.guard' 
+or its corresponding type declarations.
+Module_07_Financing/src/controllers/partner-finan
+cing.controller.ts(79,29): error TS2551: 
+Property 'totalAmount' does not exist on type 
+'Invoice'. Did you mean 'totalTaxAmount'?
+Module_07_Financing/src/controllers/repayment.con
+troller.ts(14,29): error TS2307: Cannot find 
+module 
+'../../../Module_11_Common/guards/tenant.guard' 
+or its corresponding type declarations.
+Module_07_Financing/src/financing.module.ts(59,38
+): error TS2307: Cannot find module '../../Module
+_12_Administration/administration.module' or its 
+corresponding type declarations.
+Module_07_Financing/src/services/__tests__/financ
+ing-calculator.service.spec.ts(350,27): error 
+TS2339: Property 'tenureDays' does not exist on 
+type '{ invoiceAmount: number; 
+advancePercentage: number; advanceAmount: 
+number; discountRate: number; 
+annualDiscountRate: number; discountAmount: 
+number; processingFee: number; totalCost: 
+number; netAmountToSupplier: number; 
+effectiveAPR: number; breakdown: { ...; }; }'.
+Module_07_Financing/src/services/discount-marketp
+lace.service.ts(63,13): error TS2367: This 
+comparison appears to be unintentional because 
+the types 'InvoiceStatus' and '"PAID"' have no 
+overlap.
+Module_07_Financing/src/services/discount-marketp
+lace.service.ts(76,36): error TS2551: Property 
+'totalAmount' does not exist on type 'Invoice'. 
+Did you mean 'totalTaxAmount'?
+Module_07_Financing/src/services/discount-marketp
+lace.service.ts(90,35): error TS2339: Property 
+'supplierName' does not exist on type 'Invoice'.
+Module_07_Financing/src/services/discount-marketp
+lace.service.ts(91,30): error TS2339: Property 
+'buyerId' does not exist on type 'Invoice'.
+Module_07_Financing/src/services/discount-marketp
+lace.service.ts(92,32): error TS2339: Property 
+'buyerCompanyName' does not exist on type 
+'Invoice'.
+Module_07_Financing/src/services/discount-marketp
+lace.service.ts(92,60): error TS2339: Property 
+'buyerName' does not exist on type 'Invoice'.
+Module_07_Financing/src/services/discount-marketp
+lace.service.ts(94,37): error TS2551: Property 
+'totalAmount' does not exist on type 'Invoice'. 
+Did you mean 'totalTaxAmount'?
+Module_07_Financing/src/services/discount-marketp
+lace.service.ts(99,44): error TS2551: Property 
+'totalAmount' does not exist on type 'Invoice'. 
+Did you mean 'totalTaxAmount'?
+Module_07_Financing/src/services/discount-marketp
+lace.service.ts(100,44): error TS2551: Property 
+'totalAmount' does not exist on type 'Invoice'. 
+Did you mean 'totalTaxAmount'?
+Module_07_Financing/src/services/invoice-financin
+g.service.ts(414,40): error TS2551: Property 
+'totalAmount' does not exist on type 'Invoice'. 
+Did you mean 'totalTaxAmount'?
+Module_07_Financing/src/services/invoice-financin
+g.service.ts(417,34): error TS2339: Property 
+'buyerId' does not exist on type 'Invoice'.
+Module_07_Financing/src/services/invoice-financin
+g.service.ts(418,36): error TS2339: Property 
+'buyerCompanyName' does not exist on type 
+'Invoice'.
+Module_07_Financing/src/services/invoice-financin
+g.service.ts(418,64): error TS2339: Property 
+'buyerName' does not exist on type 'Invoice'.
+Module_07_Financing/src/services/invoice-financin
+g.service.ts(419,35): error TS2339: Property 
+'purchaseOrderNumber' does not exist on type 
+'Invoice'.
+Module_07_Financing/src/services/invoice-financin
+g.service.ts(421,36): error TS2339: Property 
+'taxAmount' does not exist on type 'Invoice'.
+Module_07_Financing/src/services/partners/__tests
+__/capital-float.service.spec.ts(22,25): error 
+TS2339: Property 'mockRejectedValue' does not 
+exist on type 'Mocked<AxiosStatic>'.
+Module_07_Financing/src/services/partners/__tests
+__/capital-float.service.spec.ts(30,25): error 
+TS2339: Property 'mockRejectedValue' does not 
+exist on type 'Mocked<AxiosStatic>'.
+Module_07_Financing/src/services/partners/__tests
+__/capital-float.service.spec.ts(52,25): error 
+TS2339: Property 'mockResolvedValue' does not 
+exist on type 'Mocked<AxiosStatic>'.
+Module_07_Financing/src/services/partners/__tests
+__/capital-float.service.spec.ts(62,25): error 
+TS2339: Property 'mockRejectedValue' does not 
+exist on type 'Mocked<AxiosStatic>'.
+Module_07_Financing/src/services/partners/__tests
+__/flexiloans.service.spec.ts(40,25): error 
+TS2339: Property 'mockResolvedValue' does not 
+exist on type 'Mocked<AxiosStatic>'.
+Module_07_Financing/src/services/partners/__tests
+__/flexiloans.service.spec.ts(50,25): error 
+TS2339: Property 'mockRejectedValue' does not 
+exist on type 'Mocked<AxiosStatic>'.
+Module_07_Financing/src/services/partners/__tests
+__/flexiloans.service.spec.ts(60,25): error 
+TS2339: Property 'mockRejectedValue' does not 
+exist on type 'Mocked<AxiosStatic>'.
+Module_07_Financing/src/services/partners/__tests
+__/indifi.service.spec.ts(22,25): error TS2339: 
+Property 'mockRejectedValue' does not exist on 
+type 'Mocked<AxiosStatic>'.
+Module_07_Financing/src/services/partners/__tests
+__/indifi.service.spec.ts(36,25): error TS2339: 
+Property 'mockRejectedValue' does not exist on 
+type 'Mocked<AxiosStatic>'.
+Module_07_Financing/src/services/partners/__tests
+__/indifi.service.spec.ts(43,25): error TS2339: 
+Property 'mockRejectedValue' does not exist on 
+type 'Mocked<AxiosStatic>'.
+Module_07_Financing/src/services/partners/__tests
+__/indifi.service.spec.ts(59,25): error TS2339: 
+Property 'mockResolvedValue' does not exist on 
+type 'Mocked<AxiosStatic>'.
+Module_07_Financing/src/services/partners/__tests
+__/lendingkart.service.spec.ts(31,25): error 
+TS2339: Property 'mockResolvedValue' does not 
+exist on type 'Mocked<AxiosStatic>'.
+Module_07_Financing/src/services/partners/__tests
+__/lendingkart.service.spec.ts(63,25): error 
+TS2339: Property 'mockRejectedValue' does not 
+exist on type 'Mocked<AxiosStatic>'.
+Module_07_Financing/src/services/partners/__tests
+__/lendingkart.service.spec.ts(73,25): error 
+TS2339: Property 'mockRejectedValue' does not 
+exist on type 'Mocked<AxiosStatic>'.
+Module_07_Financing/src/services/partners/__tests
+__/lendingkart.service.spec.ts(93,25): error 
+TS2339: Property 'mockResolvedValue' does not 
+exist on type 'Mocked<AxiosStatic>'.
+Module_07_Financing/src/services/partners/__tests
+__/lendingkart.service.spec.ts(117,25): error 
+TS2339: Property 'mockRejectedValue' does not 
+exist on type 'Mocked<AxiosStatic>'.
+Module_07_Financing/src/services/partners/__tests
+__/lendingkart.service.spec.ts(128,25): error 
+TS2339: Property 'mockResolvedValue' does not 
+exist on type 'Mocked<AxiosStatic>'.
+Module_07_Financing/src/services/partners/__tests
+__/lendingkart.service.spec.ts(136,25): error 
+TS2339: Property 'mockRejectedValue' does not 
+exist on type 'Mocked<AxiosStatic>'.
+Module_07_Financing/src/services/partners/__tests
+__/lendingkart.service.spec.ts(146,25): error 
+TS2339: Property 'mockRejectedValue' does not 
+exist on type 'Mocked<AxiosStatic>'.
+Module_11_Common/src/controllers/notification.con
+troller.ts(1,10): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Controller'.
+Module_11_Common/src/controllers/notification.con
+troller.ts(1,22): error TS2305: Module 
+'"@nestjs/common"' has no exported member 'Post'.
+Module_11_Common/src/controllers/notification.con
+troller.ts(1,28): error TS2305: Module 
+'"@nestjs/common"' has no exported member 'Body'.
+Module_11_Common/src/controllers/notification.con
+troller.ts(1,34): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'UseGuards'.
+Module_11_Common/src/controllers/notification.con
+troller.ts(1,45): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Param'.
+Module_11_Common/src/processors/notification.proc
+essor.ts(1,10): error TS2305: Module 
+'"@nestjs/bull"' has no exported member 
+'Process'.
+Module_11_Common/src/processors/notification.proc
+essor.ts(1,19): error TS2305: Module 
+'"@nestjs/bull"' has no exported member 
+'Processor'.
+Module_11_Common/src/processors/notification.proc
+essor.ts(2,10): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Logger'.
+Module_11_Common/src/processors/notification.proc
+essor.ts(34,21): error TS2322: Type 
+'"EMAIL_SENT"' is not assignable to type 
+'AuditAction'.
+Module_11_Common/src/processors/notification.proc
+essor.ts(54,21): error TS2322: Type 
+'"EMAIL_FAILED"' is not assignable to type 
+'AuditAction'.
+Module_11_Common/src/processors/notification.proc
+essor.ts(82,21): error TS2322: Type '"SMS_SENT"' 
+is not assignable to type 'AuditAction'.
+Module_11_Common/src/processors/notification.proc
+essor.ts(101,21): error TS2322: Type 
+'"SMS_FAILED"' is not assignable to type 
+'AuditAction'.
+Module_11_Common/src/processors/notification.proc
+essor.ts(129,21): error TS2322: Type 
+'"WHATSAPP_SENT"' is not assignable to type 
+'AuditAction'.
+Module_11_Common/src/processors/notification.proc
+essor.ts(149,21): error TS2322: Type 
+'"WHATSAPP_FAILED"' is not assignable to type 
+'AuditAction'.
+Module_11_Common/src/services/low-cost-sms.servic
+e.ts(1,10): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Injectable'.
+Module_11_Common/src/services/low-cost-sms.servic
+e.ts(1,22): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Logger'.
+Module_11_Common/src/services/low-cost-sms.servic
+e.ts(3,29): error TS2307: Cannot find module 
+'@nestjs/axios' or its corresponding type 
+declarations.
+Module_11_Common/src/services/low-cost-sms.servic
+e.ts(133,53): error TS2339: Property 'data' does 
+not exist on type 'unknown'.
+Module_11_Common/src/services/low-cost-sms.servic
+e.ts(136,27): error TS2339: Property 'data' does 
+not exist on type 'unknown'.
+Module_11_Common/src/services/notification.servic
+e.ts(1,10): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Injectable'.
+Module_11_Common/src/services/notification.servic
+e.ts(6,10): error TS2305: Module 
+'"@nestjs/bull"' has no exported member 
+'InjectQueue'.
+Module_11_Common/src/services/sendgrid.service.ts
+(1,10): error TS2305: Module '"@nestjs/common"' 
+has no exported member 'Injectable'.
+Module_11_Common/src/services/sendgrid.service.ts
+(1,22): error TS2305: Module '"@nestjs/common"' 
+has no exported member 'Logger'.
+Module_11_Common/src/services/twilio-sms.service.
+ts(1,10): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Injectable'.
+Module_11_Common/src/services/twilio-sms.service.
+ts(1,22): error TS2305: Module 
+'"@nestjs/common"' has no exported member 
+'Logger'.
+Module_11_Common/src/services/twilio-sms.service.
+ts(49,27): error TS2349: This expression is not 
+callable.
+Module_11_Common/src/services/twilio-sms.service.
+ts(181,17): error TS2322: Type '() => 
+BalanceListInstance' is not assignable to type 
+'string'.
+Module_11_Common/src/services/whatsapp.service.ts
+(1,10): error TS2305: Module '"@nestjs/common"' 
+has no exported member 'Injectable'.
+Module_11_Common/src/services/whatsapp.service.ts
+(1,22): error TS2305: Module '"@nestjs/common"' 
+has no exported member 'Logger'.
+
+

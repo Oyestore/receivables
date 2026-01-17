@@ -1,0 +1,57 @@
+2026-01-02 09:16:38 [MetricsService] [32minfo[39m: MetricsService initialized
+2026-01-02 09:16:39 [NotificationService] [32minfo[39m: NotificationService initialized
+{
+  "emailProvider": "sendgrid",
+  "smsProvider": "twilio"
+}
+[PaymentOrchestrationService] Default gateway configurations initialized { gatewayCount: 3 }
+[33m[Nest] 16960  - [39m02/01/2026, 9:16:51 am [33m   WARN[39m [38;5;3m[RazorpayService] [39m[33mRazorpay credentials not found. Payment features will be disabled.[39m
+[31m[Nest] 16960  - [39m02/01/2026, 9:17:02 am [31m  ERROR[39m [38;5;3m[ExceptionHandler] [39mUnknownDependenciesException [Error]: Nest can't resolve dependencies of the ConciergeController (ConciergeService, PaymentIntegrationService, DisputeIntegrationService, ReferralIntegrationService, OrchestrationService, NotificationService, InvoiceService, ?). Please make sure that the argument PaymentService at index [7] is available in the ConciergeModule context.
+
+Potential solutions:
+- Is ConciergeModule a valid NestJS module?
+- If PaymentService is a provider, is it part of the current ConciergeModule?
+- If PaymentService is exported from a separate @Module, is that module imported within ConciergeModule?
+  @Module({
+    imports: [ /* the Module containing PaymentService */ ]
+  })
+
+For more common dependency resolution issues, see: https://docs.nestjs.com/faq/common-errors
+    at Injector.lookupComponentInParentModules [90m(C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\[39mnode_modules\[4m@nestjs[24m\core\injector\injector.js:286:19[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at async resolveParam [90m(C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\[39mnode_modules\[4m@nestjs[24m\core\injector\injector.js:140:38[90m)[39m
+    at async Promise.all (index 7)
+    at async Injector.resolveConstructorParams [90m(C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\[39mnode_modules\[4m@nestjs[24m\core\injector\injector.js:169:27[90m)[39m
+    at async Injector.loadInstance [90m(C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\[39mnode_modules\[4m@nestjs[24m\core\injector\injector.js:75:13[90m)[39m
+    at async Injector.loadController [90m(C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\[39mnode_modules\[4m@nestjs[24m\core\injector\injector.js:94:9[90m)[39m
+    at async [90mC:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\[39mnode_modules\[4m@nestjs[24m\core\injector\instance-loader.js:68:13
+    at async Promise.all (index 0)
+    at async InstanceLoader.createInstancesOfControllers [90m(C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\[39mnode_modules\[4m@nestjs[24m\core\injector\instance-loader.js:67:9[90m)[39m
+    at async [90mC:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\[39mnode_modules\[4m@nestjs[24m\core\injector\instance-loader.js:42:13
+    at async Promise.all (index 39)
+    at async InstanceLoader.createInstances [90m(C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\[39mnode_modules\[4m@nestjs[24m\core\injector\instance-loader.js:39:9[90m)[39m
+    at async InstanceLoader.createInstancesOfDependencies [90m(C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\[39mnode_modules\[4m@nestjs[24m\core\injector\instance-loader.js:22:13[90m)[39m
+    at async [90mC:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\[39mnode_modules\[4m@nestjs[24m\core\nest-factory.js:112:17
+    at async Function.asyncRun [90m(C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\[39mnode_modules\[4m@nestjs[24m\core\errors\exceptions-zone.js:22:13[90m)[39m {
+  type: [32m'ConciergeController'[39m,
+  context: {
+    index: [33m7[39m,
+    dependencies: [
+      [36m[class ConciergeService][39m,
+      [36m[class PaymentIntegrationService][39m,
+      [36m[class DisputeIntegrationService][39m,
+      [36m[class ReferralIntegrationService][39m,
+      [36m[class OrchestrationService][39m,
+      [36m[class NotificationService][39m,
+      [36m[class InvoiceService][39m,
+      [36m[class PaymentService][39m
+    ],
+    name: [36m[class PaymentService][39m
+  },
+  metadata: {
+    id: [32m'60138b457e2a1ce83ded8'[39m
+  },
+  moduleRef: {
+    id: [32m'67fb360e1f110cec78228'[39m
+  }
+}

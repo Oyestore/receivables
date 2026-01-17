@@ -1,0 +1,344 @@
+/* Scenario Planner Styles */
+
+.scenario-planner {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+.planner-header {
+    margin-bottom: 32px;
+}
+
+.planner-header h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #111827;
+}
+
+.planner-header p {
+    color: #6b7280;
+    font-size: 16px;
+}
+
+.scenario-selector {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.scenario-card {
+    display: flex;
+    gap: 16px;
+    padding: 20px;
+    background: white;
+    border: 2px solid #e5e7eb;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: left;
+}
+
+.scenario-card:hover {
+    border-color: #667eea;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+}
+
+.scenario-card.active {
+    border-color: #667eea;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+}
+
+.scenario-icon {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-shrink: 0;
+}
+
+.scenario-info h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 4px 0;
+    color: #111827;
+}
+
+.scenario-info p {
+    font-size: 13px;
+    color: #6b7280;
+    margin: 0;
+}
+
+.input-panel {
+    background: white;
+    padding: 28px;
+    border-radius: 16px;
+    border: 2px solid #e5e7eb;
+    margin-bottom: 24px;
+}
+
+.input-panel h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 24px 0;
+    color: #111827;
+}
+
+.input-group {
+    margin-bottom: 24px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 12px;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.slider-container input[type="range"] {
+    flex: 1;
+    height: 6px;
+    border-radius: 3px;
+    background: #e5e7eb;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+.slider-container input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.4);
+}
+
+.slider-container input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.4);
+}
+
+.value-display {
+    min-width: 60px;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 700;
+    color: #667eea;
+}
+
+.run-scenario-btn {
+    width: 100%;
+    padding: 14px 24px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.2s;
+    margin-top: 24px;
+}
+
+.run-scenario-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+.run-scenario-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.results-panel {
+    background: white;
+    padding: 28px;
+    border-radius: 16px;
+    border: 2px solid #10b981;
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.results-panel h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+    color: #111827;
+}
+
+.result-summary {
+    margin-bottom: 24px;
+}
+
+.recommendation {
+    display: flex;
+    gap: 12px;
+    padding: 16px;
+    border-radius: 12px;
+    border-left: 4px solid;
+}
+
+.recommendation.positive {
+    background: #d1fae5;
+    border-color: #10b981;
+    color: #065f46;
+}
+
+.recommendation.warning {
+    background: #fef3c7;
+    border-color: #f59e0b;
+    color: #92400e;
+}
+
+.recommendation strong {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.recommendation p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.impact-grid {
+    margin-bottom: 24px;
+}
+
+.impact-grid h4 {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 12px 0;
+    color: #374151;
+}
+
+.impact-item {
+    display: flex;
+    gap: 12px;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #111827;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.impact-item:last-child {
+    border-bottom: none;
+}
+
+.impact-bullet {
+    color: #667eea;
+    font-weight: 700;
+}
+
+.financial-summary {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05));
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+
+.summary-item {
+    text-align: center;
+}
+
+.summary-item span {
+    display: block;
+    font-size: 13px;
+    color: #6b7280;
+    margin-bottom: 4px;
+}
+
+.summary-item strong {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.summary-item strong.positive {
+    color: #10b981;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.apply-btn,
+.save-btn {
+    flex: 1;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.apply-btn {
+    background: #10b981;
+    color: white;
+    border: none;
+}
+
+.apply-btn:hover {
+    background: #059669;
+}
+
+.save-btn {
+    background: white;
+    color: #374151;
+    border: 2px solid #e5e7eb;
+}
+
+.save-btn:hover {
+    background: #f9fafb;
+}
+
+@media (max-width: 768px) {
+    .scenario-selector {
+        grid-template-columns: 1fr;
+    }
+
+    .financial-summary {
+        grid-template-columns: 1fr;
+    }
+}

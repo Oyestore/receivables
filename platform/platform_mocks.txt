@@ -1,0 +1,200 @@
+﻿C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\dist-ci\Module_03_Payment_Integration\src\services\gateways\phonepe-gateway.service.d.ts:26: private getMockOrderResponse;
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\dist-ci\Module_03_Payment_Integration\src\services\gateways\phonepe-gateway.service.d.ts:27: private getMockPaymentDetails;
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\dist-ci\Module_04_Analytics_Reporting\src\config\clickhouse.config.d.ts:2: import { ClickHouse } from '../utils/clickhouse.mock';
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\dist-ci\Module_04_Analytics_Reporting\src\services\powerbi-export.service.d.ts:77: private getMockExportResult;
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\dist-ci\Module_06_Credit_Scoring\src\services\cibil.service.d.ts:125: private getMockCreditReport;
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\dist-ci\Module_06_Credit_Scoring\src\services\cibil.service.d.ts:126: private getMockCompanyReport;
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\dist-ci\Module_11_Common\code\constants\platform.constants.d.ts:15: readonly MOCK_TASK_DELAY_MS: 1000;
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\dist-ci\Module_16_Invoice_Concierge\code\services\concierge.service.d.ts:11: private mockInternalReasoning;
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\dist-ci\Module_16_Invoice_Concierge\code\services\concierge.service.d.ts:12: private mockExternalReasoning;
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\e2e\cypress\e2e\02-invoices.cy.ts:61: cy.get('input[placeholder*="Search"]').type('INV-001');
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\e2e\cypress\e2e\02-invoices.cy.ts:93: cy.stub(win, 'open').as('windowOpen');
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\frontend\src\config\api.ts:84: sendMessage: (tenantId: string, id: string, message: string) => console.warn('Mock: Send Message not impl in backend'),
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\frontend\src\hooks\useAnalytics.ts:32: // Legacy Hooks (Placeholders to prevent build errors in old components)
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\frontend\src\hooks\useApi.ts:116: // Mock endpoint - replace with actual when backend is ready
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\frontend\src\services\admin-config.service.ts:5: // Current Tenant ID (Mock for now, should come from Auth Context)
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\frontend\src\services\module10-api.ts:307: patternType: 'circular_dependency' | 'collusion_ring' | 'suspicious_routing' | 'fake_supplier';
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\frontend\src\services\module17.service.ts:159: console.warn('Backend unavailable, using mock for getDashboardStats');
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\frontend\src\services\module17.service.ts:162: matched: 0, // Not directly available in mock, setting to 0
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\frontend\src\services\module17.service.ts:164: suspended: 0, // Not directly available in mock, setting to 0
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\frontend\src\services\payment.service.ts:33: console.warn('Backend unavailable, using mock for initiatePayment');
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\frontend\src\services\payment.service.ts:35: id: 'MOCK-' + Math.random().toString(36).substr(2, 9),
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\frontend\src\services\payment.service.ts:39: gateway: 'mock-gateway',
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\frontend\src\services\payment.service.ts:46: * Get recent transactions (Mock simulation if endpoints are missing listing feature)
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\frontend\src\services\payment.service.ts:50: * I'll assume /payments endpoint might support listing or I'll add a TODO.
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\frontend\src\services\payment.service.ts:55: * I will create a simulation for `getRecentTransactions` that calls /payments/history if it existed, or mock it locally for now if backend is strict.
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\frontend\src\services\payment.service.ts:57: * I'll mock the fetching part in service for now but keep initiatePayment real.
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\frontend\src\services\payment.service.ts:60: // Mocking for now as Controller didn't explicitly show a "List All" endpoint
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\frontend\src\services\payment.service.ts:91: console.warn('Prediction service unavailable, using mock');
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\frontend\src\services\payment.service.ts:95: factors: ['Mock Factor 1', 'Mock Factor 2']
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\frontend\src\test\setup.ts:14: // Mock window.matchMedia
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\frontend\src\test\setup.ts:17: value: vi.fn().mockImplementation(query => ({
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\frontend\src\test\setup.ts:29: // Mock IntersectionObserver
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\frontend\src\test\setup.ts:40: // Mock ResizeObserver
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\frontend\src\theme\concierge-theme.ts:213: '*::placeholder': {
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\frontend\vitest.config.ts:20: '**/mockData',
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\controllers\invoice-generation.controller.integration.spec.ts:24: checkQuality: jest.fn().mockResolvedValue({
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\controllers\invoice-generation.controller.integration.spec.ts:49: create: jest.fn().mockResolvedValue({
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\controllers\invoice-generation.controller.integration.spec.ts:57: findAll: jest.fn().mockResolvedValue([
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\controllers\invoice-generation.controller.integration.spec.ts:64: findOne: jest.fn().mockResolvedValue({
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\controllers\invoice-generation.controller.integration.spec.ts:69: update: jest.fn().mockResolvedValue({
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\controllers\invoice-generation.controller.integration.spec.ts:73: remove: jest.fn().mockResolvedValue({ success: true }),
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\controllers\invoice-generation.controller.integration.spec.ts:79: analyzeTemplate: jest.fn().mockResolvedValue({
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\controllers\invoice-generation.controller.integration.spec.ts:84: optimizeTemplate: jest.fn().mockResolvedValue({
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\controllers\invoice-generation.controller.integration.spec.ts:94: identifyConstraints: jest.fn().mockResolvedValue({
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\controllers\invoice-generation.controller.integration.spec.ts:100: description: 'Mock constraint',
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\controllers\invoice-ocr.controller.ts:166: // TODO: Integrate with GST API
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\services\constraint-integration.service.spec.ts:18: identifyConstraints: jest.fn().mockResolvedValue({
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\services\constraint-integration.service.spec.ts:28: save: jest.fn().mockResolvedValue({ id: 'constraint-123' }),
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\services\constraint-integration.service.spec.ts:29: findByTenant: jest.fn().mockResolvedValue([]),
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\services\constraint-integration.service.spec.ts:30: findByStatus: jest.fn().mockResolvedValue([]),
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\services\constraint-integration.service.spec.ts:31: findByType: jest.fn().mockResolvedValue([]),
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\services\constraint-integration.service.spec.ts:32: findBySeverity: jest.fn().mockResolvedValue([]),
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\services\constraint-integration.service.spec.ts:33: findById: jest.fn().mockResolvedValue(null),
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\services\constraint-integration.service.spec.ts:34: update: jest.fn().mockResolvedValue({ affected: 1 }),
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\services\constraint-integration.service.spec.ts:35: delete: jest.fn().mockResolvedValue({ affected: 1 }),
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\services\constraint-integration.service.ts:99: // Add mock constraints for demonstration
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\services\gst.service.ts:150: // TODO: In production, query HSN/SAC database or API
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\services\gst.service.ts:292: // TODO: Implement GSTR-1 JSON generation
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\services\indian-compliance.service.spec.ts:29: jest.clearAllMocks();
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\services\ocr.service.ts:103: rawText = this.getMockInvoiceText();
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\services\ocr.service.ts:119: rawText = this.getMockInvoiceText();
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\services\ocr.service.ts:291: * Mock invoice text for testing
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\services\ocr.service.ts:293: private getMockInvoiceText(): string {
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\services\pdf-generation-pdfkit.service.ts:415: doc.text('-', xPos, yPosition, { width: colWidths[1], align: 'center' }); xPos += colWidths[1]; // HSN placeholder
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\services\pdf-generation.service.ts:6: // Mock PDF generation
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\services\quality-assurance.service.spec.ts:18: analyzeQuality: jest.fn().mockResolvedValue({
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\services\quality-assurance.service.spec.ts:28: validateGSTINFormat: jest.fn().mockReturnValue({
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\services\quality-assurance.service.spec.ts:32: validateInvoiceCompliance: jest.fn().mockReturnValue({
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\services\quality-assurance.service.ts:460: // For now, return mock data structure
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\services\template-optimization.service.ts:393: // TODO: Implement actual performance tracking
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\services\template-optimization.service.ts:405: // TODO: Query actual metrics from database
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\services\template-optimization.service.ts:522: // TODO: Query actual metrics from database
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\services\template.service.spec.ts:16: get: jest.fn().mockReturnValue('test-value'),
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\services\template.service.ts:396: // Replace customer-specific placeholders
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\services\template.service.ts:406: // TODO: Implement language-specific template variations
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\services\template.service.ts:412: // TODO: Implement regional adaptations (currency, date formats, etc.)
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\services\template.service.ts:419: const placeholder = new RegExp(`{{invoice\\.${key}}}`, 'g');
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\services\template.service.ts:420: personalizedHtml = personalizedHtml.replace(placeholder, String(value));
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\services\template.service.ts:441: const placeholder = new RegExp(`{{${key}}}`, 'g');
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\services\template.service.ts:442: renderedHtml = renderedHtml.replace(placeholder, String(value));
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\services\template.service.ts:467: // Check for required placeholders
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\services\template.service.ts:468: const requiredPlaceholders = [
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\services\template.service.ts:475: for (const placeholder of requiredPlaceholders) {
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\services\template.service.ts:476: if (!params.htmlContent.includes(placeholder)) {
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\services\template.service.ts:477: issues.push(`Missing required placeholder: ${placeholder}`);
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\code\services\template.service.ts:500: // TODO: Implement actual analytics from usage data
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\controllers\invoice.controller.spec.ts:11: const mockInvoiceService = {
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\controllers\invoice.controller.spec.ts:28: useValue: mockInvoiceService,
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\controllers\invoice.controller.spec.ts:44: jest.clearAllMocks();
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\controllers\invoice.controller.spec.ts:49: const mockInvoice = {
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\controllers\invoice.controller.spec.ts:55: mockInvoiceService.create.mockResolvedValue(mockInvoice);
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\controllers\invoice.controller.spec.ts:65: expect(response.body).toEqual(mockInvoice);
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\controllers\invoice.controller.spec.ts:72: const mockResult = {
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\controllers\invoice.controller.spec.ts:79: mockInvoiceService.findAll.mockResolvedValue(mockResult);
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\controllers\invoice.controller.spec.ts:85: expect(response.body).toEqual(mockResult);
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\controllers\invoice.controller.spec.ts:91: const mockInvoice = {
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\controllers\invoice.controller.spec.ts:96: mockInvoiceService.findOne.mockResolvedValue(mockInvoice);
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\controllers\invoice.controller.spec.ts:102: expect(response.body).toEqual(mockInvoice);
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\controllers\invoice.controller.spec.ts:106: mockInvoiceService.findOne.mockRejectedValue(new Error('Not found'));
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\controllers\invoice.controller.spec.ts:121: mockInvoiceService.updateStatus.mockResolvedValue(updatedInvoice);
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\controllers\invoice.controller.spec.ts:139: mockInvoiceService.getOverdueInvoices.mockResolvedValue(overdueInvoices);
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\controllers\invoice.controller.spec.ts:159: mockInvoiceService.getStatistics.mockResolvedValue(stats);
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\controllers\recurring-invoice.controller.ts:50: // @UseGuards(JwtAuthGuard, RolesGuard, TenantGuard) // TODO: Add guards
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\controllers\recurring-invoice.controller.ts:65: // TODO: Get userId from auth
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\controllers\recurring-invoice.controller.ts:120: // TODO: Get userId from auth
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\invoice-journey-tracker.service.ts:54: // If automated chasing is active (mock check for now, would link to M02)
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\invoice.service.spec.ts:12: const mockInvoice = {
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\invoice.service.spec.ts:29: const mockRepository = {
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\invoice.service.spec.ts:37: where: jest.fn().mockReturnThis(),
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\invoice.service.spec.ts:38: andWhere: jest.fn().mockReturnThis(),
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\invoice.service.spec.ts:49: useValue: mockRepository,
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\invoice.service.spec.ts:59: jest.clearAllMocks();
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\invoice.service.spec.ts:64: mockRepository.create.mockReturnValue(mockInvoice);
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\invoice.service.spec.ts:65: mockRepository.save.mockResolvedValue(mockInvoice);
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\invoice.service.spec.ts:67: const result = await service.create(mockInvoice, 'user-1');
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\invoice.service.spec.ts:69: expect(repository.create).toHaveBeenCalledWith(mockInvoice);
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\invoice.service.spec.ts:71: expect(result).toEqual(mockInvoice);
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\invoice.service.spec.ts:75: const invoiceWithoutNumber = { ...mockInvoice, invoice_number: undefined };
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\invoice.service.spec.ts:76: mockRepository.create.mockReturnValue(mockInvoice);
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\invoice.service.spec.ts:77: mockRepository.save.mockResolvedValue(mockInvoice);
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\invoice.service.spec.ts:87: mockRepository.findOne.mockResolvedValue(mockInvoice);
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\invoice.service.spec.ts:92: expect(result).toEqual(mockInvoice);
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\invoice.service.spec.ts:96: mockRepository.findOne.mockResolvedValue(null);
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\invoice.service.spec.ts:104: const mockInvoices = [mockInvoice];
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\invoice.service.spec.ts:105: mockRepository.findAndCount.mockResolvedValue([mockInvoices, 1]);
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\invoice.service.spec.ts:109: expect(result.data).toEqual(mockInvoices);
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\invoice.service.spec.ts:119: const updatedInvoice = { ...mockInvoice, ...updates };
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\invoice.service.spec.ts:121: mockRepository.findOne.mockResolvedValue(mockInvoice);
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\invoice.service.spec.ts:122: mockRepository.save.mockResolvedValue(updatedInvoice);
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\invoice.service.spec.ts:132: mockRepository.findOne.mockResolvedValue(mockInvoice);
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\invoice.service.spec.ts:133: mockRepository.save.mockResolvedValue({ ...mockInvoice, status: 'SENT' });
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\invoice.service.spec.ts:143: mockRepository.findOne.mockResolvedValue(mockInvoice);
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\invoice.service.spec.ts:144: mockRepository.remove.mockResolvedValue(mockInvoice);
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\invoice.service.spec.ts:148: expect(repository.remove).toHaveBeenCalledWith(mockInvoice);
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\invoice.service.spec.ts:154: const overdueInvoices = [{ ...mockInvoice, status: 'OVERDUE' }];
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\invoice.service.spec.ts:155: mockRepository.createQueryBuilder().getMany.mockResolvedValue(overdueInvoices);
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\invoice.service.spec.ts:165: mockRepository.find.mockResolvedValue([mockInvoice]);
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\ocr.service.ts:45: * TODO: Replace with LLM-based parsing (DeepSeek) for higher accuracy
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\ocr.service.ts:107: // This is simplified but better than pure mock.
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\pdf-generation.service.ts:6: // Mock PDF generation
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\quality-assurance.service.ts:460: // For now, return mock data structure
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\recurring-invoice.service.spec.ts:13: const mockRecurringInvoice = {
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\recurring-invoice.service.spec.ts:26: shouldStop: jest.fn().mockReturnValue(false),
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\recurring-invoice.service.spec.ts:29: const mockRepository = {
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\recurring-invoice.service.spec.ts:37: const mockInvoiceService = {
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\recurring-invoice.service.spec.ts:48: useValue: mockRepository,
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\recurring-invoice.service.spec.ts:52: useValue: mockInvoiceService,
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\recurring-invoice.service.spec.ts:63: jest.clearAllMocks();
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\recurring-invoice.service.spec.ts:68: mockRepository.create.mockReturnValue(mockRecurringInvoice);
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\recurring-invoice.service.spec.ts:69: mockRepository.save.mockResolvedValue(mockRecurringInvoice);
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\recurring-invoice.service.spec.ts:71: const result = await service.create(mockRecurringInvoice, 'user-1');
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\recurring-invoice.service.spec.ts:75: expect(result).toEqual(mockRecurringInvoice);
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\recurring-invoice.service.spec.ts:81: const mockTemplate = {
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\recurring-invoice.service.spec.ts:89: const mockGeneratedInvoice = {
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\recurring-invoice.service.spec.ts:95: mockRecurringInvoice.templateInvoice = mockTemplate;
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\recurring-invoice.service.spec.ts:96: mockInvoiceService.create.mockResolvedValue(mockGeneratedInvoice);
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\recurring-invoice.service.spec.ts:97: mockRepository.save.mockResolvedValue({
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\recurring-invoice.service.spec.ts:98: ...mockRecurringInvoice,
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\recurring-invoice.service.spec.ts:103: const result = await service.generateInvoiceFromRecurring(mockRecurringInvoice);
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\recurring-invoice.service.spec.ts:107: expect(result).toEqual(mockGeneratedInvoice);
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\recurring-invoice.service.spec.ts:111: mockRecurringInvoice.shouldStop.mockReturnValue(true);
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\recurring-invoice.service.spec.ts:112: mockRecurringInvoice.templateInvoice = { id: 'inv-123' };
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\recurring-invoice.service.spec.ts:113: mockInvoiceService.create.mockResolvedValue({ id: 'new-inv' });
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\recurring-invoice.service.spec.ts:114: mockRepository.save.mockResolvedValue({
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\recurring-invoice.service.spec.ts:115: ...mockRecurringInvoice,
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\recurring-invoice.service.spec.ts:119: await service.generateInvoiceFromRecurring(mockRecurringInvoice);
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\recurring-invoice.service.spec.ts:121: const savedRecurring = mockRepository.save.mock.calls[0][0];
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\recurring-invoice.service.spec.ts:128: mockRepository.findOne.mockResolvedValue(mockRecurringInvoice);
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\recurring-invoice.service.spec.ts:129: mockRepository.save.mockResolvedValue({
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\recurring-invoice.service.spec.ts:130: ...mockRecurringInvoice,
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\recurring-invoice.service.spec.ts:144: ...mockRecurringInvoice,
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\recurring-invoice.service.spec.ts:148: mockRepository.findOne.mockResolvedValue(pausedRecurring);
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\recurring-invoice.service.spec.ts:149: mockRepository.save.mockResolvedValue({
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\template-optimization.service.ts:63: // private personalizedTemplates: Map<string, any> = new Map(); // Removed/ToDo: Add entity if needed
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\template-optimization.service.ts:371: // TODO: Implement actual performance tracking
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\template-optimization.service.ts:383: // TODO: Query actual metrics from database
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\template-optimization.service.ts:500: // TODO: Query actual metrics from database
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\voice-auth.service.ts:15: const mockHash = "hash_" + voiceData.length;
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\services\voice-auth.service.ts:16: const bio = this.repo.create({ userId, voicePrintHash: mockHash, isVerified: true });
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\shared\industry-templates.data.ts:40: // Placeholder for the actual visual template structure (e.g., GrapesJS or HTML)
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\tests\integration\invoice.harness.spec.ts:17: * 3. Generate PDF (Mocked)
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\tests\integration\invoice.harness.spec.ts:25: // Mock Repositories
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\tests\integration\invoice.harness.spec.ts:26: const mockInvoiceRepo = {
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\tests\integration\invoice.harness.spec.ts:32: leftJoinAndSelect: jest.fn().mockReturnThis(),
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\tests\integration\invoice.harness.spec.ts:33: where: jest.fn().mockReturnThis(),
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\tests\integration\invoice.harness.spec.ts:34: andWhere: jest.fn().mockReturnThis(),
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\tests\integration\invoice.harness.spec.ts:35: orderBy: jest.fn().mockReturnThis(),
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\tests\integration\invoice.harness.spec.ts:36: skip: jest.fn().mockReturnThis(),
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\tests\integration\invoice.harness.spec.ts:37: take: jest.fn().mockReturnThis(),
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\tests\integration\invoice.harness.spec.ts:38: getManyAndCount: jest.fn().mockResolvedValue([[], 0]),
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\tests\integration\invoice.harness.spec.ts:39: select: jest.fn().mockReturnThis(),
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\tests\integration\invoice.harness.spec.ts:40: addSelect: jest.fn().mockReturnThis(),
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\tests\integration\invoice.harness.spec.ts:41: getRawOne: jest.fn().mockResolvedValue({ totalAmount: 0, paidAmount: 0, dueAmount: 0 }),
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\tests\integration\invoice.harness.spec.ts:45: const mockLineItemRepo = {
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\tests\integration\invoice.harness.spec.ts:51: const mockAuditService = {
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\tests\integration\invoice.harness.spec.ts:55: const mockPDFService = {
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\tests\integration\invoice.harness.spec.ts:65: useValue: mockInvoiceRepo,
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\tests\integration\invoice.harness.spec.ts:69: useValue: mockLineItemRepo,
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\tests\integration\invoice.harness.spec.ts:73: useValue: mockAuditService,
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_01_Smart_Invoice_Generation\src\tests\integration\invoice.harness.spec.ts:77: useValue: mockPDFService,

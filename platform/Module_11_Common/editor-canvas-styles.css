@@ -1,0 +1,102 @@
+/* 
+CSS for the GrapesJS Editor Canvas - to style the content being edited 
+File: /home/ubuntu/smart_invoice_module/invoice_agent_nestjs/src/frontend_app/css/editor-canvas-styles.css 
+*/
+
+/* Basic styles to mimic an invoice layout within the canvas */
+body {
+    background-color: #fff; /* Canvas background */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 20px; /* Provide some spacing around the content in the canvas */
+}
+
+.invoice-header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.invoice-header-section .company-logo-area {
+    flex: 1;
+    max-width: 200px; /* Limit logo area */
+}
+
+.invoice-header-section .company-logo-area img {
+    max-width: 100%;
+    height: auto;
+}
+
+.invoice-header-section .company-details-area {
+    flex: 2;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.invoice-header-section .company-details-area h1 {
+    margin: 0 0 5px 0;
+    font-size: 1.8em;
+    color: #222;
+}
+
+.invoice-header-section .company-details-area p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.invoice-header-section .invoice-info-area {
+    flex: 1.5;
+    text-align: right;
+}
+
+.invoice-header-section .invoice-info-area h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.6em;
+    color: #444;
+}
+
+.invoice-header-section .invoice-info-area p {
+    margin: 3px 0;
+    font-size: 0.9em;
+}
+
+.invoice-line-items {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.invoice-line-items th,
+.invoice-line-items td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.invoice-line-items th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
+/* Example of how data-field-id might be visually indicated in the editor (optional) */
+[data-field-id] {
+    /* outline: 1px dashed #007bff; /* Light blue dashed outline */
+    /* transition: outline 0.2s ease-in-out; */
+}
+
+[data-field-id]:hover {
+    /* outline: 1px solid #0056b3; /* Darker blue solid outline on hover */
+    /* background-color: rgba(0, 123, 255, 0.05); /* Slight background tint on hover */
+}
+
+/* Ensure GrapesJS helper elements are not overly intrusive */
+.gjs-selected {
+    outline: 2px solid #0d6efd !important;
+}
+
+/* Add more styles as needed for other invoice components like totals, terms, footers etc. */
+

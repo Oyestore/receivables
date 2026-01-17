@@ -1,0 +1,47 @@
+{
+  "moduleFileExtensions": ["js", "json", "ts"],
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "testMatch": [
+    "<rootDir>/test/smoke.spec.ts",
+    "<rootDir>/test/*.e2e.spec.ts",
+    "<rootDir>/Module_*/src/tests/**/*.(spec|test).ts",
+    "<rootDir>/Module_*/test/**/*.(spec|test).ts",
+    "<rootDir>/Module_*/code/**/__tests__/**/*.(spec|test).ts",
+    "<rootDir>/Module_*/code/**/tests/**/*.(spec|test).ts",
+    "<rootDir>/Module_*/tests/**/*.(spec|test).ts"
+  ],
+  "transform": {
+    "^.+\\.(t|j)s$": [
+      "ts-jest"
+    ]
+  },
+  "collectCoverageFrom": [
+    "src/**/*.(t|j)s",
+    "Module_02_Intelligent_Distribution/src/**/*.(t|j)s",
+    "Module_03_Payment_Integration/src/**/*.(t|j)s",
+    "Module_04_Analytics_Reporting/src/**/*.(t|j)s",
+    "Module_05_Milestone_Workflows/src/**/*.(t|j)s",
+    "Module_06_Credit_Scoring/src/**/*.(t|j)s",
+    "Module_07_Financing/src/**/*.(t|j)s",
+    "Module_10_Orchestration_Hub/src/**/*.(t|j)s",
+    "Module_11_Common/**/*.ts",
+    "Module_12_Administration/src/**/*.(t|j)s",
+    "Module_13_Cross_Border_Trade/src/**/*.(t|j)s",
+    "!**/frontend_assets/**",
+    "!**/code/**",
+    "!**/pwa/**",
+    "!**/scripts/**",
+    "!**/artifacts/**"
+  ],
+  "coverageDirectory": "./coverage",
+  "coverageReporters": ["html", "text", "lcov"],
+  "moduleNameMapper": {
+    "^sharp$": "<rootDir>/test/mocks/sharp.mock.ts",
+    "^axios$": "<rootDir>/test/mocks/axios.mock.js"
+  },
+  "coverageThreshold": {
+    "global": { "branches": 100, "functions": 100, "lines": 100, "statements": 100 }
+  },
+  "coveragePathIgnorePatterns": ["/node_modules/", "/frontend_assets/", "/code/", "<rootDir>/Module_07_Financing_Factoring/"]
+}

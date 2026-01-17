@@ -1,0 +1,11 @@
+2026-01-02 19:59:18 [MetricsService] [32minfo[39m: MetricsService initialized
+2026-01-02 19:59:18 [NotificationService] [32minfo[39m: NotificationService initialized
+{
+  "emailProvider": "sendgrid",
+  "smsProvider": "twilio"
+}
+[PaymentOrchestrationService] Default gateway configurations initialized { gatewayCount: 3 }
+[33m[Nest] 19356  - [39m02/01/2026, 7:59:22 pm [33m   WARN[39m [38;5;3m[RazorpayService] [39m[33mRazorpay credentials not found. Payment features will be disabled.[39m
+[33m[Nest] 19356  - [39m02/01/2026, 7:59:33 pm [33m   WARN[39m [38;5;3m[OrchestrationService] [39m[33mRegistration attempt 1/3 failed: Invalid URL[39m
+❌ AppModuleE2E initialization failed:
+Nest could not find DynamicTermsManagementService element (this provider does not exist in the current context)

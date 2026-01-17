@@ -1,0 +1,22 @@
+import { Module } from '@nestjs/common';
+import { AppController } from './app.controller';
+import { AppService } from './app.service';
+import { TypeOrmModule } from '@nestjs/typeorm';
+import { dataSourceOptions } from './data-source';
+import { DistributionModule } from './distribution/distribution.module';
+import { FollowUpModule } from './follow-up/follow-up.module';
+import { PersonalizationModule } from './personalization/personalization.module';
+import { ChannelIntegrationModule } from './channel-integration/channel-integration.module';
+
+@Module({
+  imports: [
+    TypeOrmModule.forRoot(dataSourceOptions),
+    DistributionModule,
+    FollowUpModule,
+    PersonalizationModule,
+    ChannelIntegrationModule,
+  ],
+  controllers: [AppController],
+  providers: [AppService],
+})
+export class AppModule {}

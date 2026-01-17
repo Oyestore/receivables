@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice {{invoice.number}}</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 800px;
+            margin: 30px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .company-details h1 {
+            margin: 0 0 10px 0;
+            font-size: 28px;
+            color: #2c3e50;
+        }
+        .company-details p {
+            margin: 4px 0;
+            font-size: 13px;
+            color: #555;
+        }
+        .invoice-details {
+            text-align: right;
+        }
+        .invoice-details h2 {
+            margin: 0 0 10px 0;
+            font-size: 24px;
+            color: #3498db;
+        }
+        .invoice-details p {
+            margin: 4px 0;
+            font-size: 13px;
+        }
+        .addresses {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        .addresses > div {
+            width: 48%;
+        }
+        .addresses h3 {
+            font-size: 16px;
+            color: #3498db;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        .addresses p {
+            margin: 4px 0;
+            font-size: 13px;
+        }
+        .items-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        .items-table th, .items-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+            font-size: 13px;
+        }
+        .items-table th {
+            background-color: #f9f9f9;
+            font-weight: bold;
+        }
+        .items-table .text-right {
+            text-align: right;
+        }
+        .totals {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 30px;
+        }
+        .totals table {
+            width: 300px;
+            border-collapse: collapse;
+        }
+        .totals td {
+            padding: 8px;
+            font-size: 14px;
+        }
+        .totals .label {
+            font-weight: bold;
+            color: #555;
+        }
+        .totals .grand-total td {
+            font-size: 18px;
+            font-weight: bold;
+            color: #3498db;
+            border-top: 2px solid #3498db;
+        }
+        .footer-notes {
+            border-top: 2px solid #eee;
+            padding-top: 20px;
+            font-size: 12px;
+            color: #777;
+        }
+        .footer-notes h4 {
+            margin-top: 0;
+            color: #555;
+        }
+        .conditional-section {
+            background-color: #e6f7ff;
+            border: 1px solid #91d5ff;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+            font-size: 13px;
+        }
+        .external-data-section {
+            background-color: #fffbe6;
+            border: 1px solid #ffe58f;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+            font-size: 13px;
+        }
+        img.logo {
+            max-height: 80px;
+            max-width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="company-details">
+                <img src="{{company.logo_url}}" alt="Company Logo" class="logo">
+                <h1>{{company.name}}</h1>
+                <p>{{company.address}}</p>
+                <p>GSTIN: {{company.gstin}}</p>
+            </div>
+            <div class="invoice-details">
+                <h2>INVOICE</h2>
+                <p><strong>Invoice #:</strong> {{invoice.number}}</p>
+                <p><strong>Date:</strong> {{invoice.date}}</p>
+                <p><strong>Due Date:</strong> {{invoice.due_date}}</p>
+            </div>
+        </div>
+
+        <div class="addresses">
+            <div>
+                <h3>Bill To:</h3>
+                <p><strong>{{recipient.name}}</strong></p>
+                <p>{{recipient.address}}</p>
+                <p>GSTIN: {{recipient.gstin}}</p>
+            </div>
+            <div>
+                <h3>Ship To:</h3>
+                <p><strong>{{recipient.name}}</strong></p>
+                <p>{{recipient.address}}</p>
+            </div>
+        </div>
+
+        <!-- Conditional Section: Show if total amount > 80000 -->
+        <div class="conditional-section" data-gjs-conditions='[{"groupLogic":"AND","rules":[{"field":"invoice.calculated_total_amount","operator":">","value":"80000"}]}]'>
+            <p><strong>Special Note for High Value Orders:</strong> Thank you for your significant order! A dedicated account manager will be in touch shortly.</p>
+        </div>
+        
+        <!-- External Data Section: Show if external_data.customer_loyalty_status == "Gold" -->
+        <div class="external-data-section" data-gjs-conditions='[{"groupLogic":"AND","rules":[{"field":"external_data.customer_loyalty_status","operator":"==","value":"Gold"}]}]'>
+            <p><strong>Loyalty Program:</strong> As a valued <strong>{{external_data.customer_loyalty_status}}</strong> member, you have earned <strong>{{external_data.loyalty_points_earned}}</strong> points with this order!</p>
+        </div>
+
+        <table class="items-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Item & Description</th>
+                    <th>HSN/SAC</th>
+                    <th class="text-right">Quantity</th>
+                    <th class="text-right">Unit Price ({{invoice.currency}})</th>
+                    <th class="text-right">Taxable Amount ({{invoice.currency}})</th>
+                    <th class="text-right">Tax Rate</th>
+                    <th class="text-right">Tax Amount ({{invoice.currency}})</th>
+                    <th class="text-right">Total Amount ({{invoice.currency}})</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each invoice.items}}
+                <tr>
+                    <td>{{@index_1}}</td>
+                    <td>{{this.description}}</td>
+                    <td>{{this.hsn_sac}}</td>
+                    <td class="text-right">{{this.quantity}}</td>
+                    <td class="text-right">{{formatCurrency this.unit_price}}</td>
+                    <td class="text-right">{{formatCurrency this.taxable_amount}}</td> <!-- Calculated -->
+                    <td class="text-right">{{formatPercentage this.tax_rate}}</td>
+                    <td class="text-right">{{formatCurrency this.tax_amount}}</td> <!-- Calculated -->
+                    <td class="text-right">{{formatCurrency this.total_item_amount}}</td> <!-- Calculated -->
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+
+        <div class="totals">
+            <table>
+                <tr>
+                    <td class="label">Subtotal:</td>
+                    <td class="text-right">{{invoice.currency}} {{formatCurrency invoice.calculated_subtotal}}</td>
+                </tr>
+                <tr>
+                    <td class="label">Total Tax (CGST+SGST/IGST):</td>
+                    <td class="text-right">{{invoice.currency}} {{formatCurrency invoice.calculated_total_tax}}</td>
+                </tr>
+                <tr class="grand-total">
+                    <td class="label">Grand Total:</td>
+                    <td class="text-right">{{invoice.currency}} {{formatCurrency invoice.calculated_total_amount}}</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="footer-notes">
+            <h4>Notes:</h4>
+            <p>{{invoice.notes}}</p>
+            <h4>Terms & Conditions:</h4>
+            <p>{{invoice.terms_conditions}}</p>
+        </div>
+    </div>
+</body>
+</html>
+

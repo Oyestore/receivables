@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .test-section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .test-result {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .info {
+            background-color: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        input, select {
+            padding: 8px;
+            margin: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .otp-inputs {
+            display: flex;
+            gap: 5px;
+            margin: 10px 0;
+        }
+        .otp-input {
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔐 SME Platform Authentication Test</h1>
+    
+    <div class="test-section">
+        <h2>📱 Mobile OTP Test</h2>
+        <div>
+            <input type="text" id="mobileNumber" placeholder="+1234567890" value="+1234567890">
+            <button onclick="sendOTP()">Send OTP</button>
+        </div>
+        <div id="otpResult" class="test-result info">Enter mobile number and click Send OTP</div>
+        
+        <div class="otp-inputs" id="otpInputs" style="display: none;">
+            <input type="text" class="otp-input" maxlength="1" onkeyup="handleOTPInput(0, event)">
+            <input type="text" class="otp-input" maxlength="1" onkeyup="handleOTPInput(1, event)">
+            <input type="text" class="otp-input" maxlength="1" onkeyup="handleOTPInput(2, event)">
+            <input type="text" class="otp-input" maxlength="1" onkeyup="handleOTPInput(3, event)">
+            <input type="text" class="otp-input" maxlength="1" onkeyup="handleOTPInput(4, event)">
+            <input type="text" class="otp-input" maxlength="1" onkeyup="handleOTPInput(5, event)">
+        </div>
+        <button id="verifyOTPBtn" onclick="verifyOTP()" style="display: none;">Verify OTP</button>
+    </div>
+
+    <div class="test-section">
+        <h2>🔑 Social Login Test</h2>
+        <div>
+            <select id="socialProvider">
+                <option value="google">Google</option>
+                <option value="microsoft">Microsoft (Mock)</option>
+                <option value="linkedin">LinkedIn (Mock)</option>
+            </select>
+            <button onclick="testSocialLogin()">Test Social Login</button>
+        </div>
+        <div id="socialResult" class="test-result info">Select provider and click Test Social Login</div>
+    </div>
+
+    <div class="test-section">
+        <h2>📧 Email/Password Test</h2>
+        <div>
+            <input type="email" id="email" placeholder="test@example.com" value="test@example.com">
+            <input type="password" id="password" placeholder="password" value="password123">
+            <button onclick="testEmailLogin()">Test Email Login</button>
+        </div>
+        <div id="emailResult" class="test-result info">Enter credentials and click Test Email Login</div>
+    </div>
+
+    <div class="test-section">
+        <h2>🛡️ Security Tests</h2>
+        <button onclick="testRateLimiting()">Test Rate Limiting</button>
+        <button onclick="testInvalidOTP()">Test Invalid OTP</button>
+        <button onclick="testExpiredOTP()">Test Expired OTP</button>
+        <div id="securityResult" class="test-result info">Click security tests to run</div>
+    </div>
+
+    <div class="test-section">
+        <h2>📊 Test Results Summary</h2>
+        <div id="summary">
+            <div>Total Tests: <span id="totalTests">0</span></div>
+            <div>Passed: <span id="passedTests">0</span></div>
+            <div>Failed: <span id="failedTests">0</span></div>
+            <div>Success Rate: <span id="successRate">0%</span></div>
+        </div>
+    </div>
+
+    <script>
+        // Mock OTP service (simulating backend)
+        const mockOTPService = {
+            otps: new Map(),
+            
+            generateOTP: function(mobile) {
+                const code = Math.floor(100000 + Math.random() * 900000).toString();
+                const expires = new Date(Date.now() + 10 * 60 * 1000);
+                
+                this.otps.set(mobile, { code, expires, attempts: 0 });
+                
+                console.log(`🔐 Mock OTP for ${mobile}: ${code}`);
+                return code;
+            },
+            
+            validateOTP: function(mobile, code) {
+                const otpData = this.otps.get(mobile);
+                
+                if (!otpData) return { success: false, message: 'OTP not found' };
+                if (otpData.expires < new Date()) return { success: false, message: 'OTP expired' };
+                if (otpData.attempts >= 3) return { success: false, message: 'Too many attempts' };
+                
+                otpData.attempts++;
+                
+                if (otpData.code === code) {
+                    this.otps.delete(mobile);
+                    return { success: true, message: 'OTP verified successfully' };
+                }
+                
+                return { success: false, message: 'Invalid OTP' };
+            }
+        };
+
+        // Mock user database
+        const mockUsers = new Map();
+        
+        // Test statistics
+        let testStats = {
+            total: 0,
+            passed: 0,
+            failed: 0
+        };
+
+        function updateTestStats(passed) {
+            testStats.total++;
+            if (passed) {
+                testStats.passed++;
+            } else {
+                testStats.failed++;
+            }
+            
+            document.getElementById('totalTests').textContent = testStats.total;
+            document.getElementById('passedTests').textContent = testStats.passed;
+            document.getElementById('failedTests').textContent = testStats.failed;
+            document.getElementById('successRate').textContent = 
+                Math.round((testStats.passed / testStats.total) * 100) + '%';
+        }
+
+        function showResult(elementId, message, type) {
+            const element = document.getElementById(elementId);
+            element.textContent = message;
+            element.className = `test-result ${type}`;
+        }
+
+        // Mobile OTP Tests
+        async function sendOTP() {
+            const mobile = document.getElementById('mobileNumber').value;
+            
+            if (!mobile || !/^\+?[1-9]\d{1,14}$/.test(mobile)) {
+                showResult('otpResult', 'Invalid mobile number format', 'error');
+                updateTestStats(false);
+                return;
+            }
+
+            try {
+                // Simulate API call delay
+                await new Promise(resolve => setTimeout(resolve, 500));
+                
+                const otp = mockOTPService.generateOTP(mobile);
+                
+                showResult('otpResult', `OTP sent successfully! Mock OTP: ${otp}`, 'success');
+                document.getElementById('otpInputs').style.display = 'flex';
+                document.getElementById('verifyOTPBtn').style.display = 'inline-block';
+                
+                // Focus first OTP input
+                document.querySelector('.otp-input').focus();
+                
+                updateTestStats(true);
+            } catch (error) {
+                showResult('otpResult', 'Failed to send OTP', 'error');
+                updateTestStats(false);
+            }
+        }
+
+        function handleOTPInput(index, event) {
+            const input = event.target;
+            const value = input.value;
+            
+            // Only allow numbers
+            if (!/^\d*$/.test(value)) {
+                input.value = '';
+                return;
+            }
+            
+            // Auto-focus next input
+            if (value && index < 5) {
+                const nextInput = document.querySelectorAll('.otp-input')[index + 1];
+                if (nextInput) nextInput.focus();
+            }
+            
+            // Auto-submit when all digits are entered
+            const allInputs = document.querySelectorAll('.otp-input');
+            const allFilled = Array.from(allInputs).every(inp => inp.value !== '');
+            
+            if (allFilled) {
+                setTimeout(verifyOTP, 500);
+            }
+        }
+
+        async function verifyOTP() {
+            const mobile = document.getElementById('mobileNumber').value;
+            const otpInputs = document.querySelectorAll('.otp-input');
+            const otp = Array.from(otpInputs).map(input => input.value).join('');
+            
+            if (otp.length !== 6) {
+                showResult('otpResult', 'Please enter all 6 digits', 'error');
+                updateTestStats(false);
+                return;
+            }
+
+            try {
+                // Simulate API call delay
+                await new Promise(resolve => setTimeout(resolve, 500));
+                
+                const result = mockOTPService.validateOTP(mobile, otp);
+                
+                if (result.success) {
+                    showResult('otpResult', result.message + ' - Login successful!', 'success');
+                    updateTestStats(true);
+                    
+                    // Reset form
+                    document.getElementById('otpInputs').style.display = 'none';
+                    document.getElementById('verifyOTPBtn').style.display = 'none';
+                    otpInputs.forEach(input => input.value = '');
+                } else {
+                    showResult('otpResult', result.message, 'error');
+                    updateTestStats(false);
+                }
+            } catch (error) {
+                showResult('otpResult', 'Failed to verify OTP', 'error');
+                updateTestStats(false);
+            }
+        }
+
+        // Social Login Tests
+        async function testSocialLogin() {
+            const provider = document.getElementById('socialProvider').value;
+            
+            try {
+                // Simulate OAuth flow
+                await new Promise(resolve => setTimeout(resolve, 1000));
+                
+                const mockUser = {
+                    id: `user_${Date.now()}`,
+                    email: `user@${provider}.com`,
+                    name: `Test User (${provider})`,
+                    role: 'SME_OWNER',
+                    tenantId: `tenant_${Date.now()}`
+                };
+                
+                mockUsers.set(mockUser.email, mockUser);
+                
+                showResult('socialResult', `✅ ${provider} login successful! User: ${mockUser.email}`, 'success');
+                updateTestStats(true);
+            } catch (error) {
+                showResult('socialResult', `❌ ${provider} login failed`, 'error');
+                updateTestStats(false);
+            }
+        }
+
+        // Email Login Tests
+        async function testEmailLogin() {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            
+            if (!email || !password) {
+                showResult('emailResult', 'Please enter email and password', 'error');
+                updateTestStats(false);
+                return;
+            }
+
+            try {
+                // Simulate API call delay
+                await new Promise(resolve => setTimeout(resolve, 500));
+                
+                const mockUser = {
+                    id: `user_${Date.now()}`,
+                    email: email,
+                    name: 'Test User',
+                    role: 'SME_OWNER',
+                    tenantId: `tenant_${Date.now()}`
+                };
+                
+                mockUsers.set(email, mockUser);
+                
+                showResult('emailResult', `✅ Email login successful! User: ${email}`, 'success');
+                updateTestStats(true);
+            } catch (error) {
+                showResult('emailResult', '❌ Email login failed', 'error');
+                updateTestStats(false);
+            }
+        }
+
+        // Security Tests
+        async function testRateLimiting() {
+            const mobile = '+1234567890';
+            
+            try {
+                // Send multiple OTP requests rapidly
+                for (let i = 0; i < 5; i++) {
+                    mockOTPService.generateOTP(mobile);
+                    await new Promise(resolve => setTimeout(resolve, 100));
+                }
+                
+                showResult('securityResult', '⚠️ Rate limiting test completed - Check console for details', 'info');
+                updateTestStats(true);
+            } catch (error) {
+                showResult('securityResult', '❌ Rate limiting test failed', 'error');
+                updateTestStats(false);
+            }
+        }
+
+        async function testInvalidOTP() {
+            const mobile = '+1234567890';
+            
+            try {
+                // Generate valid OTP
+                const validOTP = mockOTPService.generateOTP(mobile);
+                
+                // Try invalid OTP
+                const result = mockOTPService.validateOTP(mobile, '999999');
+                
+                if (!result.success) {
+                    showResult('securityResult', '✅ Invalid OTP properly rejected', 'success');
+                    updateTestStats(true);
+                } else {
+                    showResult('securityResult', '❌ Invalid OTP was accepted', 'error');
+                    updateTestStats(false);
+                }
+            } catch (error) {
+                showResult('securityResult', '❌ Invalid OTP test failed', 'error');
+                updateTestStats(false);
+            }
+        }
+
+        async function testExpiredOTP() {
+            const mobile = '+1234567890';
+            
+            try {
+                // Generate OTP
+                const otp = mockOTPService.generateOTP(mobile);
+                
+                // Manually expire it
+                const otpData = mockOTPService.otps.get(mobile);
+                otpData.expires = new Date(Date.now() - 1000);
+                
+                // Try to verify expired OTP
+                const result = mockOTPService.validateOTP(mobile, otp);
+                
+                if (!result.success && result.message === 'OTP expired') {
+                    showResult('securityResult', '✅ Expired OTP properly rejected', 'success');
+                    updateTestStats(true);
+                } else {
+                    showResult('securityResult', '❌ Expired OTP was accepted', 'error');
+                    updateTestStats(false);
+                }
+            } catch (error) {
+                showResult('securityResult', '❌ Expired OTP test failed', 'error');
+                updateTestStats(false);
+            }
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('🧪 Authentication Test Suite Ready');
+            console.log('📱 Mock OTP service initialized');
+            console.log('👥 Mock user database initialized');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "training_date": "2025-11-24T17:23:38.995193",
+  "models": [
+    "inflow_forecaster",
+    "outflow_forecaster",
+    "net_cashflow"
+  ],
+  "data_sources": [
+    "Cash flow time series patterns (research-based)",
+    "ARIMA/LSTM forecasting research",
+    "Business seasonal patterns (India)",
+    "Payment timing analysis"
+  ],
+  "sample_size": "730 days (2 years)",
+  "forecast_horizon": "7-30-90 days",
+  "version": "1.0"
+}

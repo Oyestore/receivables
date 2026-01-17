@@ -1,0 +1,136 @@
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import axios from 'axios';
+
+// API base URL - Changed to relative path
+const API_URL = '/api';
+
+// Async thunks
+export const login = createAsyncThunk(
+  'auth/login',
+  async ({ email, password }, { rejectWithValue }) => {
+    try {
+      const response = await axios.post(`${API_URL}/auth/login`, { email, password });
+      // Store token in localStorage
+      localStorage.setItem('token', response.data.token);
+      return response.data;
+    } catch (error) {
+      return rejectWithValue(error.response?.data?.message || 'Login failed');
+    }
+  }
+);
+
+export const checkAuth = createAsyncThunk(
+  'auth/checkAuth',
+  async (_, { rejectWithValue }) => {
+    try {
+      const token = localStorage.getItem('token');
+      
+      if (!token) {
+        return rejectWithValue('No token found');
+      }
+      
+      // Verify token by making a request to a protected endpoint
+      // Using /users as an example, ideally this would be a dedicated /auth/profile or /auth/verify endpoint
+      const response = await axios.get(`${API_URL}/users`, { // Assuming /api/users is a protected route
+        headers: {
+          Authorization: `Bearer ${token}`
+        }
+      });
+      
+      // If request is successful, token is valid
+      // We could also have a dedicated endpoint for token validation
+      // The user object should ideally come from the server response of a profile endpoint
+      const user = JSON.parse(localStorage.getItem('user')); 
+      return { token, user }; // Or better, user: response.data.user if /api/users returns user profile
+    } catch (error) {
+      localStorage.removeItem('token');
+      localStorage.removeItem('user');
+      return rejectWithValue(error.response?.data?.message || 'Authentication failed');
+    }
+  }
+);
+
+export const logout = createAsyncThunk(
+  'auth/logout',
+  async () => {
+    localStorage.removeItem('token');
+    localStorage.removeItem('user');
+    return null;
+  }
+);
+
+// Initial state
+const initialState = {
+  user: JSON.parse(localStorage.getItem('user')) || null, // Load user from storage
+  token: localStorage.getItem('token') || null,
+  isAuthenticated: !!localStorage.getItem('token'), // Set based on token presence
+  loading: false,
+  error: null
+};
+
+// Auth slice
+const authSlice = createSlice({
+  name: 'auth',
+  initialState,
+  reducers: {
+    clearError: (state) => {
+      state.error = null;
+    }
+  },
+  extraReducers: (builder) => {
+    builder
+      // Login
+      .addCase(login.pending, (state) => {
+        state.loading = true;
+        state.error = null;
+      })
+      .addCase(login.fulfilled, (state, action) => {
+        state.loading = false;
+        state.isAuthenticated = true;
+        state.token = action.payload.token;
+        state.user = action.payload.user; 
+        // Store user in localStorage for persistence
+        localStorage.setItem('user', JSON.stringify(action.payload.user));
+      })
+      .addCase(login.rejected, (state, action) => {
+        state.loading = false;
+        state.error = action.payload;
+        state.isAuthenticated = false;
+        state.token = null;
+        state.user = null;
+      })
+      
+      // Check Auth
+      .addCase(checkAuth.pending, (state) => {
+        state.loading = true;
+        state.error = null;
+      })
+      .addCase(checkAuth.fulfilled, (state, action) => {
+        state.loading = false;
+        state.isAuthenticated = true;
+        state.token = action.payload.token;
+        state.user = action.payload.user;
+      })
+      .addCase(checkAuth.rejected, (state, action) => {
+        state.loading = false;
+        state.isAuthenticated = false;
+        state.token = null;
+        state.user = null;
+        // Do not set error here if it's just a check failing due to no token
+        // state.error = action.payload; 
+      })
+      
+      // Logout
+      .addCase(logout.fulfilled, (state) => {
+        state.isAuthenticated = false;
+        state.token = null;
+        state.user = null;
+        state.loading = false;
+        state.error = null;
+      });
+  }
+});
+
+export const { clearError } = authSlice.actions;
+
+export default authSlice.reducer;

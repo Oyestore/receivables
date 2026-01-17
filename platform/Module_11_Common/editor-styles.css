@@ -1,0 +1,73 @@
+/* CSS for the GrapesJS Editor UI Layout */
+/* File: /home/ubuntu/smart_invoice_module/invoice_agent_nestjs/src/frontend_app/css/editor-styles.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+#gjs-editor-container {
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Ensures padding/border don't add to width/height */
+}
+
+.editor-panels {
+    display: flex;
+    background-color: #f8f9fa;
+    border-top: 1px solid #ccc;
+    padding: 5px;
+    box-sizing: border-box;
+    height: 200px; /* Example fixed height for panels area, adjust as needed */
+    overflow-x: auto; /* Allow horizontal scrolling if panels overflow */
+}
+
+.panel-section {
+    flex: 1;
+    border-left: 1px solid #ddd;
+    padding: 5px;
+    min-width: 200px; /* Minimum width for each panel section */
+    overflow-y: auto; /* Allow vertical scrolling within each panel */
+}
+
+.panel-section:first-child {
+    border-left: none;
+}
+
+/* Basic styling for GrapesJS panels if they are directly appended */
+/* GrapesJS often injects its own panel structures, so this might need adjustment */
+.gjs-pn-panels {
+    /* Styles for the main panel container if GrapesJS creates it */
+}
+
+.gjs-pn-panel {
+    /* Styles for individual panels */
+}
+
+.gjs-pn-buttons {
+    /* Styles for button groups within panels */
+}
+
+.gjs-pn-btn {
+    /* Styles for individual buttons */
+    margin: 2px;
+}
+
+/* Custom panel titles (if you add them) */
+.panel-section h4 {
+    margin-top: 0;
+    font-size: 1em;
+    color: #333;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Ensure GrapesJS UI elements are visible and usable */
+.gjs-cv-canvas {
+    background-color: white;
+}
+
+/* Add more specific styles as the editor UI takes shape */
+

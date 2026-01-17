@@ -1,0 +1,767 @@
+{
+  "module_name": "Module_01_Smart_Invoice_Generation",
+  "version": "1.0.0",
+  "generated_at": "2025-11-16T11:40:56.573218",
+  "metadata": {
+    "title": "Smart Invoice Generation & Management",
+    "description": "AI-powered invoice generation with quality assurance, template optimization, and GST compliance",
+    "key_features": [
+      "AI-assisted invoice creation",
+      "Advanced template management",
+      "GST compliance validation",
+      "Multi-format generation (PDF, HTML, XML)"
+    ]
+  },
+  "statistics": {
+    "total_files": 149,
+    "total_size_bytes": 193640476,
+    "total_size_mb": 184.67
+  },
+  "files": [
+    {
+      "path": "Module_01_Smart_Invoice_Generation/invoice_parsing_module.js",
+      "size": 5722,
+      "hash": "472dd9113e82d2468867badb3c4708ee"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/invoice_schema_phase_1_1.sql",
+      "size": 3819,
+      "hash": "6de686a060fe996ed7119f2ad42f85c0"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/invoice_api_phase_1_1.js",
+      "size": 6371,
+      "hash": "7f469dec8e9a18605101da518b51a0b4"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/Phase 1.1: Core Invoice Data & AI-Assisted Creation - Detailed Design.md",
+      "size": 15273,
+      "hash": "0b7b0cdccc10a64249ed738be75bfc67"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/Open-Source Invoice Data Extraction: Research Summary and Recommendation.md",
+      "size": 10846,
+      "hash": "122a97e68d52a83a7225fadf25b54955"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/Invoice Generation Agent: Module Specifications.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/7. Architectural Design.md",
+      "size": 18168,
+      "hash": "8b3a8ea4578fcd0ac68e5f574a7dea89"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/Document Types for AI-Assisted Invoice Data Extraction.md",
+      "size": 8853,
+      "hash": "3300306b14c99efb3e13a800824a6cc2"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/Invoice Generation Agent: Detailed Scope and Requirements.md",
+      "size": 10448,
+      "hash": "992116713c2a6da28739979acbbb2af7"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/conditional-logic.service.spec.ts",
+      "size": 11537,
+      "hash": "eb13dc6ec3f86ab8c840d725f9a423a3"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/todo_expanded_phase_1.md",
+      "size": 4286,
+      "hash": "b4588d248e4c4531d945ff3db3f8aeba"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/invoice-template-version.entity.ts",
+      "size": 1277,
+      "hash": "f1e7bf12cba1302ef73465a337ea4c7e"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/invoice-template-master.entity.ts",
+      "size": 2509,
+      "hash": "2f93b8bde031f2070a3b0e9a86ec6cf5"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/data-source.ts",
+      "size": 2778,
+      "hash": "62d2d6ab87cb5de28bdc51a03a9e2c32"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/pdf-generation.service.ts",
+      "size": 11515,
+      "hash": "d5732b74177daf331d16a432b3016bdb"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/pdf-generation.module.ts",
+      "size": 553,
+      "hash": "3a69cebdaa8b31a81f5aa84f82270c41"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/expanded_phase_1_detailed_plan.md",
+      "size": 9108,
+      "hash": "4d77353d8528de573c6655577a0848c2"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/Phase_1_Smart_Invoice_Agent_Deliverables.zip",
+      "size": 176793776,
+      "hash": "5dc1c54ddb9161a6e490bcb8e6d71cbb"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/To-Do List: Phase 1.4 - Full Backend Integration.md",
+      "size": 5528,
+      "hash": "bb3daaa36a144190de396a43bd029334"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/Phase 1: Smart Invoice Generation Agent - Full Completion Report.md",
+      "size": 6933,
+      "hash": "80060a82e1aedef5a774bc2a723365c7"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/template.controller.ts",
+      "size": 6370,
+      "hash": "89398bc1900b4a2daf2ab998aa73f4a0"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/create-new-template-version.dto.ts",
+      "size": 272,
+      "hash": "ce010e0f5a81a637b0cead50c87b93c1"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/template.service.ts",
+      "size": 11054,
+      "hash": "c212984ccb889a7484ceef1ac5bb87a8"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/update-invoice-template-master-details.dto.ts",
+      "size": 408,
+      "hash": "0ebdead9bd9acb486ada6b25e3248e76"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/create-invoice-template-master.dto.ts",
+      "size": 712,
+      "hash": "a53172685ff62c6f45f4c4dd845d95fd"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/phase_1_4_full_backend_integration_plan.md",
+      "size": 9948,
+      "hash": "f1dfa757be3522e02c5868774ab9eb70"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/Phase 1.4 Design Document: Advanced UI Components.md",
+      "size": 7368,
+      "hash": "9b8ef72ce2e239d8a30b8f5c8fe8888f"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/To-Do List: Phase 1.4 - Advanced UI Components Implementation.md",
+      "size": 2953,
+      "hash": "2a4f750e2ead83be153eafc7303592d4"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/Phase 1: Smart Invoice Generation Agent Module - Overall Summary.md",
+      "size": 5360,
+      "hash": "a7aac17d26ec091804d3e63e5cc8d425"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/todo_phase_1_4.md",
+      "size": 2594,
+      "hash": "44bb518c402e8715c929671ca0cd3fb6"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/phase_1_4_advanced_ui_design.md",
+      "size": 7368,
+      "hash": "9b8ef72ce2e239d8a30b8f5c8fe8888f"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/Phase_1_Smart_Invoice_Module_Summary.md",
+      "size": 5360,
+      "hash": "a7aac17d26ec091804d3e63e5cc8d425"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/To-Do List: Phase 1.3 - Advanced Editor UX & Indian Taxation Compliance.md",
+      "size": 4374,
+      "hash": "a06f5fb1dba4d6778b16e72a9e4549c9"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/test_plan_phase_1_3.md",
+      "size": 6341,
+      "hash": "84acc150c8dbb3f23dfffe3772d46860"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/phase_1_3_implementation_details.md",
+      "size": 1473,
+      "hash": "27841f87424993eb59faf61f48a70aab"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/invoice-template.entity.ts",
+      "size": 1397,
+      "hash": "7e896b74cc899b95f7954a30b2b68e91"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/Phase 1.3 Design Document: Advanced Editor UX & Indian Taxation Compliance.md",
+      "size": 9223,
+      "hash": "6f785d949551bbf60ff103ce6364e787"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/Phase 1.2+ Documentation Update.md",
+      "size": 5011,
+      "hash": "48a7e4fc955133c2fb1b35addd042a48"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/To-Do List: Smart Invoice Generation Agent - Phase 1.2.md",
+      "size": 8257,
+      "hash": "5866e1c125ed406b794c80850732edb9"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/Phase 1.2+ Advanced Template Editor - Design Document.md",
+      "size": 9672,
+      "hash": "a6fbecf6b2776dd8c3f29e65da05a44c"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/Test Plan for Phase 1.2+: Visual Template Editor & Advanced Features.md",
+      "size": 8072,
+      "hash": "f350ef1ffb3d65f812d387aa028e4267"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/update-invoice-template.dto.ts",
+      "size": 1023,
+      "hash": "2450774e5e4b4d7872a1e1785eb8750c"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/create-invoice-template.dto.ts",
+      "size": 808,
+      "hash": "28638c6aa5fa3fdb9d9864b347d30ece"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/Phase 1.2: Advanced Invoice Template Management - Design Document.md",
+      "size": 13945,
+      "hash": "b6b20cf072516c8ecfb53128cae8ee47"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/modern_invoice.html",
+      "size": 10492,
+      "hash": "ff76ec63dc8bc7c32ea0f83622d24713"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/default-templates.data.ts",
+      "size": 2703,
+      "hash": "309b786ac7aeb2992091f911480faf37"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/Test Plan for Phase 1.2: Advanced Invoice Template Management.md",
+      "size": 10619,
+      "hash": "6025fcd8130c51beaff73e66f9531a04"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/invoice.service.ts",
+      "size": 5712,
+      "hash": "a0d6d8cc4cfa42b4bb2d78756a2ad972"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/invoice.module.ts",
+      "size": 739,
+      "hash": "43fa8a6e69029542b5f4f764f9f5faab"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/classic_professional_template.html",
+      "size": 3406,
+      "hash": "4e850756102d1987c43e1aa987c2e3c2"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/template.module.ts",
+      "size": 734,
+      "hash": "235e2e85914946fa5d4745c6d4766e2b"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/phase_1_2_advanced_template_management_design.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/todo_phase_1_2.md",
+      "size": 3485,
+      "hash": "a074f142cdb3ede1b5e63557af0cb4f4"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/invoice_generation_agent_specs.md",
+      "size": 10448,
+      "hash": "992116713c2a6da28739979acbbb2af7"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/Smart Invoice Generation Module: Design and Implementation Plan (v2.0 - Post-Reset).md",
+      "size": 8049,
+      "hash": "de0862d4d54205a9d70caab178661148"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/smart_invoice_module_ocr_microservice_no_venv.zip",
+      "size": 2072,
+      "hash": "792bd006863c317bdba29530979b8649"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/recurring-invoice-profile.service.ts",
+      "size": 6698,
+      "hash": "23ce6be11f93e56ba65b6c698c8e9452"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/recurring-invoice-profile.entity.ts",
+      "size": 1815,
+      "hash": "b25ea37f5b58ba69fcbc544274e7b179"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/recurring-invoice-profile.module.ts",
+      "size": 865,
+      "hash": "4d01832a30b39cdcb0cb331faeea321b"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/invoice.controller.ts",
+      "size": 3745,
+      "hash": "d418fd06010d506efe06ce2d889074ac"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/client-preference.dto.ts",
+      "size": 645,
+      "hash": "8a92178b5aa12c3aee941bff471ef11d"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/client-preference.entity.ts",
+      "size": 852,
+      "hash": "e4ef7912dc2da6a822f469a8d34308b6"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/recurring-invoice-profile.dto.ts",
+      "size": 2101,
+      "hash": "f8d48618f72daf1d0cbca835bcd02ef7"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/product-service-catalog.entity.ts",
+      "size": 791,
+      "hash": "5780bfc5abb46c7c2e722d0a2fe97295"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/invoice.dto.ts",
+      "size": 2591,
+      "hash": "1b114f6397b79e85053b5ce23e495b2f"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/invoice-line-item.entity.ts",
+      "size": 1857,
+      "hash": "27b08c0dc4c5a2c41ebd38946be34c20"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/invoice.entity.ts",
+      "size": 2156,
+      "hash": "9d2ec9be928b6b1824445712032c024c"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/Invoice Generation Agent_ Module Specifications.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/phase_1_1_detailed_design.md",
+      "size": 15273,
+      "hash": "0b7b0cdccc10a64249ed738be75bfc67"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/phase_1_1_detailed_design (1).md",
+      "size": 15273,
+      "hash": "0b7b0cdccc10a64249ed738be75bfc67"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/Smart Invoice Generation Module: Design and Implementation Plan (v1.1 with Enhancements).md",
+      "size": 11517,
+      "hash": "ee9c5f140f44f906b17a28b72223df5c"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/Smart Invoice Generation Module: Design and Implementation Plan.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/invoice_enhancement_suggestions.md",
+      "size": 8853,
+      "hash": "3300306b14c99efb3e13a800824a6cc2"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/Open-Source Invoice Data Extraction_ Research Summary and Recommendation.md",
+      "size": 10846,
+      "hash": "122a97e68d52a83a7225fadf25b54955"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/integration-template.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/report-generation.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/report-template.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/requirements_gap_analysis_report.pdf",
+      "size": 358983,
+      "hash": "02dd188912d194869e7e6186e4656769"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/base_requirements.md",
+      "size": 11580,
+      "hash": "44a5ca7b7e72ca911f3a79ee69d62aa9"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/comprehensive-unit-tests.spec.ts",
+      "size": 50656,
+      "hash": "9f153960f9217a1e3e5fd9ff5e665082"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/technical-documentation.pdf",
+      "size": 475992,
+      "hash": "5224caabdbe372de9d0e491a0a091a60"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/invoice-financing-workflow-template.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/template-library-expansion.service.ts",
+      "size": 46623,
+      "hash": "5340acd9889bde1a5411d998465b35c5"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/template-management.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/phase7_4_requirements_document.pdf",
+      "size": 378002,
+      "hash": "0545ba50baed770b68a7065f0cc4dcae"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/phase7_3_completion_report.pdf",
+      "size": 332895,
+      "hash": "4e6b77155b7308bdd2749d747af9419b"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/phase7_3_requirements_document.pdf",
+      "size": 509672,
+      "hash": "8bae7763a08af09e716f8ebee616d44b"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/phase7_2_completion_report.pdf",
+      "size": 338061,
+      "hash": "ee7ae3090532681baa4757ff578cd79e"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/phase7_2_requirements_document.pdf",
+      "size": 369788,
+      "hash": "530c96f73a6f594d44b2c6c3a2c1fb5d"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/phase8_1_detailed_requirements.pdf",
+      "size": 752556,
+      "hash": "ef6072d6d0758a80c959df6df1299ed6"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/phase8_technical_architecture.pdf",
+      "size": 501618,
+      "hash": "cd78562fd9e3299003c712565ab17104"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/phase8_requirements_document.pdf",
+      "size": 505565,
+      "hash": "49f9f7ea8bd8c0251b7477ae3585a163"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/phase7_5_completion_report.pdf",
+      "size": 428029,
+      "hash": "4be2a905e69d2225bc90b1b97823f600"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/phase7_5_requirements_document.pdf",
+      "size": 511029,
+      "hash": "d75b79287e79f85eb642a07183b11585"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/phase7_4_completion_report.pdf",
+      "size": 465871,
+      "hash": "c95ce98e2ec866e1c71c72a0dbd4a668"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/phase8.4_detailed_requirements_refined.pdf",
+      "size": 334646,
+      "hash": "c4f89d9338a8a39b4d0e79ebb4a37468"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/phase8.4_technical_architecture_refined.pdf",
+      "size": 362881,
+      "hash": "c44b9dbabde31e321e0eeabf64b31b50"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/phase8.4_executive_summary_refined.pdf",
+      "size": 304240,
+      "hash": "2e123939d80ea93629480eb2ac816d70"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/phase8.4_refinement_completion_report.pdf",
+      "size": 307592,
+      "hash": "4583963034ddadd84a25763f9b37ad10"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/phase8.4_detailed_requirements.pdf",
+      "size": 334801,
+      "hash": "6e6a1b676b33fbfbb35fae803836db0b"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/phase8.4_technical_architecture.pdf",
+      "size": 462965,
+      "hash": "e64e02a1cb84b7d776255d4d4382941f"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/phase8.4_executive_summary.pdf",
+      "size": 307390,
+      "hash": "8775d0220660a4a4315e650ed33df3fa"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/phase8.4_project_completion_report.pdf",
+      "size": 338677,
+      "hash": "784b6f661ab32ad0781c25d031acc48f"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/implementation-completion-report.pdf",
+      "size": 334477,
+      "hash": "2a3f45dfd7af28215f3184889a6fee3b"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/phase8.3_executive_summary.pdf",
+      "size": 421815,
+      "hash": "01b652074c9cf0f91879830ebd246543"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/phase8.3_project_completion_report.pdf",
+      "size": 436125,
+      "hash": "cf8201487bb2e37f9733fa6d769ede7a"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/phase8.3_detailed_requirements.pdf",
+      "size": 481130,
+      "hash": "3c31f9b8ac2293c5b075b878643175b6"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/phase8.3_technical_architecture.pdf",
+      "size": 523818,
+      "hash": "8d72b29625dbc22c95423ad3fed5ea42"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/phase9.2_detailed_requirements.pdf",
+      "size": 411553,
+      "hash": "baa3ecc6b7be40df8e0f02dbeb02c30a"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/phase9.1_detailed_requirements.pdf",
+      "size": 338585,
+      "hash": "8566483653bf15a12224a808512bbd7d"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/module9_strategic_recommendations.pdf",
+      "size": 345814,
+      "hash": "d871ec12aa9af297226187abac896a11"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/module8_gap_remediation_completion_report.pdf",
+      "size": 324421,
+      "hash": "9f5749ac3baab94f483797abaa924e15"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/module8_comprehensive_gap_analysis.pdf",
+      "size": 333499,
+      "hash": "d4f1be8026ce8efbc219b96756b10dfc"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/phase10.1_detailed_requirements.pdf",
+      "size": 369383,
+      "hash": "74e5d2837698621597a000ed91b6da6b"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/module10_detailed_requirements.pdf",
+      "size": 365739,
+      "hash": "206606f1e5506ec35ce10efc83fbdc0a"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/Multi-Agent AI Receivables Management Tool: Requirements Gap Analysis Report.md",
+      "size": 74843,
+      "hash": "db5e39ef1a555d1a95212e7a17cc748e"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/phase9.4_detailed_requirements.pdf",
+      "size": 430154,
+      "hash": "131416d83819c55d7d8d4a791e1ca517"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/phase9.3_detailed_requirements.pdf",
+      "size": 545959,
+      "hash": "3b9eccb0da233740554e49d7d2eb6caa"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/Module 1: Smart Invoice Generation - Enhancement Implementation.md",
+      "size": 1971,
+      "hash": "712fc109fe212525fb6c667c39ea9de6"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/Module 1 Enhanced: Smart Invoice Generation - Technical Documentation.md",
+      "size": 94749,
+      "hash": "c42e0b89357e8ceda9ec30a1e6aee171"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/Module 1 Enhanced: Smart Invoice Generation.md",
+      "size": 62725,
+      "hash": "0d76f07846d780f3093b1d5e5ec1a7a8"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/template-optimization.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/template-optimization.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/template-optimization.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/invoice-enhancement.interface.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/invoice-enhancement.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/module_enhancement_detailed_requirements.pdf",
+      "size": 350522,
+      "hash": "27bb73ddd3db4f135aa6ca357c4b558d"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/phase10.4_detailed_requirements.pdf",
+      "size": 347484,
+      "hash": "8558540c6022bcfd157d6f89eff27c96"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/phase10.3_detailed_requirements.pdf",
+      "size": 354678,
+      "hash": "c1a567e0bbbe1fec5b2d710b1aff29e6"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/phase10.2_detailed_requirements.pdf",
+      "size": 353261,
+      "hash": "1346d3a825bbf74921531bf11fdce653"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/MobileApp.jsx",
+      "size": 16073,
+      "hash": "d7fc5b75b730eba08d3fa06fdb2ed255"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/TemplateManagement.test.jsx",
+      "size": 9840,
+      "hash": "4dd7e36e8b0311a8750ec11978a9827a"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/TemplateManagement.jsx",
+      "size": 21204,
+      "hash": "980f71a83630cf5cbae914320af67787"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/invoice-integration.service.ts",
+      "size": 4164,
+      "hash": "563b8296cbbc9892247654fa3bc65636"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/personalization.module.ts",
+      "size": 520,
+      "hash": "5bbd06650bf9865a2a66382568eca8c3"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/message-history.entity.ts",
+      "size": 1733,
+      "hash": "e996361199ac601e653e0b95db0e2a66"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/message-template.entity.ts",
+      "size": 1353,
+      "hash": "96ba28c1c70b77099e9db082662e03b0"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/Phase 1: Smart Invoice Generation Module - Conceptual & Production Considerations.md",
+      "size": 6298,
+      "hash": "a93e30ff5f0dbdb0ff18aac6ee24f9f4"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/To-Do List: Expanded Phase 1 - Full Runtime Capabilities.md",
+      "size": 4286,
+      "hash": "8b861ec1cbc5da31ec330a8975bc78e9"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/template-versioning.e2e-spec.ts",
+      "size": 12341,
+      "hash": "b8c537b77eba5e61c106011d24997382"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/pdf-generation.e2e-spec.ts",
+      "size": 11551,
+      "hash": "d25ea96f51cec2f36df8c32c40dfdd5a"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/invoice_data.json",
+      "size": 1142,
+      "hash": "2f736bad7d5094cbff07523d3c80b4ce"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/invoice_template.html",
+      "size": 8400,
+      "hash": "4b8f9d5764dd7e4a8a754ea3335bb8f0"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/demo_invoice_generator.py",
+      "size": 6526,
+      "hash": "2f0ce9f7bb206084f57a6bdfe1adf3a8"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/Expanded Phase 1: Smart Invoice Generation Module - Final Report.md",
+      "size": 6366,
+      "hash": "3de7a1630a6dea3166c50329038742c1"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/generated_invoice_demo.pdf",
+      "size": 213685,
+      "hash": "36eb235d1b275954c256802144753872"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/Integration Tests Outline: TemplateModule (Versioning).md",
+      "size": 7994,
+      "hash": "c6d6ce407f3668ee6bda8dc38afba469"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/Integration Tests Outline: PDF Generation Process.md",
+      "size": 9814,
+      "hash": "5b2b9a36c5f27df72494c51f5bb3b6f7"
+    },
+    {
+      "path": "Module_01_Smart_Invoice_Generation/voice-biometric.entity.ts",
+      "size": 809,
+      "hash": "480121e694952be4fe88064ea729d586"
+    }
+  ]
+}

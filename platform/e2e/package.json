@@ -1,0 +1,19 @@
+{
+    "name": "sme-platform-e2e",
+    "version": "1.0.0",
+    "description": "E2E tests for SME Receivables Platform",
+    "scripts": {
+        "cypress:open": "cypress open",
+        "cypress:run": "cypress run",
+        "cypress:run:headed": "cypress run --headed",
+        "test:e2e": "cypress run --browser chrome",
+        "test:e2e:mobile": "cypress run --config viewportWidth=375,viewportHeight=667",
+        "test:e2e:tablet": "cypress run --config viewportWidth=768,viewportHeight=1024"
+    },
+    "devDependencies": {
+        "cypress": "^13.6.0",
+        "@testing-library/cypress": "^10.0.1",
+        "@cypress/webpack-preprocessor": "^6.0.0",
+        "typescript": "^5.3.0"
+    }
+}

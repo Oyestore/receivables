@@ -1,0 +1,16 @@
+{
+  "training_date": "2025-11-24T17:29:45.478997",
+  "models": [
+    "fraud_classifier",
+    "anomaly_detector"
+  ],
+  "data_sources": [
+    "IEEE-CIS E-commerce Fraud (590k transactions patterns)",
+    "Credit Card Fraud Detection (Kaggle patterns)",
+    "Anomaly detection research",
+    "Velocity checking patterns"
+  ],
+  "sample_size": 20000,
+  "fraud_rate": "3% (typical)",
+  "version": "1.0"
+}

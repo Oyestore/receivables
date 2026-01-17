@@ -1,0 +1,885 @@
+/* NegotiationAssistant.css - CSS styles for Negotiation Assistant component */
+
+/* Base Card Styles */
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+}
+
+.card-body {
+  padding: 16px;
+}
+
+.card-header {
+  padding: 16px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* Heading Styles */
+.heading {
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.heading-lg {
+  font-size: 1.5rem;
+}
+
+.heading-md {
+  font-size: 1.25rem;
+}
+
+.heading-sm {
+  font-size: 1.125rem;
+}
+
+/* Text Styles */
+.text {
+  color: #4a5568;
+  font-size: 1rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+}
+
+.text-bold {
+  font-weight: 600;
+}
+
+.text-semibold {
+  font-weight: 500;
+}
+
+/* Layout Styles */
+.v-stack {
+  display: flex;
+  flex-direction: column;
+}
+
+.h-stack {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Button Styles */
+.button {
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.button-blue {
+  background: #3182ce;
+  color: white;
+}
+
+.button-blue:hover {
+  background: #2c5282;
+}
+
+.button-outline {
+  background: transparent;
+  border-color: #3182ce;
+  color: #3182ce;
+}
+
+.button-outline:hover {
+  background: #ebf8ff;
+}
+
+.button-sm {
+  padding: 6px 12px;
+  font-size: 0.875rem;
+}
+
+.button-lg {
+  padding: 12px 24px;
+  font-size: 1rem;
+}
+
+.button-full {
+  width: 100%;
+}
+
+/* Icon Styles */
+.icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+
+.icon-lg {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}
+
+/* Badge Styles */
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.badge-green {
+  background: #c6f6d5;
+  color: #22543d;
+}
+
+.badge-blue {
+  background: #bee3f8;
+  color: #2c5282;
+}
+
+.badge-orange {
+  background: #fed7d7;
+  color: #742a2a;
+}
+
+.badge-red {
+  background: #feb2b2;
+  color: #742a2a;
+}
+
+.badge-purple {
+  background: #e9d8fd;
+  color: #553c9a;
+}
+
+.badge-gray {
+  background: #e2e8f0;
+  color: #4a5568;
+}
+
+/* Divider Styles */
+.divider {
+  height: 1px;
+  background: #e2e8f0;
+  margin: 16px 0;
+}
+
+/* Textarea Styles */
+.textarea {
+  padding: 8px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  background: white;
+  resize: vertical;
+  transition: border-color 0.2s;
+  font-family: inherit;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: #3182ce;
+  box-shadow: 0 0 0 1px #3182ce;
+}
+
+.textarea::placeholder {
+  color: #a0aec0;
+}
+
+/* Collapse Styles */
+.collapse {
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.collapse-content {
+  padding: 16px 0;
+}
+
+/* List Styles */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.list-item:last-child {
+  border-bottom: none;
+}
+
+.list-icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 600;
+}
+
+.color-gray-500 {
+  color: #718096;
+}
+
+.color-gray-600 {
+  color: #4a5568;
+}
+
+.color-gray-800 {
+  color: #2d3748;
+}
+
+.color-green-500 {
+  color: #48bb78;
+}
+
+.color-green-600 {
+  color: #38a169;
+}
+
+.color-red-600 {
+  color: #e53e3e;
+}
+
+.color-orange-500 {
+  color: #ed8936;
+}
+
+.color-blue-600 {
+  color: #3182ce;
+}
+
+.color-purple-600 {
+  color: #805ad5;
+}
+
+/* Spacing Utilities */
+.gap-0 {
+  gap: 0;
+}
+
+.gap-2 {
+  gap: 8px;
+}
+
+.gap-3 {
+  gap: 12px;
+}
+
+.gap-4 {
+  gap: 16px;
+}
+
+.gap-6 {
+  gap: 24px;
+}
+
+/* Alignment Utilities */
+.align-start {
+  align-items: flex-start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-stretch {
+  align-items: stretch;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+/* Flex Utilities */
+.flex-1 {
+  flex: 1;
+}
+
+/* Width Utilities */
+.w-full {
+  width: 100%;
+}
+
+.w-32 {
+  width: 128px;
+}
+
+.w-48 {
+  width: 192px;
+}
+
+/* Height Utilities */
+.h-32 {
+  height: 128px;
+}
+
+.h-48 {
+  height: 192px;
+}
+
+/* Padding Utilities */
+.pt-0 {
+  padding-top: 0;
+}
+
+.mb-4 {
+  margin-bottom: 16px;
+}
+
+.p-3 {
+  padding: 12px;
+}
+
+/* Margin Utilities */
+.mr-2 {
+  margin-right: 8px;
+}
+
+.mr-1 {
+  margin-right: 4px;
+}
+
+.mb-2 {
+  margin-bottom: 8px;
+}
+
+/* Display Utilities */
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Position Utilities */
+.relative {
+  position: relative;
+}
+
+/* Cursor Utilities */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Negotiation Assistant Specific Styles */
+.negotiation-assistant {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.assistant-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.assistant-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.assistant-actions {
+  display: flex;
+  gap: 12px;
+}
+
+/* Negotiation Context */
+.negotiation-context {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  margin-bottom: 24px;
+}
+
+.context-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.context-title {
+  font-weight: 600;
+  color: #2d3748;
+  font-size: 1.125rem;
+}
+
+.context-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.context-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.context-label {
+  font-size: 0.75rem;
+  color: #718096;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.context-value {
+  font-size: 0.875rem;
+  color: #2d3748;
+  font-weight: 500;
+}
+
+/* Negotiation Strategies */
+.negotiation-strategies {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  margin-bottom: 24px;
+}
+
+.strategies-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.strategies-title {
+  font-weight: 600;
+  color: #2d3748;
+  font-size: 1.125rem;
+}
+
+.strategies-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.strategy-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px;
+  background: #f7fafc;
+  border-radius: 6px;
+  border-left: 4px solid #3182ce;
+}
+
+.strategy-icon {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #ebf8ff;
+  color: #3182ce;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.strategy-content {
+  flex: 1;
+}
+
+.strategy-title {
+  font-weight: 500;
+  color: #2d3748;
+  font-size: 0.875rem;
+  margin-bottom: 4px;
+}
+
+.strategy-description {
+  font-size: 0.75rem;
+  color: #718096;
+  line-height: 1.4;
+}
+
+.strategy-impact {
+  font-size: 0.75rem;
+  margin-top: 4px;
+  color: #38a169;
+}
+
+/* Negotiation Messages */
+.negotiation-messages {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  margin-bottom: 24px;
+}
+
+.messages-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.messages-title {
+  font-weight: 600;
+  color: #2d3748;
+  font-size: 1.125rem;
+}
+
+.message-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px;
+  background: #f7fafc;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.message-item.assistant {
+  background: #ebf8ff;
+  border-left: 4px solid #3182ce;
+}
+
+.message-item.user {
+  background: #f0fff4;
+  border-left: 4px solid #48bb78;
+}
+
+.message-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.message-avatar.assistant {
+  background: #3182ce;
+  color: white;
+}
+
+.message-avatar.user {
+  background: #48bb78;
+  color: white;
+}
+
+.message-content {
+  flex: 1;
+}
+
+.message-text {
+  font-size: 0.875rem;
+  color: #2d3748;
+  line-height: 1.4;
+  margin-bottom: 4px;
+}
+
+.message-time {
+  font-size: 0.75rem;
+  color: #718096;
+}
+
+/* Message Input */
+.message-input-container {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  margin-bottom: 24px;
+}
+
+.input-header {
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 12px;
+  font-size: 1.125rem;
+}
+
+.message-textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  background: white;
+  resize: vertical;
+  transition: border-color 0.2s;
+  font-family: inherit;
+}
+
+.message-textarea:focus {
+  outline: none;
+  border-color: #3182ce;
+  box-shadow: 0 0 0 1px #3182ce;
+}
+
+.message-textarea::placeholder {
+  color: #a0aec0;
+}
+
+.input-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+
+/* Negotiation Tips */
+.negotiation-tips {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.tips-title {
+  font-weight: 600;
+  margin-bottom: 16px;
+  font-size: 1.125rem;
+}
+
+.tips-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tip-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  backdrop-filter: blur(10px);
+}
+
+.tip-icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tip-content {
+  flex: 1;
+}
+
+.tip-text {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+
+/* Progress Indicator */
+.progress-indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 4px;
+  background: #e2e8f0;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #3182ce;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  font-size: 0.75rem;
+  color: #718096;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .negotiation-assistant {
+    padding: 0 16px;
+  }
+  
+  .assistant-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+  
+  .assistant-actions {
+    flex-direction: column;
+  }
+  
+  .assistant-actions .button {
+    width: 100%;
+  }
+  
+  .context-info {
+    grid-template-columns: 1fr;
+  }
+  
+  .message-input-container {
+    padding: 16px;
+  }
+  
+  .input-actions {
+    flex-direction: column;
+  }
+  
+  .input-actions .button {
+    width: 100%;
+  }
+}
+
+/* Grid Layout */
+.grid-cols-1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Loading State */
+.loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 48px 24px;
+  color: #718096;
+}
+
+.empty-state-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+  opacity: 0.5;
+}
+
+.empty-state-text {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.empty-state-subtext {
+  font-size: 0.875rem;
+  color: #a0aec0;
+}
+
+/* Toast Notification */
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  z-index: 1000;
+  max-width: 300px;
+}
+
+.toast-success {
+  border-left: 4px solid #48bb78;
+}
+
+.toast-error {
+  border-left: 4px solid #e53e3e;
+}
+
+.toast-title {
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 4px;
+}
+
+.toast-message {
+  font-size: 0.875rem;
+  color: #718096;
+}

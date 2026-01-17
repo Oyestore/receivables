@@ -1,0 +1,102 @@
+name: E2E Tests
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    
+    services:
+      postgres:
+        image: postgres:15
+        env:
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: sme_platform_test
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports:
+          - 5432:5432
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install backend dependencies
+        run: |
+          cd backend
+          npm ci
+
+      - name: Install frontend dependencies
+        run: |
+          cd frontend
+          npm ci
+
+      - name: Install E2E dependencies
+        run: |
+          cd e2e
+          npm ci
+
+      - name: Run database migrations
+        run: |
+          cd backend
+          npm run migration:run
+        env:
+          DATABASE_URL: postgresql://postgres:postgres@localhost:5432/sme_platform_test
+
+      - name: Seed test data
+        run: |
+          cd backend
+          npm run seed:test
+        env:
+          DATABASE_URL: postgresql://postgres:postgres@localhost:5432/sme_platform_test
+
+      - name: Start backend
+        run: |
+          cd backend
+          npm run start &
+          sleep 10
+        env:
+          NODE_ENV: test
+          DATABASE_URL: postgresql://postgres:postgres@localhost:5432/sme_platform_test
+          JWT_SECRET: test-secret-key
+
+      - name: Start frontend
+        run: |
+          cd frontend
+          npm run dev &
+          sleep 10
+
+      - name: Run Cypress tests
+        uses: cypress-io/github-action@v6
+        with:
+          working-directory: e2e
+          browser: chrome
+          record: false
+          config-file: cypress.config.ts
+
+      - name: Upload screenshots
+        uses: actions/upload-artifact@v3
+        if: failure()
+        with:
+          name: cypress-screenshots
+          path: e2e/cypress/screenshots
+
+      - name: Upload videos
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: cypress-videos
+          path: e2e/cypress/videos

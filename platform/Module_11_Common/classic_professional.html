@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <style>
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 12px;
+            line-height: 1.4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .invoice-container {
+            width: 800px;
+            margin: 20px auto;
+            padding: 30px;
+            border: 1px solid #eee;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+        .company-logo img {
+            max-width: 150px;
+            max-height: 75px;
+        }
+        .company-details,
+        .client-details {
+            width: 48%;
+        }
+        .company-details h2,
+        .client-details h3 {
+            margin-top: 0;
+            margin-bottom: 5px;
+            color: #222;
+        }
+        .invoice-info {
+            text-align: right;
+        }
+        .invoice-info h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #007bff;
+        }
+        .invoice-info p {
+            margin: 2px 0;
+        }
+        .items-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        .items-table th,
+        .items-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        .items-table th {
+            background-color: #f8f8f8;
+            font-weight: bold;
+        }
+        .totals-section {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 30px;
+        }
+        .totals-table {
+            width: 40%;
+            border-collapse: collapse;
+        }
+        .totals-table td {
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+        .totals-table .label {
+            font-weight: bold;
+            text-align: right;
+        }
+        .footer-notes {
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+            font-size: 11px;
+            color: #777;
+        }
+        .footer-notes p {
+            margin: 5px 0;
+        }
+        /* Placeholder for custom CSS that users might add */
+        /* {{ custom_css }} */
+
+        /* Field visibility classes - can be toggled by removing the element or via CSS display:none */
+        .field-visible {
+            /* display: block; */ /* or other appropriate display type */
+        }
+        .field-hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="invoice-container">
+        <!-- Header Section: Logo and Company Info -->
+        <div class="header">
+            <div class="company-logo field-visible" data-field-id="company_logo">
+                <!-- Users can customize this logo URL -->
+                <img src="{{ company_logo_url }}" alt="Company Logo">
+            </div>
+            <div class="invoice-info">
+                <h1>INVOICE</h1>
+                <!-- Mandatory Field (Example): Invoice Number -->
+                <p data-field-id="invoice_number" data-mandatory="true"><strong>Invoice #:</strong> {{ invoice_number }}</p>
+                <!-- Optional Field: Order Number -->
+                <p class="field-visible" data-field-id="order_number"><strong>Order #:</strong> {{ order_number }}</p>
+                <!-- Mandatory Field (Example): Invoice Date -->
+                <p data-field-id="invoice_date" data-mandatory="true"><strong>Date:</strong> {{ invoice_date }}</p>
+                <!-- Optional Field: Due Date -->
+                <p class="field-visible" data-field-id="due_date"><strong>Due Date:</strong> {{ due_date }}</p>
+            </div>
+        </div>
+
+        <!-- Company and Client Details Section -->
+        <div class="header">
+            <div class="company-details">
+                <h2>{{ company_name }}</h2>
+                <!-- These fields can be made optional/configurable -->
+                <p class="field-visible" data-field-id="company_address_line1">{{ company_address_line1 }}</p>
+                <p class="field-visible" data-field-id="company_address_line2">{{ company_address_line2 }}</p>
+                <p class="field-visible" data-field-id="company_city_state_zip">{{ company_city_state_zip }}</p>
+                <p class="field-visible" data-field-id="company_phone">Phone: {{ company_phone }}</p>
+                <p class="field-visible" data-field-id="company_email">Email: {{ company_email }}</p>
+                <!-- Mandatory Field (Example): Company GSTIN -->
+                <p data-field-id="company_gstin" data-mandatory="true">GSTIN: {{ company_gstin }}</p>
+            </div>
+            <div class="client-details">
+                <h3>Bill To:</h3>
+                <p>{{ client_name }}</p>
+                <!-- These fields can be made optional/configurable -->
+                <p class="field-visible" data-field-id="client_address_line1">{{ client_address_line1 }}</p>
+                <p class="field-visible" data-field-id="client_address_line2">{{ client_address_line2 }}</p>
+                <p class="field-visible" data-field-id="client_city_state_zip">{{ client_city_state_zip }}</p>
+                <p class="field-visible" data-field-id="client_phone">Phone: {{ client_phone }}</p>
+                <p class="field-visible" data-field-id="client_email">Email: {{ client_email }}</p>
+                <!-- Optional Field: Client GSTIN -->
+                <p class="field-visible" data-field-id="client_gstin">GSTIN: {{ client_gstin }}</p>
+            </div>
+        </div>
+
+        <!-- Items Table Section -->
+        <table class="items-table">
+            <thead>
+                <tr>
+                    <!-- Columns can be made configurable (add/remove/reorder) -->
+                    <th class="field-visible" data-field-id="item_description_header">Description</th>
+                    <th class="field-visible" data-field-id="item_quantity_header">Quantity</th>
+                    <th class="field-visible" data-field-id="item_unit_price_header">Unit Price</th>
+                    <th class="field-visible" data-field-id="item_total_amount_header">Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- This block will be replaced by actual line item rows by the PDF generation service -->
+                {{ line_items_rows }}
+                <!-- Example of a single line item row structure for reference:
+                <tr>
+                    <td class="field-visible" data-field-id="item_description">{{ item_description }}</td>
+                    <td class="field-visible" data-field-id="item_quantity">{{ item_quantity }}</td>
+                    <td class="field-visible" data-field-id="item_unit_price">{{ item_unit_price }}</td>
+                    <td class="field-visible" data-field-id="item_total_amount">{{ item_total_amount }}</td>
+                </tr>
+                -->
+            </tbody>
+        </table>
+
+        <!-- Totals Section -->
+        <div class="totals-section">
+            <table class="totals-table">
+                <tbody>
+                    <!-- Optional Field: Subtotal -->
+                    <tr class="field-visible" data-field-id="subtotal_row">
+                        <td class="label">Subtotal:</td>
+                        <td>{{ subtotal_amount }}</td>
+                    </tr>
+                    <!-- Optional Field: Discount -->
+                    <tr class="field-visible" data-field-id="discount_row">
+                        <td class="label">Discount ({{ discount_percentage_or_amount }}):</td>
+                        <td>{{ discount_total }}</td>
+                    </tr>
+                    <!-- Optional Field: Tax (e.g., CGST, SGST, IGST - can be more granular) -->
+                    <tr class="field-visible" data-field-id="tax_row">
+                        <td class="label">Tax ({{ tax_rate_description }}):</td>
+                        <td>{{ tax_total }}</td>
+                    </tr>
+                    <!-- Optional Field: Shipping -->
+                    <tr class="field-visible" data-field-id="shipping_row">
+                        <td class="label">Shipping:</td>
+                        <td>{{ shipping_amount }}</td>
+                    </tr>
+                    <!-- Mandatory Field (Example): Grand Total -->
+                    <tr data-field-id="grand_total_row" data-mandatory="true">
+                        <td class="label">Grand Total:</td>
+                        <td>{{ grand_total_amount }}</td>
+                    </tr>
+                    <!-- Optional Field: Amount Paid -->
+                    <tr class="field-visible" data-field-id="amount_paid_row">
+                        <td class="label">Amount Paid:</td>
+                        <td>{{ amount_paid }}</td>
+                    </tr>
+                    <!-- Optional Field: Balance Due -->
+                    <tr class="field-visible" data-field-id="balance_due_row">
+                        <td class="label">Balance Due:</td>
+                        <td>{{ balance_due }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Footer Notes Section -->
+        <div class="footer-notes field-visible" data-field-id="footer_notes_section">
+            <!-- Users can customize these notes -->
+            <p><strong>Notes:</strong></p>
+            <p>{{ notes }}</p>
+            <p><strong>Terms & Conditions:</strong></p>
+            <p>{{ terms_and_conditions }}</p>
+            <!-- Placeholder for bank details or payment instructions -->
+            <p class="field-visible" data-field-id="payment_instructions">{{ payment_instructions }}</p>
+        </div>
+
+        <!-- Placeholder for additional custom sections users might add -->
+        <!-- {{ custom_section_1 }} -->
+
+    </div>
+</body>
+</html>
+

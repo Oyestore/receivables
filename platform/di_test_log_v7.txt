@@ -1,0 +1,29 @@
+2026-01-02 20:02:20 [MetricsService] [32minfo[39m: MetricsService initialized
+2026-01-02 20:02:20 [NotificationService] [32minfo[39m: NotificationService initialized
+{
+  "emailProvider": "sendgrid",
+  "smsProvider": "twilio"
+}
+[PaymentOrchestrationService] Default gateway configurations initialized { gatewayCount: 3 }
+[33m[Nest] 23260  - [39m02/01/2026, 8:02:23 pm [33m   WARN[39m [38;5;3m[RazorpayService] [39m[33mRazorpay credentials not found. Payment features will be disabled.[39m
+[33m[Nest] 23260  - [39m02/01/2026, 8:02:33 pm [33m   WARN[39m [38;5;3m[OrchestrationService] [39m[33mRegistration attempt 1/3 failed: Invalid URL[39m
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\node_modules\src\data-source\DataSource.ts:451
+        if (!metadata) throw new EntityMetadataNotFoundError(target)
+                             ^
+EntityMetadataNotFoundError: No metadata for "IndustryRiskProfile" was found.
+    at DataSource.getMetadata (C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\node_modules\src\data-source\DataSource.ts:451:30)
+    at Repository.get metadata [as metadata] (C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\node_modules\src\repository\Repository.ts:54:40)
+    at Repository.count (C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\node_modules\src\repository\Repository.ts:516:40)
+    at IndustryRiskService.initializeDefaultProfiles (C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_06_Credit_Scoring\src\services\industry-risk.service.ts:177:46)
+    at new IndustryRiskService (C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_06_Credit_Scoring\src\services\industry-risk.service.ts:27:14)
+    at Injector.instantiateClass (C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\node_modules\@nestjs\core\injector\injector.js:418:19)
+    at callback (C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\node_modules\@nestjs\core\injector\injector.js:70:45)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Injector.resolveConstructorParams (C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\node_modules\@nestjs\core\injector\injector.js:170:24)
+    at async Injector.loadInstance (C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\node_modules\@nestjs\core\injector\injector.js:75:13)
+    at async Injector.loadProvider (C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\node_modules\@nestjs\core\injector\injector.js:103:9)
+    at async C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\node_modules\@nestjs\core\injector\instance-loader.js:56:13
+    at async Promise.all (index 9)
+    at async InstanceLoader.createInstancesOfProviders (C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\node_modules\@nestjs\core\injector\instance-loader.js:55:9)
+    at async C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\node_modules\@nestjs\core\injector\instance-loader.js:40:13
+    at async Promise.all (index 30)

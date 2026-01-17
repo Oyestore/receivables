@@ -1,0 +1,142 @@
+{
+  "module_name": "Module_10_Orchestration_Hub",
+  "version": "1.0.0",
+  "generated_at": "2025-11-16T11:40:57.758427",
+  "metadata": {
+    "title": "Multi-Agent Orchestration & Intelligence Hub",
+    "description": "Central intelligence hub implementing Dr. Barnard's Constraint Theory",
+    "key_features": [
+      "Multi-agent coordination",
+      "Constraint identification",
+      "Strategic recommendation engine",
+      "Autonomous operations"
+    ]
+  },
+  "statistics": {
+    "total_files": 24,
+    "total_size_bytes": 647195,
+    "total_size_mb": 0.62
+  },
+  "files": [
+    {
+      "path": "Module_10_Orchestration_Hub/flow-orchestration.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_10_Orchestration_Hub/integration-orchestration.entity.ts",
+      "size": 83158,
+      "hash": "31064cad2c45a7cad967460b82236db2"
+    },
+    {
+      "path": "Module_10_Orchestration_Hub/Current Status Against Requirements Gap Analysis Report.md",
+      "size": 16192,
+      "hash": "cca1fe742bb2d3262cb5fe97e07a1ae5"
+    },
+    {
+      "path": "Module_10_Orchestration_Hub/Current_Status_Against_Gap_Analysis.md",
+      "size": 16192,
+      "hash": "cca1fe742bb2d3262cb5fe97e07a1ae5"
+    },
+    {
+      "path": "Module_10_Orchestration_Hub/onboarding-orchestration.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_10_Orchestration_Hub/Phase 10.1: Foundation Infrastructure and Basic Orchestration - Implementation Todo.md",
+      "size": 2150,
+      "hash": "882816e19be88ee50fa56dcc49d96d35"
+    },
+    {
+      "path": "Module_10_Orchestration_Hub/orchestration.interface.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_10_Orchestration_Hub/orchestration.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_10_Orchestration_Hub/Phase 10.1: Foundation Infrastructure and Basic Orchestration.md",
+      "size": 100651,
+      "hash": "1c8465e8ff908a146055859d14f0d79b"
+    },
+    {
+      "path": "Module_10_Orchestration_Hub/Module 10: Multi-Agent Orchestration & Intelligence Hub.md",
+      "size": 89707,
+      "hash": "c99b6ced3365696e2815d91b49176763"
+    },
+    {
+      "path": "Module_10_Orchestration_Hub/onboarding-orchestration.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_10_Orchestration_Hub/communication-orchestration.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_10_Orchestration_Hub/communication-orchestration.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_10_Orchestration_Hub/Module-Wise Enhancement Requirements.md",
+      "size": 79406,
+      "hash": "3b6b3c2e2703bb0406cab891c6f11df3"
+    },
+    {
+      "path": "Module_10_Orchestration_Hub/Phase 10.4: Advanced AI Capabilities & Autonomous Operations.md",
+      "size": 72262,
+      "hash": "fe9c3e7a0e70a4a0951d081adea8a59f"
+    },
+    {
+      "path": "Module_10_Orchestration_Hub/Phase 10.3: Predictive Intelligence & Automated Decision-Making.md",
+      "size": 30019,
+      "hash": "6c3b2c30fb74a129a2c37d009d2b8008"
+    },
+    {
+      "path": "Module_10_Orchestration_Hub/Phase 10.2: Constraint Identification & Strategic Guidance.md",
+      "size": 150192,
+      "hash": "b439c5fb2e3a2f69909f0788a448d18b"
+    },
+    {
+      "path": "Module_10_Orchestration_Hub/Phase 10.2: Constraint Identification & Strategic Guidance - Implementation Todo.md",
+      "size": 2274,
+      "hash": "1503f07b9a241d8819e3e2fac1475b69"
+    },
+    {
+      "path": "Module_10_Orchestration_Hub/constraint-analysis.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_10_Orchestration_Hub/constraint-analysis.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_10_Orchestration_Hub/constraint-identification.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_10_Orchestration_Hub/constraint.interface.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_10_Orchestration_Hub/constraint.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_10_Orchestration_Hub/PLATFORM_SUMMARY.md",
+      "size": 4512,
+      "hash": "6cbafddda5934ef6b297a026b41d4dc8"
+    }
+  ]
+}

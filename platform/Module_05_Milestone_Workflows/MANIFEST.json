@@ -1,0 +1,367 @@
+{
+  "module_name": "Module_05_Milestone_Workflows",
+  "version": "1.0.0",
+  "generated_at": "2025-11-16T11:40:57.741576",
+  "metadata": {
+    "title": "Milestone-Based Payment Workflow Module",
+    "description": "Complex B2B workflow automation for project-based payments",
+    "key_features": [
+      "Intelligent milestone tracking",
+      "Automated payment triggering",
+      "Multi-party approval workflows",
+      "Project integration capabilities"
+    ]
+  },
+  "statistics": {
+    "total_files": 69,
+    "total_size_bytes": 349973,
+    "total_size_mb": 0.33
+  },
+  "files": [
+    {
+      "path": "Module_05_Milestone_Workflows/General UI_UX Guidelines for Visual Aids, Guided Workflows, and Overall User Experience.md",
+      "size": 7209,
+      "hash": "a5db0f03b8b29bcfad0c76d70d8f2dea"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/workflow-adaptation.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/workflow-adaptation.service.ts",
+      "size": 58342,
+      "hash": "a798ee0e21b61d053d25e2048c617a9f"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/personalized-workflow.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/milestone-escalation.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/milestone-visualization.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/milestone-status-probe.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/visual-workflow-designer.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/update-milestone-escalation.dto.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/create-milestone-escalation.dto.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/update-milestone-verification.dto.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/create-milestone-verification.dto.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/milestone-verification.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/update-milestone-evidence.dto.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/create-milestone-evidence.dto.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/milestone-evidence.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/update-workflow.dto.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/create-workflow.dto.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/workflow.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/update-milestone-owner.dto.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/create-milestone-owner.dto.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/milestone-owner.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/update-milestone.dto.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/create-milestone.dto.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/milestone.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/milestone-escalation.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/workflow-status.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/milestone-workflow.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/milestone-verification.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/milestone-evidence.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/milestone-owner.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/milestone-status.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/milestone-type.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/milestone.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/Phase 5: Milestone-Based Payment Workflow Module - Requirements Document.md",
+      "size": 32024,
+      "hash": "323574ee84ee8e19c42aa3c26e338e83"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/intelligent-workflow.interface.ts",
+      "size": 35419,
+      "hash": "91fce96c374c54fec7a49eb4a4fcdab7"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/workflow-adaptation.entity.ts",
+      "size": 85413,
+      "hash": "7e3bd774265a0283e991e646bd861c86"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/intelligent-workflow.enum.ts",
+      "size": 16689,
+      "hash": "8500c4cf77eaefad5c6aeb7b4ab234a5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/workflow-orchestration.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/workflow-orchestration.interface.ts",
+      "size": 12291,
+      "hash": "47b182daf0946b78862577cee967ea9b"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/workflow-orchestration.enum.ts",
+      "size": 7194,
+      "hash": "b9cbc2cf5082db9f492225c0f0d949c9"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/final_comprehensive_documentation.md",
+      "size": 6681,
+      "hash": "1741d85bdcc7e739780d3a11d3cb33ef"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/invoice-financing-workflow.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/financing-workflow.entity.ts",
+      "size": 2273,
+      "hash": "fe4cd3f292e1db6e9b2dd283160c7b8b"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/financing-workflow-instance.entity.ts",
+      "size": 2392,
+      "hash": "ed4cf1236f19af45b45b78867587fe16"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/Phase 5: Milestone-Based Payment Workflow Module Implementation.md",
+      "size": 1580,
+      "hash": "499601fb2e299ff11d725a8274616686"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/Milestone-Based Payment Workflow Module.md",
+      "size": 9806,
+      "hash": "45f8fde5c2df7f02a0d16e63e9b9501a"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/Documentation and Training Materials Validation Report.md",
+      "size": 4963,
+      "hash": "dc0646df35c72bf58c4038267b5db1a2"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/Phase 5: Final Delivery Report.md",
+      "size": 5038,
+      "hash": "fa0b67f4150ceda60d11d5ef0699fd7d"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/Phase 5.4: Integration and Customization Framework - Design Document.md",
+      "size": 12654,
+      "hash": "99a2e46c6b045595d4a4d304d546076d"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/Phase 5.4: Integration and Customization Testing Report.md",
+      "size": 10835,
+      "hash": "f3f3ffc01e7508a88f6ed0de7ea1c207"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/Phase 5.4: Integration and Customization - Implementation Guide.md",
+      "size": 17424,
+      "hash": "9df4f90503f820cb96dc57a36ceb6e7b"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/Phase 5.4: Integration and Customization - Completion Report.md",
+      "size": 6138,
+      "hash": "e78f266f40d8d67328cc614cbda683ca"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/milestone_based_payment_workflow_requirements.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/Phase 5.3: Escalation and Analytics - Validation Report.md",
+      "size": 6479,
+      "hash": "6e0f43fe0c302ca4327ef9ba7f075e87"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/workflow.processor.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/workflow-state-machine.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/workflow-state.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/approval-workflow.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/success-milestone-management.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/success-milestone.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/onboarding-workflow.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/success-milestones.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/workflow-state-machine.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/workflow-orchestration.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/workflow-instance.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/workflow-definition.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/success-milestone-management.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_05_Milestone_Workflows/General UI/UX Guidelines for Visual Aids, Guided Workflows, and Overall User Experience.md",
+      "size": 7209,
+      "hash": "a5db0f03b8b29bcfad0c76d70d8f2dea"
+    }
+  ]
+}

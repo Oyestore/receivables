@@ -1,0 +1,222 @@
+groups:
+  # =====================================================
+  # Application Health Alerts
+  # =====================================================
+  - name: application_health
+    interval: 30s
+    rules:
+      - alert: ApplicationDown
+        expr: up{job="sme-receivables-app"} == 0
+        for: 1m
+        labels:
+          severity: critical
+          component: application
+        annotations:
+          summary: "Application is down"
+          description: "The SME Receivables application has been down for more than 1 minute."
+
+      - alert: HighErrorRate
+        expr: rate(http_request_errors_total[5m]) > 0.05
+        for: 5m
+        labels:
+          severity: warning
+          component: application
+        annotations:
+          summary: "High error rate detected"
+          description: "Error rate is {{ $value | humanizePercentage }} over the last 5 minutes."
+
+      - alert: HighResponseTime
+        expr: histogram_quantile(0.95, rate(http_request_duration_seconds_bucket[5m])) > 1
+        for: 5m
+        labels:
+          severity: warning
+          component: application
+        annotations:
+          summary: "High response time detected"
+          description: "95th percentile response time is {{ $value }}s over the last 5 minutes."
+
+  # =====================================================
+  # Database Alerts
+  # =====================================================
+  - name: database_health
+    interval: 30s
+    rules:
+      - alert: DatabaseDown
+        expr: up{job="postgres"} == 0
+        for: 1m
+        labels:
+          severity: critical
+          component: database
+        annotations:
+          summary: "PostgreSQL database is down"
+          description: "The PostgreSQL database has been unreachable for more than 1 minute."
+
+      - alert: HighDatabaseConnections
+        expr: db_connections_active > 80
+        for: 5m
+        labels:
+          severity: warning
+          component: database
+        annotations:
+          summary: "High number of database connections"
+          description: "There are {{ $value }} active database connections."
+
+      - alert: SlowDatabaseQueries
+        expr: histogram_quantile(0.95, rate(db_query_duration_seconds_bucket[5m])) > 1
+        for: 5m
+        labels:
+          severity: warning
+          component: database
+        annotations:
+          summary: "Slow database queries detected"
+          description: "95th percentile query duration is {{ $value }}s."
+
+      - alert: DatabaseQueryErrors
+        expr: rate(db_query_errors_total[5m]) > 0.01
+        for: 5m
+        labels:
+          severity: warning
+          component: database
+        annotations:
+          summary: "High database query error rate"
+          description: "Database query error rate is {{ $value | humanizePercentage }}."
+
+  # =====================================================
+  # Cache Alerts
+  # =====================================================
+  - name: cache_health
+    interval: 30s
+    rules:
+      - alert: RedisDown
+        expr: up{job="redis"} == 0
+        for: 1m
+        labels:
+          severity: critical
+          component: cache
+        annotations:
+          summary: "Redis cache is down"
+          description: "The Redis cache has been unreachable for more than 1 minute."
+
+      - alert: LowCacheHitRate
+        expr: rate(cache_hits_total[5m]) / (rate(cache_hits_total[5m]) + rate(cache_misses_total[5m])) < 0.8
+        for: 10m
+        labels:
+          severity: warning
+          component: cache
+        annotations:
+          summary: "Low cache hit rate"
+          description: "Cache hit rate is {{ $value | humanizePercentage }}."
+
+  # =====================================================
+  # Business Logic Alerts
+  # =====================================================
+  - name: business_metrics
+    interval: 1m
+    rules:
+      - alert: PaymentProcessingFailures
+        expr: rate(payments_processed_total{status="failed"}[5m]) > 0.05
+        for: 5m
+        labels:
+          severity: warning
+          component: payments
+        annotations:
+          summary: "High payment processing failure rate"
+          description: "Payment failure rate is {{ $value | humanizePercentage }}."
+
+      - alert: NoInvoicesCreated
+        expr: rate(invoices_created_total[1h]) == 0
+        for: 2h
+        labels:
+          severity: warning
+          component: invoices
+        annotations:
+          summary: "No invoices created in the last 2 hours"
+          description: "There have been no invoices created for 2 hours."
+
+  # =====================================================
+  # Agent System Alerts
+  # =====================================================
+  - name: agent_system
+    interval: 30s
+    rules:
+      - alert: HighAgentErrorRate
+        expr: rate(agent_errors_total[5m]) > 0.1
+        for: 5m
+        labels:
+          severity: warning
+          component: agents
+        annotations:
+          summary: "High agent error rate"
+          description: "Agent {{ $labels.agent_type }} error rate is {{ $value | humanizePercentage }}."
+
+      - alert: SlowAgentTasks
+        expr: histogram_quantile(0.95, rate(agent_task_duration_seconds_bucket[5m])) > 10
+        for: 5m
+        labels:
+          severity: warning
+          component: agents
+        annotations:
+          summary: "Slow agent task execution"
+          description: "Agent {{ $labels.agent_type }} 95th percentile task duration is {{ $value }}s."
+
+  # =====================================================
+  # System Resource Alerts
+  # =====================================================
+  - name: system_resources
+    interval: 30s
+    rules:
+      - alert: HighCPUUsage
+        expr: 100 - (avg by (instance) (rate(node_cpu_seconds_total{mode="idle"}[5m])) * 100) > 80
+        for: 5m
+        labels:
+          severity: warning
+          component: system
+        annotations:
+          summary: "High CPU usage"
+          description: "CPU usage is {{ $value }}% on {{ $labels.instance }}."
+
+      - alert: HighMemoryUsage
+        expr: (1 - (node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes)) * 100 > 85
+        for: 5m
+        labels:
+          severity: warning
+          component: system
+        annotations:
+          summary: "High memory usage"
+          description: "Memory usage is {{ $value }}% on {{ $labels.instance }}."
+
+      - alert: DiskSpaceLow
+        expr: (1 - (node_filesystem_avail_bytes / node_filesystem_size_bytes)) * 100 > 85
+        for: 5m
+        labels:
+          severity: warning
+          component: system
+        annotations:
+          summary: "Low disk space"
+          description: "Disk usage is {{ $value }}% on {{ $labels.instance }}."
+
+  # =====================================================
+  # Security Alerts
+  # =====================================================
+  - name: security
+    interval: 1m
+    rules:
+      - alert: UnauthorizedAccessAttempts
+        expr: rate(http_requests_total{status_code="401"}[5m]) > 10
+        for: 5m
+        labels:
+          severity: warning
+          component: security
+        annotations:
+          summary: "High rate of unauthorized access attempts"
+          description: "There are {{ $value }} unauthorized access attempts per second."
+
+      - alert: SuspiciousActivity
+        expr: rate(http_requests_total{status_code="403"}[5m]) > 5
+        for: 5m
+        labels:
+          severity: warning
+          component: security
+        annotations:
+          summary: "Suspicious activity detected"
+          description: "There are {{ $value }} forbidden access attempts per second."

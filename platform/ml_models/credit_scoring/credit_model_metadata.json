@@ -1,0 +1,18 @@
+{
+  "training_date": "2025-11-24T17:23:55.366112",
+  "models": [
+    "credit_score",
+    "default_prediction",
+    "credit_limit",
+    "risk_category"
+  ],
+  "data_sources": [
+    "SME Financial Decision-Risk Dataset (Kaggle patterns)",
+    "Payment behavior variables research",
+    "Credit record information patterns",
+    "Digital footprint indicators"
+  ],
+  "sample_size": 15000,
+  "credit_score_range": "300-900",
+  "version": "1.0"
+}

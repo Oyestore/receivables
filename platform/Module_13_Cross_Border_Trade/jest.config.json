@@ -1,0 +1,36 @@
+{
+    "moduleNameMapper": {
+        "^@/(.*)$": "<rootDir>/src/$1",
+        "^@module11/(.*)$": "<rootDir>/../Module_11_Common/code/$1"
+    },
+    "rootDir": ".",
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+        "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+        "src/**/*.(t|j)s",
+        "!src/**/*.module.ts",
+        "!src/**/*.entity.ts",
+        "!src/**/*.dto.ts",
+        "!src/main.ts"
+    ],
+    "coverageDirectory": "./coverage",
+    "coverageThreshold": {
+        "global": {
+            "branches": 80,
+            "functions": 80,
+            "lines": 80,
+            "statements": 80
+        }
+    },
+    "testEnvironment": "node",
+    "roots": [
+        "<rootDir>/src/",
+        "<rootDir>/test/"
+    ],
+    "setupFilesAfterEnv": [
+        "<rootDir>/test/setup.ts"
+    ],
+    "preset": "ts-jest"
+}

@@ -1,0 +1,86 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "declaration": true,
+        "removeComments": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "allowSyntheticDefaultImports": true,
+        "target": "ES2021",
+        "sourceMap": true,
+        "outDir": "./dist",
+        "baseUrl": "./",
+        "incremental": true,
+        "skipLibCheck": true,
+        "skipDefaultLibCheck": true,
+        "strictNullChecks": false,
+        "noImplicitAny": false,
+        "strictBindCallApply": false,
+        "forceConsistentCasingInFileNames": false,
+        "noFallthroughCasesInSwitch": false,
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "paths": {
+            "@common/*": [
+                "Module_11_Common/src/*"
+            ],
+            "@shared/enums/*": [
+                "Module_11_Common/shared/enums/*",
+                "shared/enums/*"
+            ],
+            "@shared/interfaces/*": [
+                "Module_11_Common/shared/interfaces/*",
+                "shared/interfaces/*"
+            ],
+            "@admin/*": [
+                "Module_12_Administration/src/*"
+            ],
+            "@enums/*": [
+                "Module_03_Payment_Integration/*",
+                "shared/enums/*"
+            ],
+            "@/*": [
+                "./*"
+            ]
+        }
+    },
+    "include": [
+        "app.module.ts",
+        "main.ts",
+        "data-source.ts",
+        "Module_01_Invoice_Management/src/**/*.ts",
+        "Module_02_Intelligent_Distribution/src/**/*.ts",
+        "Module_03_Payment_Integration/src/**/*.ts",
+        "Module_04_Analytics_Reporting/src/**/*.ts",
+        "Module_05_Milestone_Workflows/src/**/*.ts",
+        "Module_06_Credit_Scoring/src/**/*.ts",
+        "Module_07_Financing/src/**/*.ts",
+        "Module_10_Orchestration_Hub/src/**/*.ts",
+        "Module_11_Common/src/**/*.ts",
+        "Module_16_Invoice_Concierge/code/**/*.ts",
+        "Module_12_Administration/src/**/*.ts",
+        "shared/**/*.ts",
+        "src/types/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist",
+        "test",
+        "**/node_modules",
+        "**/dist",
+        "**/tests/**",
+        "**/__tests__/**",
+        "**/*.spec.ts",
+        "**/migrations/**",
+        "**/schemas/**",
+        "**/General UI/**",
+        "e2e",
+        "frontend",
+        "ml_models",
+        "optimized_modules_extracted",
+        "Module_07_Financing_Factoring",
+        "Module_*/frontend/**",
+        "Module_*/config/**"
+    ]
+}

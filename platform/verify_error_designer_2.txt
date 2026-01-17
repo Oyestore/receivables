@@ -1,0 +1,16 @@
+🚀 Starting Module 05 Designer Verification...
+[90m[4mquery:[24m[39m [94mSELECT[0m [95mversion[0m[37m([0m[37m)[0m
+[90m[4mquery:[24m[39m [94mSELECT[0m [37m*[0m [94mFROM[0m [95mcurrent_schema[0m[37m([0m[37m)[0m
+🧹 Cleaning schema...
+[90m[4mquery:[24m[39m [94mDROP TABLE[0m [94mIF[0m [94mEXISTS[0m [37m"workflow_designs"[0m [94mCASCADE[0m
+✅ Database connected & synced
+
+Testing Create Workflow...
+❌ Verification Failed: EntityMetadataNotFoundError: No metadata for "WorkflowDesign" was found.
+    at DataSource.getMetadata (C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\node_modules\src\data-source\DataSource.ts:451:30)
+    at Repository.get metadata [as metadata] (C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\node_modules\src\repository\Repository.ts:54:40)
+    at Repository.create (C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\node_modules\src\repository\Repository.ts:131:18)
+    at WorkflowDesignService.create (C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_05_Milestone_Workflows\src\services\workflow-design.service.ts:25:56)
+    at WorkflowDesignController.create (C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\Module_05_Milestone_Workflows\src\controllers\workflow-design.controller.ts:37:43)
+    at verifyDesigner (C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\verify-module05-designer.ts:44:52)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)

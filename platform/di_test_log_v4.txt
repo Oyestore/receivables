@@ -1,0 +1,27 @@
+2026-01-02 09:24:57 [MetricsService] [32minfo[39m: MetricsService initialized
+2026-01-02 09:24:57 [NotificationService] [32minfo[39m: NotificationService initialized
+{
+  "emailProvider": "sendgrid",
+  "smsProvider": "twilio"
+}
+C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+Module_16_Invoice_Concierge/code/controllers/portal.controller.ts(86,40): error TS2339: Property 'revokeToken' does not exist on type 'StaticPortalService'.
+Module_16_Invoice_Concierge/code/controllers/portal.controller.ts(156,41): error TS2339: Property 'raiseDispute' does not exist on type 'StaticPortalService'.
+Module_16_Invoice_Concierge/code/controllers/portal.controller.ts(171,41): error TS2339: Property 'approveDraft' does not exist on type 'StaticPortalService'.
+Module_16_Invoice_Concierge/code/controllers/portal.controller.ts(188,41): error TS2339: Property 'getSessionAnalytics' does not exist on type 'StaticPortalService'.
+
+    at createTSError (C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+  diagnosticCodes: [ 2339, 2339, 2339, 2339 ]
+}

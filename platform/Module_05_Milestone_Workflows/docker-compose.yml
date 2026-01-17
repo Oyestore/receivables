@@ -1,0 +1,231 @@
+version: '3.8'
+
+services:
+  # =====================================================
+  # Milestone Workflows API Service
+  # =====================================================
+  milestone-workflows:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production
+    container_name: milestone-workflows-api
+    ports:
+      - "3005:3005"
+    environment:
+      - NODE_ENV=production
+      - PORT=3005
+      - DB_HOST=postgres-milestone
+      - DB_PORT=5432
+      - DB_USERNAME=postgres
+      - DB_PASSWORD=milestone_password_2025
+      - DB_DATABASE=milestone_workflows
+      - REDIS_HOST=redis-milestone
+      - REDIS_PORT=6379
+      - JWT_SECRET=milestone_jwt_secret_change_in_production_2025
+      - JWT_REFRESH_SECRET=milestone_refresh_secret_change_in_production_2025
+      - CORS_ORIGIN=http://localhost:3000,http://localhost:3001,http://localhost:3002
+      - LOG_LEVEL=info
+      - ENABLE_METRICS=true
+    depends_on:
+      postgres-milestone:
+        condition: service_healthy
+      redis-milestone:
+        condition: service_healthy
+    volumes:
+      - ./logs:/app/logs
+      - ./uploads:/app/uploads
+      - ./backups:/app/backups
+    networks:
+      - milestone-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3005/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # =====================================================
+  # PostgreSQL Database
+  # =====================================================
+  postgres-milestone:
+    image: postgres:15-alpine
+    container_name: milestone-postgres
+    ports:
+      - "5435:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=milestone_password_2025
+      - POSTGRES_DB=milestone_workflows
+      - POSTGRES_INITDB_ARGS=--encoding=UTF-8 --lc-collate=C --lc-ctype=C
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./database/migrations:/docker-entrypoint-initdb.d
+      - ./database/seed:/docker-entrypoint-initdb.d/seed
+    networks:
+      - milestone-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+  # =====================================================
+  # Redis Cache
+  # =====================================================
+  redis-milestone:
+    image: redis:7-alpine
+    container_name: milestone-redis
+    ports:
+      - "6380:6379"
+    command: redis-server --appendonly yes --requirepass milestone_redis_password_2025
+    volumes:
+      - redis_data:/data
+      - ./config/redis.conf:/usr/local/etc/redis/redis.conf
+    networks:
+      - milestone-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "--raw", "incr", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+      start_period: 30s
+
+  # =====================================================
+  # Nginx Reverse Proxy
+  # =====================================================
+  nginx-milestone:
+    image: nginx:alpine
+    container_name: milestone-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./config/nginx.conf:/etc/nginx/nginx.conf
+      - ./config/ssl:/etc/nginx/ssl
+      - ./logs/nginx:/var/log/nginx
+    depends_on:
+      - milestone-workflows
+    networks:
+      - milestone-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # =====================================================
+  # Prometheus Monitoring
+  # =====================================================
+  prometheus-milestone:
+    image: prom/prometheus:latest
+    container_name: milestone-prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./config/prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus_data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+      - '--storage.tsdb.retention.time=200h'
+      - '--web.enable-lifecycle'
+    networks:
+      - milestone-network
+    restart: unless-stopped
+    profiles:
+      - monitoring
+
+  # =====================================================
+  # Grafana Dashboard
+  # =====================================================
+  grafana-milestone:
+    image: grafana/grafana:latest
+    container_name: milestone-grafana
+    ports:
+      - "3006:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=milestone_grafana_2025
+      - GF_USERS_ALLOW_SIGN_UP=false
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./config/grafana/dashboards:/etc/grafana/provisioning/dashboards
+      - ./config/grafana/datasources:/etc/grafana/provisioning/datasources
+    depends_on:
+      - prometheus-milestone
+    networks:
+      - milestone-network
+    restart: unless-stopped
+    profiles:
+      - monitoring
+
+  # =====================================================
+  # Elasticsearch for Search
+  # =====================================================
+  elasticsearch-milestone:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.11.0
+    container_name: milestone-elasticsearch
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ports:
+      - "9200:9200"
+    volumes:
+      - elasticsearch_data:/usr/share/elasticsearch/data
+    networks:
+      - milestone-network
+    restart: unless-stopped
+    profiles:
+      - search
+
+  # =====================================================
+  # Kibana for Search Visualization
+  # =====================================================
+  kibana-milestone:
+    image: docker.elastic.co/kibana/kibana:8.11.0
+    container_name: milestone-kibana
+    ports:
+      - "5601:5601"
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch-milestone:9200
+    depends_on:
+      - elasticsearch-milestone
+    networks:
+      - milestone-network
+    restart: unless-stopped
+    profiles:
+      - search
+
+# =====================================================
+# Volumes
+# =====================================================
+volumes:
+  postgres_data:
+    driver: local
+  redis_data:
+    driver: local
+  prometheus_data:
+    driver: local
+  grafana_data:
+    driver: local
+  elasticsearch_data:
+    driver: local
+
+# =====================================================
+# Networks
+# =====================================================
+networks:
+  milestone-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16

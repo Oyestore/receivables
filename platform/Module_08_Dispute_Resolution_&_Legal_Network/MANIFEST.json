@@ -1,0 +1,222 @@
+{
+  "module_name": "Module_08_India_Market_Leadership",
+  "version": "1.0.0",
+  "generated_at": "2025-11-16T11:40:57.751052",
+  "metadata": {
+    "title": "India-First Market Leadership Module",
+    "description": "Comprehensive Indian market compliance and legal integration",
+    "key_features": [
+      "MSME Samadhaan integration",
+      "Legal service provider network",
+      "GST compliance automation",
+      "Multi-language support"
+    ]
+  },
+  "statistics": {
+    "total_files": 40,
+    "total_size_bytes": 728618,
+    "total_size_mb": 0.69
+  },
+  "files": [
+    {
+      "path": "Module_08_India_Market_Leadership/full_requirements_from_user.txt",
+      "size": 16407,
+      "hash": "55e84147581dad02c0a3538b30ad98ab"
+    },
+    {
+      "path": "Module_08_India_Market_Leadership/requirements_extracted.txt",
+      "size": 16407,
+      "hash": "55e84147581dad02c0a3538b30ad98ab"
+    },
+    {
+      "path": "Module_08_India_Market_Leadership/compliance.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_08_India_Market_Leadership/compliance.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_08_India_Market_Leadership/compliance-document.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_08_India_Market_Leadership/Next Steps: Strategic Gap Closure Plan for 100% Platform Completion.md",
+      "size": 16790,
+      "hash": "4df7b4803e4507c1c28684ce09f3944d"
+    },
+    {
+      "path": "Module_08_India_Market_Leadership/Module 8 Enhancement: Legal Compliance Automation - COMPLETE \u2705.md",
+      "size": 14186,
+      "hash": "fe743f96be529e20568262fdcb074dc0"
+    },
+    {
+      "path": "Module_08_India_Market_Leadership/Module 8 Enhancement: Legal Compliance Automation.md",
+      "size": 46816,
+      "hash": "fc54b5903bec6585cda74d2c1b66034a"
+    },
+    {
+      "path": "Module_08_India_Market_Leadership/compliance-monitoring.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_08_India_Market_Leadership/compliance-monitoring.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_08_India_Market_Leadership/document-generation.service.ts",
+      "size": 69410,
+      "hash": "1866a01495c035f9d5a4328fa2be0c0c"
+    },
+    {
+      "path": "Module_08_India_Market_Leadership/document-generation.entity.ts",
+      "size": 32313,
+      "hash": "1ccdcf148e73d6d6026e27f64554de71"
+    },
+    {
+      "path": "Module_08_India_Market_Leadership/legal-provider.service.ts",
+      "size": 51028,
+      "hash": "9f8a99025ff8e6eb82dec3334c223707"
+    },
+    {
+      "path": "Module_08_India_Market_Leadership/legal-provider.entity.ts",
+      "size": 32088,
+      "hash": "5b4faea4c15b3a41d7cb53479e42646a"
+    },
+    {
+      "path": "Module_08_India_Market_Leadership/msme-portal.service.ts",
+      "size": 36853,
+      "hash": "e34f06998ba53ea5f9b65598a5b818ae"
+    },
+    {
+      "path": "Module_08_India_Market_Leadership/msme-portal.entity.ts",
+      "size": 22028,
+      "hash": "8241cf55f67fe864ccbb7ee4ce831516"
+    },
+    {
+      "path": "Module_08_India_Market_Leadership/legal-compliance.interface.ts",
+      "size": 33361,
+      "hash": "681bd0756abd2e984c4d884c608d4505"
+    },
+    {
+      "path": "Module_08_India_Market_Leadership/legal-compliance.enum.ts",
+      "size": 18736,
+      "hash": "06b27d430b427f73f21d2eebd3cd6786"
+    },
+    {
+      "path": "Module_08_India_Market_Leadership/Module 8 Enhancement: Technical Specifications and API Requirements.md",
+      "size": 32740,
+      "hash": "8d257eb0bd095bfca587a7f6d4c6ffa5"
+    },
+    {
+      "path": "Module_08_India_Market_Leadership/Module 8 Enhancement: Implementation Guidelines and Acceptance Criteria.md",
+      "size": 42825,
+      "hash": "37130f8c3303dcd63ad7458a5b5a55ee"
+    },
+    {
+      "path": "Module_08_India_Market_Leadership/compliance-monitoring.dto.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_08_India_Market_Leadership/compliance.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_08_India_Market_Leadership/Phase 8: Dispute Resolution and Collection Module with Legal Professional Network - Research Findings.md",
+      "size": 31737,
+      "hash": "9754b4b8324b1f7b3011207b534e4e0f"
+    },
+    {
+      "path": "Module_08_India_Market_Leadership/Phase 8 Planning: Comprehensive Analysis Including Dispute Resolution and Collection Module.md",
+      "size": 20835,
+      "hash": "43303e0fde79d774600e31eb6a3fec20"
+    },
+    {
+      "path": "Module_08_India_Market_Leadership/Phase 8 Planning: SME Receivables Management Platform.md",
+      "size": 33884,
+      "hash": "9e1b6f93f2022cb9ef9ae3c5e3fb3ecb"
+    },
+    {
+      "path": "Module_08_India_Market_Leadership/compliance-monitoring.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_08_India_Market_Leadership/compliance-monitoring.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_08_India_Market_Leadership/indian-ai-models.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_08_India_Market_Leadership/gst-compliance.dto.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_08_India_Market_Leadership/gst-compliance.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_08_India_Market_Leadership/indian-market.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_08_India_Market_Leadership/phase8.4_indian_market_research.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_08_India_Market_Leadership/legal-professional.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_08_India_Market_Leadership/legal-professionals.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_08_India_Market_Leadership/legal-professionals.dto.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_08_India_Market_Leadership/legal-professionals.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_08_India_Market_Leadership/Module 8 Gap Remediation - Complete Implementation Report.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_08_India_Market_Leadership/Module 8 Comprehensive Gap Analysis Report.md",
+      "size": 56616,
+      "hash": "2b0a81a83552d986e39209d7df489540"
+    },
+    {
+      "path": "Module_08_India_Market_Leadership/Phase 8.4 Implementation Completion Report: India-First Market Leadership & Global Expansion.md",
+      "size": 77830,
+      "hash": "3a5e8ea8b921d2643ee7a6af46ee4737"
+    },
+    {
+      "path": "Module_08_India_Market_Leadership/PLATFORM_ANALYSIS.md",
+      "size": 24968,
+      "hash": "b0019e8e40ead41e2e9b1861adb22d38"
+    }
+  ]
+}

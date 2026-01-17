@@ -1,0 +1,93 @@
+{
+  "timestamp": "2025-12-17T18:10:00Z",
+  "environment": {
+    "os": "windows",
+    "cwd": "c:/Users/91858/Downloads/SME_Platform_12_Separate_Modules/platform"
+  },
+  "summary": {
+    "test_suites_total": 151,
+    "test_suites_passed": 40,
+    "test_suites_failed": 111,
+    "tests_total": 990,
+    "tests_passed": 464,
+    "tests_failed": 526,
+    "duration_seconds": 595
+  },
+  "coverage": {
+    "source": "coverage/clover.xml",
+    "statements": { "total": 118116, "covered": 11005, "percent": 9.31 },
+    "conditionals": { "total": 89898, "covered": 5577, "percent": 6.20 },
+    "methods": { "total": 27307, "covered": 1151, "percent": 4.21 },
+    "thresholds_required_percent": { "branches": 70, "functions": 70, "lines": 70, "statements": 70 }
+  },
+  "timeouts": [
+    {
+      "suite": "Module_04_Analytics_Reporting/src/tests/e2e/analytics-api.spec.ts",
+      "hook": "beforeAll",
+      "timeout_ms": 5000
+    }
+  ],
+  "errors": {
+    "categories": [
+      {
+        "name": "Critical",
+        "description": "Missing modules/entities or bad import paths causing Jest resolver failures; DB connection errors",
+        "count": 40
+      },
+      {
+        "name": "High",
+        "description": "E2E timeouts during app/module initialization",
+        "count": 5
+      },
+      {
+        "name": "Medium",
+        "description": "Missing dev dependencies (e.g., @faker-js/faker) used by tests",
+        "count": 3
+      },
+      {
+        "name": "Low",
+        "description": "Auth strategy errors on protected endpoints when tests skip token provisioning",
+        "count": 2
+      }
+    ],
+    "examples": [
+      {
+        "path": "Module_02_Intelligent_Distribution/rabbitmq.service.spec.ts",
+        "message": "Cannot find module '../services/rabbitmq.service'",
+        "severity": "Critical"
+      },
+      {
+        "path": "Module_03_Payment_Integration/contextual-financial-insights.spec.ts",
+        "message": "Cannot find module '../services/financial-intelligence.service'",
+        "severity": "Critical"
+      },
+      {
+        "path": "Module_04_Analytics_Reporting/src/tests/e2e/analytics-api.spec.ts",
+        "message": "Exceeded timeout of 5000 ms for a hook (beforeAll)",
+        "severity": "High"
+      },
+      {
+        "path": "Module_01_Smart_Invoice_Generation/comprehensive-unit-tests.spec.ts",
+        "message": "Cannot find module '@faker-js/faker'",
+        "severity": "Medium"
+      },
+      {
+        "path": "test/module05-e2e.spec.ts",
+        "message": "TypeError: request is not a function",
+        "severity": "High"
+      }
+    ]
+  },
+  "skipped": [],
+  "resources": {
+    "notes": "System resource metrics not captured during Jest run; add instrumentation to gather CPU/memory during tests."
+  },
+  "recommendations": [
+    "Fix legacy test import paths to use current src module locations",
+    "Add missing dev dependencies used only by tests (e.g., @faker-js/faker)",
+    "Provide JWT tokens or mock auth for protected controllers in e2e tests",
+    "Increase Jest timeout for heavy module initialization; or run targeted e2e via dedicated config",
+    "Scope unit tests to modules with validated schemas; stub external services to avoid DB/Redis dependencies",
+    "Add k6/Artillery scripts for load testing with resource metrics collection"
+  ]
+}

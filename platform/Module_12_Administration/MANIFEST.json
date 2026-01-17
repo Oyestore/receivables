@@ -1,0 +1,126 @@
+{
+  "module_name": "Module_12_Administration",
+  "version": "1.0.0",
+  "generated_at": "2025-11-16T11:40:20.897280",
+  "metadata": {
+    "title": "2-Tier Hierarchical Administrative Module",
+    "description": "Comprehensive platform and tenant-level administration with multi-tenant architecture",
+    "key_features": [
+      "Platform-level tenant lifecycle management",
+      "Tenant-level user and access control",
+      "2-tier hierarchical administration architecture",
+      "Complete database schemas for both tiers",
+      "Phase 1 (Foundation) 100% complete",
+      "Advanced features roadmap (Phases 2-5)"
+    ]
+  },
+  "statistics": {
+    "total_files": 16,
+    "total_size_bytes": 417949,
+    "total_size_mb": 0.4
+  },
+  "file_structure": {
+    "documentation": "Design docs, requirements, status reports, and completion reports",
+    "schemas": "Database schemas for platform-admin and tenant-admin",
+    "code": "TypeScript interfaces, enums, and React components",
+    "tests": "Integration and unit tests for admin functionality"
+  },
+  "files": [
+    {
+      "path": "documentation/2-Tier Hierarchical Administrative Module - Status Analysis.md",
+      "size": 15447,
+      "hash": "87a672cac0837a24dfcee35cb633e31f",
+      "category": "documentation"
+    },
+    {
+      "path": "documentation/SME Receivables Management Platform - 2-Tier Hierarchical Administrative Framework Design.md",
+      "size": 13670,
+      "hash": "7c9cd15d13416acc24095edcb885cd51",
+      "category": "documentation"
+    },
+    {
+      "path": "documentation/Administrative Module Phase 1 - Completion Report.md",
+      "size": 22273,
+      "hash": "1f7d5a2a937ec85246caef4df7f2ec1e",
+      "category": "documentation"
+    },
+    {
+      "path": "documentation/Administrative_Module_Phase1_Completion_Report.md",
+      "size": 7598,
+      "hash": "25839efbf6e7227a10a0da77468c2bac",
+      "category": "documentation"
+    },
+    {
+      "path": "documentation/Administrative Module Requirements Assessment.md",
+      "size": 9305,
+      "hash": "5d27ef2a67f4c3922507c05fb5d2c577",
+      "category": "documentation"
+    },
+    {
+      "path": "documentation/SME Receivables Management Platform - Administrative Requirements Analysis.md",
+      "size": 10259,
+      "hash": "0fc8b933d7886cb7bdfe9abb1d26b9e7",
+      "category": "documentation"
+    },
+    {
+      "path": "documentation/Administrative Module Phase 2: Advanced Features - Detailed Requirements Document.md",
+      "size": 73679,
+      "hash": "a83750ea9a2fc53353dd8d7bc53c0523",
+      "category": "documentation"
+    },
+    {
+      "path": "documentation/Administrative Module Phase 2: Advanced Features - Final Completion Report.md",
+      "size": 13903,
+      "hash": "b234278d95b7248f12a1b9c7a3ae48a4",
+      "category": "documentation"
+    },
+    {
+      "path": "documentation/SME Receivables Management Platform - Administrative Module Technical Requirements.md",
+      "size": 119054,
+      "hash": "d4f079b4a8ef6dd6bfc7d012b1f30ec1",
+      "category": "documentation"
+    },
+    {
+      "path": "schemas/platform-admin.schema.sql",
+      "size": 26769,
+      "hash": "e6d292da4c7fec9709903678380a381a",
+      "category": "schemas"
+    },
+    {
+      "path": "schemas/tenant-admin.schema.sql",
+      "size": 29025,
+      "hash": "60359f9d05d962e6eb47d2b65b5c3a51",
+      "category": "schemas"
+    },
+    {
+      "path": "code/administrative.interface.ts",
+      "size": 18766,
+      "hash": "0d3433380af55055b9fba73594a0195e",
+      "category": "code"
+    },
+    {
+      "path": "code/administrative.enum.ts",
+      "size": 8583,
+      "hash": "8dbd284de2353e57b911b40d46810c0b",
+      "category": "code"
+    },
+    {
+      "path": "code/admin-dashboard.jsx",
+      "size": 3011,
+      "hash": "a5a698e7e406fb92ef89cfcaece85109",
+      "category": "code"
+    },
+    {
+      "path": "tests/admin-dashboard.test.jsx",
+      "size": 4900,
+      "hash": "490baedbff96df3557fe261c0fe29da3",
+      "category": "tests"
+    },
+    {
+      "path": "tests/administrative-integration.test.ts",
+      "size": 41707,
+      "hash": "3f45f7a1e5528515d58f5ef41ffcb149",
+      "category": "tests"
+    }
+  ]
+}

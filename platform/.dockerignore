@@ -1,0 +1,34 @@
+# Optimized Dockerignore
+node_modules
+dist
+coverage
+.git
+.vscode
+.gemini
+logs
+*.log
+*.zip
+*.tar.gz
+test-results
+reports
+documentation
+
+# Heavy Folders not needed for API Runtime
+frontend
+ml_models
+ml-services
+
+# Module Specific Ignores (Recursive)
+**/node_modules
+**/dist
+**/coverage
+**/test
+**/tests
+**/__tests__
+**/.pytest_cache
+**/__pycache__
+
+# Specific Heavy Modules Data
+Module_04_Analytics_Reporting/docker/clickhouse/data
+Module_04_Analytics_Reporting/airflow/logs
+Module_04_Analytics_Reporting/local_data

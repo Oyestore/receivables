@@ -1,0 +1,136 @@
+version: '3.8'
+
+services:
+  analytics-service:
+    build: .
+    container_name: analytics-api
+    restart: unless-stopped
+    ports:
+      - "3004:3004"
+    environment:
+      - NODE_ENV=production
+      - PORT=3004
+      - DATABASE_URL=postgresql://postgres:password@postgres:5435/analytics_db
+      - CLICKHOUSE_URL=clickhouse://clickhouse:9000/analytics
+      - REDIS_URL=redis://redis:6380
+      - JWT_SECRET=${JWT_SECRET:-your-jwt-secret}
+      - VALID_API_KEYS=${VALID_API_KEYS:-sk-analytics-key}
+      # ClickHouse Configuration
+      - CLICKHOUSE_HOST=clickhouse
+      - CLICKHOUSE_PORT=9000
+      - CLICKHOUSE_DATABASE=analytics
+      - CLICKHOUSE_USER=default
+      - CLICKHOUSE_PASSWORD=
+      # Analytics Configuration
+      - ANALYTICS_RETENTION_DAYS=365
+      - REAL_TIME_ANALYTICS_ENABLED=true
+      - AI_INSIGHTS_ENABLED=true
+      - ANOMALY_DETECTION_ENABLED=true
+      - DASHBOARD_CACHE_TTL=300
+      - REPORT_GENERATION_TIMEOUT=600000
+      # Power BI Configuration
+      - POWERBI_CLIENT_ID=${POWERBI_CLIENT_ID}
+      - POWERBI_CLIENT_SECRET=${POWERBI_CLIENT_SECRET}
+      - POWERBI_TENANT_ID=${POWERBI_TENANT_ID}
+      - POWERBI_WORKSPACE_ID=${POWERBI_WORKSPACE_ID}
+      # WhatsApp BI Configuration
+      - WHATSAPP_API_KEY=${WHATSAPP_API_KEY}
+      - WHATSAPP_WEBHOOK_URL=${WHATSAPP_WEBHOOK_URL}
+      # Queue Configuration
+      - BULL_REDIS_HOST=redis
+      - BULL_REDIS_PORT=6380
+      - BULL_REDIS_PASSWORD=${REDIS_PASSWORD}
+    depends_on:
+      - postgres
+      - clickhouse
+      - redis
+    networks:
+      - analytics-network
+    volumes:
+      - ./logs:/app/logs
+      - ./reports:/app/reports
+      - ./dashboards:/app/dashboards
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3004/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  postgres:
+    image: postgres:15-alpine
+    container_name: analytics-postgres
+    restart: unless-stopped
+    environment:
+      - POSTGRES_DB=analytics_db
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+    ports:
+      - "5435:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./database/migrations:/docker-entrypoint-initdb.d
+    networks:
+      - analytics-network
+
+  clickhouse:
+    image: clickhouse/clickhouse-server:latest-alpine
+    container_name: analytics-clickhouse
+    restart: unless-stopped
+    environment:
+      - CLICKHOUSE_DB=analytics
+      - CLICKHOUSE_USER=default
+      - CLICKHOUSE_PASSWORD=
+    ports:
+      - "9000:9000"
+      - "8123:8123"
+    volumes:
+      - clickhouse_data:/var/lib/clickhouse
+      - ./clickhouse/config.xml:/etc/clickhouse-server/config.xml
+      - ./clickhouse/users.xml:/etc/clickhouse-server/users.xml
+    networks:
+      - analytics-network
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:8123/ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  redis:
+    image: redis:7-alpine
+    container_name: analytics-redis
+    restart: unless-stopped
+    ports:
+      - "6380:6379"
+    volumes:
+      - redis_data:/data
+      - ./redis.conf:/usr/local/etc/redis/redis.conf
+    command: redis-server /usr/local/etc/redis/redis.conf
+    networks:
+      - analytics-network
+
+  nginx:
+    image: nginx:alpine
+    container_name: analytics-nginx
+    restart: unless-stopped
+    ports:
+      - "8084:80"
+      - "8444:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./ssl:/etc/nginx/ssl
+      - ./dashboards:/var/www/dashboards
+    depends_on:
+      - analytics-service
+    networks:
+      - analytics-network
+
+volumes:
+  postgres_data:
+  clickhouse_data:
+  redis_data:
+
+networks:
+  analytics-network:
+    driver: bridge

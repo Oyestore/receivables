@@ -1,0 +1,72 @@
+🚀 Starting Module 05 Designer Verification...
+[90m[4mquery:[24m[39m [94mSELECT[0m [95mversion[0m[37m([0m[37m)[0m
+[90m[4mquery:[24m[39m [94mSELECT[0m [37m*[0m [94mFROM[0m [95mcurrent_schema[0m[37m([0m[37m)[0m
+🧹 Cleaning schema...
+[90m[4mquery:[24m[39m [94mDROP TABLE[0m [94mIF[0m [94mEXISTS[0m [37m"workflow_designs"[0m [94mCASCADE[0m
+✅ Database connected & synced
+
+Testing Create Workflow...
+❌ Verification Failed: QueryFailedError: invalid input syntax for type uuid: "test-tenant-1767490875204"
+    at PostgresQueryRunner.query (C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\node_modules\typeorm\src\driver\postgres\PostgresQueryRunner.ts:325:19)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async InsertQueryBuilder.execute (C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\node_modules\src\query-builder\InsertQueryBuilder.ts:164:33)
+    at async SubjectExecutor.executeInsertOperations (C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\node_modules\src\persistence\SubjectExecutor.ts:435:42)
+    at async SubjectExecutor.execute (C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\node_modules\src\persistence\SubjectExecutor.ts:137:9)
+    at async EntityPersistExecutor.execute (C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\node_modules\src\persistence\EntityPersistExecutor.ts:182:21)
+    at async verifyDesigner (C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\verify-module05-designer.ts:45:29) {
+  query: 'INSERT INTO "public"."workflow_designs"("id", "tenantId", "name", "description", "nodes", "edges", "viewport", "status", "version", "isTemplate", "category", "orchestrationWorkflow", "isValid", "validationErrors", "validationWarnings", "createdAt", "updatedAt", "createdBy", "updatedBy") VALUES (DEFAULT, $1, $2, $3, $4, $5, DEFAULT, $6, $7, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, $8, DEFAULT) RETURNING "id", "status", "version", "isTemplate", "isValid", "createdAt", "updatedAt"',
+  parameters: [
+    'test-tenant-1767490875204',
+    'Test Workflow Design',
+    'Created by verification script',
+    '[{"id":"1","type":"start","data":{"label":"Start"},"position":{"x":0,"y":0}},{"id":"2","type":"milestone","data":{"label":"Phase 1"},"position":{"x":100,"y":100}},{"id":"3","type":"end","data":{"label":"End"},"position":{"x":200,"y":200}}]',
+    '[{"id":"e1-2","source":"1","target":"2"},{"id":"e2-3","source":"2","target":"3"}]',
+    'draft',
+    1,
+    'test-user-1767490875204'
+  ],
+  driverError: error: invalid input syntax for type uuid: "test-tenant-1767490875204"
+      at C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\node_modules\pg\lib\client.js:545:17
+      at processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async PostgresQueryRunner.query (C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\node_modules\typeorm\src\driver\postgres\PostgresQueryRunner.ts:254:25)
+      at async InsertQueryBuilder.execute (C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\node_modules\src\query-builder\InsertQueryBuilder.ts:164:33)
+      at async SubjectExecutor.executeInsertOperations (C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\node_modules\src\persistence\SubjectExecutor.ts:435:42)
+      at async SubjectExecutor.execute (C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\node_modules\src\persistence\SubjectExecutor.ts:137:9)
+      at async EntityPersistExecutor.execute (C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\node_modules\src\persistence\EntityPersistExecutor.ts:182:21)
+      at async verifyDesigner (C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\verify-module05-designer.ts:45:29) {
+    length: 157,
+    severity: 'ERROR',
+    code: '22P02',
+    detail: undefined,
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: "unnamed portal parameter $1 = '...'",
+    schema: undefined,
+    table: undefined,
+    column: undefined,
+    dataType: undefined,
+    constraint: undefined,
+    file: 'uuid.c',
+    line: '133',
+    routine: 'string_to_uuid'
+  },
+  length: 157,
+  severity: 'ERROR',
+  code: '22P02',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: "unnamed portal parameter $1 = '...'",
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'uuid.c',
+  line: '133',
+  routine: 'string_to_uuid'
+}

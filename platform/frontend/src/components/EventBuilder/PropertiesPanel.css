@@ -1,0 +1,106 @@
+/* Properties Panel Styles */
+.properties-panel {
+    padding: 1.5rem;
+}
+
+.properties-panel__empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1rem;
+    text-align: center;
+    color: #9ca3af;
+}
+
+.properties-panel__empty svg {
+    margin-bottom: 1rem;
+    opacity: 0.5;
+}
+
+.properties-panel__empty p {
+    margin: 0;
+    font-size: 0.875rem;
+}
+
+.properties-panel__title {
+    margin: 0 0 1.5rem 0;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.properties-panel__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #374151;
+}
+
+.form-control {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    transition: all 0.2s;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.form-control:disabled {
+    background: #f3f4f6;
+    color: #9ca3af;
+    cursor: not-allowed;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.radio-label:hover {
+    background: #f9fafb;
+}
+
+.radio-label input[type="radio"] {
+    cursor: pointer;
+}
+
+.properties-panel__info {
+    margin-top: 2rem;
+    padding: 0.75rem;
+    background: #f3f4f6;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    color: #6b7280;
+}
+
+.properties-panel__info strong {
+    color: #374151;
+}

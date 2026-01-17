@@ -1,0 +1,10 @@
+// Export all new SME dashboards
+export { InvoiceDashboard } from './InvoiceDashboard';
+export { PaymentDashboard } from './PaymentDashboard';
+export { AnalyticsDashboard } from './AnalyticsDashboard';
+export { CreditScoringDashboard } from './CreditScoringDashboard';
+export { FinancingDashboard } from './FinancingDashboard';
+export { DisputeDashboard } from './DisputeDashboard';
+export { MarketingDashboard } from './MarketingDashboard';
+export { NotificationDashboard } from './NotificationDashboard';
+export { AdministrationDashboard } from './AdministrationDashboard';

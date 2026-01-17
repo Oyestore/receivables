@@ -1,0 +1,183 @@
+.invoice-dashboard {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    padding: 2rem;
+}
+
+/* Stats Grid */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Invoices Container */
+.invoices-container {
+    padding: 2rem;
+}
+
+.invoices-header {
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0;
+}
+
+/* Table */
+.invoices-table {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.table-header,
+.table-row {
+    display: grid;
+    grid-template-columns: 120px 2fr 1fr 1fr 120px 180px;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+}
+
+.table-header {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #64748b;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.table-row {
+    background: white;
+    border-radius: 0.75rem;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.table-row:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Columns */
+.col-number {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.invoice-icon {
+    width: 18px;
+    height: 18px;
+    color: #10b981;
+}
+
+.invoice-number {
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.col-customer {
+    font-weight: 500;
+    color: #1e293b;
+}
+
+.col-amount {
+    font-weight: 700;
+    color: #10b981;
+    font-size: 1.125rem;
+}
+
+.col-due {
+    color: #64748b;
+    font-size: 0.875rem;
+}
+
+.col-status {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.col-actions {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-end;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .stats-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .table-header,
+    .table-row {
+        grid-template-columns: 100px 1.5fr 1fr 1fr 100px 150px;
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .invoice-dashboard {
+        padding: 1rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .table-header {
+        display: none;
+    }
+
+    .table-row {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+        padding: 1.5rem;
+    }
+
+    .col-number,
+    .col-customer,
+    .col-amount,
+    .col-due,
+    .col-status,
+    .col-actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .col-number::before {
+        content: 'Invoice:';
+        font-weight: 600;
+        color: #64748b;
+    }
+
+    .col-customer::before {
+        content: 'Customer:';
+        font-weight: 600;
+        color: #64748b;
+    }
+
+    .col-amount::before {
+        content: 'Amount:';
+        font-weight: 600;
+        color: #64748b;
+    }
+
+    .col-due::before {
+        content: 'Due:';
+        font-weight: 600;
+        color: #64748b;
+    }
+
+    .col-actions {
+        justify-content: flex-start;
+    }
+}

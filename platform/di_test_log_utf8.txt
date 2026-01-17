@@ -1,0 +1,8 @@
+﻿2026-01-02 08:52:03 [MetricsService] [32minfo[39m: MetricsService initialized
+2026-01-02 08:52:03 [NotificationService] [32minfo[39m: NotificationService initialized
+{
+  "emailProvider": "sendgrid",
+  "smsProvider": "twilio"
+}
+[PaymentOrchestrationService] Default gateway configurations initialized { gatewayCount: 3 }
+[33m[Nest] 4020  - [39m02/01/2026, 8:52:13 am [33m   WARN[39m [38;5;3m[RazorpayService] [39m[33mRazorpay credentials not found. Payment features will be disabled.[39m

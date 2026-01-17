@@ -1,0 +1,25 @@
+2026-01-02 08:55:45 [MetricsService] [32minfo[39m: MetricsService initialized
+2026-01-02 08:55:45 [NotificationService] [32minfo[39m: NotificationService initialized
+{
+  "emailProvider": "sendgrid",
+  "smsProvider": "twilio"
+}
+[PaymentOrchestrationService] Default gateway configurations initialized { gatewayCount: 3 }
+[33m[Nest] 16292  - [39m02/01/2026, 8:55:54 am [33m   WARN[39m [38;5;3m[RazorpayService] [39m[33mRazorpay credentials not found. Payment features will be disabled.[39m
+[31m[Nest] 16292  - [39m02/01/2026, 8:55:54 am [31m  ERROR[39m [38;5;3m[ExceptionHandler] [39mError: Required configuration missing: BACKEND_URL
+    at OrchestrationService.getRequiredConfig [90m(C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\[39mModule_16_Invoice_Concierge\code\services\orchestration.service.ts:140:19[90m)[39m
+    at new OrchestrationService [90m(C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\[39mModule_16_Invoice_Concierge\code\services\orchestration.service.ts:115:32[90m)[39m
+    at Injector.instantiateClass [90m(C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\[39mnode_modules\[4m@nestjs[24m\core\injector\injector.js:418:19[90m)[39m
+    at callback [90m(C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\[39mnode_modules\[4m@nestjs[24m\core\injector\injector.js:70:45[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at async Injector.resolveConstructorParams [90m(C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\[39mnode_modules\[4m@nestjs[24m\core\injector\injector.js:170:24[90m)[39m
+    at async Injector.loadInstance [90m(C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\[39mnode_modules\[4m@nestjs[24m\core\injector\injector.js:75:13[90m)[39m
+    at async Injector.loadProvider [90m(C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\[39mnode_modules\[4m@nestjs[24m\core\injector\injector.js:103:9[90m)[39m
+    at async [90mC:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\[39mnode_modules\[4m@nestjs[24m\core\injector\instance-loader.js:56:13
+    at async Promise.all (index 9)
+    at async InstanceLoader.createInstancesOfProviders [90m(C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\[39mnode_modules\[4m@nestjs[24m\core\injector\instance-loader.js:55:9[90m)[39m
+    at async [90mC:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\[39mnode_modules\[4m@nestjs[24m\core\injector\instance-loader.js:40:13
+    at async Promise.all (index 39)
+    at async InstanceLoader.createInstances [90m(C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\[39mnode_modules\[4m@nestjs[24m\core\injector\instance-loader.js:39:9[90m)[39m
+    at async InstanceLoader.createInstancesOfDependencies [90m(C:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\[39mnode_modules\[4m@nestjs[24m\core\injector\instance-loader.js:22:13[90m)[39m
+    at async [90mC:\Users\91858\Downloads\SME_Platform_12_Separate_Modules\platform\[39mnode_modules\[4m@nestjs[24m\core\nest-factory.js:112:17

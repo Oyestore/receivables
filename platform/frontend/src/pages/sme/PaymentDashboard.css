@@ -1,0 +1,262 @@
+.payment-dashboard {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    padding: 2rem;
+}
+
+/* Stats Grid */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Payment Methods Grid */
+.payment-methods-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.method-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-left: 4px solid;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.method-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.method-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    flex-shrink: 0;
+}
+
+.method-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.method-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0 0 0.25rem 0;
+}
+
+.method-stats {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.75rem;
+    color: #64748b;
+}
+
+.method-amount {
+    font-weight: 600;
+    color: #10b981;
+}
+
+.method-arrow {
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.method-card:hover .method-arrow {
+    opacity: 1;
+    transform: translate(4px, -4px);
+}
+
+/* Payments Container */
+.payments-container {
+    padding: 2rem;
+}
+
+.payments-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0;
+}
+
+.header-badges {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.live-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: white;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.live-icon {
+    width: 16px;
+    height: 16px;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+/* Payments List */
+.payments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.payment-item {
+    background: white;
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+    display: grid;
+    grid-template-columns: 60px 2fr 1fr 100px 120px;
+    gap: 1rem;
+    align-items: center;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.payment-item:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.payment-method-indicator {
+    display: flex;
+    justify-content: center;
+}
+
+.method-badge {
+    width: 48px;
+    height: 48px;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.payment-details {
+    min-width: 0;
+}
+
+.payment-customer {
+    font-weight: 600;
+    color: #0f172a;
+    margin-bottom: 0.25rem;
+}
+
+.payment-id {
+    font-size: 0.75rem;
+    color: #64748b;
+    font-family: monospace;
+}
+
+.payment-amount {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #3b82f6;
+    text-align: right;
+}
+
+.payment-time {
+    font-size: 0.875rem;
+    color: #64748b;
+    text-align: center;
+}
+
+.payment-status {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .payment-methods-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .payment-item {
+        grid-template-columns: 50px 1.5fr 1fr 80px 100px;
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .payment-dashboard {
+        padding: 1rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .payment-methods-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .payment-item {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    .payment-method-indicator,
+    .payment-details,
+    .payment-amount,
+    .payment-time,
+    .payment-status {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .payment-amount {
+        text-align: left;
+    }
+
+    .payment-time {
+        text-align: left;
+    }
+}

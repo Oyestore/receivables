@@ -1,0 +1,1382 @@
+{
+  "module_name": "Module_03_Payment_Integration",
+  "version": "1.0.0",
+  "generated_at": "2025-11-16T11:40:57.724375",
+  "metadata": {
+    "title": "Advanced Payment Integration",
+    "description": "Comprehensive payment orchestration with 15+ gateways and AI-driven analytics",
+    "key_features": [
+      "Payment gateway integration (15+ gateways)",
+      "AI-powered behavioral analytics",
+      "Real-time fraud detection",
+      "Intelligent workflow automation"
+    ]
+  },
+  "statistics": {
+    "total_files": 272,
+    "total_size_bytes": 2466243,
+    "total_size_mb": 2.35
+  },
+  "files": [
+    {
+      "path": "Module_03_Payment_Integration/Requirements Coverage Analysis: SME Receivables Management Platform.md",
+      "size": 20674,
+      "hash": "1dec32b745d26c550f886cab6b5bd84a"
+    },
+    {
+      "path": "Module_03_Payment_Integration/todo.md",
+      "size": 638,
+      "hash": "b9a3682c0edcb2511251c7bfce8f561e"
+    },
+    {
+      "path": "Module_03_Payment_Integration/conditional_logic_backend_integration_notes.md",
+      "size": 2550,
+      "hash": "0e308854d8705e2d6026aa853d91ff09"
+    },
+    {
+      "path": "Module_03_Payment_Integration/grapesjs-editor-integration.js",
+      "size": 9934,
+      "hash": "d095f75f4e5fb40a7a72546669060252"
+    },
+    {
+      "path": "Module_03_Payment_Integration/ocr-integration.service.ts",
+      "size": 1818,
+      "hash": "afb722b7c9628c3aa69761d0182c7470"
+    },
+    {
+      "path": "Module_03_Payment_Integration/ocr-integration.module.ts",
+      "size": 498,
+      "hash": "e85d365b98d9671cf813f6c32223f282"
+    },
+    {
+      "path": "Module_03_Payment_Integration/Blockchain-Based Payment Verification - Design Document.md",
+      "size": 20536,
+      "hash": "213f548b412c528fcec98ca11347b9dc"
+    },
+    {
+      "path": "Module_03_Payment_Integration/Phase 3.4 Implementation Report.md",
+      "size": 9318,
+      "hash": "292ea02ea655fae6147ef72b48c8f2df"
+    },
+    {
+      "path": "Module_03_Payment_Integration/integration.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/integration.service.ts",
+      "size": 35354,
+      "hash": "f68e567451d1ffc2b560485ab5df6db1"
+    },
+    {
+      "path": "Module_03_Payment_Integration/advanced-payment-phase3.module.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/cross-border-payment.module.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/international-payment.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/international-payment.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/international-payment-method.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-analytics.module.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-insight.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-metric.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-dashboard.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/rural-payment.module.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/sms-payment.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/ussd-payment.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/rural-payment-method.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-agent.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/sms-payment.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/ussd-payment.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/rural-payment-method.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-agent.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/sms-payment.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/rural-payment-method.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-agent.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/Rural Payment Solutions - Design Document.md",
+      "size": 38992,
+      "hash": "8a6f5e0339440d0018f8b4c75315e307"
+    },
+    {
+      "path": "Module_03_Payment_Integration/Enhanced Payment Analytics - Design Document.md",
+      "size": 37887,
+      "hash": "f8c37b3abd510934d4cf00e679bc590b"
+    },
+    {
+      "path": "Module_03_Payment_Integration/Machine Learning Payment Forecasting - Design Document.md",
+      "size": 30525,
+      "hash": "c1ddc52c12bab553027f61a02c24eaa3"
+    },
+    {
+      "path": "Module_03_Payment_Integration/Cross-Border Payment Optimization - Design Document.md",
+      "size": 25671,
+      "hash": "d8180eed977b4605504a5a1e824fe4ef"
+    },
+    {
+      "path": "Module_03_Payment_Integration/Advanced Payment Integration Module: Implementation Status Breakdown.md",
+      "size": 9513,
+      "hash": "eaf9f8e56a8a870f6e8a5d5827084a50"
+    },
+    {
+      "path": "Module_03_Payment_Integration/Phase 3.3 Advanced Payment Module Implementation Report.md",
+      "size": 5678,
+      "hash": "628b2930f366a060bd45778e3892dbca"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-benchmarking.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-benchmark.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-benchmarking.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-benchmark.entity.ts",
+      "size": 3978,
+      "hash": "22af035e36f850c3e1ec3497df4719f7"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-performance-benchmarking.module.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/digilocker-integration.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment.module.ts",
+      "size": 2042,
+      "hash": "9ff584fb10aa85b5bbf17882e50e7b5b"
+    },
+    {
+      "path": "Module_03_Payment_Integration/voice_enabled_payment_collection_integration_report.md",
+      "size": 5214,
+      "hash": "10f875297a0fa1dbaa4e7fb257b49c50"
+    },
+    {
+      "path": "Module_03_Payment_Integration/integration-framework.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/security-integration.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/personalization-integration.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/cross-module-integration.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/integration_test_plan.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/Phase 3.2: Advanced Payment Integration Module Implementation Report.md",
+      "size": 5979,
+      "hash": "a00031e337791035838e542cbb7277ff"
+    },
+    {
+      "path": "Module_03_Payment_Integration/Advanced Payment Integration Module Status Report.md",
+      "size": 10540,
+      "hash": "aa3f29629e8488b9f05fd8e5120113c0"
+    },
+    {
+      "path": "Module_03_Payment_Integration/Phase 3.1: Advanced Payment Integration Module Implementation Report.md",
+      "size": 4730,
+      "hash": "cc740e96b557f8ab14b0e3ccecd310fe"
+    },
+    {
+      "path": "Module_03_Payment_Integration/Advanced Payment Integration Module Requirements Document.md",
+      "size": 24523,
+      "hash": "d60d65ded9eb4d8d715bf948bebe9157"
+    },
+    {
+      "path": "Module_03_Payment_Integration/Phase 3.5 Implementation Todo.md",
+      "size": 3791,
+      "hash": "bc0df2ad6bc91a83ae7188ecf7d7bc70"
+    },
+    {
+      "path": "Module_03_Payment_Integration/Integration Test Plan for Phase 3.5.md",
+      "size": 8962,
+      "hash": "b928669f0a3e3f57cadbb60848edfca0"
+    },
+    {
+      "path": "Module_03_Payment_Integration/Phase 3.5 Implementation Status Report.md",
+      "size": 11985,
+      "hash": "c7e7453e87573b1b095729b35f2ddf15"
+    },
+    {
+      "path": "Module_03_Payment_Integration/integration-framework.module.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/integration-monitor.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/integration-execution.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/integration-flow.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/integration-mapping.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/integration-endpoint.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/integration-framework-enhancements-design.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/integration-tests.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/integration.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/ab-testing.service.ts",
+      "size": 16073,
+      "hash": "8177975e5447770add439a3b58949050"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-experience-personalization-design.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/enhanced-payment-security-design.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-routing.module.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-route.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/advanced-payment-routing-optimization-design.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-method.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-recommendation.module.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-method.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-method.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-method-usage.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-method.entity.ts",
+      "size": 1919,
+      "hash": "cf3e028049a17a0cceca5a45f4ad540f"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-method-recommendation-design.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/integration.controller.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-verification.controller.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-verification.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-verification.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-verification.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-verification.go",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-verification.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/blockchain-payment-verification-design.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/module-integration.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/module-integration.service.ts",
+      "size": 18503,
+      "hash": "3effd14c3b86bc5f9c91de423e2ebb37"
+    },
+    {
+      "path": "Module_03_Payment_Integration/Advanced Payment Integration Module - Performance and Security Validation Report.md",
+      "size": 11578,
+      "hash": "ca50bef627351c46f3cbad6284d7d744"
+    },
+    {
+      "path": "Module_03_Payment_Integration/Advanced Payment Integration Module - Integration Guide.md",
+      "size": 16162,
+      "hash": "f97420cbdcb8a23ae98853a823350495"
+    },
+    {
+      "path": "Module_03_Payment_Integration/mock-integration-services.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/Advanced Payment Integration Module - Phase 3.6 Completion Report.md",
+      "size": 5748,
+      "hash": "eb431036668564850d7471effdf04dce"
+    },
+    {
+      "path": "Module_03_Payment_Integration/mock-integration-framework-services.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/integration-mock-providers.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/base-integration.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-personalization.module.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/milestone-integration.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/milestone-payment.module.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/update-milestone-payment.dto.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/create-milestone-payment.dto.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/milestone-payment.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-method.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-status.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/milestone-payment.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/Integration Documentation and Tools.md",
+      "size": 50537,
+      "hash": "5a47029ef4b028073270caac81a77bba"
+    },
+    {
+      "path": "Module_03_Payment_Integration/Testing and Validation Framework.md",
+      "size": 43912,
+      "hash": "18cbad229c22253d3356e0cd41a27061"
+    },
+    {
+      "path": "Module_03_Payment_Integration/Extensibility Features Validation Report.md",
+      "size": 34835,
+      "hash": "b4c83dac461e5b7eb74bda21ad877cc5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/Module 3 Enhancement Phase 1: Accounting Integration Hub - Todo List.md",
+      "size": 6667,
+      "hash": "425433f365494f2900a668fcfb939e9a"
+    },
+    {
+      "path": "Module_03_Payment_Integration/Module 3 Enhancement Phase 1: Accounting Integration Hub.md",
+      "size": 45170,
+      "hash": "8074f3358894f77612c4ea5776cd3c57"
+    },
+    {
+      "path": "Module_03_Payment_Integration/quickbooks-india-integration.service.ts",
+      "size": 88,
+      "hash": "88b53d64208e6235070620ff4efaac9b"
+    },
+    {
+      "path": "Module_03_Payment_Integration/marg-erp-integration.service.ts",
+      "size": 88,
+      "hash": "88b53d64208e6235070620ff4efaac9b"
+    },
+    {
+      "path": "Module_03_Payment_Integration/quickbooks-india-integration.entity.ts",
+      "size": 88,
+      "hash": "88b53d64208e6235070620ff4efaac9b"
+    },
+    {
+      "path": "Module_03_Payment_Integration/marg-erp-integration.entity.ts",
+      "size": 88,
+      "hash": "88b53d64208e6235070620ff4efaac9b"
+    },
+    {
+      "path": "Module_03_Payment_Integration/busy-accounting-integration.service.ts",
+      "size": 88,
+      "hash": "88b53d64208e6235070620ff4efaac9b"
+    },
+    {
+      "path": "Module_03_Payment_Integration/zoho-books-integration.service.ts",
+      "size": 88,
+      "hash": "88b53d64208e6235070620ff4efaac9b"
+    },
+    {
+      "path": "Module_03_Payment_Integration/Module 3 Enhancement Phase 1: Accounting Integration Hub - Status Report.md",
+      "size": 11773,
+      "hash": "3ae59e325096b0322773c1634f83a905"
+    },
+    {
+      "path": "Module_03_Payment_Integration/busy-accounting-integration.entity.ts",
+      "size": 88,
+      "hash": "88b53d64208e6235070620ff4efaac9b"
+    },
+    {
+      "path": "Module_03_Payment_Integration/zoho-books-integration.entity.ts",
+      "size": 88,
+      "hash": "88b53d64208e6235070620ff4efaac9b"
+    },
+    {
+      "path": "Module_03_Payment_Integration/tally-integration.service.ts",
+      "size": 88,
+      "hash": "88b53d64208e6235070620ff4efaac9b"
+    },
+    {
+      "path": "Module_03_Payment_Integration/tally-integration.entity.ts",
+      "size": 88,
+      "hash": "88b53d64208e6235070620ff4efaac9b"
+    },
+    {
+      "path": "Module_03_Payment_Integration/accounting-integration.interface.ts",
+      "size": 88,
+      "hash": "88b53d64208e6235070620ff4efaac9b"
+    },
+    {
+      "path": "Module_03_Payment_Integration/accounting-integration.enum.ts",
+      "size": 88,
+      "hash": "88b53d64208e6235070620ff4efaac9b"
+    },
+    {
+      "path": "Module_03_Payment_Integration/integration-orchestration.service.ts",
+      "size": 72065,
+      "hash": "dc0112fe6adfafe83f652cb3c5c2bc99"
+    },
+    {
+      "path": "Module_03_Payment_Integration/SME_Platform_Complete_Status_Report.md",
+      "size": 12876,
+      "hash": "3bf63d324e706fafdaa600e42e506af9"
+    },
+    {
+      "path": "Module_03_Payment_Integration/Module 3 Enhancement Status Report.md",
+      "size": 18928,
+      "hash": "5a606f5bdc02d5acf0117a190d308e71"
+    },
+    {
+      "path": "Module_03_Payment_Integration/Module 3 Phase 3.3: Advanced Enhancement Engine - TODO.md",
+      "size": 5722,
+      "hash": "b9321f5b8651adf7f308399c8c10fe11"
+    },
+    {
+      "path": "Module_03_Payment_Integration/Module 3 Phase 3.3: Advanced Enhancement Engine - Technical Documentation.md",
+      "size": 32269,
+      "hash": "3b6630a9f689079392b907c96698526f"
+    },
+    {
+      "path": "Module_03_Payment_Integration/automation-framework.entity.ts",
+      "size": 49222,
+      "hash": "6ea42f0002defec0bdc63f4607f2368c"
+    },
+    {
+      "path": "Module_03_Payment_Integration/performance-enhancement.entity.ts",
+      "size": 36382,
+      "hash": "2e4cdb14591c197ba17a5b7768b1cdb6"
+    },
+    {
+      "path": "Module_03_Payment_Integration/enhancement-engine.enum.ts",
+      "size": 19656,
+      "hash": "df1c4d8668bc2a6d7597fcd8fcee9189"
+    },
+    {
+      "path": "Module_03_Payment_Integration/enhancement_architecture.md",
+      "size": 15373,
+      "hash": "0ad0fa1183d03101828e9f187cb01542"
+    },
+    {
+      "path": "Module_03_Payment_Integration/Module 3 Phase 3.2: Intelligent Workflow Engine - Technical Documentation.md",
+      "size": 29007,
+      "hash": "1ee1fdd9ec41a0b492264b79596063a8"
+    },
+    {
+      "path": "Module_03_Payment_Integration/ai-intelligence.service.ts",
+      "size": 44375,
+      "hash": "0494c49f738e982a5a1859948326a448"
+    },
+    {
+      "path": "Module_03_Payment_Integration/ai-intelligence.entity.ts",
+      "size": 74924,
+      "hash": "e6b1df7ac73e66c98ee5d8bd9e3ffdb4"
+    },
+    {
+      "path": "Module_03_Payment_Integration/intelligent-task-routing.service.ts",
+      "size": 42918,
+      "hash": "b7d2dc7dd0afa77e9f6ae8ef79c0e401"
+    },
+    {
+      "path": "Module_03_Payment_Integration/intelligent-task-routing.entity.ts",
+      "size": 59664,
+      "hash": "946154aa7c805e33df489f8ed3255a02"
+    },
+    {
+      "path": "Module_03_Payment_Integration/module3_phase3.2_todo.md",
+      "size": 4648,
+      "hash": "adf9dbc47ce64a42d822ffe799ff39a1"
+    },
+    {
+      "path": "Module_03_Payment_Integration/technical_documentation.md",
+      "size": 28767,
+      "hash": "83f349c74a69d591b3040b472f451314"
+    },
+    {
+      "path": "Module_03_Payment_Integration/integration.entity.ts",
+      "size": 36765,
+      "hash": "05aa6627fdbe6d4875d0ba69dc6a9b6e"
+    },
+    {
+      "path": "Module_03_Payment_Integration/security.entity.ts",
+      "size": 16073,
+      "hash": "d6a29ba53bbebf3d43b366ecf7beed1f"
+    },
+    {
+      "path": "Module_03_Payment_Integration/security.interface.ts",
+      "size": 21854,
+      "hash": "51ca4e1d185f7f170ea929f5ff2bec3d"
+    },
+    {
+      "path": "Module_03_Payment_Integration/monitoring.interface.ts",
+      "size": 14566,
+      "hash": "811e0a95cf9b6652814be12c42b21cbd"
+    },
+    {
+      "path": "Module_03_Payment_Integration/security.enum.ts",
+      "size": 8682,
+      "hash": "d182f19d2e2aeff33d0e89c1c6325c06"
+    },
+    {
+      "path": "Module_03_Payment_Integration/monitoring.enum.ts",
+      "size": 7544,
+      "hash": "f668c2ac77236096a7773d0ba2ce8e42"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-prediction.service.ts",
+      "size": 16073,
+      "hash": "21570d2df8a5f91f50531435dcb8cc28"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-prediction.entity.ts",
+      "size": 16073,
+      "hash": "b2433ebc18dbee856729b22087be85bc"
+    },
+    {
+      "path": "Module_03_Payment_Integration/customer-segmentation.entity.ts",
+      "size": 16073,
+      "hash": "0c1ab0f64954e62d62a1ed3a6445c7cb"
+    },
+    {
+      "path": "Module_03_Payment_Integration/integration-hub.service.ts",
+      "size": 16073,
+      "hash": "c8ce45e128922ac5078ddc4d4a7e1ba8"
+    },
+    {
+      "path": "Module_03_Payment_Integration/integration-hub.entity.ts",
+      "size": 16073,
+      "hash": "d36c102686fa1ba3b24e129f7514ae69"
+    },
+    {
+      "path": "Module_03_Payment_Integration/api-gateway.service.ts",
+      "size": 16073,
+      "hash": "4ec5f487b945d6ba4689d039292a7b8d"
+    },
+    {
+      "path": "Module_03_Payment_Integration/api-gateway.entity.ts",
+      "size": 15704,
+      "hash": "79ad0e15c2f7228ac4c2a71e491ee522"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-orchestration.service.ts",
+      "size": 16073,
+      "hash": "f366b1b0af8aaeb63a6754add074dc49"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-orchestration.entity.ts",
+      "size": 16073,
+      "hash": "ef63c49b0086ee61471f67a72d7391a3"
+    },
+    {
+      "path": "Module_03_Payment_Integration/SME Receivables Management Platform - Comprehensive Testing Report.md",
+      "size": 34929,
+      "hash": "d7d91147f87ba9a2f6bd48e01ef14f78"
+    },
+    {
+      "path": "Module_03_Payment_Integration/SME_Platform_100_Percent_Completion_Report.md",
+      "size": 3692,
+      "hash": "65eaea39fc8f55610d896cc021a87aba"
+    },
+    {
+      "path": "Module_03_Payment_Integration/comprehensive-functional-tests.spec.ts",
+      "size": 58321,
+      "hash": "fb5f60b002fcd7da775de3c455bb01d3"
+    },
+    {
+      "path": "Module_03_Payment_Integration/comprehensive-integration-tests.spec.ts",
+      "size": 45579,
+      "hash": "f77092ec4159fe144a6e77df38ecfabf"
+    },
+    {
+      "path": "Module_03_Payment_Integration/SME Receivables Management Platform - Comprehensive Testing Suite.md",
+      "size": 2681,
+      "hash": "8234444eeeee1b1e1ac9fd119d781267"
+    },
+    {
+      "path": "Module_03_Payment_Integration/integration-marketplace.entity.ts",
+      "size": 29771,
+      "hash": "64f3c29abb2cb067d7936401d8728e40"
+    },
+    {
+      "path": "Module_03_Payment_Integration/advanced-features.interface.ts",
+      "size": 47759,
+      "hash": "bf51943f43285e1bc57645e8a84787c4"
+    },
+    {
+      "path": "Module_03_Payment_Integration/SME Receivables Management Platform - 100% COMPLETION ACHIEVEMENT REPORT.md",
+      "size": 4322,
+      "hash": "bfc0758b0fec645f24187245713fabbe"
+    },
+    {
+      "path": "Module_03_Payment_Integration/services.test.ts",
+      "size": 40236,
+      "hash": "8333a496c51b1554efb001384e60319e"
+    },
+    {
+      "path": "Module_03_Payment_Integration/accounting-integration.test.ts",
+      "size": 45780,
+      "hash": "927d849171f918c364c6753d0eb33ca2"
+    },
+    {
+      "path": "Module_03_Payment_Integration/SME Receivables Management Platform - Module 3 Enhancement Phase 1: Accounting Integration Hub.md",
+      "size": 48023,
+      "hash": "84db91bc60ec17ea754ffbcbd2f39053"
+    },
+    {
+      "path": "Module_03_Payment_Integration/module3_enhancement_phase1_todo.md",
+      "size": 6667,
+      "hash": "425433f365494f2900a668fcfb939e9a"
+    },
+    {
+      "path": "Module_03_Payment_Integration/universal-integration-hub.service.ts",
+      "size": 88,
+      "hash": "88b53d64208e6235070620ff4efaac9b"
+    },
+    {
+      "path": "Module_03_Payment_Integration/universal-integration-hub.entity.ts",
+      "size": 88,
+      "hash": "88b53d64208e6235070620ff4efaac9b"
+    },
+    {
+      "path": "Module_03_Payment_Integration/Final 0.5% Gap Analysis and Strategic Recommendations.md",
+      "size": 74582,
+      "hash": "90c5bff771471503d091501b6f3e8c08"
+    },
+    {
+      "path": "Module_03_Payment_Integration/Module_3_Enhancement_Phase1_Status_Report.md",
+      "size": 11773,
+      "hash": "3ae59e325096b0322773c1634f83a905"
+    },
+    {
+      "path": "Module_03_Payment_Integration/5_Percent_Gap_Analysis_and_Solutions.md",
+      "size": 16549,
+      "hash": "bc283eba1248a2c6de16323d0ff712c1"
+    },
+    {
+      "path": "Module_03_Payment_Integration/early-warning-integration.service.ts",
+      "size": 13295,
+      "hash": "e33a7a069ef34f63d86e9238f0e1fee0"
+    },
+    {
+      "path": "Module_03_Payment_Integration/credit-limit-integration.service.ts",
+      "size": 18473,
+      "hash": "0a3e4c68ab6de64a7bd76397acc92685"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-pattern.entity.ts",
+      "size": 3082,
+      "hash": "1990d25ce527c717f5a15958ba3149da"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-metrics.entity.ts",
+      "size": 4439,
+      "hash": "4d32a3dd7baf390aeafa59f41a2f3d59"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-metrics.service.ts",
+      "size": 14633,
+      "hash": "07a12128a33cd50261ef535c578ef11b"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-pattern.service.ts",
+      "size": 19708,
+      "hash": "63436fd96f62f3756af5b25fc811a3e5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-prediction.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-pattern.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-metrics.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-history.entity.ts",
+      "size": 2923,
+      "hash": "50ac66b439fe2515b5e32c2a31c53967"
+    },
+    {
+      "path": "Module_03_Payment_Integration/external-system-integration.service.ts",
+      "size": 31748,
+      "hash": "0eba632a4dab2a775ca4290865409430"
+    },
+    {
+      "path": "Module_03_Payment_Integration/ai-integration.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/financing-provider-integration.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/financing-provider-integration.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/workflow-integration.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/Phase 7.5: Dynamic Discounting and Early Payment Solution - Implementation Todo.md",
+      "size": 1702,
+      "hash": "936cbaae92d5232f8a0f5956bce46de3"
+    },
+    {
+      "path": "Module_03_Payment_Integration/Phase 7.5: Dynamic Discounting and Early Payment Solution - Technical Documentation.md",
+      "size": 6805,
+      "hash": "c0c34195380848bc1ba1a2ba58046b23"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-processing.service.ts",
+      "size": 12185,
+      "hash": "8ab0a2f84c7b6541faa7d43100217bcf"
+    },
+    {
+      "path": "Module_03_Payment_Integration/upi-integration.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/credit-bureau-integration.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/banking-integration.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/government-portal-integration.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/upi-integration.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/upi-integration.dto.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/indian-payments.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/deepseek-integration.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/deepseek-integration.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/deepseek-integration.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/deepseek-integration.dto.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/phase9.1-integration.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/cross-phase-integration-orchestrator.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/collections-integration.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/dispute-resolution-integration.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/phase10.1-integration.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/data-integration.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/phase9.4-integration.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/phase9.3-integration.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/phase9.2-integration.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-orchestration.interface.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-orchestration.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/Module 3: Advanced Payment Integration - Enhancement Requirements.md",
+      "size": 68862,
+      "hash": "6624dfcca7c358b9a18a562626be6672"
+    },
+    {
+      "path": "Module_03_Payment_Integration/module1-integration.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/constraint-integration.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/constraint-integration.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/module2-integration.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/phase10.4-integration.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/autonomous-integration.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/integration-coordination.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/phase10.3-integration.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/phase10.2-integration.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/integration-gateway.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/integration-gateway.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_03_Payment_Integration/channel-integration.module.ts",
+      "size": 248,
+      "hash": "e2ed12f1a3c95a7ad7b413bfeebc7842"
+    },
+    {
+      "path": "Module_03_Payment_Integration/Integration Tests Outline: UserDataSourceModule.md",
+      "size": 8700,
+      "hash": "36c260089a51eccba7d84ceaa004ea59"
+    },
+    {
+      "path": "Module_03_Payment_Integration/voice.controller.ts",
+      "size": 4182,
+      "hash": "09ca37ed1ed989694c5ce15179c1efb7"
+    },
+    {
+      "path": "Module_03_Payment_Integration/voice-interaction.entity.ts",
+      "size": 1119,
+      "hash": "f05839291049d2c9ee020970757f75c7"
+    },
+    {
+      "path": "Module_03_Payment_Integration/Voice-Enabled Payment Collection Module Design.md",
+      "size": 12343,
+      "hash": "e57fddbb230dc7da88aaa0d28daf8789"
+    },
+    {
+      "path": "Module_03_Payment_Integration/reputation-payment-terms.spec.ts",
+      "size": 16073,
+      "hash": "cfcf5fa96c81ee2d245a7e756bc866a6"
+    },
+    {
+      "path": "Module_03_Payment_Integration/contextual-financial-insights.spec.ts",
+      "size": 16073,
+      "hash": "ec39b1028d6556b109574eb4157fac92"
+    },
+    {
+      "path": "Module_03_Payment_Integration/terms-integration.service.ts",
+      "size": 9242,
+      "hash": "b0bfd7495c9198e7d0065ea03b6c85e2"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-behavior-scoring.service.ts",
+      "size": 16073,
+      "hash": "1edb99b2221e76a1e7fc4a1bbb6370a6"
+    },
+    {
+      "path": "Module_03_Payment_Integration/dynamic-payment-terms.entity.ts",
+      "size": 2283,
+      "hash": "cf8cb01c23998d143d6dcfaa26ba931e"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-behavior-score.entity.ts",
+      "size": 2111,
+      "hash": "f852cec44b7507aafc7168d2148b83a4"
+    },
+    {
+      "path": "Module_03_Payment_Integration/cash-flow-optimization.service.ts",
+      "size": 16081,
+      "hash": "4e368ac9f146d70b8c7788c915cdbcc3"
+    },
+    {
+      "path": "Module_03_Payment_Integration/financial-intelligence.service.ts",
+      "size": 16073,
+      "hash": "5dac431fc594a32241af0efd571cfe16"
+    },
+    {
+      "path": "Module_03_Payment_Integration/financing-integration.service.ts",
+      "size": 16073,
+      "hash": "b231a39c27ce47a6a468b73a1acd40ff"
+    },
+    {
+      "path": "Module_03_Payment_Integration/supply-chain-finance.service.ts",
+      "size": 16073,
+      "hash": "f0b8850232025b26e73e2ae48b83ef1a"
+    },
+    {
+      "path": "Module_03_Payment_Integration/working-capital.service.ts",
+      "size": 16073,
+      "hash": "6ba05fcc0bfadadd04b28046ab677995"
+    },
+    {
+      "path": "Module_03_Payment_Integration/eligibility-assessment.service.ts",
+      "size": 16073,
+      "hash": "34b0a4c13f98e1ce826f082c2852cf77"
+    },
+    {
+      "path": "Module_03_Payment_Integration/nbfc-integration.service.ts",
+      "size": 16073,
+      "hash": "a4660ae9aea44ec4eebb5c6910a496df"
+    },
+    {
+      "path": "Module_03_Payment_Integration/nbfc-partner.entity.ts",
+      "size": 2582,
+      "hash": "ed0dd5f5a62d195cfdb983ff9a478045"
+    },
+    {
+      "path": "Module_03_Payment_Integration/phase3_1_validation.spec.ts",
+      "size": 7848,
+      "hash": "1eed55030886b59798a4c1a9d7fbf691"
+    },
+    {
+      "path": "Module_03_Payment_Integration/currency-settlement.service.ts",
+      "size": 11989,
+      "hash": "ee4188b7b61cacabe5f5071a526a7dfa"
+    },
+    {
+      "path": "Module_03_Payment_Integration/dunning-management.service.ts",
+      "size": 16073,
+      "hash": "fc745c45de548c2fe7ab44e617299357"
+    },
+    {
+      "path": "Module_03_Payment_Integration/subscription.service.ts",
+      "size": 16073,
+      "hash": "dbc74639e2c361d529d7044b7bd45202"
+    },
+    {
+      "path": "Module_03_Payment_Integration/installment.service.ts",
+      "size": 15413,
+      "hash": "0c443ba5aa16bfe0bbbe955e0b540ab9"
+    },
+    {
+      "path": "Module_03_Payment_Integration/subscription-payment.entity.ts",
+      "size": 2238,
+      "hash": "abadabbdce506ed66b935450f2797593"
+    },
+    {
+      "path": "Module_03_Payment_Integration/recurring-subscription.entity.ts",
+      "size": 2878,
+      "hash": "a2759df0089138f2e323ba8a04ea3a0e"
+    },
+    {
+      "path": "Module_03_Payment_Integration/installment-payment.entity.ts",
+      "size": 2159,
+      "hash": "4d80e9e372458f22d6422257e9ff4cc7"
+    },
+    {
+      "path": "Module_03_Payment_Integration/installment-plan.entity.ts",
+      "size": 3153,
+      "hash": "1d74794a3c22674370f4941bfe1acd0d"
+    },
+    {
+      "path": "Module_03_Payment_Integration/incentives-integration.service.ts",
+      "size": 10306,
+      "hash": "ddfc23db3abbe3cd5cef94061e1702ce"
+    },
+    {
+      "path": "Module_03_Payment_Integration/ab-test-experiment.entity.ts",
+      "size": 1939,
+      "hash": "3bd2d83dacf894fd2cd7055bc5c3b033"
+    },
+    {
+      "path": "Module_03_Payment_Integration/late-fee.service.ts",
+      "size": 12857,
+      "hash": "cd9a24cc75e1afda542fa5c732a4d944"
+    },
+    {
+      "path": "Module_03_Payment_Integration/discount.service.ts",
+      "size": 9715,
+      "hash": "9bead914407ac777813bb523ff813d96"
+    },
+    {
+      "path": "Module_03_Payment_Integration/late-fee-application.entity.ts",
+      "size": 1861,
+      "hash": "90d77b4e518ffdee9ee40dbd294ff155"
+    },
+    {
+      "path": "Module_03_Payment_Integration/discount-application.entity.ts",
+      "size": 1673,
+      "hash": "66eba7a60cff152f5e0c6347517b0d3c"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-late-fee-rule.entity.ts",
+      "size": 2357,
+      "hash": "c372c982d55558a6a0ab5709e29ab921"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-discount-rule.entity.ts",
+      "size": 2243,
+      "hash": "ed24e9629c6a7743ea563e6565e58a0c"
+    },
+    {
+      "path": "Module_03_Payment_Integration/Advanced Payment Integration Module - Deployment Guide.md",
+      "size": 7942,
+      "hash": "2be29851636c695b2de834afe3d5386a"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-processing.service.spec.ts",
+      "size": 11882,
+      "hash": "30b128af9e6064cae8dc1380b44ad6c8"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-transaction.controller.ts",
+      "size": 8919,
+      "hash": "7fae7dafdba43b8e2d8a9727413a1c94"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-security.service.ts",
+      "size": 4754,
+      "hash": "6f4a57d857b5120ab0e096eca70486fb"
+    },
+    {
+      "path": "Module_03_Payment_Integration/distribution-payment-integration.service.ts",
+      "size": 3832,
+      "hash": "58e3cd568ab748ae5c9c07f05afb6c53"
+    },
+    {
+      "path": "Module_03_Payment_Integration/invoice-payment-integration.service.ts",
+      "size": 6097,
+      "hash": "825f2cbc9f68a65ecd376a0b30938998"
+    },
+    {
+      "path": "Module_03_Payment_Integration/PaymentManagement.jsx",
+      "size": 16073,
+      "hash": "cbdad6f0b821e558695bfd1e7ea493eb"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-gateway-factory.service.ts",
+      "size": 4299,
+      "hash": "34e8b4a32e6fe857ffa1675ec887cad3"
+    },
+    {
+      "path": "Module_03_Payment_Integration/abstract-payment-gateway.service.ts",
+      "size": 2859,
+      "hash": "0202c06b4eb60002f02ba75bf8c78621"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-gateway.interface.ts",
+      "size": 2720,
+      "hash": "5f0a65edc50a604525a0e3321bd4a983"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-gateway.entity.ts",
+      "size": 2289,
+      "hash": "88709d4fe0c28fb8c5e537b3d164d0e0"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-reconciliation.entity.ts",
+      "size": 2011,
+      "hash": "04e7b9b37624808e5e65e830c7cf6ac6"
+    },
+    {
+      "path": "Module_03_Payment_Integration/payment-transaction.entity.ts",
+      "size": 3157,
+      "hash": "77522fa716ab126d618951bdcdb8a4ed"
+    }
+  ]
+}

@@ -1,0 +1,2897 @@
+{
+  "module_name": "Module_11_Common",
+  "version": "1.0.0",
+  "generated_at": "2025-11-16T11:40:57.760717",
+  "metadata": {
+    "title": "Common Shared Resources",
+    "description": "Shared utilities, configurations, and cross-module functionality",
+    "key_features": [
+      "Shared utilities and helpers",
+      "Common configurations",
+      "Cross-module interfaces",
+      "Reusable components"
+    ]
+  },
+  "statistics": {
+    "total_files": 575,
+    "total_size_bytes": 361487644,
+    "total_size_mb": 344.74
+  },
+  "files": [
+    {
+      "path": "Module_11_Common/hello_flask.log",
+      "size": 404,
+      "hash": "e6b4b2cca83717ccc8a580b0554a8573"
+    },
+    {
+      "path": "Module_11_Common/hello_flask.py",
+      "size": 200,
+      "hash": "86cc2319fcc057be77c3970f93db9fef"
+    },
+    {
+      "path": "Module_11_Common/ocr_service.log",
+      "size": 396,
+      "hash": "90b7dbca08140f66e7ed379307aabb49"
+    },
+    {
+      "path": "Module_11_Common/app.py",
+      "size": 2883,
+      "hash": "29be2f91ffb0bcfe8d82449c083f07c7"
+    },
+    {
+      "path": "Module_11_Common/requirements.txt",
+      "size": 40,
+      "hash": "25e6a7f92bc68fa6c27826af9f448c56"
+    },
+    {
+      "path": "Module_11_Common/init.sql.updated",
+      "size": 8845,
+      "hash": "7982dee7387ceea7c7a5e5102b8a08f0"
+    },
+    {
+      "path": "Module_11_Common/generate_correct_hash.py",
+      "size": 197,
+      "hash": "dff5ccd48f41bd9481844830c8799bd6"
+    },
+    {
+      "path": "Module_11_Common/verify_hash.py",
+      "size": 1022,
+      "hash": "bbb7755e5522df29b6e212ed6254dee1"
+    },
+    {
+      "path": "Module_11_Common/generate_hash.py",
+      "size": 485,
+      "hash": "4a2d9ec47f1b43491afa5ba4eb1cd164"
+    },
+    {
+      "path": "Module_11_Common/authSlice.js.updated",
+      "size": 4188,
+      "hash": "0c3e1997fbe29b193585aa31d541d8f8"
+    },
+    {
+      "path": "Module_11_Common/sme-receivables-platform-final-v3.zip",
+      "size": 86778,
+      "hash": "9a3f03b65a8b7ed1ac0523f4adcce987"
+    },
+    {
+      "path": "Module_11_Common/docker-compose.yml.updated",
+      "size": 2251,
+      "hash": "151ee7661738becc6e9416a5c711a885"
+    },
+    {
+      "path": "Module_11_Common/nginx.conf.updated",
+      "size": 944,
+      "hash": "6d21671c7fd37f0b6afb46f8c1440b99"
+    },
+    {
+      "path": "Module_11_Common/user-data-source-fetching.service.spec.ts",
+      "size": 10283,
+      "hash": "ed17113c25eadca51318bd40ca45c279"
+    },
+    {
+      "path": "Module_11_Common/conceptual_expanded_phase1_migration.sql",
+      "size": 6629,
+      "hash": "55714092e7a6098d00b8ec830731a05a"
+    },
+    {
+      "path": "Module_11_Common/organization.entity.ts",
+      "size": 336,
+      "hash": "77ad3b213a83ee3ca9a552cac59b0e25"
+    },
+    {
+      "path": "Module_11_Common/user.entity.ts",
+      "size": 515,
+      "hash": "222a364622949ec33f2c5b82a43fb1f8"
+    },
+    {
+      "path": "Module_11_Common/package.json",
+      "size": 2643,
+      "hash": "099d5c6038484e55aeb1e24b743a6ada"
+    },
+    {
+      "path": "Module_11_Common/user-data-source.service.ts",
+      "size": 7637,
+      "hash": "5bb951b55a65cc7d204b3839266bc258"
+    },
+    {
+      "path": "Module_11_Common/user-data-source.controller.ts",
+      "size": 3523,
+      "hash": "733e69140cc9237ca97ac6d4e284f3c0"
+    },
+    {
+      "path": "Module_11_Common/user-data-source.module.ts",
+      "size": 979,
+      "hash": "f6173873b5f4e2e203660a200adc8ffd"
+    },
+    {
+      "path": "Module_11_Common/shared.module.ts",
+      "size": 520,
+      "hash": "12493749bacddbae4ddd6a9827164db1"
+    },
+    {
+      "path": "Module_11_Common/encryption.service.ts",
+      "size": 1982,
+      "hash": "149da560acf4753d2842767ac575e3c8"
+    },
+    {
+      "path": "Module_11_Common/user-data-source-fetching.service.ts",
+      "size": 5431,
+      "hash": "9ca3df93a75723a17dbe95f4e62a8fe4"
+    },
+    {
+      "path": "Module_11_Common/conditional-logic.module.ts",
+      "size": 253,
+      "hash": "17d32bd9a95b65d524410b6a49787e48"
+    },
+    {
+      "path": "Module_11_Common/conditional-logic.service.ts",
+      "size": 4455,
+      "hash": "37a4f6f57215c3a2584f9e0af9cbec26"
+    },
+    {
+      "path": "Module_11_Common/condition.interface.ts",
+      "size": 222,
+      "hash": "4b06a2f4353de938c509ffec20e7ecf5"
+    },
+    {
+      "path": "Module_11_Common/editor-main.js",
+      "size": 16073,
+      "hash": "a4e8723545d19fb90a666a688cddc3c0"
+    },
+    {
+      "path": "Module_11_Common/user-defined-data-source.dto.ts",
+      "size": 3287,
+      "hash": "2e0c83e37e92fac06a84352c5608cf15"
+    },
+    {
+      "path": "Module_11_Common/user-defined-data-source.entity.ts",
+      "size": 1480,
+      "hash": "f5c3efb9092a799b0fe272e69399f11b"
+    },
+    {
+      "path": "Module_11_Common/editor.html",
+      "size": 10521,
+      "hash": "667c306a605a85e2fb71e0a6edf1e258"
+    },
+    {
+      "path": "Module_11_Common/final_report.txt",
+      "size": 52,
+      "hash": "276e37f63cb29f3c4eebe447fb67fd15"
+    },
+    {
+      "path": "Module_11_Common/editor-canvas-styles.css",
+      "size": 2431,
+      "hash": "3157c750d5bd59d7975a4dfad7dbf7fa"
+    },
+    {
+      "path": "Module_11_Common/editor-styles.css",
+      "size": 1794,
+      "hash": "33d1860c362ec29afd9f1edd3ac08e59"
+    },
+    {
+      "path": "Module_11_Common/classic_professional.html",
+      "size": 10216,
+      "hash": "a53c45f5f21f92650f0077ee5bc77e2e"
+    },
+    {
+      "path": "Module_11_Common/phase_1_2_schema_additions.sql",
+      "size": 3068,
+      "hash": "eac8632804118b75af4d0537fa79602d"
+    },
+    {
+      "path": "Module_11_Common/setup.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/app.module.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/recurring-invoice-profile.controller.ts",
+      "size": 2691,
+      "hash": "f1cfe1c617bda91330f2c8170d67ed9c"
+    },
+    {
+      "path": "Module_11_Common/client-preference.module.ts",
+      "size": 618,
+      "hash": "562073b9a044eab9c42bc98937e0dccf"
+    },
+    {
+      "path": "Module_11_Common/client-preference.controller.ts",
+      "size": 2190,
+      "hash": "58167fcb6071958df5a4896169d46f2c"
+    },
+    {
+      "path": "Module_11_Common/client-preference.service.ts",
+      "size": 2878,
+      "hash": "285cf0d5513e959648f4c0cf1dd3af8b"
+    },
+    {
+      "path": "Module_11_Common/product-service-catalog.module.ts",
+      "size": 676,
+      "hash": "18aa3a07bf056aba02c51bc4edbd5363"
+    },
+    {
+      "path": "Module_11_Common/product-service-catalog.controller.ts",
+      "size": 2062,
+      "hash": "0fe1e2edd3755f04dfbe706f84323f78"
+    },
+    {
+      "path": "Module_11_Common/product-service-catalog.service.ts",
+      "size": 2858,
+      "hash": "caee2b7775c93ae48fdaede8c4a74bc4"
+    },
+    {
+      "path": "Module_11_Common/product-service-catalog.dto.ts",
+      "size": 774,
+      "hash": "10f75aab36efe8001e0363227eb1fe0c"
+    },
+    {
+      "path": "Module_11_Common/schema.sql",
+      "size": 6869,
+      "hash": "64fc38907dd98632a207ae2bd0f635fd"
+    },
+    {
+      "path": "Module_11_Common/7. Architectural Design",
+      "size": 110,
+      "hash": "ec43ae0dbeaa71e7f8a139b21ccb28ba"
+    },
+    {
+      "path": "Module_11_Common/AI Platform Development Requirements.zip",
+      "size": 27781,
+      "hash": "2a46b0ff3becfc958b61c6d551ecb6f0"
+    },
+    {
+      "path": "Module_11_Common/event-handler.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/tax-duty.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/exchange-rate.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/currency-management.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/tax-duty.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/exchange-rate.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/currency-management.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/cross-border-transaction.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/exchange-rate.entity.ts",
+      "size": 1686,
+      "hash": "3bebca5d85cc1f7fb35a1ddc77e80b3e"
+    },
+    {
+      "path": "Module_11_Common/currency-profile.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/insight.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/metric.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/insight.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/metric.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/data-segment.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/ml-forecasting.module.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/model-training.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/feature-engineering.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/forecasting.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/model-training.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/feature-engineering.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/forecasting.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/feature-store.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/seasonal-trend-analysis.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/collection-timing-optimization.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/cash-flow-forecast.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/forecast-model.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/device-management.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/offline-transaction.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/device-management.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/offline-transaction.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/ussd-session.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/device-registration.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/agent-transaction.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/offline-transaction.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/fraud-detection.module.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/fraud-intelligence.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/rule-engine.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/behavioral-biometrics.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/device-fingerprint.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/fraud-detection.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/fraud-intelligence.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/rule-engine.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/behavioral-biometrics.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/device-fingerprint.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/fraud-detection.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/fraud-intelligence-network.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/fraud-rule.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/behavioral-profile.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/device-fingerprint.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/fraud-case-event.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/fraud-case.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/fraud-detection-profile.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/business-verification.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/action-execution.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/recommendation.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/benchmark-visualization.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/action-execution.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/recommendation-engine.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/metric-calculation.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/action-execution.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/action-recommendation.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/benchmark-metric.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/verification-status.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/verification-document.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/video-kyc.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/digital-footprint.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/business-presence-verification.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/bank-account-verification.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/pan-verification.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/business-verification.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/gst-verification.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/business-verification.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/verification-provider.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/verification-history.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/verification-document.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/business-verification.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/business-identity-verification.module.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/phase1.zip",
+      "size": 177108400,
+      "hash": "983b6ddf318dbf2871acee4643ccf956"
+    },
+    {
+      "path": "Module_11_Common/beforephase1.zip",
+      "size": 276420,
+      "hash": "e2babd9130186028f8005ff2ac303896"
+    },
+    {
+      "path": "Module_11_Common/integratedphase1.1included.zip",
+      "size": 377966,
+      "hash": "dd6736057bf465d3cf4c8473784df670"
+    },
+    {
+      "path": "Module_11_Common/phase1andbefore.zip",
+      "size": 408061,
+      "hash": "e44c53fe20c352ca5641769917291f10"
+    },
+    {
+      "path": "Module_11_Common/phase1,2.zip",
+      "size": 177708344,
+      "hash": "802711e4843495ec910cda96747f4eab"
+    },
+    {
+      "path": "Module_11_Common/Phase1,2,3part.zip",
+      "size": 1455119,
+      "hash": "5a7760f1ed33644b711724412d81f21a"
+    },
+    {
+      "path": "Module_11_Common/SMEreceivablemanagement.zip",
+      "size": 3050038,
+      "hash": "01a16378df579cc49a803acbfc44142b"
+    },
+    {
+      "path": "Module_11_Common/blockchain-verification.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/implementation_report.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/event-bus.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/adapter.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/monitoring.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/flow.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/mapping.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/endpoint.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/adapter.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/monitoring.service.ts",
+      "size": 31863,
+      "hash": "c590428de0a5754060b5467fa46a7789"
+    },
+    {
+      "path": "Module_11_Common/event-bus.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/mapping.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/endpoint-management.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/index.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/documentation.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/personalization-engine.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/user-preference.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/localization.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/ab-testing.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/personalization-engine.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/user-preference.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/localization.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/personalization-engine.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/user-preference.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/ab-test-configuration.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/ui-component.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/personalization-rule.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/user-behavioral-data.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/user-preference-profile.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/fraud-detection.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/security.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/enhanced-security.module.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/audit.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/authentication.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/security-profile.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/authentication.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/audit.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/security.service.ts",
+      "size": 35121,
+      "hash": "5047bb91d159a928554041c6be509d26"
+    },
+    {
+      "path": "Module_11_Common/security-audit-log.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/fraud-detection-rule.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/authentication-session.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/authentication-method.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/security-profile.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/api-documentation.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/optimization.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/routing-engine.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/cost-management.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/performance-tracking.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/optimization.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/routing-engine.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/route-management.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/routing-configuration.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/cost-management.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/performance-tracking.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/optimization.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/routing-engine.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/route-management.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/routing-configuration.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/routing-optimization-job.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/routing-decision.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/route-performance.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/routing-rule.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/routing-configuration.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/user-guide.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/data-collection.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/recommendation.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/recommendation.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/analysis.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/data-collection.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/recommendation-model.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/recommendation.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/user-preference.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/consensus.controller.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/consensus.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/blockchain.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/blockchain-verification.module.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/consensus.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/consensus.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/blockchain.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/consensus.go",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/consensus-record.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/verification-event.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/verification-config.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/blockchain-transaction.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/dashboard-export-config.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/cross-filter.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/drill-down.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/cross-filter.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/drill-down.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/cross-filter-relationship.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/drill-down-configuration.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/architecture_review.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/data-source.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/validation.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/validation.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/visualization.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/data-processing.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/data-warehouse.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/metric-definition.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/data-partition.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/data-relationship.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/fact-table.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/dimension-table.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/data-ingestion.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/data-source.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/data-ingestion-log.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/data-ingestion-job.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/data-source.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/tsconfig.json",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/mock-security-services.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/mock-mapping-service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/mock-personalization-services.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/mock-blockchain-services.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/personalization-mock-providers.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/mock-providers.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/reason-analysis.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/probe-channel.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/probe-status.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/automated-status-probing.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/advanced-verification.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/status-tracking.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/escalation-status.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/escalation-level.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/verification-status.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/verification-type.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/evidence-type.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/owner-role.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/owner-type.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/automated-insight.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/insight-model.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/insight-rule.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/insight-feedback-type.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/insight-source.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/insight-priority.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/insight-status.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/insight-type.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/insight-feedback.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/insight.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/natural-language-query.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/nl-response-format.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/nl-response-type.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/nl-query-status.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/nl-query-type.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/nl-query-response.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/natural-language-query.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/recommendation-rule.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/recommendation-action-status.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/recommendation-feedback-type.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/recommendation-source.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/recommendation-priority.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/recommendation-status.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/recommendation-type.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/recommendation-action.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/recommendation-feedback.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/anomaly-detection.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/anomaly-model.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/anomaly-rule.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/anomaly-resolution-status.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/anomaly-feedback-type.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/anomaly-detection-method.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/anomaly-severity.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/anomaly-status.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/anomaly-type.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/anomaly-resolution.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/anomaly-feedback.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/anomaly.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/custom-report-designer.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/financial-visualization.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/geospatial-visualization.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/interactive-visualization.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/visualization-theme.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/advanced-visualization.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/validation_report.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/implementation_guide.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/Bridging the 5% Gap: Strategic Analysis and Implementation Options.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/jest.config.json",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/data-harmonization.service.ts",
+      "size": 88,
+      "hash": "88b53d64208e6235070620ff4efaac9b"
+    },
+    {
+      "path": "Module_11_Common/data-harmonization.entity.ts",
+      "size": 88,
+      "hash": "88b53d64208e6235070620ff4efaac9b"
+    },
+    {
+      "path": "Module_11_Common/SME Receivables Management Platform - Accurate Implementation Status Report.md",
+      "size": 22996,
+      "hash": "bb49b6f0132c73eea050091e888130cb"
+    },
+    {
+      "path": "Module_11_Common/self-optimization.service.ts",
+      "size": 38790,
+      "hash": "72e908a72404d18479e1d5e76037d38b"
+    },
+    {
+      "path": "Module_11_Common/self-optimization.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/autonomous-decision.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/monitoring.entity.ts",
+      "size": 23361,
+      "hash": "005ca7b6397158e825ffec1f4ae0381a"
+    },
+    {
+      "path": "Module_11_Common/workflow-orchestration.service.ts",
+      "size": 23374,
+      "hash": "5af5378da96eb030e9d250f5c7b6850f"
+    },
+    {
+      "path": "Module_11_Common/logger.util.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/base.dto.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/ai-optimization.entity.ts",
+      "size": 16073,
+      "hash": "0bc6dd5bcd2825e0582ad9dece602261"
+    },
+    {
+      "path": "Module_11_Common/module3_phase2_todo.md",
+      "size": 5041,
+      "hash": "7b3b140bf31b436fce738ab06beb9fa0"
+    },
+    {
+      "path": "Module_11_Common/module3_phase1_todo.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/comprehensive-system-tests.spec.ts",
+      "size": 47939,
+      "hash": "11bc75444c1f35db59dad292b8c2dd9e"
+    },
+    {
+      "path": "Module_11_Common/self-service-portal.entity.ts",
+      "size": 29746,
+      "hash": "eaf9a67af1afa6151be923373b427e00"
+    },
+    {
+      "path": "Module_11_Common/tenant.entity.ts",
+      "size": 16500,
+      "hash": "f8c4441b55f1d616f4fae0893376780d"
+    },
+    {
+      "path": "Module_11_Common/dynamic-pricing.entity.ts",
+      "size": 16958,
+      "hash": "de71dae277ef79c02c69818045c6b7a7"
+    },
+    {
+      "path": "Module_11_Common/Production Deployment Guide.md",
+      "size": 96312,
+      "hash": "02c03afe5d10dea0ecf3a9de1d6907b5"
+    },
+    {
+      "path": "Module_11_Common/user-management.service.ts",
+      "size": 35942,
+      "hash": "0ae1b885f5e8c0847662124c1dd83b5f"
+    },
+    {
+      "path": "Module_11_Common/tenant-management.service.ts",
+      "size": 31244,
+      "hash": "695520a9316a421d936c65dd97a19343"
+    },
+    {
+      "path": "Module_11_Common/subscription-plan.entity.ts",
+      "size": 16676,
+      "hash": "3eacb1985999e9f7d492cce983548100"
+    },
+    {
+      "path": "Module_11_Common/ai-data-harmonization.service.ts",
+      "size": 88,
+      "hash": "88b53d64208e6235070620ff4efaac9b"
+    },
+    {
+      "path": "Module_11_Common/ai-data-harmonization.entity.ts",
+      "size": 88,
+      "hash": "88b53d64208e6235070620ff4efaac9b"
+    },
+    {
+      "path": "Module_11_Common/Accurate_SME_Platform_Status_Report.md",
+      "size": 16758,
+      "hash": "b50c2e2c204c453e5c9578808cc41c98"
+    },
+    {
+      "path": "Module_11_Common/workflow-engine.service.ts",
+      "size": 14296,
+      "hash": "3e1be1ffc0f9c44bf3cbb72b87445191"
+    },
+    {
+      "path": "Module_11_Common/core.module.ts",
+      "size": 1085,
+      "hash": "3c3ddea2b53b83b56cfa1e5d96db7970"
+    },
+    {
+      "path": "Module_11_Common/rules-engine.service.ts",
+      "size": 11394,
+      "hash": "e7eeedf889a0a42a2185e58a0aa15534"
+    },
+    {
+      "path": "Module_11_Common/base.entity.ts",
+      "size": 1079,
+      "hash": "e981de8fcdaa3301ba18dad8a7d2b438"
+    },
+    {
+      "path": "Module_11_Common/external-data.service.ts",
+      "size": 29563,
+      "hash": "b4c731b5b5ccb913343ab0004f0ab2af"
+    },
+    {
+      "path": "Module_11_Common/external-data-source.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/industry-classification-mapping.entity.ts",
+      "size": 3124,
+      "hash": "a905828b41aebd77d1ad2b3c460948a0"
+    },
+    {
+      "path": "Module_11_Common/create-assessment-data-source.dto.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/data-source-type.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/confidence-level.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/advanced-customization.service.ts",
+      "size": 26227,
+      "hash": "942c0eab2a4c2168885a79ae531603c5"
+    },
+    {
+      "path": "Module_11_Common/phase7_4_implementation_plan.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/audit-security.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/audit-security.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/financial-insights.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/deepseek-r1.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/financial-insights.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/conversational-ai.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/nlp.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/automl.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/ml-model.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/nlp-insights.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/anomaly-detection.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/ml-model.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/nlp.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/anomaly-detection.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/forecasting.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/phase8_1_todo.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/optimization-engine.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/financial-planning.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/optimization-engine.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/working-capital.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/working-capital-snapshot.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/cash-flow-forecast.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/working-capital-optimization.module.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/financial-plan.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/optimization-recommendation.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/working-capital-snapshot.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/optimization-recommendation-type.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/forecasting-method.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/working-capital-metric-type.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/dispute.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/dispute.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/dispute.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/dispute-classification.processor.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/dispute-classification.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/dispute-audit-log.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/dispute-comment.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/dispute-document.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/dispute-classification.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/dispute.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/dispute-resolution.module.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/dispute-resolution.dto.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/dispute-resolution.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/phase8_1_detailed_requirements.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/phase8_technical_architecture.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/phase8_requirements_document.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/phase7_5_completion_report.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/dynamic-discounting.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/dynamic-discounting.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/notification.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/supplier-enrollment.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/dynamic-discount-program.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/discount-offer.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/discount-calculation.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/dynamic-discounting.module.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/dynamic-discounting.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/dynamic-discounting.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/phase7_5_requirements_document.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/phase7_4_completion_report.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/technical-documentation.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/scheme-recommendation.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/localization.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/gst-calculation.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/upi-transaction.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/phase8.4_refinement_completion_report.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/phase8.4_executive_summary_refined.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/phase8.4_technical_architecture_refined.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/phase8.4_detailed_requirements_refined.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/phase8.4_project_completion_report.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/phase8.4_executive_summary.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/phase8.4_technical_architecture.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/phase8.4_detailed_requirements.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/phase8.4_research_findings.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/implementation-completion-report.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/explainable-ai.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/ml-model.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/explainable-ai.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/explainable-ai.dto.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/explainable-ai.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/intelligent-automation.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/behavioral-analysis.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/behavioral-intelligence.dto.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/behavioral-intelligence.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/ml-model.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/ai-engine.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/base-ai.dto.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/phase8.3_project_completion_report.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/phase8.3_executive_summary.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/phase8.3_technical_architecture.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/phase8.3_detailed_requirements.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/phase8.3_research_findings.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/collections.dto.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/documents.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/documents.dto.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/documents.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/bad-debts.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/bad-debts.dto.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/bad-debts.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/collections.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/collections.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/customer-health-monitoring.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/onboarding.interface.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/customer-health.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/lead.dto.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/customer-health.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/onboarding.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/lead-management.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/conversion-tracking.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/nurturing-automation.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/nurturing-campaign.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/lead-management.controller.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/lead-management.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/lead-activity.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/lead.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/nurturing.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/lead-status.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/completion_report.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/phase8_planning.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/phase8_comprehensive_analysis.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/production-readiness-validator.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/enhanced-security.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/real-time-inference-engine.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/enhanced-ai-model-optimization.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/performance-optimization.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/monitoring.dto.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/dispute-resolution-performance.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/dispute-classification.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/phase10.2_detailed_requirements.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/data-synchronization.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/phase7_1_completion_report.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/final_completion_report.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/completion_report_phase5_4.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/phase3.6_completion_report.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/module9_strategic_recommendations.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/consent-management.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/partner-onboarding.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/consent-management.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/content-management.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/consent-management.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/partner-onboarding.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/partner-activity.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/partner-revenue.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/partner-performance.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/partner-certification.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/partner.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/partner.interface.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/intelligence.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/marketplace.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/partner.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/revenue-optimization.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/customer-behavior-analysis.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/market-analysis.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/revenue-optimization.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/revenue-optimization.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/customer-behavior-analysis.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/customer-behavior.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/phase9.2_detailed_requirements.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/phase9.1_detailed_requirements.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/customer-health-monitoring.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/requirements_gap_analysis_report.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/quality-assurance.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/quality-assurance.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/quality-check.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/relationship-intelligence.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/cultural-intelligence.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/relationship-intelligence.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/relationship-profile.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/cultural-intelligence.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/cultural-profile.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/autonomous-decision-making.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/ai-business-intelligence.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/business-intelligence.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/self-optimizing-systems.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/safety-alignment.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/autonomous-process-optimization.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/autonomous-decision-making.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/autonomous-operations.interface.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/ai-capabilities.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/autonomous-operations.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/automated-decision-making.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/business-intelligence.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/automated-decision-making.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/decision-engine.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/prediction-model.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/business-intelligence.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/intelligent-automation.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/automated-decision-making.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/learning-adaptation.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/strategic-guidance.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/user-experience.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/learning-adaptation.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/learning-model.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/strategic-guidance.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/strategic-recommendation.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/strategic-guidance.interface.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/learning.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/strategic-guidance.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/phase10.1_detailed_requirements.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_11_Common/mobile.html",
+      "size": 2663,
+      "hash": "6354f577987c40123d72d5a3522aa466"
+    },
+    {
+      "path": "Module_11_Common/queue.controller.ts",
+      "size": 3004,
+      "hash": "515ea025049672741974cc5f4d88b5ea"
+    },
+    {
+      "path": "Module_11_Common/queue.module.ts",
+      "size": 1238,
+      "hash": "e0d145de0cc67267787b49c880ac8732"
+    },
+    {
+      "path": "Module_11_Common/package.json.update",
+      "size": 135,
+      "hash": "2a1418cc515b8f3cd870aa7afba78a85"
+    },
+    {
+      "path": "Module_11_Common/docker-compose.rabbitmq.yml",
+      "size": 507,
+      "hash": "d4aaa8a6a3d7b29154f7d23e917df163"
+    },
+    {
+      "path": "Module_11_Common/Phase_2_Deliverables.zip",
+      "size": 55392,
+      "hash": "8608dfb64bcf04752c0183af80c127a5"
+    },
+    {
+      "path": "Module_11_Common/FollowUpConfiguration.test.jsx",
+      "size": 9680,
+      "hash": "c9766fcd758d9784fe114b86b15a0799"
+    },
+    {
+      "path": "Module_11_Common/RecipientManagement.test.jsx",
+      "size": 5514,
+      "hash": "1261492732944c2d596bd88b7f786c58"
+    },
+    {
+      "path": "Module_11_Common/FollowUpConfiguration.jsx",
+      "size": 29647,
+      "hash": "f56fcc3b31e2f37725ce0fcfc3f94424"
+    },
+    {
+      "path": "Module_11_Common/sms-distributor.service.ts",
+      "size": 2149,
+      "hash": "00966468368fb0e4ceaa6e5e3dc46937"
+    },
+    {
+      "path": "Module_11_Common/whatsapp-distributor.service.ts",
+      "size": 2300,
+      "hash": "9ceb5cfabb8024be406810d87716345a"
+    },
+    {
+      "path": "Module_11_Common/email-distributor.service.ts",
+      "size": 2372,
+      "hash": "429def5b792d78beb0a80eecccca090f"
+    },
+    {
+      "path": "Module_11_Common/channel-distributor.interface.ts",
+      "size": 2000,
+      "hash": "cda83c243abde77d27c356a7ba8a91fe"
+    },
+    {
+      "path": "Module_11_Common/recipient-contact.service.ts",
+      "size": 2496,
+      "hash": "86aba8bf91fbcba19e1357c9b7caa189"
+    },
+    {
+      "path": "Module_11_Common/recipient-contact.service.spec.ts",
+      "size": 5983,
+      "hash": "0cf83ca0e5ec4dd6a1e2adff0738367a"
+    },
+    {
+      "path": "Module_11_Common/app.module.ts.new",
+      "size": 810,
+      "hash": "ffd87ad0534836c1999c89abe1ee55b5"
+    },
+    {
+      "path": "Module_11_Common/recipient-contact.controller.spec.ts",
+      "size": 5381,
+      "hash": "4ecf969a1d27d9f27b9962a56f649e38"
+    },
+    {
+      "path": "Module_11_Common/recipient-contact.controller.ts",
+      "size": 3670,
+      "hash": "44714e71879a48d57ad205e44bf53068"
+    },
+    {
+      "path": "Module_11_Common/user-data-source.e2e-spec.ts",
+      "size": 11378,
+      "hash": "5907ea92407da62e46beb25785e993a4"
+    },
+    {
+      "path": "Module_11_Common/voice-module.spec.ts",
+      "size": 12687,
+      "hash": "73171a5cd6d1bc1895a260c53ab69c75"
+    },
+    {
+      "path": "Module_11_Common/voice.module.ts",
+      "size": 1070,
+      "hash": "1c69d2980314cf783af7dfcea324e46c"
+    },
+    {
+      "path": "Module_11_Common/voice-language.service.ts",
+      "size": 11487,
+      "hash": "5b69d7622812485dab2a0a00554496fc"
+    },
+    {
+      "path": "Module_11_Common/currency.entity.ts",
+      "size": 799,
+      "hash": "9dcfc1d1ee41d06e5e796f0c50819f95"
+    },
+    {
+      "path": "Module_11_Common/voice-collection.service.ts",
+      "size": 12447,
+      "hash": "443b2979ab0177ef053c62402afda098"
+    },
+    {
+      "path": "Module_11_Common/voice-authentication.service.ts",
+      "size": 13547,
+      "hash": "d44cff52e92c28bf3f0535b8fdf99a93"
+    },
+    {
+      "path": "Module_11_Common/voice-language.entity.ts",
+      "size": 637,
+      "hash": "c39aabece1bbbc1b052ec3f2227d1642"
+    },
+    {
+      "path": "Module_11_Common/financial-scenario.entity.ts",
+      "size": 1244,
+      "hash": "9efd80fa38de64da6365d7d9197da415"
+    },
+    {
+      "path": "Module_11_Common/financial-insight.entity.ts",
+      "size": 1323,
+      "hash": "968208426a4d0697d181ac53f50ac8ed"
+    },
+    {
+      "path": "Module_11_Common/currency.controller.ts",
+      "size": 5010,
+      "hash": "4f9e34cd767b79fe983253ca479dc6c9"
+    },
+    {
+      "path": "Module_11_Common/currency-conversion.service.ts",
+      "size": 13709,
+      "hash": "cdaa267bc751d882aaf0831e39d8a877"
+    },
+    {
+      "path": "Module_11_Common/mobile-app.test.jsx",
+      "size": 10955,
+      "hash": "b6de0645e1697b2469b4647490b760bd"
+    },
+    {
+      "path": "Module_11_Common/role-based-access.service.ts",
+      "size": 7692,
+      "hash": "4f03f78b8b85948b744def1d800f25e6"
+    }
+  ]
+}

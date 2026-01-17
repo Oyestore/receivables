@@ -1,0 +1,400 @@
+/* Morning Briefing Styles */
+
+.briefing-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 32px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 24px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    animation: fadeInScale 0.4s ease;
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.briefing-loading {
+    text-align: center;
+    padding: 48px;
+    font-size: 18px;
+    color: #6b7280;
+}
+
+.briefing-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 32px;
+}
+
+.briefing-greeting {
+    display: flex;
+    gap: 16px;
+}
+
+.greeting-icon {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-shrink: 0;
+}
+
+.briefing-greeting h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    color: #111827;
+}
+
+.briefing-greeting p {
+    font-size: 16px;
+    color: #6b7280;
+    margin: 0;
+}
+
+.close-briefing {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(0, 0, 0, 0.05);
+    font-size: 28px;
+    color: #6b7280;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.close-briefing:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.briefing-section {
+    margin-bottom: 24px;
+    padding: 24px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(249, 250, 251, 0.9));
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+    color: #374151;
+}
+
+.section-header h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    flex: 1;
+}
+
+.time-estimate {
+    font-size: 13px;
+    color: #6b7280;
+    background: rgba(0, 0, 0, 0.05);
+    padding: 4px 12px;
+    border-radius: 12px;
+}
+
+/* Priority Actions */
+.priority-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.priority-item {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    padding: 16px;
+    background: white;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    transition: all 0.2s;
+}
+
+.priority-item:hover {
+    border-color: #667eea;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+}
+
+.priority-number {
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.priority-content {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.priority-content span {
+    font-size: 15px;
+    color: #111827;
+}
+
+.quick-action-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+
+.quick-action-btn:hover {
+    background: #5568d3;
+    transform: translateX(2px);
+}
+
+/* Cash Position */
+.cash-overview {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.cash-main {
+    flex: 1;
+}
+
+.cash-status {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.cash-status.healthy {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.cash-amount {
+    font-size: 36px;
+    font-weight: 700;
+    color: #10b981;
+}
+
+.cash-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.cash-detail {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    font-size: 14px;
+}
+
+.cash-detail span {
+    color: #6b7280;
+}
+
+.cash-detail strong {
+    color: #111827;
+}
+
+.cash-detail.warning strong {
+    color: #f59e0b;
+}
+
+/* Highlights */
+.highlights-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    background: white;
+    border-radius: 10px;
+    font-size: 14px;
+    border-left: 4px solid #e5e7eb;
+}
+
+.highlight-item.success {
+    border-left-color: #10b981;
+}
+
+.highlight-item.warning {
+    border-left-color: #f59e0b;
+}
+
+.highlight-item.achievement {
+    border-left-color: #8b5cf6;
+}
+
+/* Prediction */
+.prediction-card {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 24px;
+    border-radius: 12px;
+    color: white;
+}
+
+.prediction-text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.prediction-confidence {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.confidence-bar {
+    flex: 1;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.confidence-fill {
+    height: 100%;
+    background: white;
+    border-radius: 4px;
+    transition: width 0.5s ease;
+}
+
+.prediction-confidence span {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* Quick Stats */
+.briefing-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 24px 0;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.02);
+    border-radius: 12px;
+}
+
+.stat-value {
+    font-size: 28px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 4px;
+}
+
+.stat-label {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+/* Actions */
+.briefing-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.primary-btn,
+.secondary-btn {
+    flex: 1;
+    padding: 14px 24px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.primary-btn {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+}
+
+.primary-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+.secondary-btn {
+    background: white;
+    color: #374151;
+    border: 2px solid #e5e7eb;
+}
+
+.secondary-btn:hover {
+    background: #f9fafb;
+    border-color: #d1d5db;
+}
+
+@media (max-width: 768px) {
+    .briefing-container {
+        padding: 20px;
+    }
+
+    .cash-overview {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .briefing-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .briefing-actions {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,87 @@
+{
+  "module_name": "Module_09_Marketing_Customer_Success",
+  "version": "1.0.0",
+  "generated_at": "2025-11-16T11:40:57.754965",
+  "metadata": {
+    "title": "B2B2C Marketing & Customer Success Module",
+    "description": "Growth engine with AI-powered lead scoring and partner ecosystem",
+    "key_features": [
+      "AI-powered lead scoring",
+      "Customer onboarding automation",
+      "Revenue optimization analytics",
+      "Partner ecosystem platform"
+    ]
+  },
+  "statistics": {
+    "total_files": 13,
+    "total_size_bytes": 1096061,
+    "total_size_mb": 1.05
+  },
+  "files": [
+    {
+      "path": "Module_09_Marketing_Customer_Success/Phase 9.2: Customer Onboarding & Success Management.md",
+      "size": 109531,
+      "hash": "652f29590a2693382e2026bb0b8dd0da"
+    },
+    {
+      "path": "Module_09_Marketing_Customer_Success/Phase 9.1: Customer Acquisition & Lead Management.md",
+      "size": 35364,
+      "hash": "b3cc3e3a273212a5c19c8c9f6867d703"
+    },
+    {
+      "path": "Module_09_Marketing_Customer_Success/Phase 9.1 Implementation Completion Report.md",
+      "size": 24624,
+      "hash": "4e26609a819dd1d65e33d0b295072ccf"
+    },
+    {
+      "path": "Module_09_Marketing_Customer_Success/Phase 9.1: Customer Acquisition & Lead Management - Detailed Requirements Document.md",
+      "size": 46653,
+      "hash": "dcb48627ae48e7cbf3d80ddb15f6da0e"
+    },
+    {
+      "path": "Module_09_Marketing_Customer_Success/B2B2C Marketing Strategy: SME Receivables Platform Customer Engagement.md",
+      "size": 56749,
+      "hash": "150e1a598780d5b8a8c7e47b132a8861"
+    },
+    {
+      "path": "Module_09_Marketing_Customer_Success/b2b2c_marketing_strategy.pdf",
+      "size": 333976,
+      "hash": "59d57ec8709d35806d022d58eaf2e628"
+    },
+    {
+      "path": "Module_09_Marketing_Customer_Success/Module 9 Strategic Recommendations: SME Receivables Management Platform.md",
+      "size": 62546,
+      "hash": "0e4c4be0198a585000dc7f11ead38142"
+    },
+    {
+      "path": "Module_09_Marketing_Customer_Success/Phase 9.4: Partner Ecosystem & B2B2C Marketing - Implementation Todo.md",
+      "size": 3023,
+      "hash": "968c422bebe9b45d29532bf9d60e7b1c"
+    },
+    {
+      "path": "Module_09_Marketing_Customer_Success/b2b2c.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_09_Marketing_Customer_Success/Phase 9.4: Partner Ecosystem & B2B2C Marketing.md",
+      "size": 175100,
+      "hash": "c3de108a73ea3d6df521f80f78f99426"
+    },
+    {
+      "path": "Module_09_Marketing_Customer_Success/b2b2c_marketing_strategy.md",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_09_Marketing_Customer_Success/phase9.3_detailed_requirements.md",
+      "size": 245136,
+      "hash": "7d85d79bd59f37c163f01ca1a2593843"
+    },
+    {
+      "path": "Module_09_Marketing_Customer_Success/Phase 9.2: Customer Onboarding & Success Management - Implementation Todo.md",
+      "size": 3279,
+      "hash": "5d19b50f83f13b56f75af4ea64505679"
+    }
+  ]
+}

@@ -1,0 +1,448 @@
+.general-ledger {
+    padding: 2rem;
+    max-width: 1600px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    min-height: 100vh;
+}
+
+/* Header */
+.gl-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.gl-title-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.gl-icon {
+    width: 48px;
+    height: 48px;
+    color: #60a5fa;
+}
+
+.gl-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+}
+
+.gl-subtitle {
+    color: #94a3b8;
+    margin: 0.25rem 0 0 0;
+}
+
+.gl-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-outline {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 12px;
+    font-weight: 600;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Tabs */
+.gl-tabs {
+    display: flex;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    padding: 0.5rem;
+    border-radius: 16px;
+    margin-bottom: 2rem;
+}
+
+.tab {
+    flex: 1;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    border: none;
+    background: transparent;
+    color: #94a3b8;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.tab-active {
+    background: linear-gradient(135deg, #60a5fa, #3b82f6);
+    color: white;
+    box-shadow: 0 10px 30px rgba(96, 165, 250, 0.3);
+}
+
+/* Content */
+.gl-content {
+    min-height: 60vh;
+}
+
+/* Accounts Grid */
+.accounts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+.account-group {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.group-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.group-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.group-total {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #60a5fa;
+}
+
+.account-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.account-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    transition: all 0.2s ease;
+}
+
+.account-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateX(5px);
+}
+
+.account-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.account-code {
+    font-family: 'Courier New', monospace;
+    font-weight: 700;
+    color: #60a5fa;
+    background: rgba(96, 165, 250, 0.1);
+    padding: 0.25rem 0.75rem;
+    border-radius: 6px;
+}
+
+.account-name {
+    color: white;
+    font-weight: 500;
+}
+
+.account-balance {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.balance {
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+
+.balance.debit {
+    color: #10b981;
+}
+
+.balance.credit {
+    color: #f59e0b;
+}
+
+.balance-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.balance-icon.debit {
+    color: #10b981;
+}
+
+.balance-icon.credit {
+    color: #f59e0b;
+}
+
+/* Journal Entries */
+.journal-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 1.5rem;
+}
+
+.journal-entry-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.journal-entry-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    border-color: rgba(96, 165, 250, 0.3);
+}
+
+.entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.entry-number {
+    font-family: 'Courier New', monospace;
+    font-weight: 700;
+    color: #60a5fa;
+    font-size: 1.125rem;
+}
+
+.entry-date {
+    color: #94a3b8;
+    font-size: 0.875rem;
+}
+
+.entry-description {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.entry-amounts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.entry-amount {
+    padding: 1rem;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.entry-amount.debit {
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.entry-amount.credit {
+    background: rgba(245, 158, 11, 0.1);
+    border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.amount-label {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem;
+    color: #94a3b8;
+}
+
+.amount-value {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.entry-amount.debit .amount-value {
+    color: #10b981;
+}
+
+.entry-amount.credit .amount-value {
+    color: #f59e0b;
+}
+
+.entry-status {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.status-posted {
+    background: rgba(16, 185, 129, 0.1);
+    color: #10b981;
+    padding: 0.375rem 0.875rem;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+/* Trial Balance */
+.trial-balance-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.trial-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin: 0 0 2rem 0;
+    text-align: center;
+}
+
+.trial-summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.trial-total {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+}
+
+.trial-label {
+    display: block;
+    color: #94a3b8;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.75rem;
+}
+
+.trial-value {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.trial-value.debit {
+    color: #10b981;
+}
+
+.trial-value.credit {
+    color: #f59e0b;
+}
+
+.trial-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1.5rem;
+    border-radius: 16px;
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.trial-status.balanced {
+    background: rgba(16, 185, 129, 0.1);
+    color: #10b981;
+    border: 2px solid rgba(16, 185, 129, 0.3);
+}
+
+.trial-status.unbalanced {
+    background: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+    border: 2px solid rgba(239, 68, 68, 0.3);
+}
+
+.status-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.trial-table {
+    display: block;
+}
+
+.trial-table-header,
+.trial-table-row {
+    display: grid;
+    grid-template-columns: 120px 1fr 150px 150px;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: center;
+}
+
+.trial-table-header {
+    font-weight: 600;
+    color: #94a3b8;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.trial-table-row {
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.2s ease;
+}
+
+.trial-table-row:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.account-code-cell {
+    font-family: 'Courier New', monospace;
+    font-weight: 700;
+    color: #60a5fa;
+}
+
+.text-right {
+    text-align: right;
+}

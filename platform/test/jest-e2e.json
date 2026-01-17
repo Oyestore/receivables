@@ -1,0 +1,43 @@
+{
+    "moduleFileExtensions": [
+        "js",
+        "json",
+        "ts"
+    ],
+    "rootDir": ".",
+    "testEnvironment": "node",
+    "testMatch": ["**/*.e2e.spec.ts"],
+    "transform": {
+        "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+        "**/*.{ts,js}",
+        "!**/*.d.ts",
+        "!**/node_modules/**",
+        "!**/dist/**",
+        "!**/coverage/**",
+        "!**/*.spec.ts",
+        "!**/*.e2e-spec.ts",
+        "!**/test/**",
+        "!**/main.ts",
+        "!**/app.module.ts"
+    ],
+    "coverageDirectory": "./coverage",
+    "coverageReporters": [
+        "html",
+        "text",
+        "lcov"
+    ],
+    "coverageThreshold": {
+        "global": {
+            "branches": 70,
+            "functions": 70,
+            "lines": 70,
+            "statements": 70
+        }
+    },
+    "moduleNameMapper": {
+        "^src/(.*)$": "<rootDir>/src/$1"
+    },
+    "testTimeout": 60000
+}

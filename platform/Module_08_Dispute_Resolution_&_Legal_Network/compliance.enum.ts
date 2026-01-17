@@ -1,0 +1,13 @@
+export enum ComplianceStatus {
+    COMPLIANT = 'COMPLIANT',
+    NON_COMPLIANT = 'NON_COMPLIANT',
+    PENDING_REVIEW = 'PENDING_REVIEW',
+    UNDER_INVESTIGATION = 'UNDER_INVESTIGATION'
+}
+
+export enum ComplianceType {
+    REGULATORY = 'REGULATORY',
+    LEGAL = 'LEGAL',
+    INDUSTRY = 'INDUSTRY',
+    INTERNAL = 'INTERNAL'
+}

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice - Modern</title>
+    <style>
+        body {
+            font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 11px;
+            line-height: 1.5;
+            color: #4A4A4A;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .invoice-container {
+            max-width: 850px;
+            margin: 25px auto;
+            padding: 35px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+        .header-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding-bottom: 25px;
+            border-bottom: 2px solid #007AFF; /* Accent color */
+            margin-bottom: 25px;
+        }
+        .company-logo-modern img {
+            max-height: 60px;
+            /* Consider adding a data-field-id if the URL is dynamic */
+        }
+        .invoice-title-modern {
+            text-align: right;
+        }
+        .invoice-title-modern h1 {
+            font-size: 28px;
+            color: #007AFF;
+            margin: 0 0 5px 0;
+            font-weight: 500;
+        }
+        .invoice-details-modern p {
+            margin: 3px 0;
+            font-size: 12px;
+        }
+        .parties-section {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        .from-address, .to-address {
+            width: 48%;
+        }
+        .from-address h3, .to-address h3 {
+            font-size: 14px;
+            color: #333;
+            margin-top: 0;
+            margin-bottom: 8px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .items-table-modern {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        .items-table-modern th,
+        .items-table-modern td {
+            border-bottom: 1px solid #eaeaea;
+            padding: 12px 8px;
+            text-align: left;
+        }
+        .items-table-modern th {
+            background-color: #f5f7fa;
+            font-weight: 500;
+            font-size: 12px;
+            color: #007AFF;
+        }
+        .items-table-modern td {
+            font-size: 12px;
+        }
+        .items-table-modern .numerical {
+            text-align: right;
+        }
+        .summary-section {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 30px;
+        }
+        .summary-table {
+            width: 45%;
+            border-collapse: collapse;
+        }
+        .summary-table td {
+            padding: 9px 8px;
+            border-bottom: 1px solid #eaeaea;
+        }
+        .summary-table .label {
+            font-weight: 500;
+            text-align: right;
+            color: #555;
+        }
+        .summary-table .total-amount {
+            font-weight: bold;
+            font-size: 16px;
+            color: #007AFF;
+        }
+        .footer-content {
+            margin-top: 35px;
+            padding-top: 20px;
+            border-top: 2px solid #007AFF;
+            font-size: 11px;
+            color: #666;
+            text-align: center;
+        }
+        .footer-content p {
+            margin: 5px 0;
+        }
+        .field-visible {
+            /* display: block; */
+        }
+        .field-hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="invoice-container">
+        <div class="header-section">
+            <div class="company-logo-modern field-visible" data-field-id="company_logo">
+                <img src="{{ company_logo_url }}" alt="Company Logo">
+            </div>
+            <div class="invoice-title-modern">
+                <h1>INVOICE</h1>
+                <div class="invoice-details-modern">
+                    <p data-field-id="invoice_number" data-mandatory="true"><strong>Invoice No:</strong> {{ invoice_number }}</p>
+                    <p data-field-id="invoice_date" data-mandatory="true"><strong>Date:</strong> {{ invoice_date }}</p>
+                    <p class="field-visible" data-field-id="due_date"><strong>Due Date:</strong> {{ due_date }}</p>
+                    <p class="field-visible" data-field-id="order_number"><strong>Order No:</strong> {{ order_number }}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="parties-section">
+            <div class="from-address">
+                <h3>From:</h3>
+                <p><strong>{{ company_name }}</strong></p>
+                <p class="field-visible" data-field-id="company_address_line1">{{ company_address_line1 }}</p>
+                <p class="field-visible" data-field-id="company_address_line2">{{ company_address_line2 }}</p>
+                <p class="field-visible" data-field-id="company_city_state_zip">{{ company_city_state_zip }}</p>
+                <p class="field-visible" data-field-id="company_phone">Phone: {{ company_phone }}</p>
+                <p class="field-visible" data-field-id="company_email">Email: {{ company_email }}</p>
+                <p data-field-id="company_gstin" data-mandatory="true">GSTIN: {{ company_gstin }}</p>
+            </div>
+            <div class="to-address">
+                <h3>To:</h3>
+                <p><strong>{{ client_name }}</strong></p>
+                <p class="field-visible" data-field-id="client_address_line1">{{ client_address_line1 }}</p>
+                <p class="field-visible" data-field-id="client_address_line2">{{ client_address_line2 }}</p>
+                <p class="field-visible" data-field-id="client_city_state_zip">{{ client_city_state_zip }}</p>
+                <p class="field-visible" data-field-id="client_phone">Phone: {{ client_phone }}</p>
+                <p class="field-visible" data-field-id="client_email">Email: {{ client_email }}</p>
+                <p class="field-visible" data-field-id="client_gstin">GSTIN: {{ client_gstin }}</p>
+            </div>
+        </div>
+
+        <table class="items-table-modern">
+            <thead>
+                <tr>
+                    <th class="field-visible" data-field-id="item_description_header">Item Description</th>
+                    <th class="numerical field-visible" data-field-id="item_quantity_header">Qty</th>
+                    <th class="numerical field-visible" data-field-id="item_unit_price_header">Rate</th>
+                    <th class="numerical field-visible" data-field-id="item_total_amount_header">Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{ line_items_rows }}
+                <!-- Example row structure:
+                <tr>
+                    <td class="field-visible" data-field-id="item_description">{{ item_description }}</td>
+                    <td class="numerical field-visible" data-field-id="item_quantity">{{ item_quantity }}</td>
+                    <td class="numerical field-visible" data-field-id="item_unit_price">{{ item_unit_price }}</td>
+                    <td class="numerical field-visible" data-field-id="item_total_amount">{{ item_total_amount }}</td>
+                </tr>
+                -->
+            </tbody>
+        </table>
+
+        <div class="summary-section">
+            <table class="summary-table">
+                <tbody>
+                    <tr class="field-visible" data-field-id="subtotal_row">
+                        <td class="label">Subtotal:</td>
+                        <td class="numerical">{{ subtotal_amount }}</td>
+                    </tr>
+                    <tr class="field-visible" data-field-id="discount_row">
+                        <td class="label">Discount:</td>
+                        <td class="numerical">{{ discount_total }}</td>
+                    </tr>
+                    <!-- More granular tax rows can be added here if needed -->
+                    <tr class="field-visible" data-field-id="tax_row_cgst">
+                        <td class="label">CGST ({{ cgst_rate_percentage }}%):</td>
+                        <td class="numerical">{{ cgst_amount }}</td>
+                    </tr>
+                    <tr class="field-visible" data-field-id="tax_row_sgst">
+                        <td class="label">SGST ({{ sgst_rate_percentage }}%):</td>
+                        <td class="numerical">{{ sgst_amount }}</td>
+                    </tr>
+                    <tr class="field-visible" data-field-id="tax_row_igst">
+                        <td class="label">IGST ({{ igst_rate_percentage }}%):</td>
+                        <td class="numerical">{{ igst_amount }}</td>
+                    </tr>
+                    <tr class="field-visible" data-field-id="shipping_row">
+                        <td class="label">Shipping:</td>
+                        <td class="numerical">{{ shipping_amount }}</td>
+                    </tr>
+                    <tr data-field-id="grand_total_row" data-mandatory="true">
+                        <td class="label total-amount">Total:</td>
+                        <td class="numerical total-amount">{{ grand_total_amount }}</td>
+                    </tr>
+                    <tr class="field-visible" data-field-id="amount_paid_row">
+                        <td class="label">Amount Paid:</td>
+                        <td class="numerical">{{ amount_paid }}</td>
+                    </tr>
+                    <tr class="field-visible" data-field-id="balance_due_row">
+                        <td class="label">Balance Due:</td>
+                        <td class="numerical">{{ balance_due }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="footer-content field-visible" data-field-id="footer_notes_section">
+            <p class="field-visible" data-field-id="notes"><strong>Notes:</strong> {{ notes }}</p>
+            <p class="field-visible" data-field-id="terms_and_conditions"><strong>Terms & Conditions:</strong> {{ terms_and_conditions }}</p>
+            <p class="field-visible" data-field-id="payment_instructions">{{ payment_instructions }}</p>
+            <p class="field-visible" data-field-id="company_bank_details">Bank Details: {{ company_bank_name }}, A/C: {{ company_bank_account_number }}, IFSC: {{ company_bank_ifsc }}</p>
+        </div>
+    </div>
+</body>
+</html>
+

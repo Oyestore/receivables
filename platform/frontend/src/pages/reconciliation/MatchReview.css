@@ -1,0 +1,343 @@
+.match-review {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 100%);
+    min-height: 100vh;
+}
+
+/* Header */
+.review-header {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    border-radius: 24px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.header-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-icon {
+    width: 48px;
+    height: 48px;
+    color: #6366f1;
+    animation: sparkle 2s ease-in-out infinite;
+}
+
+@keyframes sparkle {
+
+    0%,
+    100% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.1) rotate(5deg);
+        opacity: 0.8;
+    }
+}
+
+.review-title {
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+.review-subtitle {
+    color: #64748b;
+    margin: 0.25rem 0 0 0;
+}
+
+/* Matches Container */
+.matches-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Match Card */
+.match-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    border-radius: 24px;
+    padding: 2rem;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+.match-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: linear-gradient(90deg, #6366f1, #8b5cf6);
+}
+
+/* Score Badge */
+.match-score-badge {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    color: white;
+    padding: 0.75rem 1.25rem;
+    border-radius: 12px;
+    font-weight: 700;
+    box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
+}
+
+.score-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.score-text {
+    font-size: 1.125rem;
+}
+
+/* Comparison */
+.match-comparison {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.comparison-side {
+    background: #f8fafc;
+    border-radius: 16px;
+    padding: 1.5rem;
+}
+
+.transaction-side {
+    border: 2px solid #dbeafe;
+}
+
+.invoice-side {
+    border: 2px solid #e0e7ff;
+}
+
+.side-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 0 1.5rem 0;
+    color: #1e293b;
+}
+
+.detail-group {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.detail-group:last-child {
+    margin-bottom: 0;
+}
+
+.detail-icon {
+    width: 24px;
+    height: 24px;
+    color: #6366f1;
+    flex-shrink: 0;
+    margin-top: 0.25rem;
+}
+
+.detail-label {
+    font-size: 0.875rem;
+    color: #64748b;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.detail-value {
+    font-size: 1rem;
+    color: #1e293b;
+    font-weight: 600;
+}
+
+.description-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.invoice-number {
+    display: inline-block;
+    padding: 0.375rem 0.875rem;
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    color: white;
+    border-radius: 8px;
+    font-family: 'Courier New', monospace;
+}
+
+/* Arrow */
+.comparison-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow-icon {
+    width: 48px;
+    height: 48px;
+    color: #6366f1;
+    animation: pulse-arrow 2s ease-in-out infinite;
+}
+
+@keyframes pulse-arrow {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/* Match Criteria */
+.match-criteria {
+    background: #f8fafc;
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.criteria-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #475569;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.criteria-badges {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.criteria-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.criteria-badge.matched {
+    background: #d1fae5;
+    color: #059669;
+    border: 2px solid #6ee7b7;
+}
+
+.criteria-badge.unmatched {
+    background: #fee2e2;
+    color: #dc2626;
+    border: 2px solid #fca5a5;
+}
+
+.badge-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Actions */
+.match-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+.btn-reject,
+.btn-approve {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 1.05rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-reject {
+    background: #f1f5f9;
+    color: #475569;
+    border: 2px solid #e2e8f0;
+}
+
+.btn-reject:hover {
+    background: #ef4444;
+    color: white;
+    border-color: #dc2626;
+    box-shadow: 0 10px 30px rgba(239, 68, 68, 0.3);
+}
+
+.btn-approve {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+    box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);
+}
+
+.btn-approve:hover {
+    box-shadow: 0 15px 40px rgba(16, 185, 129, 0.4);
+    transform: translateY(-2px);
+}
+
+.btn-icon {
+    width: 22px;
+    height: 22px;
+}
+
+/* Empty State */
+.empty-state {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    border-radius: 24px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.empty-icon {
+    width: 80px;
+    height: 80px;
+    color: #10b981;
+    margin: 0 auto 1.5rem;
+}
+
+.empty-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0 0 0.5rem 0;
+}
+
+.empty-text {
+    color: #64748b;
+    font-size: 1.125rem;
+    margin: 0;
+}

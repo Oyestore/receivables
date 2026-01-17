@@ -1,0 +1,30 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist-ci"
+  },
+  "include": [
+    "app.module.ci.ts",
+    "main.ci.ts",
+    "src/**/*.ts",
+    "Module_01_Smart_Invoice_Generation/src/**/*.ts",
+    "Module_03_Payment_Integration/src/**/*.ts",
+    "Module_04_Analytics_Reporting/src/**/*.ts",
+    "Module_06_Credit_Scoring/src/**/*.ts",
+    "Module_12_Administration/src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "test",
+    "**/node_modules",
+    "**/dist",
+    "**/*.spec.ts",
+    "**/__tests__/**",
+    "**/tests/**",
+    "Module_05_Milestone_Workflows/**",
+    "Module_11_Common/code/services/workflow-engine.service.ts",
+    "frontend",
+    "Module_11_Common/pwa/**"
+  ]
+}

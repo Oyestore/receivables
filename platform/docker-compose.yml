@@ -1,0 +1,116 @@
+version: '3.8'
+
+services:
+  # --- INFRASTRUCTURE ---
+  postgres:
+    image: postgres:15-alpine
+    container_name: sme-postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres_password
+      POSTGRES_DB: sme_platform
+    ports:
+      - "5438:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - sme-network
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U postgres" ]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: sme-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - sme-network
+    healthcheck:
+      test: [ "CMD", "redis-cli", "ping" ]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # --- FRONTEND WITH AUTH.JS ---
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: sme-frontend
+    environment:
+      NODE_ENV: production
+      # Auth.js Configuration
+      AUTH_SECRET: your-super-secret-jwt-key-change-in-production-min-32-chars
+      AUTH_URL: http://localhost:5176
+      # Database Configuration
+      DATABASE_URL: postgres://postgres:postgres_password@postgres:5432/sme_platform
+      REDIS_URL: redis://redis:6379
+      # JWT Configuration
+      JWT_SECRET: your-jwt-secret-key-change-in-production-min-32-chars
+      JWT_EXPIRES_IN: 24h
+      # OAuth Configuration (placeholders - update with real values)
+      GOOGLE_CLIENT_ID: your-google-client-id
+      GOOGLE_CLIENT_SECRET: your-google-client-secret
+      MICROSOFT_CLIENT_ID: your-microsoft-client-id
+      MICROSOFT_CLIENT_SECRET: your-microsoft-client-secret
+      LINKEDIN_CLIENT_ID: your-linkedin-client-id
+      LINKEDIN_CLIENT_SECRET: your-linkedin-client-secret
+      # API Configuration
+      API_URL: http://localhost:5176/api
+    ports:
+      - "5176:5176"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    networks:
+      - sme-network
+    restart: always
+
+  # --- CORE MONOLITHS ---
+  platform-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sme-platform-api
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      # Database
+      DATABASE_URL: postgres://postgres:postgres_password@postgres:5432/sme_platform
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_USERNAME: postgres
+      DB_PASSWORD: postgres_password
+      DB_NAME: sme_platform
+      DB_SYNC: "true"
+      # Redis
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      # API Keys (Placeholders)
+      OPENAI_API_KEY: "sk-proj-xyz"
+      STRIPE_SECRET_KEY: "sk_test_xyz"
+    ports:
+      - "3000:3000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    networks:
+      - sme-network
+    restart: always
+
+volumes:
+  postgres_data:
+  redis_data:
+
+networks:
+  sme-network:
+    driver: bridge

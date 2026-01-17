@@ -1,0 +1,98 @@
+version: '3.8'
+
+services:
+  distribution-service:
+    build: .
+    container_name: intelligent-distribution-api
+    restart: unless-stopped
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=production
+      - PORT=3001
+      - DATABASE_URL=postgresql://postgres:password@postgres:5432/distribution_db
+      - REDIS_URL=redis://redis:6379
+      - JWT_SECRET=${JWT_SECRET:-your-jwt-secret}
+      - VALID_API_KEYS=${VALID_API_KEYS:-sk-test-key}
+      # Email Service Configuration
+      - SENDGRID_API_KEY=${SENDGRID_API_KEY}
+      - AWS_SES_ACCESS_KEY=${AWS_SES_ACCESS_KEY}
+      - AWS_SES_SECRET_KEY=${AWS_SES_SECRET_KEY}
+      - MAILGUN_API_KEY=${MAILGUN_API_KEY}
+      # SMS Service Configuration
+      - TWILIO_ACCOUNT_SID=${TWILIO_ACCOUNT_SID}
+      - TWILIO_AUTH_TOKEN=${TWILIO_AUTH_TOKEN}
+      - AWS_SNS_ACCESS_KEY=${AWS_SNS_ACCESS_KEY}
+      - AWS_SNS_SECRET_KEY=${AWS_SNS_SECRET_KEY}
+      - PLIVO_AUTH_ID=${PLIVO_AUTH_ID}
+      - PLIVO_AUTH_TOKEN=${PLIVO_AUTH_TOKEN}
+      # WhatsApp Configuration
+      - WHATSAPP_ACCESS_TOKEN=${WHATSAPP_ACCESS_TOKEN}
+      - WHATSAPP_WEBHOOK_URL=${WHATSAPP_WEBHOOK_URL}
+      # Queue Configuration
+      - BULL_REDIS_HOST=redis
+      - BULL_REDIS_PORT=6379
+      - BULL_REDIS_PASSWORD=${REDIS_PASSWORD}
+    depends_on:
+      - postgres
+      - redis
+    networks:
+      - distribution-network
+    volumes:
+      - ./logs:/app/logs
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3001/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  postgres:
+    image: postgres:15-alpine
+    container_name: distribution-postgres
+    restart: unless-stopped
+    environment:
+      - POSTGRES_DB=distribution_db
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./database/migrations:/docker-entrypoint-initdb.d
+    networks:
+      - distribution-network
+
+  redis:
+    image: redis:7-alpine
+    container_name: distribution-redis
+    restart: unless-stopped
+    ports:
+      - "6380:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - distribution-network
+
+  nginx:
+    image: nginx:alpine
+    container_name: distribution-nginx
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+      - "8443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./ssl:/etc/nginx/ssl
+    depends_on:
+      - distribution-service
+    networks:
+      - distribution-network
+
+volumes:
+  postgres_data:
+  redis_data:
+
+networks:
+  distribution-network:
+    driver: bridge

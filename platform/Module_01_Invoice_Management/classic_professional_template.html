@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Classic Professional Invoice</title>
+    <style>
+        body {{ font-family: Arial, sans-serif; margin: 0; padding: 0; }}
+        .container {{ width: 80%; margin: 20px auto; border: 1px solid #ccc; padding: 20px; }}
+        .header {{ text-align: center; margin-bottom: 20px; }}
+        .header h1 {{ margin: 0; }}
+        .company-details, .client-details {{ margin-bottom: 20px; }}
+        .company-details p, .client-details p {{ margin: 5px 0; }}
+        .items-table {{ width: 100%; border-collapse: collapse; margin-bottom: 20px; }}
+        .items-table th, .items-table td {{ border: 1px solid #ccc; padding: 8px; text-align: left; }}
+        .items-table th {{ background-color: #f2f2f2; }}
+        .totals {{ text-align: right; margin-bottom: 20px; }}
+        .totals p {{ margin: 5px 0; }}
+        .footer {{ text-align: center; margin-top: 20px; font-size: 0.8em; }}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>INVOICE</h1>
+        </div>
+        <div class="company-details">
+            <p data-field-id="companyName"><strong>Your Company Name</strong></p>
+            <p data-field-id="companyAddress">Your Company Address</p>
+            <p data-field-id="companyContact">Your Company Contact Info</p>
+        </div>
+        <div class="client-details">
+            <p><strong>Bill To:</strong></p>
+            <p data-field-id="clientName">Client Name</p>
+            <p data-field-id="clientAddress">Client Address</p>
+            <p data-field-id="clientContact">Client Contact Info</p>
+        </div>
+        <div>
+            <p><strong>Invoice Number:</strong> <span data-field-id="invoiceNumber">INV-001</span></p>
+            <p><strong>Date of Issue:</strong> <span data-field-id="issueDate">2025-05-10</span></p>
+            <p><strong>Due Date:</strong> <span data-field-id="dueDate">2025-06-10</span></p>
+        </div>
+        <table class="items-table">
+            <thead>
+                <tr>
+                    <th>Item Description</th>
+                    <th>Quantity</th>
+                    <th>Unit Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Items will be dynamically inserted here -->
+                <tr>
+                    <td data-field-id="itemDescription1">Sample Item 1</td>
+                    <td data-field-id="itemQuantity1">1</td>
+                    <td data-field-id="itemUnitPrice1">100.00</td>
+                    <td data-field-id="itemTotal1">100.00</td>
+                </tr>
+                <tr>
+                    <td data-field-id="itemDescription2">Sample Item 2</td>
+                    <td data-field-id="itemQuantity2">2</td>
+                    <td data-field-id="itemUnitPrice2">50.00</td>
+                    <td data-field-id="itemTotal2">100.00</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="totals">
+            <p><strong>Subtotal:</strong> <span data-field-id="subtotal">200.00</span></p>
+            <p><strong>Tax (10%):</strong> <span data-field-id="taxAmount">20.00</span></p>
+            <p><strong>Total:</strong> <span data-field-id="totalAmount">220.00</span></p>
+        </div>
+        <div class="footer">
+            <p>Thank you for your business!</p>
+        </div>
+    </div>
+</body>
+</html>
+

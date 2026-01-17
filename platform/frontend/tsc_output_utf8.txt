@@ -1,0 +1,19 @@
+﻿src/components/CustomerPortal/BulkPaymentProcessor.tsx(56,5): error TS1434: Unexpected keyword or identifier.
+src/components/CustomerPortal/BulkPaymentProcessor.tsx(65,18): error TS1005: ',' expected.
+src/components/CustomerPortal/DocumentCenter.tsx(367,27): error TS17002: Expected corresponding JSX closing tag for 'HStack'.
+src/components/CustomerPortal/PaymentModal.tsx(260,85): error TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+src/components/TenantPortal/CFOChatAssistant.tsx(40,15): error TS1005: ',' expected.
+src/components/TenantPortal/CFOChatAssistant.tsx(40,17): error TS1005: ',' expected.
+src/components/TenantPortal/CFOChatAssistant.tsx(40,21): error TS1005: ',' expected.
+src/components/TenantPortal/CFOChatAssistant.tsx(40,25): error TS1005: ',' expected.
+src/components/TenantPortal/CFOChatAssistant.tsx(40,30): error TS1005: ',' expected.
+src/components/TenantPortal/CFOChatAssistant.tsx(40,40): error TS1002: Unterminated string literal.
+src/components/TenantPortal/CFOChatAssistant.tsx(41,5): error TS1005: ':' expected.
+src/components/TenantPortal/MarginAnalyzer.tsx(121,26): error TS17008: JSX element 'VStack' has no corresponding closing tag.
+src/components/TenantPortal/MarginAnalyzer.tsx(132,15): error TS17002: Expected corresponding JSX closing tag for 'VStack'.
+src/components/TenantPortal/MarginAnalyzer.tsx(133,11): error TS17002: Expected corresponding JSX closing tag for 'Box'.
+src/components/TenantPortal/MarginAnalyzer.tsx(134,5): error TS1005: ')' expected.
+src/components/TenantPortal/MarginAnalyzer.tsx(135,3): error TS1109: Expression expected.
+src/components/TenantPortal/MarginAnalyzer.tsx(136,1): error TS1128: Declaration or statement expected.
+src/components/TenantPortal/RevenueForecasting.tsx(33,24): error TS1005: '{' expected.
+src/design-system/components/GradientCard.tsx(3,21): error TS1005: ',' expected.

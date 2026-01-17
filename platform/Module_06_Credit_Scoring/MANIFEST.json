@@ -1,0 +1,347 @@
+{
+  "module_name": "Module_06_Credit_Scoring",
+  "version": "1.0.0",
+  "generated_at": "2025-11-16T11:40:57.744515",
+  "metadata": {
+    "title": "Buyer Credit Scoring Module",
+    "description": "AI-powered credit scoring with 90%+ accuracy and early warning systems",
+    "key_features": [
+      "AI credit scoring (90%+ accuracy)",
+      "Industry-specific risk models",
+      "Dynamic credit limit management",
+      "Early warning systems"
+    ]
+  },
+  "statistics": {
+    "total_files": 65,
+    "total_size_bytes": 745036,
+    "total_size_mb": 0.71
+  },
+  "files": [
+    {
+      "path": "Module_06_Credit_Scoring/default-risk-assessment.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/Advanced Fraud Detection - Design Document.md",
+      "size": 18002,
+      "hash": "ef53887ca4b5c439530fcd4d57e2cd7f"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/risk-assessment.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/subscription-management.service.ts",
+      "size": 24649,
+      "hash": "a0c6f9b977cbbff9ee83843841b8d4aa"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/Module-Level Monetization and Access Control Analysis.md",
+      "size": 132942,
+      "hash": "7be693478cf78988fdd41cdf4f9bcdc6"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/Phase 6: Final Completion Report.md",
+      "size": 4759,
+      "hash": "8339a7ca40306d624221c74f39308a10"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/Phase 6.6: Advanced Enhancements & Monetization - Requirements Analysis.md",
+      "size": 11486,
+      "hash": "a0829ffb04cf9cceca080b6969256a5a"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/Phase 6.6: Advanced Enhancements & Monetization - Architecture Design.md",
+      "size": 32964,
+      "hash": "c4883a1b185ef388892b82c14981dbb7"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/ai-risk-detection.service.ts",
+      "size": 14215,
+      "hash": "7b045d98978fd44e0d94257f835208d5"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/risk-rule.service.ts",
+      "size": 28749,
+      "hash": "d113e7382531d75dfbd4b917f526b28d"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/credit-risk-visualization.service.ts",
+      "size": 26589,
+      "hash": "5b74738ad753510ef94a6cafe2efa883"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/Phase 6.6: Advanced Enhancements & Monetization - Validation Report.md",
+      "size": 8170,
+      "hash": "12611a8952f599f4810b21aba9116932"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/risk-rule.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/Phase 6: Buyer Credit Scoring Module Requirements.md",
+      "size": 18508,
+      "hash": "155fad3bc960c3b8f3534d96899eee3c"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/Phase 6: Buyer Credit Scoring Module Architecture.md",
+      "size": 30138,
+      "hash": "62eb9698a57cf6bdbade5e673830bf7e"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/Phase 6: Buyer Credit Scoring Module Implementation Plan.md",
+      "size": 20087,
+      "hash": "d91ec1c421e5286c1989fd00a88066d8"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/Phase 6: Buyer Credit Scoring Module - Final Completion Report.md",
+      "size": 6436,
+      "hash": "0b4e24b36854cb8552eb26cbdce76627"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/risk-indicator.entity.ts",
+      "size": 4028,
+      "hash": "6062be28ced2d8591e699875b12c3b1e"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/risk-alert.entity.ts",
+      "size": 3754,
+      "hash": "1e5cf937dfbcb779f734324b077b12dc"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/risk-indicator-monitoring.service.ts",
+      "size": 16988,
+      "hash": "53feec8d167183a79b24067ccf345706"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/risk-alert.service.ts",
+      "size": 16044,
+      "hash": "a2c10a82c9ecf83b723ec804e0de402d"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/Early Warning Systems - Technical Documentation.md",
+      "size": 16685,
+      "hash": "b37fe7507cffa73c5dedae01ac15fd20"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/Phase 6.5: Early Warning Systems - Validation Report.md",
+      "size": 7371,
+      "hash": "2767f8cb028732ff5c1d96387b2b27ef"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/risk-level.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/credit-limit.entity.ts",
+      "size": 5619,
+      "hash": "b72917653e3bb262621d98cf1dbf1f14"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/credit-limit-approval.entity.ts",
+      "size": 3824,
+      "hash": "ec65b4b04424c0deda7318ee3a34b597"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/credit-limit-history.entity.ts",
+      "size": 2896,
+      "hash": "fac99442db2be95e8f920e315e1e959f"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/credit-limit-calculation.service.ts",
+      "size": 15640,
+      "hash": "c19c1ee6618a6183b1499410cb382c5c"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/credit-limit.service.ts",
+      "size": 18898,
+      "hash": "63b9e1fe168c80f63c2a05817b3461ce"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/Credit Limit Management - Technical Documentation.md",
+      "size": 14065,
+      "hash": "40482e4de0e09898f23d87b17af3e746"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/industry-risk-profile.entity.ts",
+      "size": 4906,
+      "hash": "be45d00507bf9da91d06682b551f29ba"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/regional-risk-adjustment.entity.ts",
+      "size": 3622,
+      "hash": "d34619abb51af0005ace6314f3212367"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/industry-risk-factor.entity.ts",
+      "size": 3346,
+      "hash": "f46da66157d40edebe290a9230a59fca"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/industry-risk-profile.service.ts",
+      "size": 11160,
+      "hash": "966cc210b988c70dcf3b70e0d0f55d0e"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/industry-scoring.service.ts",
+      "size": 30289,
+      "hash": "051e3690ac4ce4a3672d3e29f292df17"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/Industry-Specific Risk Models - Technical Documentation.md",
+      "size": 12803,
+      "hash": "91a33f1d16c6a9d4e9aaa2ffea9bd001"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/Payment History Analysis - Technical Documentation.md",
+      "size": 13150,
+      "hash": "9c6a616e6d285eb2590bbbca9106c391"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/credit-assessment.entity.ts",
+      "size": 3856,
+      "hash": "79b538052680e221395f5d19119c7b34"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/assessment-data-source.entity.ts",
+      "size": 2764,
+      "hash": "4b2de30ca8ed80b1cf0437444a655c43"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/credit-score-factor.entity.ts",
+      "size": 2648,
+      "hash": "99e0e1d85fba8b868d35f0f717b81d21"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/buyer-profile.entity.ts",
+      "size": 3932,
+      "hash": "337d0470422978312e652f790420d279"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/scoring-model.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/credit-assessment.service.ts",
+      "size": 29690,
+      "hash": "897bd6a39e8062f015cd66e1e9e982f4"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/data-collector.service.ts",
+      "size": 9444,
+      "hash": "12dbcd6fbc67d07cf1b6b8f7e22cd6a7"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/score-calculator.service.ts",
+      "size": 23939,
+      "hash": "ebc3b07e4926381b5371d80e965623c3"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/Core Credit Assessment Engine - Technical Documentation.md",
+      "size": 9532,
+      "hash": "00b75b1a2c5b87e587bc96f08b759a05"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/credit-assessment.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/buyer-credit-scoring.module.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/update-credit-assessment.dto.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/create-credit-assessment.dto.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/credit-assessment-status.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/credit-score-type.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/risk-assessment.dto.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/risk-management-compliance.module.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/risk-assessment.entity.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/risk.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/Phase 7.4: Risk Management and Compliance Framework - Research Findings.md",
+      "size": 19536,
+      "hash": "92b13108a01b469c34649f13d68ee202"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/Risk Management and Compliance Framework - Technical Documentation.md",
+      "size": 40000,
+      "hash": "b3dd5e3f48cf1d0f901cf8a8382cc434"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/risk-assessment.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/credit-bureau.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/scoring-engine.service.spec.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/scoring-engine.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/scoring.enum.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/autonomous-risk-management.service.ts",
+      "size": 40,
+      "hash": "6167500bd380402830264cb940efd4d5"
+    },
+    {
+      "path": "Module_06_Credit_Scoring/dynamic-terms-management.service.ts",
+      "size": 16073,
+      "hash": "743a97d35ba57494862a4f7d30e6066f"
+    }
+  ]
+}

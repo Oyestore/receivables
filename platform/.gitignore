@@ -57,3 +57,5 @@ store/
 *.pid
 *.seed
 *.pid.lock
+*.zip
+*.pkl

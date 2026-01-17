@@ -1,0 +1,16 @@
+apiVersion: v2
+name: sme-platform
+description: SME Receivable Platform - Complete Helm Chart
+type: application
+version: 1.0.0
+appVersion: "1.0.0"
+keywords:
+  - sme
+  - receivable
+  - invoicing
+  - payment
+  - financing
+maintainers:
+  - name: Platform Team
+    email: devops@smeplatform.com
+dependencies: []

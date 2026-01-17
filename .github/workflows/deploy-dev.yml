@@ -1,0 +1,77 @@
+name: Deploy to Development
+on:
+  push:
+    branches: [develop]
+  workflow_dispatch:
+
+jobs:
+  deploy-dev:
+    name: Deploy to Dev Environment
+    runs-on: ubuntu-latest
+    environment:
+      name: development
+      url: https://dev.smeplatform.com
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup kubectl
+        uses: azure/setup-kubectl@v3
+        with:
+          version: 'latest'
+      
+      - name: Setup Helm
+        uses: azure/setup-helm@v3
+        with:
+          version: 'latest'
+      
+      - name: Configure Kubernetes
+        run: |
+          echo "${{ secrets.KUBE_CONFIG_DEV }}" | base64 -d > kubeconfig
+          export KUBECONFIG=kubeconfig
+      
+      - name: Create namespace if not exists
+        run: |
+          kubectl create namespace sme-platform-dev --dry-run=client -o yaml | kubectl apply -f -
+      
+      - name: Create secrets
+        run: |
+          kubectl create secret generic sme-platform-secrets \
+            --from-literal=JWT_SECRET='${{ secrets.JWT_SECRET_DEV }}' \
+            --from-literal=DATABASE_PASSWORD='${{ secrets.DB_PASSWORD_DEV }}' \
+            --from-literal=REDIS_PASSWORD='${{ secrets.REDIS_PASSWORD_DEV }}' \
+            --from-literal=ENCRYPTION_KEY='${{ secrets.ENCRYPTION_KEY_DEV }}' \
+            --from-literal=SENDGRID_API_KEY='${{ secrets.SENDGRID_API_KEY }}' \
+            --from-literal=RAZORPAY_KEY_ID='${{ secrets.RAZORPAY_KEY_ID_DEV }}' \
+            --from-literal=RAZORPAY_KEY_SECRET='${{ secrets.RAZORPAY_KEY_SECRET_DEV }}' \
+            --namespace=sme-platform-dev \
+            --dry-run=client -o yaml | kubectl apply -f -
+      
+      - name: Deploy with Helm
+        run: |
+          helm upgrade --install sme-platform ./helm \
+            --namespace=sme-platform-dev \
+            --values=./helm/values-dev.yaml \
+            --set backend.image.tag=${{ github.sha }} \
+            --set frontend.image.tag=${{ github.sha }} \
+            --wait \
+            --timeout=10m
+      
+      - name: Verify deployment
+        run: |
+          kubectl rollout status deployment/backend -n sme-platform-dev --timeout=5m
+          kubectl get pods -n sme-platform-dev
+      
+      - name: Run smoke tests
+        run: |
+          BACKEND_URL=$(kubectl get ingress -n sme-platform-dev -o jsonpath='{.items[0].spec.rules[0].host}')
+          curl -f https://$BACKEND_URL/health || exit 1
+      
+      - name: Notify deployment
+        if: always()
+        uses: 8398a7/action-slack@v3
+        with:
+          status: ${{ job.status }}
+          text: 'Deployment to DEV: ${{ job.status }}'
+          webhook_url: ${{ secrets.SLACK_WEBHOOK }}

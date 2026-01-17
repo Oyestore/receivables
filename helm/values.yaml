@@ -1,0 +1,164 @@
+# Default values for SME Platform Helm chart
+# This is a YAML-formatted file
+
+# Global configuration
+global:
+  environment: production
+  domain: smeplatform.com
+
+# Namespace
+namespace: sme-platform
+
+# Backend configuration
+backend:
+  replicaCount: 3
+  image:
+    repository: registry.company.com/sme-platform-backend
+    tag: v1.0.0
+    pullPolicy: IfNotPresent
+  
+  service:
+    type: ClusterIP
+    port: 4000
+  
+  resources:
+    requests:
+      memory: "512Mi"
+      cpu: "500m"
+    limits:
+      memory: "2Gi"
+      cpu: "2000m"
+  
+  autoscaling:
+    enabled: true
+    minReplicas: 3
+    maxReplicas: 10
+    targetCPUUtilizationPercentage: 70
+    targetMemoryUtilizationPercentage: 80
+  
+  health:
+    livenessPath: /health
+    readinessPath: /ready
+
+# Frontend configuration
+frontend:
+  replicaCount: 2
+  image:
+    repository: registry.company.com/sme-platform-frontend
+    tag: v1.0.0
+    pullPolicy: IfNotPresent
+  
+  service:
+    type: ClusterIP
+    port: 80
+  
+  resources:
+    requests:
+      memory: "128Mi"
+      cpu: "100m"
+    limits:
+      memory: "512Mi"
+      cpu: "500m"
+
+# PostgreSQL configuration
+postgresql:
+  enabled: true
+  image:
+    repository: postgres
+    tag: 15-alpine
+  
+  persistence:
+    enabled: true
+    size: 20Gi
+    storageClass: standard
+  
+  resources:
+    requests:
+      memory: "512Mi"
+      cpu: "250m"
+    limits:
+      memory: "2Gi"
+      cpu: "1000m"
+
+# Redis configuration
+redis:
+  enabled: true
+  image:
+    repository: redis
+    tag: 7-alpine
+  
+  persistence:
+    enabled: true
+    size: 5Gi
+    storageClass: standard
+  
+  resources:
+    requests:
+      memory: "256Mi"
+      cpu: "100m"
+    limits:
+      memory: "1Gi"
+      cpu: "500m"
+
+# Ingress configuration
+ingress:
+  enabled: true
+  className: nginx
+  annotations:
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    nginx.ingress.kubernetes.io/limit-rps: "100"
+  
+  hosts:
+    - host: smeplatform.com
+      paths:
+        - path: /
+          pathType: Prefix
+          service: frontend
+    - host: www.smeplatform.com
+      paths:
+        - path: /
+          pathType: Prefix
+          service: frontend
+    - host: api.smeplatform.com
+      paths:
+        - path: /
+          pathType: Prefix
+          service: backend
+  
+  tls:
+    - secretName: sme-platform-tls
+      hosts:
+        - smeplatform.com
+        - www.smeplatform.com
+        - api.smeplatform.com
+
+# ConfigMap values
+config:
+  nodeEnv: production
+  apiPrefix: api
+  port: "4000"
+  rateLimitWindow: "15"
+  rateLimitMaxRequests: "100"
+  emailProvider: sendgrid
+  emailFrom: noreply@smeplatform.com
+  logLevel: info
+  debug: "false"
+  
+  # Feature flags
+  features:
+    milestoneWorkflows: true
+    invoiceConcierge: true
+    creditDecisioning: true
+    crossBorderTrade: true
+    globalization: true
+
+# Secrets (values should come from external secret management)
+# DO NOT commit actual secret values
+secrets:
+  # These are placeholders - inject real values via CI/CD or sealed-secrets
+  jwtSecret: "<CHANGE_ME>"
+  databaseUsername: "<CHANGE_ME>"
+  databasePassword: "<CHANGE_ME>"
+  redisPassword: "<CHANGE_ME>"
+  encryptionKey: "<CHANGE_ME>"

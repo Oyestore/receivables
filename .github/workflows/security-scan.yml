@@ -1,0 +1,176 @@
+name: Security Scan
+on:
+  pull_request:
+    branches: [main, develop]
+  push:
+    branches: [main, develop]
+  schedule:
+    # Run daily at 2 AM UTC
+    - cron: '0 2 * * *'
+
+jobs:
+  # Secret Scanning
+  secret-scan:
+    name: Secret Scanning (GitGuardian)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Full history for secret scanning
+      
+      - name: GitGuardian scan
+        uses: GitGuardian/ggshield-action@v1
+        env:
+          GITGUARDIAN_API_KEY: ${{ secrets.GITGUARDIAN_API_KEY }}
+          GITHUB_PUSH_BEFORE_SHA: ${{ github.event.before }}
+          GITHUB_PUSH_BASE_SHA: ${{ github.event.base }}
+          GITHUB_DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+          GITHUB_PULL_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          GITHUB_PULL_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+
+  # Dependency Scanning
+  dependency-scan:
+    name: Dependency Vulnerabilities (Snyk)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      
+      - name: Install Snyk CLI
+        run: npm install -g snyk
+      
+      - name: Authenticate Snyk
+        run: snyk auth ${{ secrets.SNYK_TOKEN }}
+      
+      - name: Snyk test backend
+        working-directory: platform
+        run: snyk test --severity-threshold=high
+        continue-on-error: true
+      
+      - name: Snyk test frontend
+        working-directory: frontend
+        run: snyk test --severity-threshold=high
+        continue-on-error: true
+      
+      - name: Snyk monitor backend
+        working-directory: platform
+        run: snyk monitor
+      
+      - name: Snyk monitor frontend
+        working-directory: frontend
+        run: snyk monitor
+
+  # SAST - Static Application Security Testing
+  sast:
+    name: SAST (SonarQube)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Full history for better analysis
+      
+      - name: SonarQube Scan
+        uses: sonarsource/sonarqube-scan-action@master
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+        with:
+          args: >
+            -Dsonar.projectKey=sme-platform
+            -Dsonar.sources=platform/src,frontend/src
+            -Dsonar.tests=platform/test,frontend/src/**/*.test.tsx
+            -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info
+            -Dsonar.qualitygate.wait=true
+
+  # Container Image Scanning
+  container-scan:
+    name: Container Scan (Trivy)
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Build backend image
+        run: |
+          docker build -t sme-backend:test -f platform/Dockerfile platform/
+      
+      - name: Run Trivy vulnerability scanner
+        uses: aquasecurity/trivy-action@master
+        with:
+          image-ref: 'sme-backend:test'
+          format: 'sarif'
+          output: 'trivy-results.sarif'
+          severity: 'CRITICAL,HIGH'
+      
+      - name: Upload Trivy results to GitHub Security
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: 'trivy-results.sarif'
+
+  # OWASP Dependency Check
+  owasp-check:
+    name: OWASP Dependency Check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: OWASP Dependency Check
+        uses: dependency-check/Dependency-Check_Action@main
+        with:
+          project: 'SME Platform'
+          path: '.'
+          format: 'HTML'
+          args: >
+            --failOnCVSS 7
+            --enableRetired
+      
+      - name: Upload results
+        uses: actions/upload-artifact@v3
+        with:
+          name: dependency-check-report
+          path: reports
+
+  # License Compliance
+  license-check:
+    name: License Compliance
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      
+      - name: Install license checker
+        run: npm install -g license-checker
+      
+      - name: Check backend licenses
+        working-directory: platform
+        run: |
+          npm ci
+          license-checker --json --out licenses-backend.json
+      
+      - name: Check frontend licenses
+        working-directory: frontend
+        run: |
+          npm ci
+          license-checker --json --out licenses-frontend.json
+      
+      - name: Upload license reports
+        uses: actions/upload-artifact@v3
+        with:
+          name: license-reports
+          path: |
+            platform/licenses-backend.json
+            frontend/licenses-frontend.json

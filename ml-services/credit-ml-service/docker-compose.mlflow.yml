@@ -1,0 +1,59 @@
+version: '3.8'
+
+services:
+  # MLflow Tracking Server
+  mlflow:
+    image: ghcr.io/mlflow/mlflow:latest
+    container_name: mlflow-server
+    ports:
+      - "5000:5000"
+    environment:
+      - BACKEND_STORE_URI=sqlite:///mlflow.db
+      - DEFAULT_ARTIFACT_ROOT=./mlruns
+    volumes:
+      - ./mlflow_data:/mlflow
+      - ./mlruns:/mlruns
+    command: >
+      mlflow server --backend-store-uri sqlite:///mlflow/mlflow.db --default-artifact-root /mlruns --host 0.0.0.0 --port 5000
+    networks:
+      - ml-network
+  # PostgreSQL for production MLflow (commented out for now)
+  # Uncomment and configure for production use
+  # postgres:
+  #   image: postgres:14
+  #   container_name: mlflow-postgres
+  #   environment:
+  #     - POSTGRES_USER=mlflow
+  #     - POSTGRES_PASSWORD=mlflow
+  #     - POSTGRES_DB=mlflow
+  #   volumes:
+  #     - postgres_data:/var/lib/postgresql/data
+  #   networks:
+  #     - ml-network
+
+  # MinIO for artifact storage (S3-compatible)
+  # Uncomment for production artifact storage
+  # minio:
+  #   image: minio/minio:latest
+  #   container_name: mlflow-minio
+  #   ports:
+  #     - "9000:9000"
+  #     - "9001:9001"
+  #   environment:
+  #     - MINIO_ROOT_USER=minioadmin
+  #     - MINIO_ROOT_PASSWORD=minioadmin
+  #   volumes:
+  #     - minio_data:/data
+  #   command: server /data --console-address ":9001"
+  #   networks:
+  #     - ml-network
+
+networks:
+  ml-network:
+    driver: bridge
+
+volumes:
+  # postgres_data:
+  # minio_data:
+  mlflow_data:
+  mlruns:

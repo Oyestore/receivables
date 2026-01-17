@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  cash-flow-ml:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sme-cash-flow-ml
+    ports:
+      - "8000:8000"
+    environment:
+      - MODEL_PATH=/models
+      - BATCH_SIZE=50
+      - LOG_LEVEL=INFO
+    volumes:
+      - ./models:/models
+      - ./app:/app/app
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8000/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Optional: PostgreSQL for local development
+  postgres:
+    image: postgres:14
+    container_name: sme-postgres-dev
+    environment:
+      - POSTGRES_DB=sme_platform
+      - POSTGRES_USER=sme_user
+      - POSTGRES_PASSWORD=dev_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  # Optional: Redis for caching
+  redis:
+    image: redis:7-alpine
+    container_name: sme-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+volumes:
+  postgres_data:
+  redis_data:

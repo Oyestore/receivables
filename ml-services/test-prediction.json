@@ -1,0 +1,91 @@
+{
+    "tenant_id": "test-tenant-123",
+    "buyer_id": "test-buyer-456",
+    "gstin": "29ABCDE1234F1Z5",
+    "gst": {
+        "available": true,
+        "signals": {
+            "overallScore": 75,
+            "turnover": {
+                "cagr": 15.5,
+                "monthlyAverage": 500000,
+                "seasonalityScore": 0.65
+            },
+            "compliance": {
+                "complianceScore": 85,
+                "filingRegularity": 0.95,
+                "lateFilingCount": 1,
+                "taxTimeliness": 0.90
+            },
+            "network": {
+                "customerCount": 150,
+                "supplierCount": 80,
+                "customerHHI": 0.25,
+                "networkScore": 0.75
+            },
+            "fraud": {
+                "score": 90,
+                "circularTrading": false,
+                "fakeInvoices": false,
+                "riskLevel": "LOW"
+            },
+            "workingCapital": {
+                "cccDays": 45,
+                "dsoDays": 30,
+                "dioDays": 25,
+                "dpoDays": 10,
+                "wcScore": 0.80
+            }
+        }
+    },
+    "banking": {
+        "available": true,
+        "signals": {
+            "overallScore": 80,
+            "cashFlow": {
+                "monthlyIncome": 50000,
+                "monthlyExpense": 35000,
+                "netCashFlow": 15000,
+                "incomeStability": 0.85,
+                "cashVolatility": 0.75
+            },
+            "spend": {
+                "emiAmount": 10000,
+                "rentFixed": 8000,
+                "discretionary": 5000,
+                "bounceRate": 0.02,
+                "overdraftUsage": 0.05
+            },
+            "savings": {
+                "savingsRate": 0.20,
+                "avgBalance": 75000,
+                "minBalance": 25000,
+                "balanceTrend": 0.70
+            },
+            "stability": {
+                "accountAgeYears": 5,
+                "bankRelationships": 2,
+                "digitalActivityRate": 0.85
+            },
+            "liquidity": {
+                "liquidityBuffer": 0.75,
+                "emergencyFundScore": 0.80
+            }
+        },
+        "dataFreshness": "REAL_TIME"
+    },
+    "alerts": {
+        "active": [],
+        "criticalCount": 0,
+        "warningCount": 1,
+        "hasEMIBounce": false,
+        "hasCashFlowDrop": false
+    },
+    "scores": {
+        "gstScore": 75,
+        "bankingScore": 80,
+        "alertPenalty": 95,
+        "overallScore": 77,
+        "confidence": 85
+    }
+}

@@ -1,0 +1,50 @@
+{
+  "title": "Recommendations",
+  "panels": [
+    {
+      "type": "graph",
+      "title": "Recommendations Duration (ms)",
+      "datasource": "${DS_PROMETHEUS}",
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.95, sum(rate(recommendations_duration_ms_bucket[5m])) by (le))",
+          "legendFormat": "p95 duration"
+        },
+        {
+          "expr": "histogram_quantile(0.50, sum(rate(recommendations_duration_ms_bucket[5m])) by (le))",
+          "legendFormat": "p50 duration"
+        }
+      ],
+      "lines": true,
+      "linewidth": 2
+    },
+    {
+      "type": "stat",
+      "title": "Recommendations Generated (5m rate)",
+      "datasource": "${DS_PROMETHEUS}",
+      "targets": [
+        {
+          "expr": "sum(rate(recommendations_generated_total[5m]))",
+          "legendFormat": "generated"
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "title": "Requests (5m rate)",
+      "datasource": "${DS_PROMETHEUS}",
+      "targets": [
+        {
+          "expr": "sum(rate(recommendations_requests_total[5m]))",
+          "legendFormat": "requests"
+        }
+      ]
+    }
+  ],
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "timezone": "browser",
+  "version": 1
+}

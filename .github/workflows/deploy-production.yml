@@ -1,0 +1,108 @@
+name: Deploy to Production
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Deployment environment'
+        required: true
+        default: 'production'
+        type: choice
+        options:
+          - production
+          - staging
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
+
+jobs:
+  deploy:
+    name: Deploy to ${{ github.event.inputs.environment || 'production' }}
+    runs-on: ubuntu-latest
+    environment: ${{ github.event.inputs.environment || 'production' }}
+    permissions:
+      contents: read
+      packages: read
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up SSH
+        uses: webfactory/ssh-agent@v0.8.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Add server to known hosts
+        run: |
+          mkdir -p ~/.ssh
+          ssh-keyscan -H ${{ secrets.SERVER_HOST }} >> ~/.ssh/known_hosts
+
+      - name: Create .env file
+        run: |
+          echo "NODE_ENV=production" > .env.production
+          echo "DATABASE_HOST=${{ secrets.DB_HOST }}" >> .env.production
+          echo "DATABASE_PORT=${{ secrets.DB_PORT }}" >> .env.production
+          echo "DATABASE_NAME=${{ secrets.DB_NAME }}" >> .env.production
+          echo "DATABASE_USER=${{ secrets.DB_USER }}" >> .env.production
+          echo "DATABASE_PASSWORD=${{ secrets.DB_PASSWORD }}" >> .env.production
+          echo "REDIS_HOST=${{ secrets.REDIS_HOST }}" >> .env.production
+          echo "REDIS_PASSWORD=${{ secrets.REDIS_PASSWORD }}" >> .env.production
+          echo "JWT_SECRET=${{ secrets.JWT_SECRET }}" >> .env.production
+
+      - name: Copy files to server
+        run: |
+          rsync -avz --exclude 'node_modules' \
+            -e "ssh -o StrictHostKeyChecking=no" \
+            ./ ${{ secrets.SSH_USER }}@${{ secrets.SERVER_HOST }}:~/sme-platform/
+
+      - name: Deploy on server
+        run: |
+          ssh ${{ secrets.SSH_USER }}@${{ secrets.SERVER_HOST }} << 'EOF'
+            cd ~/sme-platform
+            
+            # Pull latest images
+            docker-compose -f docker-compose.yml -f docker-compose.prod.yml pull
+            
+            # Create backup
+            docker-compose exec -T postgres pg_dump -U $POSTGRES_USER $POSTGRES_DB > backups/backup_$(date +%Y%m%d_%H%M%S).sql
+            
+            # Run migrations
+            docker-compose -f docker-compose.yml -f docker-compose.prod.yml run --rm backend npm run migration:run
+            
+            # Deploy with zero downtime
+            docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d --no-deps --build backend frontend
+            
+            # Clean up old images
+            docker image prune -af --filter "until=24h"
+          EOF
+
+      - name: Health check
+        run: |
+          sleep 15
+          response=$(curl -s -o /dev/null -w "%{http_code}" https://${{ secrets.SERVER_HOST }}/health)
+          if [ "$response" != "200" ]; then
+            echo "Health check failed with status $response"
+            exit 1
+          fi
+          echo "✅ Deployment successful!"
+
+      - name: Notify on failure
+        if: failure()
+        uses: 8398a7/action-slack@v3
+        with:
+          status: ${{ job.status }}
+          text: '🚨 Production deployment failed!'
+          webhook_url: ${{ secrets.SLACK_WEBHOOK_URL }}
+
+      - name: Notify on success
+        if: success()
+        uses: 8398a7/action-slack@v3
+        with:
+          status: ${{ job.status }}
+          text: '🎉 Production deployment successful!'
+          webhook_url: ${{ secrets.SLACK_WEBHOOK_URL }}

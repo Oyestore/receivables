@@ -1,0 +1,156 @@
+# Docker Compose - Full Local Test Environment
+# Includes: PostgreSQL, Redis, Backend, Frontend, Monitoring Stack
+
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgres:15-alpine
+    container_name: sme-postgres
+    environment:
+      POSTGRES_DB: sme_platform_db
+      POSTGRES_USER: sme_user
+      POSTGRES_PASSWORD: sme_password_change_me
+      PGDATA: /var/lib/postgresql/data/pgdata
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U sme_user -d sme_platform_db" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - sme-network
+
+  # Redis Cache
+  redis:
+    image: redis:7-alpine
+    container_name: sme-redis
+    command: redis-server --requirepass redis_password_change_me
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: [ "CMD", "redis-cli", "ping" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - sme-network
+
+  # Backend API
+  backend:
+    build:
+      context: ./platform
+      dockerfile: Dockerfile
+    container_name: sme-backend
+    ports:
+      - "4000:4000"
+    environment:
+      NODE_ENV: development
+      PORT: 4000
+      DATABASE_HOST: postgres
+      DATABASE_PORT: 5432
+      DATABASE_USERNAME: sme_user
+      DATABASE_PASSWORD: sme_password_change_me
+      DATABASE_NAME: sme_platform_db
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      REDIS_PASSWORD: redis_password_change_me
+      JWT_SECRET: local_jwt_secret_change_me_64_chars_minimum_required_for_security
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    volumes:
+      - ./platform:/app
+      - /app/node_modules
+    networks:
+      - sme-network
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:4000/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Frontend
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.dev
+    container_name: sme-frontend
+    ports:
+      - "3000:3000"
+    environment:
+      VITE_API_URL: http://localhost:4000
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    networks:
+      - sme-network
+    depends_on:
+      - backend
+
+  # Prometheus (Metrics)
+  prometheus:
+    image: prom/prometheus:v2.48.1
+    container_name: sme-prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus_data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/usr/share/prometheus/console_libraries'
+      - '--web.console.templates=/usr/share/prometheus/consoles'
+    networks:
+      - sme-network
+
+  # Grafana (Dashboards)
+  grafana:
+    image: grafana/grafana:10.2.3
+    container_name: sme-grafana
+    ports:
+      - "3001:3000"
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_INSTALL_PLUGINS=
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./monitoring/grafana/dashboards:/etc/grafana/provisioning/dashboards
+      - ./monitoring/grafana/datasources:/etc/grafana/provisioning/datasources
+    networks:
+      - sme-network
+    depends_on:
+      - prometheus
+
+  # Node Exporter (System Metrics)
+  node-exporter:
+    image: prom/node-exporter:v1.7.0
+    container_name: sme-node-exporter
+    ports:
+      - "9100:9100"
+    networks:
+      - sme-network
+
+volumes:
+  postgres_data:
+    driver: local
+  redis_data:
+    driver: local
+  prometheus_data:
+    driver: local
+  grafana_data:
+    driver: local
+
+networks:
+  sme-network:
+    driver: bridge

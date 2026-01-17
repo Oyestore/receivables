@@ -1,0 +1,88 @@
+{
+  "model_name": "ensemble",
+  "version": "1.0.0",
+  "trained_at": null,
+  "train_samples": 0,
+  "train_metrics": {
+    "auc": 1.0,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "true_negatives": 6024,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "true_positives": 976
+  },
+  "val_metrics": {
+    "auc": 0.9515286725323574,
+    "accuracy": 0.906,
+    "precision": 0.7227722772277227,
+    "recall": 0.5251798561151079,
+    "f1_score": 0.6083333333333333,
+    "true_negatives": 833,
+    "false_positives": 28,
+    "false_negatives": 66,
+    "true_positives": 73
+  },
+  "model_metrics": {
+    "xgboost": {
+      "model_name": "xgboost",
+      "version": "1.0.0",
+      "trained_at": "2025-12-23T15:29:42.355581",
+      "train_samples": 7000,
+      "train_metrics": {
+        "auc": 1.0,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "true_negatives": 6024,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_positives": 976
+      },
+      "n_features": 82,
+      "val_metrics": {
+        "auc": 0.9516540078042096,
+        "accuracy": 0.907,
+        "precision": 0.7211538461538461,
+        "recall": 0.539568345323741,
+        "f1_score": 0.617283950617284,
+        "true_negatives": 832,
+        "false_positives": 29,
+        "false_negatives": 64,
+        "true_positives": 75
+      }
+    },
+    "lightgbm": {
+      "model_name": "lightgbm",
+      "version": "1.0.0",
+      "trained_at": "2025-12-23T15:29:43.571419",
+      "train_samples": 7000,
+      "train_metrics": {
+        "auc": 1.0,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "true_negatives": 6024,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_positives": 976
+      },
+      "n_features": 82,
+      "val_metrics": {
+        "auc": 0.9501750515963536,
+        "accuracy": 0.904,
+        "precision": 0.7128712871287128,
+        "recall": 0.5179856115107914,
+        "f1_score": 0.5999999999999999,
+        "true_negatives": 832,
+        "false_positives": 29,
+        "false_negatives": 67,
+        "true_positives": 72
+      }
+    }
+  }
+}

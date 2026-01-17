@@ -1,0 +1,6 @@
+{
+    "tenant_id": "test-tenant-123",
+    "invoices": [],
+    "payment_probabilities": {},
+    "horizon_days": 30
+}

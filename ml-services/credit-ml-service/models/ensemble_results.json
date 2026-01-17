@@ -1,0 +1,81 @@
+{
+  "model_type": "ensemble",
+  "model_version": "1.0.0",
+  "trained_at": "2025-12-23T15:29:44.013725",
+  "training_samples": 7000,
+  "test_metrics": {
+    "auc": 0.9504455815677723,
+    "accuracy": 0.92,
+    "precision": 0.7489539748953975,
+    "recall": 0.6415770609318996,
+    "f1_score": 0.6911196911196911,
+    "true_negatives": 1661,
+    "false_positives": 60,
+    "false_negatives": 100,
+    "true_positives": 179
+  },
+  "train_metrics": {
+    "auc": 1.0,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "true_negatives": 6024,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "true_positives": 976
+  },
+  "val_metrics": {
+    "auc": 0.9515286725323574,
+    "accuracy": 0.906,
+    "precision": 0.7227722772277227,
+    "recall": 0.5251798561151079,
+    "f1_score": 0.6083333333333333,
+    "true_negatives": 833,
+    "false_positives": 28,
+    "false_negatives": 66,
+    "true_positives": 73
+  },
+  "top_features": [
+    {
+      "feature": "gst_dpo_days",
+      "importance": 89.6038292504847
+    },
+    {
+      "feature": "gst_refund_claims",
+      "importance": 80.27057642911869
+    },
+    {
+      "feature": "gst_wc_trend",
+      "importance": 77.00267157281436
+    },
+    {
+      "feature": "gst_industry_benchmark",
+      "importance": 76.53632521480321
+    },
+    {
+      "feature": "gst_monthly_avg",
+      "importance": 76.07017148807644
+    },
+    {
+      "feature": "gst_top5_customer_pct",
+      "importance": 75.13620918542146
+    },
+    {
+      "feature": "gst_hhi",
+      "importance": 72.80297051842014
+    },
+    {
+      "feature": "bank_cash_volatility",
+      "importance": 72.33708457027872
+    },
+    {
+      "feature": "bank_rent_fixed",
+      "importance": 72.3363018296659
+    },
+    {
+      "feature": "alert_warning_count",
+      "importance": 71.87294767796993
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-config
+  namespace: {{ .Values.namespace }}
+data:
+  NODE_ENV: {{ .Values.config.nodeEnv | quote }}
+  API_PREFIX: {{ .Values.config.apiPrefix | quote }}
+  PORT: {{ .Values.config.port | quote }}
+  DATABASE_HOST: "postgres-service"
+  DATABASE_PORT: "5432"
+  DATABASE_NAME: "sme_platform_db"
+  REDIS_HOST: "redis-service"
+  REDIS_PORT: "6379"
+  REDIS_TLS: "false"
+  RATE_LIMIT_WINDOW: {{ .Values.config.rateLimitWindow | quote }}
+  RATE_LIMIT_MAX_REQUESTS: {{ .Values.config.rateLimitMaxRequests | quote }}
+  EMAIL_PROVIDER: {{ .Values.config.emailProvider | quote }}
+  EMAIL_FROM: {{ .Values.config.emailFrom | quote }}
+  LOG_LEVEL: {{ .Values.config.logLevel | quote }}
+  DEBUG: {{ .Values.config.debug | quote }}
+  ENABLE_MILESTONE_WORKFLOWS: {{ .Values.config.features.milestoneWorkflows | quote }}
+  ENABLE_INVOICE_CONCIERGE: {{ .Values.config.features.invoiceConcierge | quote }}
+  ENABLE_CREDIT_DECISIONING: {{ .Values.config.features.creditDecisioning | quote }}
+  ENABLE_CROSS_BORDER_TRADE: {{ .Values.config.features.crossBorderTrade | quote }}
+  ENABLE_GLOBALIZATION: {{ .Values.config.features.globalization | quote }}
